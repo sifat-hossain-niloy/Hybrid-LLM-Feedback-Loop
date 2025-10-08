@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: hybrid-llm-icpc-lite
+Version: 0.1.0
+Requires-Python: >=3.8
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: sqlmodel
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: playwright
+Requires-Dist: httpx
+Requires-Dist: tenacity
+Requires-Dist: orjson
+Requires-Dist: loguru

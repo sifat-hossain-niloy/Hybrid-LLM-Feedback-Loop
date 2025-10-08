@@ -1,0 +1,35 @@
+{
+  "problem_id": "2045_A",
+  "start_time": "2025-10-07T19:35:29.088561",
+  "max_attempts": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-07T19:35:29.088576",
+      "duration_seconds": 13.583074,
+      "solution_file": "2045_A_Solution_1.cpp",
+      "solution_code": "/*\n * Problem: 2045_A - Problem A\n * Generated: 2025-10-07 19:35:42\n * Model: GPT-4\n * Iteration: 1\n * Rating: 1700\n */\n\n#include<bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    string s;\n    cin >> s;\n    vector<int> cnt(26);\n    for (char c : s) {\n        cnt[c - 'A']++;\n    }\n    int vowels = cnt['A' - 'A'] + cnt['E' - 'A'] + cnt['I' - 'A'] + cnt['O' - 'A'] + cnt['U' - 'A'] + cnt['Y' - 'A'];\n    int consonants = s.size() - vowels;\n    int ng = min(cnt['N' - 'A'], cnt['G' - 'A']);\n    consonants += ng;\n    int syllables = min(vowels, consonants);\n    if (syllables == 0) {\n        cout << 0 << endl;\n    } else {\n        cout << syllables * 3 << endl;\n    }\n    return 0;\n}",
+      "submission_error": "Submission failed with code 1",
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-07T19:35:42.672217",
+      "duration_seconds": 6.855627,
+      "solution_file": "2045_A_Solution_2.cpp",
+      "solution_code": "/*\n * Problem: 2045_A - Problem A\n * Generated: 2025-10-07 19:35:49\n * Model: GPT-4\n * Iteration: 2\n * Rating: 1700\n */\n\n#include<bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    string s;\n    cin >> s;\n    vector<int> cnt(26);\n    for (char c : s) {\n        cnt[c - 'A']++;\n    }\n    int vowels = cnt['A' - 'A'] + cnt['E' - 'A'] + cnt['I' - 'A'] + cnt['O' - 'A'] + cnt['U' - 'A'] + min(cnt['Y' - 'A'], 1);\n    int consonants = s.size() - vowels;\n    int ng = min(cnt['N' - 'A'], cnt['G' - 'A']);\n    consonants += ng;\n    int syllables = min(vowels, consonants);\n    if (syllables == 0) {\n        cout << 0 << endl;\n    } else {\n        cout << syllables * 3 << endl;\n    }\n    return 0;\n}",
+      "submission_error": "Submission failed with code 1",
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-07T19:35:49.528319",
+      "duration_seconds": 11.169016,
+      "solution_file": "2045_A_Solution_3.cpp",
+      "solution_code": "/*\n * Problem: 2045_A - Problem A\n * Generated: 2025-10-07 19:36:00\n * Model: GPT-4\n * Iteration: 3\n * Rating: 1700\n */\n\n#include<bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    string s;\n    cin >> s;\n    vector<int> cnt(26);\n    for (char c : s) {\n        cnt[c - 'A']++;\n    }\n    int vowels = cnt['A' - 'A'] + cnt['E' - 'A'] + cnt['I' - 'A'] + cnt['O' - 'A'] + cnt['U' - 'A'];\n    int y = cnt['Y' - 'A'];\n    int ng = min(cnt['N' - 'A'], cnt['G' - 'A']);\n    int consonants = s.size() - vowels - y - 2*ng;\n    int syllables = min(vowels + min(y, 1), consonants + ng + min(y, 1));\n    if (syllables == 0) {\n        cout << 0 << endl;\n    } else {\n        cout << syllables * 3 << endl;\n    }\n    return 0;\n}",
+      "submission_error": "Submission failed with code 1",
+      "accepted": false
+    }
+  ],
+  "final_status": "in_progress"
+}

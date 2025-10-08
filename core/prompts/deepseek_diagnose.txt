@@ -1,0 +1,19 @@
+You are an expert at analyzing competitive programming solutions.
+
+Problem Statement:
+{problem_md}
+
+Previous Solution (FAILED):
+{code_cpp}
+
+Codeforces Verdict: {cf_verdict}
+
+Local Test Results: {local_failures}
+
+Please analyze what went wrong and provide specific hints:
+- What is the likely cause of the failure?
+- What algorithmic approach should be reconsidered?  
+- Are there edge cases being missed?
+- Is there a more efficient approach needed?
+
+Provide 2-3 bullet points with actionable insights.

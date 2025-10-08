@@ -1,0 +1,63 @@
+{
+  "submission_id": "339631265",
+  "timestamp": "2025-09-21T03:55:31.285982",
+  "collection_methods": [
+    "api_interception"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=u0jalqdb4",
+    "rv_parameter": "u0jalqdb4",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"21\\r\\n\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"WRONG_ANSWER\",\"checkerStdoutAndStderr#1\":\"wrong answer 1st words differ - expected: \\u00279\\u0027, found: \\u002721\\u0027\\r\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"1\",\"timeConsumed#1\":\"46\",\"problemName\":\"(A) Scrambled Scrabble\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    string s;\\r\\n    cin \\u003e\\u003e s;\\r\\n    int n \\u003d s.size();\\r\\n    int vowels \\u003d 0, consonants \\u003d 0, ng \\u003d 0;\\r\\n    for (int i \\u003d 0; i \\u003c n; i++) {\\r\\n        if (s[i] \\u003d\\u003d \\u0027A\\u0027 || s[i] \\u003d\\u003d \\u0027E\\u0027 || s[i] \\u003d\\u003d \\u0027I\\u0027 || s[i] \\u003d\\u003d \\u0027O\\u0027 || s[i] \\u003d\\u003d \\u0027U\\u0027) {\\r\\n            vowels++;\\r\\n        } else if (s[i] \\u003d\\u003d \\u0027Y\\u0027) {\\r\\n            vowels++;\\r\\n            consonants++;\\r\\n        } else if (s[i] \\u003d\\u003d \\u0027N\\u0027 \\u0026\\u0026 i \\u003c n - 1 \\u0026\\u0026 s[i + 1] \\u003d\\u003d \\u0027G\\u0027) {\\r\\n            ng++;\\r\\n            i++;\\r\\n        } else {\\r\\n            consonants++;\\r\\n        }\\r\\n    }\\r\\n    int syllables \\u003d min(vowels, min(consonants, ng + (consonants - ng) / 2));\\r\\n    cout \\u003c\\u003c syllables * 7 \\u003c\\u003c endl;\\r\\n    return 0;\\r\\n}\",\"answer#1\":\"9\\r\\n\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2045/submission/339631265\",\"compilationError\":\"false\",\"rejected#1\":\"true\",\"contestName\":\"2024-2025 ICPC Asia Jakarta Regional Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2045/challenge/339631265\",\"accepted#1\":\"false\",\"verdict\":\"\\u003cspan class\\u003d\\u0027verdict-rejected\\u0027\\u003eWrong answer on test \\u003cspan class\\u003d\\\"verdict-format-judged\\\"\\u003e1\\u003c/span\\u003e\\u003c/span\\u003e\",\"prevId\":\"339630867\",\"input#1\":\"ICPCJAKARTA\\r\\n\",\"memoryConsumed#1\":\"8192\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bSOArFbA3pLto2fhRoQCf9av%2FYXTRDFi7xwg5yYXhOVtEzVIl7Cjkvx9Elz8dAzGwIA7WtkjrKxJp8VihwMr3OEKlCNZ46C8D4Tqflw7J69O7nmSQblb3hg%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Sat, 20 Sep 2025 21:55:28 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "x-req-id": "neo:982491364ee440d7-SIN:/data/submitSource:u0jalqdb4",
+      "pragma": "no-cache",
+      "cf-ray": "982491364ee440d7-SIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "21\r\n",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "WRONG_ANSWER",
+    "checkerStdoutAndStderr#1": "wrong answer 1st words differ - expected: '9', found: '21'\r\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "1",
+    "timeConsumed#1": "46",
+    "problemName": "(A) Scrambled Scrabble",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    string s;\r\n    cin >> s;\r\n    int n = s.size();\r\n    int vowels = 0, consonants = 0, ng = 0;\r\n    for (int i = 0; i < n; i++) {\r\n        if (s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U') {\r\n            vowels++;\r\n        } else if (s[i] == 'Y') {\r\n            vowels++;\r\n            consonants++;\r\n        } else if (s[i] == 'N' && i < n - 1 && s[i + 1] == 'G') {\r\n            ng++;\r\n            i++;\r\n        } else {\r\n            consonants++;\r\n        }\r\n    }\r\n    int syllables = min(vowels, min(consonants, ng + (consonants - ng) / 2));\r\n    cout << syllables * 7 << endl;\r\n    return 0;\r\n}",
+    "answer#1": "9\r\n",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2045/submission/339631265",
+    "compilationError": "false",
+    "rejected#1": "true",
+    "contestName": "2024-2025 ICPC Asia Jakarta Regional Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2045/challenge/339631265",
+    "accepted#1": "false",
+    "verdict": "<span class='verdict-rejected'>Wrong answer on test <span class=\"verdict-format-judged\">1</span></span>",
+    "prevId": "339630867",
+    "input#1": "ICPCJAKARTA\r\n",
+    "memoryConsumed#1": "8192"
+  }
+}

@@ -1,0 +1,24 @@
+You are an expert competitive programmer. Your task is to solve programming problems by learning from previous mistakes and improving solutions iteratively.
+
+IMPORTANT INSTRUCTIONS:
+1. Carefully analyze the problem statement and constraints
+2. If previous attempts are provided, study what went wrong
+3. Pay special attention to failed test cases and error messages
+4. Fix the specific issues identified in previous attempts
+5. Generate clean, efficient C++ code that handles all edge cases
+6. Use appropriate data types and algorithms for the constraints
+7. Return ONLY the C++ code, no explanations or markdown formatting
+
+PREVIOUS FAILED ATTEMPTS:
+{previous_attempts}
+
+PROBLEM STATEMENT:
+{problem_md}
+
+SAMPLE TEST CASES:
+{samples}
+
+ANALYSIS FROM PREVIOUS ATTEMPTS:
+{hints}
+
+Your task is to analyze the failures and generate a corrected C++ solution that addresses all the identified issues.

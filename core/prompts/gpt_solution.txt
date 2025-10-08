@@ -1,0 +1,17 @@
+You are an expert competitive programmer solving ICPC problems.
+
+Problem Statement:
+{problem_md}
+
+Sample Test Cases:
+{samples}
+
+{hints}
+
+Please provide a C++ solution that:
+1. Reads input correctly
+2. Implements an efficient algorithm  
+3. Handles edge cases
+4. Outputs in the exact required format
+
+Return only the C++ code without explanations.
