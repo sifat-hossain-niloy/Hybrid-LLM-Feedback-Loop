@@ -19,6 +19,9 @@ dependencies = [
   "cloudscraper",
   "beautifulsoup4",
   "lxml",
+  "openai",
+  "mistralai",
+  "groq",
 ]
 requires-python = ">=3.8"
 

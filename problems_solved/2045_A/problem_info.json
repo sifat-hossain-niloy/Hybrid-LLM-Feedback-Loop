@@ -1,0 +1,40 @@
+{
+  "problem_id": "2045_A",
+  "contest_id": 2045,
+  "letter": "A",
+  "title": "Problem A",
+  "statement": "# Problem\n\n## Problem Statement\n\nYou are playing a word game using a standard set of\n26\nuppercase English letters: A — Z. In this game, you can form vowels and consonants as follows.\nThe letters A, E, I, O, and U can only form a vowel.\nThe letter Y can form either a vowel or a consonant.\nEach of the remaining letters other than A, E, I, O, U, and Y can only form a consonant.\nThe string NG can form a single consonant when concatenated together.\nDenote a syllable as a concatenation of a consonant, a vowel, and a consonant in that order. A word is a concatenation of one or more syllables.\nYou are given a string\nS\nand you want to create a word from it. You are allowed to delete zero or more letters from\nS\nand rearrange the remaining letters to form the word. Find the length of the longest word that can be created, or determine if no words can be created.\n\n## Input\n\nA single line consisting of a string\nS\n(\n1≤|S|≤5000\n). The string\nS\nconsists of only uppercase English letters.\n\n## Output\n\nIf a word cannot be created, output 0. Otherwise, output a single integer representing the length of longest word that can be created.\n\n## Note\n\nExplanation for the sample input/output #1\nA possible longest word is JAKCARTAP, consisting of the syllables JAK, CAR, and TAP.\nExplanation for the sample input/output #2\nThe whole string\nS\nis a word consisting of one syllable which is the concatenation of the consonant NG, the vowel E, and the consonant NG.\nExplanation for the sample input/output #3\nThe whole string\nS\nis a word consisting of one syllable which is the concatenation of the consonant Y, the vowel Y, and the consonant Y.\nExplanation for the sample input/output #4\nThe whole string\n𝑆\nis a word consisting of two syllables: DAN and GAN.\n\n**Tags:** brute force, greedy\n\n**Rating:** 1700\n\n",
+  "rating": "1700",
+  "tags": [
+    "brute force",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "ICPCJAKARTA",
+      "output": "9",
+      "kind": "sample"
+    },
+    {
+      "input": "NGENG",
+      "output": "5",
+      "kind": "sample"
+    },
+    {
+      "input": "YYY",
+      "output": "3",
+      "kind": "sample"
+    },
+    {
+      "input": "DANGAN",
+      "output": "6",
+      "kind": "sample"
+    },
+    {
+      "input": "AEIOUY",
+      "output": "0",
+      "kind": "sample"
+    }
+  ],
+  "created_at": "2025-10-26T04:18:27.021376"
+}

@@ -20,15 +20,17 @@ from pathlib import Path
 from sqlmodel import Session, select
 from core.db import engine
 from core.models import Problem, TestCase
-from core.llm_gateway import gpt_generate_solution
+from core.workflow_manager import WorkflowManager, WorkflowType
 
 
 class AutomatedProblemSolver:
     """Complete automated problem solving system with feedback loop"""
     
-    def __init__(self, base_dir: str = "problems_solved"):
+    def __init__(self, base_dir: str = "problems_solved", workflow_type: WorkflowType = WorkflowType.GPT_MISTRAL):
         self.base_dir = Path(base_dir)
         self.base_dir.mkdir(exist_ok=True)
+        self.workflow_manager = WorkflowManager()
+        self.workflow_type = workflow_type
         
     def solve_problem(self, problem_id: str, max_attempts: int = 3, chromium_profile: str = "Sifat") -> Dict:
         """
@@ -55,9 +57,14 @@ class AutomatedProblemSolver:
         # Save problem info
         self._save_problem_info(problem_dir, problem_data)
         
+        # Create workflow session
+        workflow_session = self.workflow_manager.create_session(self.workflow_type, problem_id)
+        
         # Initialize solving log
         solving_log = {
             "problem_id": problem_id,
+            "workflow_type": self.workflow_type.value,
+            "workflow_session": workflow_session,
             "start_time": datetime.now().isoformat(),
             "max_attempts": max_attempts,
             "attempts": [],
@@ -73,7 +80,8 @@ class AutomatedProblemSolver:
                 problem_data=problem_data,
                 attempt_number=attempt,
                 previous_attempts=solving_log["attempts"],
-                chromium_profile=chromium_profile
+                chromium_profile=chromium_profile,
+                workflow_session=solving_log["workflow_session"]
             )
             
             solving_log["attempts"].append(attempt_result)
@@ -93,6 +101,21 @@ class AutomatedProblemSolver:
             # Don't generate next solution if this was the last attempt
             if attempt < max_attempts:
                 print(f"🔄 Preparing for attempt {attempt + 1}...")
+                
+                # Generate hint for next attempt using the configured hint provider
+                if attempt_result.get("solution_code") and attempt_result.get("verdict"):
+                    print(f"💡 Generating debugging hint...")
+                    try:
+                        hint = self._generate_hint(
+                            problem_data, 
+                            attempt_result, 
+                            solving_log["workflow_session"]
+                        )
+                        attempt_result["hint"] = hint
+                        print(f"💡 Hint: {hint[:200]}..." if len(hint) > 200 else f"💡 Hint: {hint}")
+                    except Exception as e:
+                        print(f"⚠️ Failed to generate hint: {str(e)}")
+                        attempt_result["hint_error"] = str(e)
         
         else:
             # All attempts failed
@@ -188,7 +211,7 @@ class AutomatedProblemSolver:
             json.dump(problem_info, f, indent=2, ensure_ascii=False)
     
     def _solve_attempt(self, problem_dir: Path, problem_data: Dict, attempt_number: int, 
-                       previous_attempts: List[Dict], chromium_profile: str) -> Dict:
+                       previous_attempts: List[Dict], chromium_profile: str, workflow_session: str) -> Dict:
         """Execute a single solving attempt"""
         
         attempt_start = datetime.now()
@@ -196,7 +219,7 @@ class AutomatedProblemSolver:
         
         # Step 1: Generate solution
         print(f"🧠 Generating solution with GPT...")
-        solution_result = self._generate_solution(problem_data, previous_attempts)
+        solution_result = self._generate_solution(problem_data, previous_attempts, workflow_session)
         
         if "error" in solution_result:
             return {
@@ -252,7 +275,7 @@ class AutomatedProblemSolver:
             "test_results": submission_result.get("test_results", [])
         }
     
-    def _generate_solution(self, problem_data: Dict, previous_attempts: List[Dict]) -> Dict:
+    def _generate_solution(self, problem_data: Dict, previous_attempts: List[Dict], workflow_session: str) -> Dict:
         """Generate solution using GPT with context from previous attempts"""
         
         problem = problem_data["problem"]
@@ -282,12 +305,17 @@ class AutomatedProblemSolver:
                     })
         
         try:
-            # Use enhanced GPT function with previous context
-            solution = gpt_generate_solution(
-                problem_md=problem.statement_md,
-                samples=sample_tests_text,
-                hints=None,  # Could integrate DeepSeek here later
-                previous_context=previous_context if previous_context else None
+            # Build complete problem statement (statement_md already contains formatted problem)
+            problem_statement = f"""{problem.statement_md}
+
+Sample Tests:
+{sample_tests_text}"""
+            
+            # Use workflow manager to generate solution
+            solution = self.workflow_manager.generate_solution(
+                workflow_session,
+                problem_statement,
+                previous_context if previous_context else None
             )
             
             # Add header comment to solution
@@ -297,7 +325,50 @@ class AutomatedProblemSolver:
             return {"solution": final_solution}
             
         except Exception as e:
-            return {"error": f"GPT generation failed: {str(e)}"}
+            return {"error": f"Solution generation failed: {str(e)}"}
+    
+    def _generate_hint(self, problem_data: Dict, failed_attempt: Dict, workflow_session: str) -> str:
+        """Generate debugging hint using the configured hint provider"""
+        
+        problem = problem_data["problem"]
+        test_cases = problem_data["test_cases"]
+        
+        # Prepare sample tests text
+        sample_tests_text = ""
+        for i, tc in enumerate([tc for tc in test_cases if tc.kind.value == "sample"], 1):
+            sample_tests_text += f"Sample Input {i}:\n{tc.input_text}\n\n"
+            sample_tests_text += f"Sample Output {i}:\n{tc.expected_output_text}\n\n"
+        
+        # Build complete problem statement (statement_md already contains formatted problem)
+        problem_statement = f"""{problem.statement_md}
+
+Sample Tests:
+{sample_tests_text}"""
+        
+        # Extract error details
+        error_details = ""
+        if failed_attempt.get("test_results"):
+            error_details += "Test Results:\n"
+            for test in failed_attempt["test_results"]:
+                error_details += f"Test {test.get('test_number', '?')}: {test.get('verdict', 'Unknown')}\n"
+                if test.get('expected_output') and test.get('actual_output'):
+                    error_details += f"  Expected: {test['expected_output']}\n"
+                    error_details += f"  Got: {test['actual_output']}\n"
+        
+        if failed_attempt.get("submission_error"):
+            error_details += f"\nSubmission Error: {failed_attempt['submission_error']}"
+        
+        if not error_details:
+            error_details = "No detailed error information available"
+        
+        # Use workflow manager to generate hint
+        return self.workflow_manager.generate_hint(
+            workflow_session,
+            problem_statement,
+            failed_attempt.get("solution_code", ""),
+            failed_attempt.get("verdict", "Unknown"),
+            error_details
+        )
     
     def _extract_test_results_from_api(self, api_response: Optional[Dict]) -> List[Dict]:
         """Extract detailed test results from API response"""

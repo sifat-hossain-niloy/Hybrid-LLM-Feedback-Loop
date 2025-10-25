@@ -24,6 +24,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from core.automated_solver import AutomatedProblemSolver
+from core.workflow_manager import WorkflowType
 
 
 def main():
@@ -51,6 +52,13 @@ Examples:
     )
     
     parser.add_argument(
+        "--workflow",
+        choices=["gpt_mistral", "gpt_groq"],
+        default="gpt_mistral",
+        help="LLM workflow to use (default: gpt_mistral)"
+    )
+    
+    parser.add_argument(
         "--profile",
         default="Sifat",
         help="Chromium profile to use for Codeforces submission (default: Sifat)"
@@ -75,12 +83,16 @@ Examples:
     print("=" * 50)
     print(f"📋 Problem ID: {args.problem_id}")
     print(f"🎯 Max Attempts: {args.max_attempts}")
+    print(f"🧠 Workflow: {args.workflow.upper()} ({'GPT-4 + Codestral' if args.workflow == 'gpt_mistral' else 'GPT-4 + Llama 3.3 70B'})")
     print(f"👤 Chromium Profile: {args.profile}")
     print(f"📁 Output Directory: {args.base_dir}")
     print("=" * 50)
     
     # Initialize solver
-    solver = AutomatedProblemSolver(base_dir=args.base_dir)
+    # Convert workflow string to enum
+    workflow_type = WorkflowType.GPT_MISTRAL if args.workflow == "gpt_mistral" else WorkflowType.GPT_GROQ
+    
+    solver = AutomatedProblemSolver(base_dir=args.base_dir, workflow_type=workflow_type)
     
     try:
         # Start solving
