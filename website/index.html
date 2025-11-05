@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid LLM Feedback Loop - Research Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">🤖 Hybrid LLM Feedback Loop</div>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Multi-Agent Feedback Loops for<br>Competitive Programming</h1>
+                <p class="hero-subtitle">
+                    An autonomous AI agent that solves competitive programming problems through 
+                    hybrid multi-model feedback, achieving 41% accuracy with just 3 attempts—competitive 
+                    with AlphaCode using 10,000× fewer samples.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">367</div>
+                        <div class="stat-label">Problems Evaluated</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Workflow Combinations</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">131%</div>
+                        <div class="stat-label">Max Improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Problem Statement</h3>
+                    <p>How can we enhance LLM code generation through iterative multi-agent feedback rather than massive sampling?</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Approach</h3>
+                    <p>Separate solution generation from debugging analysis using specialized critics (Codestral, Llama-3.3, DeepSeek-R1).</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Evaluation</h3>
+                    <p>167 ICPC World Finals + 200 Codeforces problems, submitted to online judge for real-world validation.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Key Finding</h3>
+                    <p>Achieves 76-174% improvement over zero-shot baselines with reasoning-focused critics (DeepSeek-R1) performing best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Questions -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Research Questions</h2>
+            <div class="rq-grid">
+                <div class="rq-card">
+                    <div class="rq-number">RQ1</div>
+                    <h3>Iterative Improvement</h3>
+                    <p>How much do Pass@k metrics improve when LLMs iteratively refine solutions based on judge feedback?</p>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-number">RQ2</div>
+                    <h3>Model Specialization</h3>
+                    <p>Do code-specialized, general-purpose, or reasoning-focused critics provide more effective debugging feedback?</p>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-number">RQ3</div>
+                    <h3>Persistent Context</h3>
+                    <p>Does maintaining conversation history across attempts improve solution quality and reduce repeated mistakes?</p>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-number">RQ4</div>
+                    <h3>Category Effectiveness</h3>
+                    <p>Do critics exhibit differential performance across problem categories (Graph Theory, DP, Math, etc.)?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2 class="section-title">Performance Results</h2>
+            
+            <!-- ICPC Results -->
+            <div class="results-subsection">
+                <h3 class="subsection-title">ICPC World Finals Problems (2011-2024)</h3>
+                <p class="subsection-description">167 elite-level competitive programming problems from 14 years of ICPC World Finals</p>
+                
+                <div class="chart-container">
+                    <canvas id="icpcPassRateChart"></canvas>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">90/167</div>
+                        <div class="metric-label">GPT-5 + DeepSeek (Best)</div>
+                        <div class="metric-change">+131% improvement</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">38/167</div>
+                        <div class="metric-label">GPT-4 + DeepSeek (Best)</div>
+                        <div class="metric-change">+153% improvement</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">2.0</div>
+                        <div class="metric-label">Avg Attempts (GPT-5)</div>
+                        <div class="metric-change">Fast convergence</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Codeforces Results -->
+            <div class="results-subsection">
+                <h3 class="subsection-title">Codeforces Contest Problems</h3>
+                <p class="subsection-description">200 intermediate-difficulty problems (rating 1200-1800) from recent contests</p>
+                
+                <div class="chart-container">
+                    <canvas id="codeforcesPassRateChart"></canvas>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">41.0%</div>
+                        <div class="metric-label">GPT-5 + DeepSeek Pass@3</div>
+                        <div class="metric-change">Best workflow</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">26.0%</div>
+                        <div class="metric-label">GPT-4 + DeepSeek Pass@3</div>
+                        <div class="metric-change">174% vs baseline</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">1.77</div>
+                        <div class="metric-label">Avg Attempts</div>
+                        <div class="metric-change">Efficient refinement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">State-of-the-Art Comparison</h2>
+            <div class="comparison-intro">
+                <p>Our multi-agent feedback approach achieves competitive performance with AlphaCode-class systems while using <strong>~10,000× fewer attempts</strong> (3 vs 1M samples).</p>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="sotaComparisonChart"></canvas>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card highlight">
+                    <h4>Our Best Workflow</h4>
+                    <div class="comparison-value">41.0%</div>
+                    <div class="comparison-detail">GPT-5 + DeepSeek-R1</div>
+                    <div class="comparison-method">3 attempts, iterative refinement</div>
+                </div>
+                <div class="comparison-card">
+                    <h4>AlphaCode 2</h4>
+                    <div class="comparison-value">43%</div>
+                    <div class="comparison-detail">Gemini-based</div>
+                    <div class="comparison-method">1M samples, filtering</div>
+                </div>
+                <div class="comparison-card">
+                    <h4>AlphaCode 1</h4>
+                    <div class="comparison-value">34%</div>
+                    <div class="comparison-detail">Original system</div>
+                    <div class="comparison-method">1M samples, ≤1300 rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section id="insights" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Insights</h2>
+            
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">🎯</div>
+                    <h3>Reasoning Beats Specialization</h3>
+                    <p>DeepSeek-R1 (reasoning-focused) consistently outperforms both Codestral (code-specialized) and Llama-3.3 (general-purpose), achieving 2-7 more solved problems at Pass@3.</p>
+                    <div class="insight-stat">Best: 53.9% on ICPC</div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">📈</div>
+                    <h3>Weaker Models Benefit More</h3>
+                    <p>GPT-4 shows larger relative improvement (153%) compared to GPT-5 (131%), demonstrating that superior debugging feedback partially compensates for weaker generation.</p>
+                    <div class="insight-stat">Effect: 22.6% range for GPT-4</div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">🔄</div>
+                    <h3>Context Enables Learning</h3>
+                    <p>Sustained success rates at later iterations (16-23% of solved problems require Pass@2 or Pass@3) demonstrate cumulative, context-aware debugging across attempts.</p>
+                    <div class="insight-stat">60-70% fixed in 2 attempts</div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">🏆</div>
+                    <h3>No Category Specialization</h3>
+                    <p>Critic ranking remains stable across all algorithmic categories (Graph Theory, DP, Math, etc.). Performance scales uniformly rather than showing category-specific advantages.</p>
+                    <div class="insight-stat">Consistent 2.3-3.0× ratio</div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">⚡</div>
+                    <h3>Huge Effect Sizes</h3>
+                    <p>Cohen's d values >1.9 for iterative refinement indicate transformative (not incremental) improvements. All critic comparisons achieve statistical significance (p < 0.05).</p>
+                    <div class="insight-stat">d = 2.12 for best workflow</div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon">💡</div>
+                    <h3>Efficiency vs Sampling</h3>
+                    <p>Achieves 95% of AlphaCode 2 performance with systematic debugging of single solution trajectory rather than massive parallel sampling and filtering.</p>
+                    <div class="insight-stat">10,000× fewer attempts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Comparison -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Workflow Performance by Critic</h2>
+            <div class="chart-container">
+                <canvas id="criticComparisonChart"></canvas>
+            </div>
+            
+            <div class="workflow-table-container">
+                <table class="workflow-table">
+                    <thead>
+                        <tr>
+                            <th>Workflow</th>
+                            <th>ICPC Pass@0</th>
+                            <th>ICPC Pass@3</th>
+                            <th>Improvement</th>
+                            <th>CF Pass@3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td>GPT-5 + DeepSeek-R1</td>
+                            <td>39 (23.4%)</td>
+                            <td>90 (53.9%)</td>
+                            <td>+131%</td>
+                            <td>41.0%</td>
+                        </tr>
+                        <tr>
+                            <td>GPT-5 + Llama-3.3</td>
+                            <td>39 (23.4%)</td>
+                            <td>87 (52.1%)</td>
+                            <td>+123%</td>
+                            <td>37.0%</td>
+                        </tr>
+                        <tr>
+                            <td>GPT-5 + Codestral</td>
+                            <td>39 (23.4%)</td>
+                            <td>85 (50.9%)</td>
+                            <td>+118%</td>
+                            <td>34.0%</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>GPT-4 + DeepSeek-R1</td>
+                            <td>15 (9.0%)</td>
+                            <td>38 (22.8%)</td>
+                            <td>+153%</td>
+                            <td>26.0%</td>
+                        </tr>
+                        <tr>
+                            <td>GPT-4 + Llama-3.3</td>
+                            <td>15 (9.0%)</td>
+                            <td>34 (20.4%)</td>
+                            <td>+127%</td>
+                            <td>23.5%</td>
+                        </tr>
+                        <tr>
+                            <td>GPT-4 + Codestral</td>
+                            <td>15 (9.0%)</td>
+                            <td>31 (18.6%)</td>
+                            <td>+107%</td>
+                            <td>21.0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About This Research</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hybrid Multi-Model Feedback Framework</h3>
+                    <p>
+                        This research introduces an autonomous AI agent that solves competitive programming problems 
+                        through a hybrid multi-model feedback loop, separating solution generation from specialized 
+                        debugging analysis.
+                    </p>
+                    
+                    <h4>System Architecture</h4>
+                    <ul class="about-list">
+                        <li><strong>Solution Generators:</strong> GPT-4 and GPT-5 for C++ code generation</li>
+                        <li><strong>Debugging Critics:</strong> Codestral-2508, Llama-3.3-70B, DeepSeek-R1</li>
+                        <li><strong>Persistent Context:</strong> Maintains conversation history across attempts</li>
+                        <li><strong>Real-World Validation:</strong> Submissions to Codeforces online judge</li>
+                    </ul>
+
+                    <h4>Evaluation Dataset</h4>
+                    <ul class="about-list">
+                        <li>167 ICPC World Finals problems (2011-2024)</li>
+                        <li>200 Codeforces problems (rating 1200-1800)</li>
+                        <li>Diverse algorithmic categories: Graph Theory, DP, Math, Geometry, etc.</li>
+                        <li>Contamination-free: Recent problems minimize training data leakage</li>
+                    </ul>
+
+                    <h4>Statistical Validation</h4>
+                    <p>
+                        All results validated with paired t-tests (p < 0.001), Cohen's d effect sizes (d > 1.9), 
+                        and 95% confidence intervals. Effect sizes indicate transformative rather than incremental 
+                        improvements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hybrid LLM Feedback Loop</h4>
+                    <p>Multi-agent feedback for competitive programming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/yourusername/hybrid-llm-feedback-loop" target="_blank">GitHub Repository</a></li>
+                        <li><a href="#" target="_blank">Research Paper (arXiv)</a></li>
+                        <li><a href="#" target="_blank">Dataset</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>For questions or collaborations</p>
+                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hybrid LLM Feedback Loop Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
