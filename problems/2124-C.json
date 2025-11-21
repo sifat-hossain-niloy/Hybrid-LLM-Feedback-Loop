@@ -1,0 +1,19 @@
+{
+    "statement": "Alice has an array a, consisting of n positive integers. The array satisfies the beautiful property that a_i divides a_{i+1} for each 1 ≤q i ≤q n - 1. Bob sees Alice's beautiful array and is jealous. To sabotage her, Bob first creates an array b of size n such that b_i=a_i for each 1 ≤q i ≤q n. Then, he chooses a positive integer x and multiplies some (possibly none, possibly all) elements in b by x. Formally, he chooses a (possibly-empty) subset S⊂eq\\{1,2,...,n\\}, and for each i∈ S, he sets b_i:=b_i· x. You are given an array b, but you don't know array a and the chosen number x. Please output any integer x that Bob could choose, so that multiplying some subset of elements of the correct array a by x would result in array b. It is guaranteed that the answer exists. If there are multiple possible integers, you can output any of them.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows. The first line of each test case contains an integer n (2 ≤q n ≤q 6·10^5) — the length of the array b.The second line of each test case contains n integers b_1,b_2,...,b_n (1 ≤q b_i ≤q 10^9) — denoting the array b.It is guaranteed the array b can be obtained from some beautiful array a and some positive integer x as described in the statements.It is guaranteed that the sum of n over all test cases does not exceed 6· 10^5.",
+    "output_specification": "OutputFor each test case, output any possible value of x (1 ≤q x ≤q 10^9) on a new line. It is guaranteed at least one value of x exists.",
+    "sample_tests": [
+        {
+            "input": "4\n2\n2 4\n3\n1 1000000000 500000000\n4\n4 8 4 8\n7\n42 42 14 84 28 73080 255780",
+            "output": "343\n2\n4\n6"
+        }
+    ],
+    "note": "In the first test case, it is possible Bob selected\n𝑥=343\nand\n𝑆={}\n(meaning he did not change the array\n𝑎\nat all).\nIn the third test case, it is possible Bob selected\n𝑥=4\nand\n𝑆={1,2}\n, meaning he multiplied both\n𝑏\n1\nand\n𝑏\n2\nby\n4\n. The original array was\n{1,2,4,8}\n, which satisfies the required property.",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "rating": "1300"
+}

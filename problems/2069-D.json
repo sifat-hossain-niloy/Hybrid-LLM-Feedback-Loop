@@ -1,0 +1,20 @@
+{
+    "statement": "You are given a string s consisting of lowercase Latin letters.You can perform the following operation with the string s: choose a contiguous substring (possibly empty) of s and shuffle it (reorder the characters in the substring as you wish).Recall that a palindrome is a string that reads the same way from the first character to the last and from the last character to the first. For example, the strings a, bab, acca, bcabcbacb are palindromes, but the strings ab, abbbaa, cccb are not.Your task is to determine the minimum possible length of the substring on which the aforementioned operation must be performed in order to convert the given string s into a palindrome.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The only line of each test case contains a string s (2 ≤ |s| ≤ 2 · 10^5), consisting of lowercase Latin letters.Additional constraints on the input: the string s has an even length; the string s can always be converted to a palindrome; the sum of lengths of s over all test cases doesn't exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, print a single integer — the minimum possible length of the substring on which the aforementioned operation must be performed in order to convert the given string s into a palindrome.",
+    "sample_tests": [
+        {
+            "input": "4\nbaba\ncc\nddaa\nacbacddacbca",
+            "output": "2\n0\n3\n2"
+        }
+    ],
+    "note": "In the first example, you can perform the operation as follows: baba\n→\nbaab.\nIn the second example, the string is already a palindrome, so we can shuffle an empty substring.\nIn the third example, you can perform the operation as follows: ddaa\n→\nadda.\nIn the fourth example, you can perform the operation as follows: acbacddacbca\n→\nacbcaddacbca.",
+    "tags": [
+        "binary search",
+        "greedy",
+        "hashing",
+        "strings",
+        "two pointers"
+    ],
+    "rating": "1800"
+}

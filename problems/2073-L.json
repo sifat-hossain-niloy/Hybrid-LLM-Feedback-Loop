@@ -1,0 +1,18 @@
+{
+    "statement": "Consider the following game. In this game, a level consists of n pairs of gates. Each pair contains one left gate and one right gate. Each gate performs one of two operations: Addition Operation (+ a): Increases the number of people in a lane by a constant amount a. Multiplication Operation (x a): Multiplies the current number of people in a lane by an integer a. This means the number of people increases by (a - 1) times the current count in that lane. The additional people gained from each operation can be assigned to either lane. However, people already in a lane cannot be moved to the other lane.Initially, there is one person in each lane. Your task is to determine the maximum total number of people that can be achieved by the end of the level.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 10^4) — the number of test cases.The first line of each test case contains one integer n (1 ≤q n ≤ 30) — the number of pairs of gates.The next n lines of each test case provide the information for the left gate followed by the right gate of each gate pair. The information for each gate is given in the form + a (1 ≤ a ≤ 1000) or x a (2 ≤ a ≤ 3) for some integer a.",
+    "output_specification": "OutputFor each test case, output a single integer — the maximum total number of people at the end of the level.",
+    "sample_tests": [
+        {
+            "input": "4\n3\n+ 4 x 2\nx 3 x 3\n+ 7 + 4\n4\n+ 9 x 2\nx 2 x 3\n+ 9 + 10\nx 2 + 1\n4\nx 2 + 1\n+ 9 + 10\nx 2 x 3\n+ 9 x 2\n5\nx 3 x 3\nx 2 x 2\n+ 21 + 2\nx 2 x 3\n+ 41 x 3",
+            "output": "32\n98\n144\n351"
+        }
+    ],
+    "note": "In the first case, here is one possible way to play this game optimally.\nInitially, we have\n𝑙=1\nperson in the left lane and\n𝑟=1\nperson in the right lane.\nAfter passing through the first pair of gates, we gain\n4\npeople from the left gate and\n1⋅(2−1)=1\nperson from the right gate, for a total of\n4+1=5\npeople. We allocate\n2\npeople to the left lane and\n3\npeople to the right lane. This results in\n𝑙=1+2=3\npeople in the left lane and\n𝑟=1+3=4\npeople in the right lane.\nAfter passing through the second pair of gates, we gain\n3⋅(3−1)=6\npeople from the left gate and\n4⋅(3−1)=8\npeople from the right gate, for a total of\n6+8=14\npeople. We allocate\n7\npeople to the left lane and\n7\npeople to the right lane. This results in\n𝑙=3+7=10\npeople in the left lane and\n𝑟=4+7=11\npeople in the right lane.\nAfter passing through the last pair of gates, we gain\n7\npeople from the left gate and\n4\npeople from the right gate, for a total of\n7+4=11\npeople. We allocate\n6\npeople to the left lane and\n5\npeople to the right lane. This results in\n𝑙=10+6=16\npeople in the left lane and\n𝑟=11+5=16\npeople in the right lane.\nAt the end, the total number of people is\n16+16=32\n.",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "rating": "1800"
+}

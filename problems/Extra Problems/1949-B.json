@@ -1,0 +1,19 @@
+{
+    "statement": "The Czech cuisine features n appetizers and n main dishes. The i-th appetizer has spiciness a_i, and the i-th main dish has spiciness b_i.A typical Czech meal consists of exactly one appetizer and one main dish. You want to pair up the n appetizers and n main dishes into n meals with each appetizer and each main dish being included in exactly one meal.Your meals shall surprise the diners, so you want the spiciness levels of the two parts of the same meal to be as different as possible. The charm of a meal is the difference (in absolute value) between the spiciness of the appetizer and the spiciness of the main dish. So, a meal consisting of an appetizer with spiciness x and a main dish with spiciness y has charm equal to |x-y|.You want to maximize the minimum charm of the resulting n meals. What is the largest possible value of the minimum charm that you can achieve?",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains an integer t (1≤ t≤ 1\\,000) — the number of test cases. The descriptions of the t test cases follow.The first line of each test case contains a single integer n (1 ≤q n ≤q 5\\,000) —the number of appetizers and main dishes.The second line of each test case contains n integers a_1, a_2, ..., a_n (0 ≤q a_i ≤q 10^{9}) — the spicinesses of the n appetizers.The third line of each test case contains n integers b_1, b_2, ..., b_n (0 ≤q b_i ≤q 10^{9}) — the spicinesses of the n main dishes.It is guaranteed that the sum of n^2 over all test cases does not exceed 25· 10^6.",
+    "output_specification": "OutputFor each test case, print the largest possible value of the minimum charm you can achieve.",
+    "sample_tests": [
+        {
+            "input": "4\n3\n0 0 0\n1000000000 1000000000 1000000000\n5\n1 2 3 4 5\n1 2 3 4 5\n6\n0 0 0 100 100 100\n100 100 100 0 0 0\n7\n14 25 62 74 86 95 12\n51 62 71 72 92 20 84",
+            "output": "1000000000\n2\n100\n30"
+        }
+    ],
+    "note": "In the first test case, no matter how you pair up the appetizers with the main dishes, each meal will have an appetizer with spiciness\n0\nand a main dish with spiciness\n1000000000\n, so the charm of each meal will be\n1000000000\n.\nIn the second test case, one optimal way to pair up appetizers and main dishes is:\n(1,5)\n,\n(2,4)\n,\n(3,1)\n,\n(4,2)\n,\n(5,3)\n. The corresponding meals have charms:\n4\n,\n2\n,\n2\n,\n2\n,\n2\n. The resulting minimum charm is\n2\n.\nIn the third test case, one way to maximize the minimum charm is to pair up the three appetizers with spiciness\n0\nwith the three main dishes with spiciness\n100\n, and the three appetizers with spiciness\n100\nwith the three main dishes with spiciness\n0\n. Doing so, the charm of each meal will be exactly\n100\n.",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "sortings"
+    ],
+    "rating": "1500"
+}

@@ -1,0 +1,18 @@
+{
+    "statement": "Sakurako has a box with n balls. Each ball has it's value. She wants to bet with her friend that if the friend randomly picks two balls from the box (it could be two distinct balls, but they may have the same value), the product of their values will be the same as the number that Sakurako guessed.Since Sakurako has a PhD in probability, she knows that the best number to pick is the expected value, but she forgot how to calculate it. Help Sakurako and find the expected value of the product of two elements from the array.It can be shown that the expected value has the form \\frac{P}{Q}, where P and Q are non-negative integers, and Q ≠ 0. Report the value of P · Q^{-1}(\\bmod 10^9+7).",
+    "input_specification": "InputThe first line contains a single integer t (1≤ t≤ 10^4)  — the number of test cases.The first line of each test case contains a single integer n (2≤ n≤ 2· 10^5)  — the number of elements in the array.The second line of each test case contains n integers a_1, a_2, ..., a_n (0≤ a_i≤ 10^9)  — the elements of the array.It is guaranteed that the sum of n across all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output the value of P · Q^{-1}(\\bmod 10^9+7).",
+    "sample_tests": [
+        {
+            "input": "3\n3\n3 2 3\n4\n2 2 2 4\n5\n1 2 3 4 5",
+            "output": "7\n6\n500000012"
+        }
+    ],
+    "note": "For the first test, Sakurako's friend can pick these pairs of balls:\n(a1,a2)\n,\n(a1,a3)\n,\n(a2,a3)\n. Their products equal to\n3⋅2=6\n,\n3⋅3=9\n,\n3⋅2=6\nrespectively, so the expected value is\n6+9+6\n3\n=7\n.\nFor the second test, Sakurako's friend can pick these pairs of balls:\n(a1,a2)\n,\n(a1,a3)\n,\n(a1,a4)\n,\n(a2,a3)\n,\n(a2,a4)\n,\n(a3,a4)\n. Their products equal to\n2⋅2=4\n,\n2⋅2=4\n,\n2⋅4=8\n,\n2⋅2=4\n,\n2⋅4=8\n,\n2⋅4=8\nrespectively, so the expected value is\n4+4+8+4+8+8\n6\n=\n36\n6\n=6\n.",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "rating": "1400"
+}

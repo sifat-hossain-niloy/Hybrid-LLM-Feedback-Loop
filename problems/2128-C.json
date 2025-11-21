@@ -1,0 +1,17 @@
+{
+    "statement": "Consider an array a_1, ..., a_n. Initially, a_i = 0 for every i.You can do operations of the following form. You choose an integer x greater than \\min(a). Then, i is defined as the minimum index such that a_i < x. In other words, i is the unique integer between 1 and n inclusive such that a_i < x and a_j ≥q x for every 1 ≤q j ≤q i-1. Finally, a_i is incremented by x. For example, if a = [6, 8, 2, 1] and you choose x = 6, then i will be equal to 3 (since a_1 ≥q 6, a_2 ≥q 6, and a_3 < 6) and a will become [6, 8, 8, 1].You can do as many operations as you want. Can you reach a target array b_1, ..., b_n?",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10\\,000). The description of the test cases follows. The first line of each test case contains a single integer n (2 ≤q n ≤q 200\\,000).The second line of each test case contains n integers b_1, b_2, ..., b_n (1 ≤ b_i ≤ 10^9).The sum of n over all test cases does not exceed 200\\,000.",
+    "output_specification": "OutputFor each test case, print YES if you can reach the target array and NO otherwise.You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "sample_tests": [
+        {
+            "input": "4\n4\n5 6 1 1\n3\n3 1 2\n3\n40 60 90\n2\n1 1",
+            "output": "YES\nNO\nNO\nYES"
+        }
+    ],
+    "note": "In the first test case, we can do the following sequence of operations:\nIn the second test case, we can prove there is no way to reach\n[3,1,2]\n.",
+    "tags": [
+        "greedy",
+        "math"
+    ],
+    "rating": "1200"
+}

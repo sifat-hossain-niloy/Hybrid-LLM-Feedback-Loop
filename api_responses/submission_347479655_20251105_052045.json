@@ -1,0 +1,63 @@
+{
+  "submission_id": "347479655",
+  "timestamp": "2025-11-05T05:20:45.018330",
+  "collection_methods": [
+    "api_interception"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=ezyy2pvav",
+    "rv_parameter": "ezyy2pvav",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"COMPILATION_ERROR\",\"checkerStdoutAndStderr#1\":\"Can\\u0027t compile file:\\nprogram.cpp:26:1: error: expected declaration before \\u0027}\\u0027 token\\n }\\n ^\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"0\",\"timeConsumed#1\":\"0\",\"problemName\":\"(A) The Bento Box Adventure\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    ios_base::sync_with_stdio(false);\\r\\n    cin.tie(NULL);\\r\\n\\r\\n    int a, b, c, d;\\r\\n    cin \\u003e\\u003e a \\u003e\\u003e b \\u003e\\u003e c \\u003e\\u003e d;\\r\\n\\r\\n    int restaurants[5] \\u003d {1, 2, 3, 4, 5};\\r\\n    restaurants[a - 1] \\u003d 0;\\r\\n    restaurants[b - 1] \\u003d 0;\\r\\n    restaurants[c - 1] \\u003d 0;\\r\\n    restaurants[d - 1] \\u003d 0;\\r\\n\\r\\n    for(int i \\u003d 0; i \\u003c 5; i++) {\\r\\n        if(restaurants[i] !\\u003d 0) {\\r\\n            cout \\u003c\\u003c restaurants[i];\\r\\n            break;\\r\\n        }\\r\\n    }\\r\\n\\r\\n    return 0;\\r\\n}\\r\\n}\",\"answer#1\":\"\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2041/submission/347479655\",\"compilationError\":\"true\",\"rejected#1\":\"false\",\"contestName\":\"2024 ICPC Asia Taichung Regional Contest (Unrated, Online Mirror, ICPC Rules, Preferably Teams)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2041/challenge/347479655\",\"accepted#1\":\"false\",\"verdict\":\"Compilation error\",\"prevId\":\"347479486\",\"input#1\":\"1 3 2 5\\r\\n\",\"memoryConsumed#1\":\"0\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=o%2FUbKBDyko2cHaQSHCHdQKAnk5JkOs3T1CF6e1YlckBSd9BdJ7pIMqcTiiBXftDSigY6g6rFvPeKcgaeeTbdmKS23JPg2SNixqreVAibKxqGV9nZ4wj%2B6VLXDYf6LN3bAY%2FaVdrL1gm5gDiL\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfL4;desc=\"?proto=QUIC&rtt=65391&min_rtt=50530&rtt_var=5940&sent=107&recv=96&lost=0&retrans=0&sent_bytes=71624&recv_bytes=42100&delivery_rate=164392&cwnd=15600&unsent_bytes=0&cid=b9066ace0c957c4d&ts=42209&x=1\", cfExtPri, cfHdrFlush;dur=0",
+      "date": "Tue, 04 Nov 2025 23:20:39 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-req-id": "neo:9997d7dd9b931d47-SIN:/data/submitSource:ezyy2pvav",
+      "pragma": "no-cache",
+      "cf-ray": "9997d7dd9b931d47-SIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "COMPILATION_ERROR",
+    "checkerStdoutAndStderr#1": "Can't compile file:\nprogram.cpp:26:1: error: expected declaration before '}' token\n }\n ^\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "0",
+    "timeConsumed#1": "0",
+    "problemName": "(A) The Bento Box Adventure",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    ios_base::sync_with_stdio(false);\r\n    cin.tie(NULL);\r\n\r\n    int a, b, c, d;\r\n    cin >> a >> b >> c >> d;\r\n\r\n    int restaurants[5] = {1, 2, 3, 4, 5};\r\n    restaurants[a - 1] = 0;\r\n    restaurants[b - 1] = 0;\r\n    restaurants[c - 1] = 0;\r\n    restaurants[d - 1] = 0;\r\n\r\n    for(int i = 0; i < 5; i++) {\r\n        if(restaurants[i] != 0) {\r\n            cout << restaurants[i];\r\n            break;\r\n        }\r\n    }\r\n\r\n    return 0;\r\n}\r\n}",
+    "answer#1": "",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2041/submission/347479655",
+    "compilationError": "true",
+    "rejected#1": "false",
+    "contestName": "2024 ICPC Asia Taichung Regional Contest (Unrated, Online Mirror, ICPC Rules, Preferably Teams)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2041/challenge/347479655",
+    "accepted#1": "false",
+    "verdict": "Compilation error",
+    "prevId": "347479486",
+    "input#1": "1 3 2 5\r\n",
+    "memoryConsumed#1": "0"
+  }
+}

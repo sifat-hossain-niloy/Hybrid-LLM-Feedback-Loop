@@ -1,0 +1,20 @@
+{
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, l=0, and r<2· 10^5. You can hack only if you solved all versions of this problem. You are given two integers l and r (l≤ r). Let n = r - l + 1. We will create two arrays a and b, both consisting of n integers. Initially, both a and b are equal to [l, l+1, ..., r]. You have to reorder the array a arbitrarily to maximize the following value:∑_{i=1}^n ≤ft (a_i\\;|\\;b_i \\right ).Here, | denotes the bitwise OR operation. You also need to construct a possible way to reorder the array a.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The only line of each test case contains two integers l and r (0=l≤q r<2· 10^5) — the minimum and maximum elements in a.Let n = r - l + 1. It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, print a single integer in the first line of output — the maximum value of ∑\\limits_{i=1}^n ≤ft (a_i\\;|\\;b_i \\right ). Then, print n distinct integers a_1, a_2, ...,a_n in the second line — the array a after reordering.If there are multiple answers, you may print any of them.",
+    "sample_tests": [
+        {
+            "input": "3\n0 3\n0 9\n0 15",
+            "output": "12\n3 2 1 0 \n90\n7 8 5 4 3 2 9 0 1 6\n240\n15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0"
+        }
+    ],
+    "note": "In the first test case, the reordered array\n𝑎\nis\n[3,2,1,0]\n. The value of the expression is\n(3|0)+(2|1)+(1|2)+(0|3)=3+3+3+3=12\n. It can be proved that this is the maximum possible value of the expression.\nIn the second test case, the reordered array\n𝑎\nis\n[7,8,5,4,3,2,9,0,1,6]\n. The value of the expression is\n90\n. It can be proved that this is the maximum possible value of the expression.",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "divide and conquer",
+        "greedy",
+        "trees"
+    ],
+    "rating": "1500"
+}

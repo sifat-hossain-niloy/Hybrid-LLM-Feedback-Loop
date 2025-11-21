@@ -1,0 +1,21 @@
+{
+    "statement": "In 2077, when robots took over the world, they decided to compete in the following game.There are n checkpoints, and the i-th checkpoint contains b_i batteries. Initially, the Robot starts at the 1-st checkpoint with no batteries and must reach the n-th checkpoint.There are a total of m one-way passages between the checkpoints. The i-th passage allows movement from point s_i to point t_i (s_i < t_i), but not the other way. Additionally, the i-th passage can only be used if the robot has at least w_i charged batteries; otherwise, it will run out of power on the way.When the robot arrives at point v, it can additionally take any number of batteries from 0 to b_v, inclusive. Moreover, it always carries all previously collected batteries, and at each checkpoint, it recharges all previously collected batteries.Find the minimum number of batteries that the robot can have at the end of the journey, or report that it is impossible to reach from the first checkpoint to the last.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains two integers n, m (2 ≤q n ≤q 2 · 10^5, 0 ≤q m ≤q 3 · 10^5) — the number of checkpoints and the number of passages, respectively.The second line contains n numbers b_i (0 ≤q b_i ≤q 10^9) — the number of batteries at the i-th checkpoint.The next m lines contain three integers s_i, t_i, w_i (1 ≤q s_i < t_i ≤q n, 1 ≤q w_i ≤q 10^9) — the endpoints of the passage and the minimum number of batteries required to pass through it.It is guaranteed that the sum of n does not exceed 2 · 10^5.It is guaranteed that the sum of m does not exceed 3 · 10^5.",
+    "output_specification": "OutputFor each test case, output the minimum number of batteries that you can have at the end of the journey, or -1 if it is impossible to reach point n.",
+    "sample_tests": [
+        {
+            "input": "4\n3 3\n2 0 0\n1 2 1\n2 3 1\n1 3 2\n5 6\n2 2 5 0 1\n1 2 2\n1 3 1\n1 4 3\n3 5 5\n2 4 4\n4 5 3\n2 0\n1 1\n4 4\n3 10 0 0\n1 2 1\n1 3 3\n2 3 10\n3 4 5",
+            "output": "1\n4\n-1\n10"
+        }
+    ],
+    "note": "In the first test case, you need to take\n1\nbattery at the starting point, then move to point\n2\n, and then to point\n3\n.\nIn the second test case, you need to take\n2\nbatteries at the starting point, then move to point\n2\n, take another\n2\nbatteries, move to point\n4\n, and then to point\n5\n.\nIn the third test case, there is no path from point\n1\nto point\n𝑛\n.\nIn the fourth test case, you need to take\n1\nbattery at the starting point, then move to point\n2\n, take another\n9\nbatteries, move to point\n3\n, and then to point\n4\n.",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "hashing"
+    ],
+    "rating": "1700"
+}

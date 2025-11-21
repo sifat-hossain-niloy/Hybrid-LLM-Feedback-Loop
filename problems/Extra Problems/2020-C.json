@@ -1,0 +1,21 @@
+{
+    "statement": "You are given three non-negative integers b, c, and d.Please find a non-negative integer a ∈ [0, 2^{61}] such that (a\\, |\\, b)-(a\\, \\&\\, c)=d, where | and \\& denote the bitwise OR operation and the bitwise AND operation, respectively.If such an a exists, print its value. If there is no solution, print a single integer -1. If there are multiple solutions, print any of them.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.The only line of each test case contains three positive integers b, c, and d (0 ≤ b, c, d ≤ 10^{18}).",
+    "output_specification": "OutputFor each test case, output the value of a, or -1 if there is no solution. Please note that a must be non-negative and cannot exceed 2^{61}.",
+    "sample_tests": [
+        {
+            "input": "3\n2 2 2\n4 2 6\n10 2 14",
+            "output": "0\n-1\n12"
+        }
+    ],
+    "note": "In the first test case,\n(0|2)−(0&2)=2−0=2\n. So,\na=0\nis a correct answer.\nIn the second test case, no value of\na\nsatisfies the equation.\nIn the third test case,\n(12|10)−(12&2)=14−0=14\n. So,\na=12\nis a correct answer.",
+    "tags": [
+        "bitmasks",
+        "hashing",
+        "implementation",
+        "math",
+        "schedules",
+        "ternary search"
+    ],
+    "rating": "1400"
+}

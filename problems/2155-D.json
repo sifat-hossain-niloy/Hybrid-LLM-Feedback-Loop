@@ -1,0 +1,21 @@
+{
+    "statement": "This is an interactive problem. Refer to the Interaction section below for better understanding.There are n (2 ≤ n ≤ 40) batteries numbered 1, 2, ..., n. Some of them work while the others don't. Let a be the number of batteries that work. It is guaranteed that \\mathbf{a ≥q 2}.You are given n but not a.There is a flashlight which can hold two batteries and it only turns on when both batteries work. The batteries have been shuffled and you don't know which ones work and which ones don't. You can choose two batteries and try them in the flashlight. You want to find a pair of batteries that work. However, you are worried about breaking the flashlight, so you want to limit the amount of trials you attempt.Therefore, you should find a pair of working batteries using at most ≤ft \\lfloor \\frac{n^2}{a} \\right \\rfloor trials.The interactor is adaptive. This means that whether battery i (1 ≤ i ≤ n) works is not fixed and may change during the interaction. However, it is guaranteed that there exists a configuration of a working batteries that is consistent with the information that you have received so far.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows. The first line of each test case contains a single integer n (2 ≤ n ≤ 40) — the number of batteries.It is guaranteed that the sum of n over all test cases does not exceed 200.",
+    "output_specification": "Not found",
+    "sample_tests": [
+        {
+            "input": "2\n3\n\n0\n\n1\n10\n\n0\n\n0\n\n1",
+            "output": "1 2\n\n2 3\n\n\n1 2\n\n1 3\n\n1 4"
+        }
+    ],
+    "note": "In the first test, there are\n3\nbatteries. Only batteries\n2\nand\n3\nwork. Therefore,\na=2\nand we have to find a pair of batteries that work in\n⌊\nn2\na\n⌋=⌊\n32\n2\n⌋=4\nqueries.\nThe interaction proceeds as follows:\nIn the second test case, there are\n10\nbatteries. Only batteries\n1\n,\n4\n,\n6\nand\n9\nwork. Therefore,\na=4\nand we have to find a pair of batteries that work in\n⌊\nn2\na\n⌋=⌊\n102\n4\n⌋=25\nqueries.\nThe interaction proceeds as follows:\nNote that the line breaks in the example input and output are for the sake of clarity, and do not occur in the real interaction.",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graph matchings",
+        "graphs",
+        "interactive",
+        "math"
+    ],
+    "rating": "1800"
+}

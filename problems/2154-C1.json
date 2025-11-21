@@ -1,0 +1,19 @@
+{
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, b_i = 1 for all i (1 ≤ i ≤ n). You can hack only if you solved all versions of this problem. You find yourself with two arrays of positive integers a and b, both of length n. You will perform the following operation any number of times (possibly none): select an integer i (1 ≤ i ≤ n) and increase a_i by 1. This has a cost of b_i. Determine the minimum total cost to make it so that there exists two integers i, j where 1 ≤ i < j ≤ n and \\gcd(a_i, a_j)^{\\text{∗}} > 1.^{\\text{∗}}\\gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains an integer n (2 ≤ n ≤ 2 · 10^5) — the length of the array a.The second line of each test case contains n integers a_1,a_2,...,a_n (1 ≤ a_i ≤ 2 · 10^5).The third line of each test case contains n integers b_1,b_2,...,b_n (\\color{red}{b_i = 1}).The sum of n across all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each testcase, output the minimum cost.",
+    "sample_tests": [
+        {
+            "input": "6\n2\n1 1\n1 1\n2\n4 8\n1 1\n5\n1 1 727 1 1\n1 1 1 1 1\n2\n3 11\n1 1\n3\n2 7 11\n1 1 1\n3\n7 12 13\n1 1 1",
+            "output": "2\n0\n2\n1\n1\n1"
+        }
+    ],
+    "note": "In the first test case, we can do the following:\n[1,1]\n−\n→\n−\n−\n𝑥=1\n[2,1]\n−\n→\n−\n−\n𝑥=2\n[2,2]\n. Now\ngcd(\n𝑎\n1\n,\n𝑎\n2\n)=gcd(2,2)=2\nand so\ngcd(\n𝑎\n1\n,\n𝑎\n2\n)>1\n. It can be proven that this is the minimum cost required.\nIn the second test case, it is already true that\ngcd(\n𝑎\n1\n,\n𝑎\n2\n)=4\nand so\ngcd(\n𝑎\n1\n,\n𝑎\n2\n)>1\n. So no operations are required.",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "rating": "1400"
+}

@@ -1,0 +1,19 @@
+{
+    "statement": "You are given an array a of n positive integers and an integer x. You can do the following two-step operation any (possibly zero) number of times: Choose an index i (1 ≤q i ≤q n). Increase a_i by x, in other words a_i := a_i + x. Find the maximum value of the \\operatorname{MEX} of a if you perform the operations optimally.The \\operatorname{MEX} (minimum excluded value) of an array is the smallest non-negative integer that is not in the array. For example: The \\operatorname{MEX} of [2,2,1] is 0 because 0 is not in the array. The \\operatorname{MEX} of [3,1,0,1] is 2 because 0 and 1 are in the array but 2 is not. The \\operatorname{MEX} of [0,3,1,2] is 4 because 0, 1, 2 and 3 are in the array but 4 is not.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.The first line of each test case contains two integers n and x (1 ≤ n ≤ 2 · 10^5; 1 ≤ x ≤ 10^9) — the length of the array and the integer to be used in the operation.The second line of each test case contains n integers a_1, a_2, ..., a_n (0 ≤ a_i ≤ 10^9) — the given array.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer: the maximum \\operatorname{MEX} of a if you perform the operations optimally.",
+    "sample_tests": [
+        {
+            "input": "3\n6 3\n0 3 2 1 5 2\n6 2\n1 3 4 1 0 2\n4 5\n2 5 10 3",
+            "output": "4\n6\n0"
+        }
+    ],
+    "note": "In the first test case, the\nMEX\nof\na\nis\n4\nwithout performing any operations, which is the maximum.\nIn the second test case, the\nMEX\nof\na\nis\n5\nwithout performing any operations. If we perform two operations both with\ni=1\n, we will have the array\na=[5,3,4,1,0,2]\n. Then, the\nMEX\nof\na\nwill become\n6\n, which is the maximum.\nIn the third test case, the\nMEX\nof\na\nis\n0\nwithout performing any operations, which is the maximum.",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "rating": "1200"
+}

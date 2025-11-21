@@ -1,0 +1,53 @@
+=== RAW LLM RESPONSE (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-07T05:37:58.021857
+Model: gpt-4
+Has Previous Context: True
+
+======================================================================
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        set<int> sums;
+        sums.insert(0); // Initialize with 0 for the empty subarray
+
+        for(int i=0; i<n; i++) {
+            cin >> a[i];
+        }
+
+        // Use a more efficient approach to generate the possible sums
+        // by considering the prefix sums of the array
+        vector<int> prefixSums(n + 1, 0);
+        for(int i=0; i<n; i++) {
+            prefixSums[i + 1] = prefixSums[i] + a[i];
+        }
+
+        for(int i=0; i<n; i++) {
+            for(int j=i; j<=n; j++) {
+                sums.insert(prefixSums[j] - prefixSums[i]);
+            }
+        }
+
+        vector<int> result(sums.begin(), sums.end());
+        sort(result.begin(), result.end());
+
+        cout << result.size() << "\n";
+        for(int num : result) {
+            cout << num << " ";
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}

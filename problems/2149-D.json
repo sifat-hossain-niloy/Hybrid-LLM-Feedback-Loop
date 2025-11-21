@@ -1,0 +1,16 @@
+{
+    "statement": "Given a string s of length n, consisting only of the characters 'a' and 'b'.In one operation, you can choose a position i (1 ≤ i ≤ n-1) and swap the neighboring characters s_i and s_{i+1}.You need to perform the minimum number of operations to ensure that all characters of one type (either a or b) are located strictly together, forming exactly one continuous block.Characters of the other type can be positioned either before or after this block, forming two (possibly empty) blocks.Examples of valid final forms: 'aaabbbaaa' — all 'b's are located together (one block), 'a's can be both before and after this block; 'bbbaaaaaabbb' — all 'a's together, 'b's are at the edges of the string; 'aaaaabbbb' or 'bbbbaaaaa' — both types of characters form one continuous block each. You need to find the minimum number of described operations required to achieve the specified state.",
+    "input_specification": "InputEach test consists of several test cases.The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.The first line of each test case contains one integer n (1 ≤ n ≤ 2 · 10^5) — the length of the string s.The second line contains the string s of length n, consisting only of the characters 'a' and 'b'.It is guaranteed that the sum of the values of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output one integer — the minimum number of operations required for all characters of one of the two types to form a single continuous block.",
+    "sample_tests": [
+        {
+            "input": "5\n4\nabab\n6\nbababa\n7\nabababa\n2\nab\n1\nb",
+            "output": "1\n2\n2\n0\n0"
+        }
+    ],
+    "note": "In the first test case, the initial string is 'abab':\nIn the fifth input test case, the string consists of a single character 'b'. The single character already forms a continuous block, no swaps are needed, so the minimum number of operations is\n0\n.",
+    "tags": [
+        "strings"
+    ],
+    "rating": "1200"
+}

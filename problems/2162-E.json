@@ -1,0 +1,18 @@
+{
+    "statement": "We call an array [b_1, b_2, ..., b_m] of length m palindromic if the following condition holds: b_i = b_{m-i+1} for all 1 ≤ i ≤ m In other words, an array is palindromic if it reads the same forward and backward.You are given an array [a_1, a_2, ... , a_n] of n integers where 1 ≤ a_i ≤ n and an integer k.You are required to perform the following operation exactly k times: choose an integer x such that 1 ≤ x ≤ n, append x to the end of the array a. Your goal is to perform these k operations in such a way that the number of palindromic subarrays^{\\text{∗}} in the resulting array is minimized.Output the k integers you chose for each operation, in the order they were appended.^{\\text{∗}}An array b is a subarray of an array a if b can be obtained from a by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end. In particular, an array is a subarray of itself.",
+    "input_specification": "InputThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains two integers n and k (3 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n) — the length of the array a.The second line of each test case contains n integers a_1, a_2, ... , a_n (1 ≤ a_i ≤ n) — the elements of the array a.It is guaranteed that the sum of n over all the test cases does not exceed 2·10^5.",
+    "output_specification": "OutputFor each test case, print the k integers chosen for the append operations, in the order they were appended, such that the total number of palindromic subarrays in the resulting array is minimized.If there are multiple answers, you may output any one of them.",
+    "sample_tests": [
+        {
+            "input": "5\n4 1\n1 3 3 4\n4 2\n2 2 2 2\n5 1\n4 1 5 2 2\n6 3\n1 2 3 4 5 6\n5 3\n3 2 5 2 3",
+            "output": "2 \n1 3 \n3 \n3 4 1\n4 1 5"
+        }
+    ],
+    "note": "For the first test case, if we append\n2\nto the end of the array,\n𝑎\nbecomes\n[1,3,3,4,2]\n. Now\n𝑎\nhas only\n6\npalindromic subarrays —\n[1]\n,\n[3]\n,\n[3]\n,\n[4]\n,\n[2]\n,\n[3,3]\n.",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "schedules"
+    ],
+    "rating": "1600"
+}

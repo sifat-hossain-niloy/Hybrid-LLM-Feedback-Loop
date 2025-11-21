@@ -23,7 +23,7 @@ class GroqProvider(BaseLLMProvider):
             response = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=messages,
-                temperature=kwargs.get("temperature", 0.7),
+                temperature=kwargs.get("temperature", 0.1),
                 max_tokens=kwargs.get("max_tokens", 2000),
             )
             return response.choices[0].message.content.strip()

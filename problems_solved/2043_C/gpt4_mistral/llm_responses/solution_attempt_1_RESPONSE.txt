@@ -1,0 +1,50 @@
+=== RAW LLM RESPONSE (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-07T05:32:52.076023
+Model: gpt-4
+Has Previous Context: False
+
+======================================================================
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        int x = 0;
+        for(int i = 0; i < n; i++) {
+            cin >> a[i];
+            if(a[i] != -1 && a[i] != 1) {
+                x = a[i];
+            }
+        }
+
+        set<int> sums;
+        int sum = 0;
+        for(int i = 0; i < n; i++) {
+            sum += a[i];
+            sums.insert(sum);
+        }
+
+        if(x != 0) {
+            for(int i = x - 1; i <= x + 1; i++) {
+                sums.insert(i);
+            }
+        }
+
+        for(auto it : sums) {
+            cout << it << " ";
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}

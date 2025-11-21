@@ -1,0 +1,63 @@
+{
+  "submission_id": "347497801",
+  "timestamp": "2025-11-05T11:17:46.920952",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=zj6k823xe",
+    "rv_parameter": "zj6k823xe",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"1\\r\\n201350114\\r\\n201350116\\r\\n4\\r\\n0\\r\\n3\\r\\n\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"WRONG_ANSWER\",\"checkerStdoutAndStderr#1\":\"wrong answer 2nd numbers differ - expected: \\u00272\\u0027, found: \\u0027201350114\\u0027\\r\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"1\",\"timeConsumed#1\":\"31\",\"problemName\":\"(A) Against the Difference\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    ios_base::sync_with_stdio(false);\\r\\n    cin.tie(NULL);\\r\\n\\r\\n    int t;\\r\\n    cin \\u003e\\u003e t;\\r\\n    while (t--) {\\r\\n        int n;\\r\\n        cin \\u003e\\u003e n;\\r\\n        vector\\u003cint\\u003e a(n);\\r\\n        for (int i \\u003d 0; i \\u003c n; i++) {\\r\\n            cin \\u003e\\u003e a[i];\\r\\n        }\\r\\n\\r\\n        vector\\u003cint\\u003e dp(n + 1, 0);\\r\\n        dp[0] \\u003d 0;\\r\\n\\r\\n        for (int i \\u003d 1; i \\u003c\\u003d n; i++) {\\r\\n            dp[i] \\u003d dp[i - 1];\\r\\n\\r\\n            int blockLength \\u003d a[i - 1];\\r\\n            int blockCount \\u003d 0;\\r\\n            for (int j \\u003d i; j \\u003c\\u003d min(i + blockLength - 1, n); j++) {\\r\\n                if (a[j - 1] \\u003d\\u003d blockLength) {\\r\\n                    blockCount++;\\r\\n                } else {\\r\\n                    break;\\r\\n                }\\r\\n            }\\r\\n\\r\\n            if (blockCount \\u003d\\u003d blockLength) {\\r\\n                dp[i] \\u003d max(dp[i], dp[i - blockLength] + blockLength);\\r\\n            }\\r\\n        }\\r\\n\\r\\n        cout \\u003c\\u003c dp[n] \\u003c\\u003c \\\"\\\\n\\\";\\r\\n    }\\r\\n\\r\\n    return 0;\\r\\n}\",\"answer#1\":\"1\\r\\n2\\r\\n4\\r\\n5\\r\\n0\\r\\n5\\r\\n\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2135/submission/347497801\",\"compilationError\":\"false\",\"rejected#1\":\"true\",\"contestName\":\"Codeforces Round 1046 (Div. 1)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2135/challenge/347497801\",\"accepted#1\":\"false\",\"verdict\":\"\\u003cspan class\\u003d\\u0027verdict-rejected\\u0027\\u003eWrong answer on test \\u003cspan class\\u003d\\\"verdict-format-judged\\\"\\u003e1\\u003c/span\\u003e\\u003c/span\\u003e\",\"prevId\":\"347497743\",\"input#1\":\"6\\r\\n1\\r\\n1\\r\\n2\\r\\n2 2\\r\\n4\\r\\n2 2 1 1\\r\\n6\\r\\n1 2 3 3 3 1\\r\\n8\\r\\n8 8 8 8 8 8 8 7\\r\\n10\\r\\n2 3 3 1 2 3 5 1 1 7\\r\\n\",\"memoryConsumed#1\":\"0\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=wjax106LI13xyHibLlZur8pyHa9IxXPidBHsvjRHJymKGaNUrJblhYxldymgnLm1Hdg966ZaT6t%2FZD0GL%2B10N0HX2lKcMK5ESqPNiBTW2Gzdd1e5uqR42v27n%2FF5anoRq8guPh1YSyALgSKW\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfL4;desc=\"?proto=QUIC&rtt=59901&min_rtt=51494&rtt_var=4421&sent=258&recv=196&lost=0&retrans=0&sent_bytes=168590&recv_bytes=89705&delivery_rate=230759&cwnd=26400&unsent_bytes=0&cid=dcd05ff5f700bb33&ts=65749&x=1\", cfExtPri, cfHdrFlush;dur=0",
+      "date": "Wed, 05 Nov 2025 05:17:44 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-req-id": "neo:9999e2ef4ce733d1-SIN:/data/submitSource:zj6k823xe",
+      "pragma": "no-cache",
+      "cf-ray": "9999e2ef4ce733d1-SIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "1\r\n201350114\r\n201350116\r\n4\r\n0\r\n3\r\n",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "WRONG_ANSWER",
+    "checkerStdoutAndStderr#1": "wrong answer 2nd numbers differ - expected: '2', found: '201350114'\r\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "1",
+    "timeConsumed#1": "31",
+    "problemName": "(A) Against the Difference",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    ios_base::sync_with_stdio(false);\r\n    cin.tie(NULL);\r\n\r\n    int t;\r\n    cin >> t;\r\n    while (t--) {\r\n        int n;\r\n        cin >> n;\r\n        vector<int> a(n);\r\n        for (int i = 0; i < n; i++) {\r\n            cin >> a[i];\r\n        }\r\n\r\n        vector<int> dp(n + 1, 0);\r\n        dp[0] = 0;\r\n\r\n        for (int i = 1; i <= n; i++) {\r\n            dp[i] = dp[i - 1];\r\n\r\n            int blockLength = a[i - 1];\r\n            int blockCount = 0;\r\n            for (int j = i; j <= min(i + blockLength - 1, n); j++) {\r\n                if (a[j - 1] == blockLength) {\r\n                    blockCount++;\r\n                } else {\r\n                    break;\r\n                }\r\n            }\r\n\r\n            if (blockCount == blockLength) {\r\n                dp[i] = max(dp[i], dp[i - blockLength] + blockLength);\r\n            }\r\n        }\r\n\r\n        cout << dp[n] << \"\\n\";\r\n    }\r\n\r\n    return 0;\r\n}",
+    "answer#1": "1\r\n2\r\n4\r\n5\r\n0\r\n5\r\n",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2135/submission/347497801",
+    "compilationError": "false",
+    "rejected#1": "true",
+    "contestName": "Codeforces Round 1046 (Div. 1)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2135/challenge/347497801",
+    "accepted#1": "false",
+    "verdict": "<span class='verdict-rejected'>Wrong answer on test <span class=\"verdict-format-judged\">1</span></span>",
+    "prevId": "347497743",
+    "input#1": "6\r\n1\r\n1\r\n2\r\n2 2\r\n4\r\n2 2 1 1\r\n6\r\n1 2 3 3 3 1\r\n8\r\n8 8 8 8 8 8 8 7\r\n10\r\n2 3 3 1 2 3 5 1 1 7\r\n",
+    "memoryConsumed#1": "0"
+  }
+}

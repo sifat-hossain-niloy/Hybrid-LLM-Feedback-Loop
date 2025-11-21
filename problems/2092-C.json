@@ -1,0 +1,18 @@
+{
+    "statement": "For her birthday, each of Asuna's n admirers gifted her a tower. The height of the tower from the i-th admirer is equal to a_i. Asuna evaluates the beauty of the received gifts as \\max(a_1, a_2, ..., a_n). She can perform the following operation an arbitrary number of times (possibly, zero). Take such 1 ≤ i ≠q j ≤ n that a_i + a_j is odd and a_i > 0, then decrease a_i by 1 and increase a_j by 1. It is easy to see that the heights of the towers remain non-negative during the operations. Help Asuna find the maximum possible beauty of the gifts after any number of operations!",
+    "input_specification": "InputEach test consists of several test cases. The first line of the input data contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer n (1 ≤q n ≤q 2 · 10^5) — the number of admirers of Asuna.The second line of each test case contains n integers a_1, a_2, ..., a_n \\ (1 ≤ a_i ≤ 10^9) — the heights of the towers.It is guaranteed that the sum of n across all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer: the maximum value of the beauty of the gifts that Asuna can achieve.",
+    "sample_tests": [
+        {
+            "input": "4\n3\n5 3 9\n2\n3 2\n4\n1 2 2 1\n5\n5 4 3 2 9",
+            "output": "9\n5\n5\n21"
+        }
+    ],
+    "note": "In the first test case, no pair of towers satisfies the required condition for applying the operation, so no operations can be performed. In this case, the answer is\nmax(5, 3, 9)=9\n.\nIn the second test case, the operation with\ni=2\nand\nj=1\ncan be applied twice. After that, the array becomes:\na = [5, 0]\n. Thus, the answer is 5.\nIn the third test case, the following sequence of operations can be applied:\n[1, 2, 2, 1]→[0, 3, 2, 1]\n[0, 3, 2, 1]→[0, 4, 1, 1]\n[0, 4, 1, 1]→[0, 5, 0, 1]\nmax(0, 5, 0, 1) = 5\n.\nTherefore, the answer is 5.",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "rating": "1200"
+}

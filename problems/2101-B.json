@@ -1,0 +1,20 @@
+{
+    "statement": "You are given a permutation a of length n^{\\text{∗}}. You are allowed to do the following operation any number of times (possibly zero): Choose an index 1≤ i≤ n - 3. Then, swap a_i with a_{i + 2}, and a_{i + 1} with a_{i + 3} simultaneously. In other words, permutation a will be transformed from [..., a_i, a_{i+1}, a_{i+2}, a_{i+3}, ...] to [..., a_{i+2}, a_{i+3}, a_{i}, a_{i+1}, ...]. Determine the lexicographically smallest permutation^{\\text{†}} that can be obtained by applying the above operation any number of times.^{\\text{∗}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array). ^{\\text{†}}An array x is lexicographically smaller than an array y of the same size if and only if the following holds: in the first position where x and y differ, the array x has a smaller element than the corresponding element in y.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows. The first line of each test case contains a single integer n (4≤ n≤ 2· 10^5) — the length of permutation a.The second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n) — the elements of permutation a.It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output the lexicographically smallest permutation that can be obtained by applying the above operation any number of times.",
+    "sample_tests": [
+        {
+            "input": "3\n4\n3 4 1 2\n5\n5 4 3 1 2\n10\n10 9 8 7 6 5 4 3 2 1",
+            "output": "1 2 3 4 \n2 1 3 4 5 \n2 1 4 3 6 5 8 7 10 9"
+        }
+    ],
+    "note": "In the first test case, an operation can be done on index\n𝑖=1\n, and the permutation will become\n[1,2,3,4]\n, which is the lexicographically smallest permutation achievable.\nIn the second test case, we can do the following sequence of operations:",
+    "tags": [
+        "brute force",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "sortings"
+    ],
+    "rating": "1800"
+}

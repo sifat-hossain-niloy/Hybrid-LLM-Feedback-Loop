@@ -1,0 +1,18 @@
+{
+    "statement": "You are given an array a consisting of n nonnegative integers. You can swap the elements at positions i and j if a_i~\\mathsf{XOR}~a_j < 4, where \\mathsf{XOR} is the bitwise XOR operation.Find the lexicographically smallest array that can be made with any number of swaps.An array x is lexicographically smaller than an array y if in the first position where x and y differ, x_i < y_i.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤q t ≤q 10^4) — the number of test cases.The first line of each test case contains a single integer n (1 ≤q n ≤q 2·10^5) — the length of the array.The second line of each test case contains n integers a_i (0 ≤q a_i ≤q 10^9) — the elements of the array.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output n integers — the lexicographically smallest array that can be made with any number of swaps.",
+    "sample_tests": [
+        {
+            "input": "4\n4\n1 0 3 2\n5\n2 7 1 5 6\n8\n1 2 1 2 1 2 1 2\n4\n16 4 1 64",
+            "output": "0 1 2 3 \n1 5 2 6 7 \n1 1 1 1 2 2 2 2 \n16 4 1 64"
+        }
+    ],
+    "note": "For the first test case, you can swap any two elements, so we can produce the sorted array.\nFor the second test case, you can swap\n2\nand\n1\n(their\nXOR\nis\n3\n),\n7\nand\n5\n(their\nXOR\nis\n2\n), and\n7\nand\n6\n(their\nXOR\nis\n1\n) to get the lexicographically smallest array.",
+    "tags": [
+        "data structures",
+        "dsu",
+        "sortings"
+    ],
+    "rating": "1700"
+}

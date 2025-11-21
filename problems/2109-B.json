@@ -1,0 +1,18 @@
+{
+    "statement": "Duelists Mouf and Fouad enter the arena, which is an n × m grid!Fouad's monster starts at cell (a, b), where rows are numbered 1 to n and columns 1 to m.Mouf and Fouad will keep duelling until the grid consists of only one cell.In each turn: Mouf first cuts the grid along a row or column line into two parts, discarding the part without Fouad's monster. Note that the grid must have at least two cells; otherwise, the game has already ended. After that, in the same turn, Fouad moves his monster to any cell (possibly the same one it was in) within the remaining grid. Visualization of the phases of the fourth test case. Mouf wants to minimize the number of turns, while Fouad wants to maximize them. How many turns will this epic duel last if both play optimally?",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first and only line of each test case contains four integers n, m, a, and b (2 ≤ n, m ≤ 10^9, 1 ≤ a ≤ n, 1 ≤ b ≤ m) — denoting the number of rows, the number of columns, the starting row of the monster, and the starting column of the monster, respectively.",
+    "output_specification": "OutputFor each test case, output a single integer — the number of turns this epic duel will last if both play optimally.",
+    "sample_tests": [
+        {
+            "input": "8\n2 2 1 1\n3 3 2 2\n2 7 1 4\n2 7 2 2\n8 9 4 6\n9 9 5 5\n2 20 2 11\n22 99 20 70",
+            "output": "2\n4\n4\n3\n6\n8\n6\n10"
+        }
+    ],
+    "note": "In the first test case, one possible duel sequence is as follows:\nThe duel is completed in\n2\nturns.\nIn the fourth case, one possible duel sequence is as follows:\nIn total, the duel is completed in\n3\nturns.\nYou can refer to the pictures mentioned in the problem statement for illustrations of the fourth test case.",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math"
+    ],
+    "rating": "1200"
+}

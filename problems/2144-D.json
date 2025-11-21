@@ -1,0 +1,18 @@
+{
+    "statement": "Imagine that you are the owner of a store. Before the start of a new season, you decided to clear your store of leftover goods, and therefore you decided to hold a total sale.You have n different items in your store: the i-th item costs c_i coins. Each item has a price tag with the corresponding price c_i. You decided to hold a sale in the format: \"we divided all the prices x times.\" Formally, this means that you choose a common coefficient x, and during the sale, the i-th item will cost ≤ft\\lceil \\frac{c_i}{x} \\right\\rceil coins (where ≤ft\\lceil y \\right\\rceil denotes rounding up).To avoid confusion among the customers, you need to pin new price tags with new prices on all items, but printing new price tags is costly. Specifically, each printed price tag will cost you y coins.Therefore, you had a brilliant idea — why not use the existing price tags and simply repin them on other items? So, you'll need to print price tags only for those items that do not have a corresponding price tag available.There remains one last question: by how much should you reduce the prices, or what x should you choose? The coefficient x must be an integer strictly greater than 1 and such that the total income is maximized. The total income is equal to the total value of the items minus the cost of the printed price tags.Determine the maximum possible total income.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10) — the number of test cases.The first line of each test case contains two integers n and y (1 ≤ n ≤ 2 · 10^5; 1 ≤ y ≤ 10^9) — the number of items and the cost of printing one price tag.The second line contains n integers c_1, c_2, ..., c_n (1 ≤ c_i ≤ 2 · 10^5) — the initial prices of the items.",
+    "output_specification": "OutputFor each test case, output a single integer — the maximum total income.",
+    "sample_tests": [
+        {
+            "input": "4\n5 51\n50 150 50 148 150\n3 1000000000\n42 42 42\n10 54321\n1 8088 45 1 73 1 9198 4991 1 83\n3 100\n1 1 1",
+            "output": "31\n-2999999937\n-162755\n3"
+        }
+    ],
+    "note": "In the first test case, it is optimal to choose\n𝑥=3\n. The new prices of the items will be\n[17,50,17,50,50]\n. In this case, we can use two old price tags of\n50\n, and we will have to print three price tags for\n17\n,\n17\n, and\n50\n. As a result, the income will be\n17+50+17+50+50−51⋅3=31\n.\nIn the second test case, it is optimal to choose\n𝑥=2\n. The new prices will be\n[21,21,21]\n, and we will have to print\n3\nnew price tags.\nIn the third test case, it is optimal to choose\n𝑥=111\n.\nIn the fourth test case, it is optimal to choose\n𝑥=2\n. The new prices will be the same as the old ones, so no new price tags will be printed.",
+    "tags": [
+        "brute force",
+        "dp",
+        "math"
+    ],
+    "rating": "1800"
+}

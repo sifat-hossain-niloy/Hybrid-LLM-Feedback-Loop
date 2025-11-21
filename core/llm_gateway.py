@@ -125,7 +125,7 @@ COMMON ISSUES TO AVOID:
                         {"role": "user", "content": prompt}
                     ],
                     "max_tokens": 2000,
-                    "temperature": 0.1 if previous_context else 0.3  # Lower temp for fixes
+                    "temperature": 0.1  # Lower temp for fixes
                 },
                 timeout=60.0
             )
@@ -176,7 +176,7 @@ def deepseek_diagnose(problem_md: str, code_cpp: str, cf_verdict: str, local_fai
                         {"role": "user", "content": prompt}
                     ],
                     "max_tokens": 1000,
-                    "temperature": 0.3
+                    "temperature": 0.1
                 },
                 timeout=60.0
             )

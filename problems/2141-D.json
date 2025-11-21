@@ -1,0 +1,18 @@
+{
+    "statement": "You are given an integer array a_1, a_2, a_3, ..., a_n. Your task is to make all elements of a equal. In order to do it, you can perform the following operation at most k times: choose any index i from 1 to n and increase a_i by one. You can choose any element of the array, but if the chosen a_i is strictly greater than the current minimum of the array, you'll earn one coin.What is the maximum number of coins you can earn among all possible ways to make the array equal?",
+    "input_specification": "InputThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Next, t cases follow (all cases are independent).The first line of each test case contains two integers n and k (2 ≤ n ≤ 3 · 10^5; 1 ≤ k ≤ 10^{12}) — the size of array a and the maximum number of operations you can perform.The second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — the array itself.It's guaranteed that the total sum of n over all test cases doesn't exceed 3 · 10^5.",
+    "output_specification": "OutputFor each test case, if it's impossible to make all elements equal, print -1. Otherwise, print the maximum number of coins you can earn while making all elements equal.",
+    "sample_tests": [
+        {
+            "input": "4\n3 16\n1 10 2\n4 20\n6 2 4 9\n5 9\n7 7 7 7 7\n2 1000000000000\n1000000000 1000000000",
+            "output": "-1\n11\n0\n499999999999"
+        }
+    ],
+    "note": "In the first test case, you need at least\n17\noperations to make all elements equal (or to get the array\n[10,10,10]\n).\nIn the second test case, you can, for example, increase\n𝑎\n3\n=4\nto\n10\n, then increase\n𝑎\n1\n=6\nto\n10\n, after that increase\n𝑎\n4\n=9\nto\n10\nand, finally,\n𝑎\n2\n=2\nto\n10\n. You'll perform\n19\noperations and earn\n(10−4)+(10−6)+(10−9)=11\ncoins in total, since increasing the\n𝑎\n2\nfrom\n2\nto\n10\nwon't give you any coins.\nIn the third test case, you can leave the array unchanged or make all elements equal to\n8\n— both strategies will give you\n0\ncoins.",
+    "tags": [
+        "*special problem",
+        "greedy",
+        "math"
+    ],
+    "rating": "1800"
+}

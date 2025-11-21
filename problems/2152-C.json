@@ -1,0 +1,18 @@
+{
+    "statement": "Tired of supporting ranged carries, Keria is now creating a data structure problem about supporting range queries.For an array b = [b_1, b_2, ..., b_m] of length m where b_i=0 or b_i=1, consider the following triple removal operation: Choose three indices 1 ≤ i < j < k ≤ m such that the elements at these positions are identical (b_i = b_j = b_k). Remove these three elements from the array. The cost of this operation is defined as \\min(k-j, j-i). After the removal, the remaining parts of the array are concatenated, and their indices are relabeled. We want to make the array b empty using the triple removal operation. Hence, we define the total cost of an array as the minimum possible sum of the costs of triple removal operations required to make the array empty. If it is impossible to make the array empty, the cost is defined to be -1.Keria wants to test his data structure. For this, you must answer q independent queries. Initially, you are given an array a = [a_1, a_2, ..., a_n] of length n where a_i=0 or a_i=1. For each query, you are given a range 1 ≤ l ≤ r ≤ n and must find the cost for the array [a_l, a_{l+1}, ..., a_r].",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains two integers n and q (1 ≤ n, q ≤ 250\\,000) — the length of the array and the number of queries.The next line contains n integers a_1, a_2, ..., a_n (a_i = 0 or a_i=1) — the elements of the array.Then q lines follow. The i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the range of the subarray for the i-th query.It is guaranteed that the sum of n over all test cases does not exceed 250\\,000. It is guaranteed that the sum of q over all test cases does not exceed 250\\,000.",
+    "output_specification": "OutputFor each test case, output q lines. The i-th line should contain a single integer representing the answer to the i-th query.",
+    "sample_tests": [
+        {
+            "input": "2\n12 4\n0 0 1 1 0 1 0 1 0 1 1 0\n1 12\n2 7\n5 10\n6 11\n6 3\n0 0 0 1 1 1\n1 3\n4 6\n1 6",
+            "output": "4\n2\n3\n-1\n1\n1\n2"
+        }
+    ],
+    "note": "Explanation of the first test case, first query (1 12):\nThe subarray is\n[0,0,1,1,0,1,0,1,0,1,1,0]\n. There are six\n0\ns and six\n1\ns. A possible optimal sequence of operations is:\nThe total cost is\n1+1+1+1=4\n.",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math"
+    ],
+    "rating": "1400"
+}

@@ -1,0 +1,17 @@
+{
+    "statement": "You are given an integer n and a binary string^{\\text{∗}} s of length n.For a permutation^{\\text{†}} p of length n and an integer x, we define \\text{find}(x) as in the following pseudocode:function find(int x): l := 1 r := n while l <= r: let m be a random integer between l and r (inclusive) if p[m] == x return m if p[m] > x: r := m - 1 else: l := m + 1 return undefined // not foundWe call an integer x (1≤ x≤ n) stable if and only if \\text{find}(x) is always not undefined and p_{\\text{find}(x)}=x always holds, no matter how the value of m is selected in the process of the pseudocode.You have to construct a permutation p of length n, such that: For each 1≤ i≤ n, the integer i is stable if and only if s_i=\\mathtt{1}. Or determine that no such permutation exists.^{\\text{∗}}A binary string is a string where each character is either \\mathtt{0} or \\mathtt{1}.^{\\text{†}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains a single integer n (2≤ n ≤ 2· 10^5) — the length of the permutation.The second line contains the binary string s of length n (s_i=\\mathtt{0} or \\mathtt{1}).It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case: If no such permutation exists, print \"NO\" in the only line of output. Otherwise, print \"YES\" in the first line of output. Then output n distinct integers p_1, p_2, ..., p_n (1≤ p_i≤ n) in the second line — the permutation you constructed. You can output the token in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.If there are multiple answers, you may print any of them.",
+    "sample_tests": [
+        {
+            "input": "6\n3\n111\n5\n00000\n5\n10100\n7\n0010000\n11\n00001001100\n12\n011100010000",
+            "output": "YES\n1 2 3 \nYES\n2 4 3 5 1\nNO\nYES\n2 1 3 5 7 6 4\nYES\n2 1 4 3 5 7 6 8 9 11 10\nNO"
+        }
+    ],
+    "note": "In the first test case, we have constructed\n𝑝=[1,2,3]\n. Take\nfind(2)\nas an example:\nSo\n𝑝\nfind(2)\n=\n𝑝\n2\n=2\nalways holds, and the integer\n2\nis stable.\nSimilarly, we can show that integers\n1\nand\n3\nare also stable. Thus, the permutation\n𝑝=[1,2,3]\nis a valid answer.\nIn the second test case, we have constructed\n𝑝=[2,4,3,5,1]\n. Take\nfind(3)\nas an example:\nThus, the return value of\nfind(3)\nis undefined, so the integer\n3\nis not stable.\nSimilarly, we can show that integers\n1\n,\n2\n,\n4\n, and\n5\nare also not stable. Thus,\n𝑝=[2,4,3,5,1]\nis a valid answer.\nSome other permutations, such as\n𝑝=[5,4,3,2,1]\nand\n𝑝=[3,5,1,4,2]\n, are also valid answers. You may print any of them.\nIn the third test case, it can be proven that no such permutation exists.",
+    "tags": [
+        "binary search",
+        "constructive algorithms"
+    ],
+    "rating": "1300"
+}

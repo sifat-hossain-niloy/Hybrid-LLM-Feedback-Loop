@@ -1,0 +1,18 @@
+{
+    "statement": "Farmer John has an array a containing n positive integers and an integer k. Let a[l, r] be a subarray^{\\text{∗}} of a. He performs the following procedure to independently determine if subarray a[l, r] is awesome: Initially, FJ has k empty multisets, numbered from 1 to k. Then, for each element a_i (1 ≤q i ≤q n) in a: If l≤q i≤q r (that is, a_i is in the subarray a[l, r]), he places a_i in multiset 1, Otherwise, he places a_i into any multiset he wants (which may be multiset 1). Subarray a[l, r] is awesome if there is some way for him to place elements such that, for every value v, all multisets contain the same number of elements with value v. In other words, he wants to make all multisets contain the exact same elements (ignoring ordering). Output the number of awesome subarrays. ^{\\text{∗}}For array a of size n and integers 1≤q l≤q r≤q n, the subarray a[l, r] denotes the array consisting of the elements a_l, ..., a_r, in order.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 1000) — the number of test cases.The first line of each test case contains two integers n and k (2 ≤q k ≤ n ≤q 2 · 10^5).The following line contains n space-separated integers a_1, a_2, ..., a_n (1 ≤q a_i ≤q n).It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each testcase, output one integer on a new line: the number of awesome subarrays.",
+    "sample_tests": [
+        {
+            "input": "4\n3 2\n1 1 1\n4 2\n1 2 1 2\n8 2\n3 3 3 3 2 2 2 2\n6 3\n1 1 1 1 1 1",
+            "output": "0\n7\n18\n11"
+        }
+    ],
+    "note": "Test case 1:\n𝑛=3\n,\n𝑎=[1,1,1]\n.\nFor\n𝑘=2\n, you cannot finish with the same number of\n1\n's in both multisets, so no subarray works.\nTest case 2:\n𝑛=4\n,\n𝑎=[1,2,1,2]\n.\nFor\n𝑘=2\n, the final state must give each multiset exactly one\n1\nand one\n2\n. Thus a valid subarray can contain at most one\n1\nand at most one\n2\n.",
+    "tags": [
+        "binary search",
+        "data structures",
+        "two pointers"
+    ],
+    "rating": "1200"
+}

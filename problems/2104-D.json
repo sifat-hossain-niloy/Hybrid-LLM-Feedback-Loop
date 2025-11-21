@@ -1,0 +1,19 @@
+{
+    "statement": "You are given an integer array a of size n.You can perform the following operations any number of times (possibly, zero): pay one coin and increase any element of the array by 1 (you must have at least 1 coin to perform this operation); gain one coin and decrease any element of the array by 1. Let's say that an array is ideal if both of the following conditions hold: each element of the array is at least 2; for each pair of indices i and j (1 ≤ i, j ≤ n; i ≠ j) the greatest common divisor (GCD) of a_i and a_j is equal to 1. If the array has less than 2 elements, this condition is automatically satisfied. Let's say that an array is beautiful if it can be transformed into an ideal array using the aforementioned operations, provided that you initially have no coins. If the array is already ideal, then it is also beautiful.The given array is not necessarily beautiful or ideal. You can remove any elements from it (including removing the entire array or not removing anything at all). Your task is to calculate the minimum number of elements you have to remove (possibly, zero) from the array a to make it beautiful.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains a single integer n (1 ≤ n ≤ 4 · 10^5).The second line contains n integers a_1, a_2, ..., a_n (2 ≤ a_i ≤ 10^9).Additional constraint on the input: the sum of n over all test cases doesn't exceed 4 · 10^5.",
+    "output_specification": "OutputFor each test case, print a single integer — the minimum number of elements you have to remove (possibly, zero) from the array a to make it beautiful.",
+    "sample_tests": [
+        {
+            "input": "5\n3\n5 5 5\n4\n2 3 2 4\n1\n3\n3\n2 100 2\n5\n2 4 2 11 2",
+            "output": "0\n2\n0\n0\n1"
+        }
+    ],
+    "note": "In the first example, you don't need to delete any elements, because the array is already beautiful. It can be transformed into an ideal array as follows:\n[5,5,5]→[4,5,5]→[4,4,5]→[4,3,5]\n(you end up with\n3\ncoins).\nIn the second example, you need to remove\n2\nelements so that the array becomes beautiful. If you leave the elements\n[2,3]\nand delete the other elements, then the given array is already ideal (and therefore, beautiful).\nIn the third example, you don't need to delete any elements because the array is already ideal (and thus, beautiful).\nIn the fourth example, the array is beautiful. It can be transformed into an ideal array as follows:\n[2,100,2]→[2,99,2]→[2,99,3]→[2,98,3]→[2,97,3]\n(you end up with\n2\ncoins).",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "rating": "1400"
+}

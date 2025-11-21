@@ -1,0 +1,21 @@
+{
+    "statement": "Iris has a tree rooted at vertex 1. Each vertex has a value of \\mathtt 0 or \\mathtt 1.Let's consider a leaf of the tree (the vertex 1 is never considered a leaf) and define its weight. Construct a string formed by the values of the vertices on the path starting at the root and ending in this leaf. Then the weight of the leaf is the difference between the number of occurrences of \\mathtt{10} and \\mathtt{01} substrings in it.Take the following tree as an example. Green vertices have a value of \\mathtt 1 while white vertices have a value of \\mathtt 0. Let's calculate the weight of the leaf 5: the formed string is \\mathtt{10110}. The number of occurrences of substring \\mathtt{10} is 2, the number of occurrences of substring \\mathtt{01} is 1, so the difference is 2 - 1 = 1. Let's calculate the weight of the leaf 6: the formed string is \\mathtt{101}. The number of occurrences of substring \\mathtt{10} is 1, the number of occurrences of substring \\mathtt{01} is 1, so the difference is 1 - 1 = 0.The score of a tree is defined as the number of leaves with non-zero weight in the tree.But the values of some vertices haven't been decided and will be given to you as \\texttt{?}. Filling the blanks would be so boring, so Iris is going to invite Dora to play a game. On each turn, one of the girls chooses any of the remaining vertices with value \\texttt{?} and changes its value to \\mathtt{0} or \\mathtt{1}, with Iris going first. The game continues until there are no vertices with value \\mathtt{?} left in the tree. Iris aims to maximize the score of the tree, while Dora aims to minimize that.Assuming that both girls play optimally, please determine the final score of the tree.",
+    "input_specification": "InputEach test consists of multiple test cases. The first line contains a single integer t (1 ≤q t ≤q 5· 10^4) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer n (2 ≤q n ≤q 10^5) — the number of vertices in the tree.The following n - 1 lines each contain two integers u and v (1 ≤q u, v ≤q n) — denoting an edge between vertices u and v.It's guaranteed that the given edges form a tree.The last line contains a string s of length n. The i-th character of s represents the value of vertex i. It's guaranteed that s only contains characters \\mathtt{0}, \\mathtt{1} and \\mathtt{?}.It is guaranteed that the sum of n over all test cases doesn't exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer — the final score of the tree.",
+    "sample_tests": [
+        {
+            "input": "6\n4\n1 2\n1 3\n4 1\n0101\n4\n1 2\n3 2\n2 4\n???0\n5\n1 2\n1 3\n2 4\n2 5\n?1?01\n6\n1 2\n2 3\n3 4\n5 3\n3 6\n?0????\n5\n1 2\n1 3\n1 4\n1 5\n11?1?\n2\n2 1\n??",
+            "output": "2\n1\n1\n2\n1\n0"
+        }
+    ],
+    "note": "In the first test case, all the values of the vertices have been determined. There are three different paths from the root to a leaf:\nThus, there are two leaves with non-zero weight, so the score of the tree is\n2\n.\nIn the second test case, one of the sequences of optimal choices for the two players can be:\nThe final tree is as follows:\nThe only leaf with non-zero weight is\n3\n, so the score of the tree is\n1\n. Note that this may not be the only sequence of optimal choices for Iris and Dora.",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "games",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "rating": "1700"
+}

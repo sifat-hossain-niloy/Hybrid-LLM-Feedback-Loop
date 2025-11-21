@@ -1,0 +1,18 @@
+{
+    "statement": "Chimpanzini Bananini stands on the brink of a momentous battle—one destined to bring finality.For an arbitrary array b of length m, let's denote the rizziness of the array to be ∑_{i=1}^mb_i· i=b_1· 1+b_2· 2+b_3· 3+... + b_m· m.Chimpanzini Bananini gifts you an empty array. There are three types of operations you can perform on it. Perform a cyclic shift on the array. That is, the array [a_1, a_2, ..., a_n] becomes [a_n, a_1, a_2, ..., a_{n-1}]. Reverse the entire array. That is, the array [a_1, a_2, ..., a_n] becomes [a_n, a_{n-1}, ..., a_1]. Append an element to the end of the array. The array [a_1, a_2, ..., a_n] becomes [a_1, a_2, ..., a_n, k] after appending k to the end of the array. After each operation, you are interested in calculating the rizziness of your array. Note that all operations are persistent. This means that each operation modifies the array, and subsequent operations should be applied to the current state of the array after the previous operations.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 10^4) — the number of test cases.The first line of each test case contains an integer q (1 ≤q q ≤q 2· 10^5) — the number of operations you perform on your array.The following q lines first contain a single integer s (1 ≤q s ≤q 3) — the operation type. If s=1, then the cyclic shift operation should be performed. If s=2, then the reversal operation should be performed. If s=3, then the line will contain an additional integer k (1 ≤q k ≤q 10^6), denoting the element appended to the back of the array. It is guaranteed that the sum of q will not exceed 2· 10^5 over all test cases. Additionally, it is guaranteed that the first operation on each test case will be one with s=3.",
+    "output_specification": "OutputFor each test case, output q lines, outputting the rizziness of your array after each operation.",
+    "sample_tests": [
+        {
+            "input": "1\n13\n3 1\n3 2\n3 3\n1\n3 4\n2\n3 5\n1\n3 6\n2\n3 7\n2\n1",
+            "output": "1\n5\n14\n11\n27\n23\n48\n38\n74\n73\n122\n102\n88"
+        }
+    ],
+    "note": "The first six states of the array:",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math"
+    ],
+    "rating": "1700"
+}

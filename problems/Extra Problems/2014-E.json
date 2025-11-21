@@ -1,0 +1,18 @@
+{
+    "statement": "In the humble act of meeting, joy doth unfold like a flower in bloom.Absence makes the heart grow fonder. Marian sold her last ware at the Market at the same time Robin finished training at the Major Oak. They couldn't wait to meet, so they both start without delay.The travel network is represented as n vertices numbered from 1 to n and m edges. The i-th edge connects vertices u_i and v_i, and takes w_i seconds to travel (all w_i are even). Marian starts at vertex 1 (Market) and Robin starts at vertex n (Major Oak).In addition, h of the n vertices each has a single horse available. Both Marian and Robin are capable riders, and could mount horses in no time (i.e. in 0 seconds). Travel times are halved when riding. Once mounted, a horse lasts the remainder of the travel. Meeting must take place on a vertex (i.e. not on an edge). Either could choose to wait on any vertex.Output the earliest time Robin and Marian can meet. If vertices 1 and n are disconnected, output -1 as the meeting is cancelled.",
+    "input_specification": "InputThe first line of the input contains a single integer t (1≤q t ≤q 10^4) — the number of test cases.The first line of each test case consists of three integers n, m, h (2 ≤ n ≤ 2 · 10^5, \\;1 ≤ m ≤ 2 · 10^5, \\; 1 ≤ h ≤ n) — the number of vertices, the number of edges and the number of vertices that have a single horse.The second line of each test case contains h distinct integers a_1, a_2, ..., a_h (1 ≤ a_i ≤ n) — the vertices that have a single horse available.Then follow m lines of each test case, each with three integers u_i, v_i, w_i (1≤ u_i,v_i ≤ n, \\; 2≤ w_i ≤ 10^6) — meaning that there is an edge between vertices u_i and v_i with travel cost w_i seconds without a horse.There are no self loops or multiple edges. By good fortune, all w_i are even integers.It is guaranteed that the sums of both n and m over all test cases do not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer, the earliest time Robin and Marian can meet. If it is impossible for them to meet, output -1.",
+    "sample_tests": [
+        {
+            "input": "6\n2 1 1\n1\n1 2 10\n3 1 2\n2 3\n1 2 10\n3 3 1\n2\n1 2 4\n1 3 10\n2 3 6\n4 3 2\n2 3\n1 2 10\n2 3 18\n3 4 16\n3 2 1\n2\n1 2 4\n1 3 16\n7 7 1\n3\n1 5 2\n2 6 12\n1 2 12\n6 4 8\n7 3 4\n6 3 4\n7 6 4",
+            "output": "5\n-1\n6\n19\n14\n12"
+        }
+    ],
+    "note": "In the first test case, Marian rides from vertex\n1\nto vertex\n2\n, Robin waits.\nIn the second test case, vertices\n1\nand\n3\nare not connected.\nIn the third test case, both Marian and Robin travel to vertex\n2\nto meet.\nIn the fourth test case, Marian travels to vertex\n2\nwithout a horse, mounts the horse at vertex\n2\nand rides to vertex\n3\nto meet Robin.\nIn the fifth test case, Marian travels to vertex\n2\nwithout a horse, mounts the horse at vertex\n2\nand rides back to vertex\n1\nand then to vertex\n3\n. Robin waits.",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths"
+    ],
+    "rating": "1800"
+}

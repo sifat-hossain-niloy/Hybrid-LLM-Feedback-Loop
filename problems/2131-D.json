@@ -1,0 +1,19 @@
+{
+    "statement": "Kagari is preparing to archive a tree, and she knows the cost of doing so will depend on its diameter^{\\text{∗}}. To keep the expense down, her goal is to shrink the diameter as much as possible first. She can perform the following operation on the tree: Choose two vertices s and t. Let the sequence of vertices on the simple path^{\\text{†}} from s to t be v_0, v_1, ..., v_k, where v_0 = s and v_k = t. Remove all edges along the path. In other words, remove edges (v_0, v_1), (v_1, v_2), ..., (v_{k-1}, v_k). Connect vertices v_1, v_2, ..., v_k directly to v_0. In other words, add edges (v_0, v_1), (v_0, v_2), ..., (v_0, v_k). It can be shown that the graph is still a tree after the operation.Help her determine the minimum number of operations required to achieve the minimal diameter.^{\\text{∗}}The diameter of a tree is the longest possible distance between any pair of vertices. The distance itself is measured by the number of edges on the unique simple path connecting them.^{\\text{†}}A simple path is a path between two vertices in a tree that does not visit any vertex more than once. It can be shown that the simple path between any two vertices is always unique.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains one integer n (2 ≤ n ≤ 2 · 10^5) — the number of the vertices in the tree.The following n-1 lines of each test case describe the tree. Each of the lines contains two integers u and v (1 ≤ u, v ≤ n, u ≠q v) that indicate an edge between vertex u and v. It is guaranteed that these edges form a tree.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output one integer — the minimum number of operations to minimize the diameter.",
+    "sample_tests": [
+        {
+            "input": "4\n4\n1 2\n1 3\n2 4\n2\n2 1\n4\n1 2\n2 3\n2 4\n11\n1 2\n1 3\n2 4\n3 5\n3 8\n5 6\n5 7\n7 9\n7 10\n5 11",
+            "output": "1\n0\n0\n4"
+        }
+    ],
+    "note": "In the first test case, the diameter of the original tree is\n3\n. Kagari can perform an operation on\n𝑠=3\nand\n𝑡=4\n. As the figure depicts, the operations includes the following steps:\nAfter the operation, the diameter reduces to\n2\n. It can be shown that\n2\nis the minimum diameter.\nIn the second test case, the diameter of the tree is\n1\n. It can be shown that\n1\nis already the minimum, so Kagari can perform no operation.",
+    "tags": [
+        "data structures",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "rating": "1400"
+}

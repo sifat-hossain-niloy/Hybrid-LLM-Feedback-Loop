@@ -1,14 +1,14 @@
 {
-    "statement": "You are given a number\n𝑛\nwith a length of no more than\n10\n5\n.\nYou can perform the following operation any number of times: choose one of its digits, square it, and replace the original digit with the result. The result must be a digit (that is, if you choose the digit\n𝑥\n, then the value of\n𝑥\n2\nmust be less than\n10\n).\nIs it possible to obtain a number that is divisible by\n9\nthrough these operations?",
-    "input_specification": "The first line contains an integer\n𝑡\n(\n1≤𝑡≤\n10\n4\n) — the number of test cases.\nThe only line of each test case contains the number\n𝑛\n, without leading zeros. The length of the number does not exceed\n10\n5\n.\nIt is guaranteed that the sum of the lengths of the numbers across all test cases does not exceed\n10\n5\n.",
-    "output_specification": "For each test case, output \"YES\" if it is possible to obtain a number divisible by\n9\nusing the described operations, and \"NO\" otherwise.\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "statement": "You are given a number n with a length of no more than 10^5.You can perform the following operation any number of times: choose one of its digits, square it, and replace the original digit with the result. The result must be a digit (that is, if you choose the digit x, then the value of x^2 must be less than 10).Is it possible to obtain a number that is divisible by 9 through these operations?",
+    "input_specification": "InputThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.The only line of each test case contains the number n, without leading zeros. The length of the number does not exceed 10^5.It is guaranteed that the sum of the lengths of the numbers across all test cases does not exceed 10^5.",
+    "output_specification": "OutputFor each test case, output \"YES\" if it is possible to obtain a number divisible by 9 using the described operations, and \"NO\" otherwise.You can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
     "sample_tests": [
         {
             "input": "9\n123\n322\n333333333333\n9997\n5472778912773\n1234567890\n23\n33\n52254522632",
             "output": "NO\nYES\nYES\nNO\nNO\nYES\nNO\nYES\nYES"
         }
     ],
-    "note": "In the first example, from the integer\n123\n, it is possible to obtain only\n123\n,\n143\n,\n129\n, and\n149\n, none of which are divisible by\n9\n.\nIn the second example, you need to replace the second digit with its square; then\n𝑛\nwill equal\n342=38⋅9\n.\nIn the third example, the integer is already divisible by\n9\n.",
+    "note": "In the first example, from the integer\n123\n, it is possible to obtain only\n123\n,\n143\n,\n129\n, and\n149\n, none of which are divisible by\n9\n.\nIn the second example, you need to replace the second digit with its square; then\nn\nwill equal\n342=38⋅9\n.\nIn the third example, the integer is already divisible by\n9\n.",
     "tags": [
         "brute force",
         "dp",

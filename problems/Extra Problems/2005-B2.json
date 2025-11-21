@@ -1,0 +1,19 @@
+{
+    "statement": "This is the hard version of the problem. The only differences between the two versions are the constraints on m and q. In this version, m, q ≤ 10^5. You can make hacks only if both versions of the problem are solved.Narek and Tsovak were busy preparing this round, so they have not managed to do their homework and decided to steal David's homework. Their strict teacher noticed that David has no homework and now wants to punish him. She hires other teachers to help her catch David. And now m teachers together are chasing him. Luckily, the classroom is big, so David has many places to hide.The classroom can be represented as a one-dimensional line with cells from 1 to n, inclusive.At the start, all m teachers and David are in distinct cells. Then they make moves. During each move David goes to an adjacent cell or stays at the current one. Then, each of the m teachers simultaneously goes to an adjacent cell or stays at the current one. This continues until David is caught. David is caught if any of the teachers (possibly more than one) is located in the same cell as David. Everyone sees others' moves, so they all act optimally.Your task is to find how many moves it will take for the teachers to catch David if they all act optimally.Acting optimally means the student makes his moves in a way that maximizes the number of moves the teachers need to catch him; and the teachers coordinate with each other to make their moves in a way that minimizes the number of moves they need to catch the student.Also, as Narek and Tsovak think this task is easy, they decided to give you q queries on David's position.",
+    "input_specification": "InputIn the first line of the input, you are given a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of each test case follows.In the first line of each test case, you are given three integers n, m, and q (3 ≤ n ≤ 10^9, 1 ≤ m, q ≤ 10^5) — the number of cells on the line, the number of teachers, and the number of queries.In the second line of each test case, you are given m distinct integers b_1, b_2, ..., b_m (1 ≤ b_i ≤ n) — the cell numbers of the teachers.In the third line of each test case, you are given q integers a_1, a_2, ..., a_q (1 ≤ a_i ≤ n) — David's cell number for every query.It is guaranteed that for any i, j such that 1 ≤ i ≤ m and 1 ≤ j ≤ q, b_i ≠q a_j.It is guaranteed that the sum of values of m over all test cases does not exceed 2 · 10^5.It is guaranteed that the sum of values of q over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output q lines, the i-th of them containing the answer of the i-th query.",
+    "sample_tests": [
+        {
+            "input": "2\n8 1 1\n6\n3\n10 3 3\n1 4 8\n2 3 10",
+            "output": "5\n1\n1\n2"
+        }
+    ],
+    "note": "In the only query of the first example, the student can run to cell\n1\n. It will take the teacher five moves to reach from cell\n6\nto cell\n1\n, so the answer is\n5\n.\nIn the second query of the second example, the student can just stay at cell\n3\n. The teacher, initially located in cell\n4\n, can reach cell\n3\nin one move. Therefore, the answer is\n1\n.",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "sortings"
+    ],
+    "rating": "1200"
+}

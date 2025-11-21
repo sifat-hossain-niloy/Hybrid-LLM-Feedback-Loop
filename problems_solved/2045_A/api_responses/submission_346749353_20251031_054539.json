@@ -1,0 +1,63 @@
+{
+  "submission_id": "346749353",
+  "timestamp": "2025-10-31T05:45:39.663184",
+  "collection_methods": [
+    "api_interception"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=iqa1msb4t",
+    "rv_parameter": "iqa1msb4t",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"COMPILATION_ERROR\",\"checkerStdoutAndStderr#1\":\"Can\\u0027t compile file:\\nprogram.cpp: In function \\u0027int main()\\u0027:\\nprogram.cpp:9:13: warning: array subscript has type \\u0027char\\u0027 [-Wchar-subscripts]\\n    9 |         cnt[c]++;\\n      |             ^\\nprogram.cpp:14:44: warning: conversion from \\u0027std::__cxx11::basic_string\\u003cchar\\u003e::size_type\\u0027 {aka \\u0027long long unsigned int\\u0027} to \\u0027int\\u0027 may change value [-Wconversion]\\n   14 |     int consonants \\u003d s.size() - vowels - y - ng;\\n      |                      ~~~~~~~~~~~~~~~~~~~~~~^~~~\\nprogram.cpp:15:24: error: no matching function for call to \\u0027min(\\u003cbrace-enclosed initializer list\\u003e)\\u0027\\n   15 |     int syllables \\u003d min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\\n      |                     ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\nIn file included from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/algorithm:60,\\n                 from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/stdc++.h:51,\\n                 from program.cpp:1:\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:233:5: note: candidate: \\u0027template\\u003cclass _Tp\\u003e constexpr const _Tp\\u0026 std::min(const _Tp\\u0026, const _Tp\\u0026)\\u0027\\n  233 |     min(const _Tp\\u0026 __a, const _Tp\\u0026 __b)\\n      |     ^~~\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:233:5: note:   candidate expects 2 arguments, 1 provided\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:281:5: note: candidate: \\u0027template\\u003cclass _Tp, class _Compare\\u003e constexpr const _Tp\\u0026 std::min(const _Tp\\u0026, const _Tp\\u0026, _Compare)\\u0027\\n  281 |     min(const _Tp\\u0026 __a, const _Tp\\u0026 __b, _Compare __comp)\\n      |     ^~~\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:281:5: note:   candidate expects 3 arguments, 1 provided\\nIn file included from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/algorithm:61:\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5685:5: note: candidate: \\u0027template\\u003cclass _Tp\\u003e constexpr _Tp std::min(initializer_list\\u003c_Tp\\u003e)\\u0027\\n 5685 |     min(initializer_list\\u003c_Tp\\u003e __l)\\n      |     ^~~\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5685:5: note:   template argument deduction/substitution failed:\\nprogram.cpp:15:24: note:   deduced conflicting types for parameter \\u0027_Tp\\u0027 (\\u0027int\\u0027 and \\u0027long long unsigned int\\u0027)\\n   15 |     int syllables \\u003d min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\\n      |                     ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5695:5: note: candidate: \\u0027template\\u003cclass _Tp, class _Compare\\u003e constexpr _Tp std::min(initializer_list\\u003c_Tp\\u003e, _Compare)\\u0027\\n 5695 |     min(initializer_list\\u003c_Tp\\u003e __l, _Compare __comp)\\n      |     ^~~\\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5695:5: note:   candidate expects 2 arguments, 1 provided\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"0\",\"timeConsumed#1\":\"0\",\"problemName\":\"(A) Scrambled Scrabble\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    string s;\\r\\n    cin \\u003e\\u003e s;\\r\\n    int cnt[128] \\u003d {};\\r\\n    for (char c : s) {\\r\\n        cnt[c]++;\\r\\n    }\\r\\n    int vowels \\u003d cnt[\\u0027A\\u0027] + cnt[\\u0027E\\u0027] + cnt[\\u0027I\\u0027] + cnt[\\u0027O\\u0027] + cnt[\\u0027U\\u0027];\\r\\n    int y \\u003d cnt[\\u0027Y\\u0027];\\r\\n    int ng \\u003d min(cnt[\\u0027N\\u0027], cnt[\\u0027G\\u0027]);\\r\\n    int consonants \\u003d s.size() - vowels - y - ng;\\r\\n    int syllables \\u003d min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\\r\\n    cout \\u003c\\u003c syllables * 3 \\u003c\\u003c \\\"\\\\n\\\";\\r\\n    return 0;\\r\\n}\",\"answer#1\":\"\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2045/submission/346749353\",\"compilationError\":\"true\",\"rejected#1\":\"false\",\"contestName\":\"2024-2025 ICPC Asia Jakarta Regional Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2045/challenge/346749353\",\"accepted#1\":\"false\",\"verdict\":\"Compilation error\",\"prevId\":\"346744493\",\"input#1\":\"ICPCJAKARTA\\r\\n\",\"memoryConsumed#1\":\"0\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5IBYR5bNXlWsnR%2BuKEtzd6l2mRvMyAAlLhjkfXBk4cutwaCzISv0ZYxlpcxRLNmsU3q%2FyJ6qjlKfLFlMmOXoCXKpKDwPDP4C4hIYDGz3em4L8fRSYStBFyQ%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Thu, 30 Oct 2025 23:45:36 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "x-req-id": "neo:996ec98c2cc087d7-SIN:/data/submitSource:iqa1msb4t",
+      "pragma": "no-cache",
+      "cf-ray": "996ec98c2cc087d7-SIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "COMPILATION_ERROR",
+    "checkerStdoutAndStderr#1": "Can't compile file:\nprogram.cpp: In function 'int main()':\nprogram.cpp:9:13: warning: array subscript has type 'char' [-Wchar-subscripts]\n    9 |         cnt[c]++;\n      |             ^\nprogram.cpp:14:44: warning: conversion from 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} to 'int' may change value [-Wconversion]\n   14 |     int consonants = s.size() - vowels - y - ng;\n      |                      ~~~~~~~~~~~~~~~~~~~~~~^~~~\nprogram.cpp:15:24: error: no matching function for call to 'min(<brace-enclosed initializer list>)'\n   15 |     int syllables = min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\n      |                     ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nIn file included from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/algorithm:60,\n                 from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/stdc++.h:51,\n                 from program.cpp:1:\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:233:5: note: candidate: 'template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)'\n  233 |     min(const _Tp& __a, const _Tp& __b)\n      |     ^~~\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:233:5: note:   candidate expects 2 arguments, 1 provided\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:281:5: note: candidate: 'template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)'\n  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)\n      |     ^~~\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algobase.h:281:5: note:   candidate expects 3 arguments, 1 provided\nIn file included from C:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/algorithm:61:\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5685:5: note: candidate: 'template<class _Tp> constexpr _Tp std::min(initializer_list<_Tp>)'\n 5685 |     min(initializer_list<_Tp> __l)\n      |     ^~~\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5685:5: note:   template argument deduction/substitution failed:\nprogram.cpp:15:24: note:   deduced conflicting types for parameter '_Tp' ('int' and 'long long unsigned int')\n   15 |     int syllables = min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\n      |                     ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5695:5: note: candidate: 'template<class _Tp, class _Compare> constexpr _Tp std::min(initializer_list<_Tp>, _Compare)'\n 5695 |     min(initializer_list<_Tp> __l, _Compare __comp)\n      |     ^~~\nC:/Programs/gcc14-64-msys2/mingw64/include/c++/14.2.0/bits/stl_algo.h:5695:5: note:   candidate expects 2 arguments, 1 provided\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "0",
+    "timeConsumed#1": "0",
+    "problemName": "(A) Scrambled Scrabble",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    string s;\r\n    cin >> s;\r\n    int cnt[128] = {};\r\n    for (char c : s) {\r\n        cnt[c]++;\r\n    }\r\n    int vowels = cnt['A'] + cnt['E'] + cnt['I'] + cnt['O'] + cnt['U'];\r\n    int y = cnt['Y'];\r\n    int ng = min(cnt['N'], cnt['G']);\r\n    int consonants = s.size() - vowels - y - ng;\r\n    int syllables = min({vowels + min(y, consonants), consonants + ng, s.size() / 3});\r\n    cout << syllables * 3 << \"\\n\";\r\n    return 0;\r\n}",
+    "answer#1": "",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2045/submission/346749353",
+    "compilationError": "true",
+    "rejected#1": "false",
+    "contestName": "2024-2025 ICPC Asia Jakarta Regional Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2045/challenge/346749353",
+    "accepted#1": "false",
+    "verdict": "Compilation error",
+    "prevId": "346744493",
+    "input#1": "ICPCJAKARTA\r\n",
+    "memoryConsumed#1": "0"
+  }
+}

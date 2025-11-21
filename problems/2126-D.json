@@ -1,0 +1,18 @@
+{
+    "statement": "You are given n casinos, numbered from 1 to n. Each casino is described by three integers: l_i, r_i, and real_i (l_i ≤ real_i ≤ r_i). You initially have k coins.You can play at casino i only if the current number of coins x satisfies l_i ≤ x ≤ r_i. After playing, your number of coins becomes real_i.You can visit the casinos in any order and are not required to visit all of them. Each casino can be visited no more than once.Your task is to find the maximum final number of coins you can obtain.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5, 0 ≤ k ≤ 10^9) — the number of casinos and the initial number of coins.This is followed by n lines. In the i-th line, there are three integers l_i, r_i, real_i (0 ≤ l_i ≤ real_i ≤ r_i ≤ 10^9) — the parameters of the i-th casino.It is guaranteed that the sum of all n across all test cases does not exceed 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer — the maximum number of coins you can obtain after optimally choosing the order of visiting the casinos.",
+    "sample_tests": [
+        {
+            "input": "5\n3 1\n2 3 3\n1 2 2\n3 10 10\n1 0\n1 2 2\n1 2\n1 2 2\n2 2\n1 3 2\n2 4 4\n2 5\n1 10 5\n3 6 5",
+            "output": "10\n0\n2\n4\n5"
+        }
+    ],
+    "note": "In the first test case, you can first play at the\n2\n-nd casino. After that, you will have\n2\ncoins. Then you can play at the\n1\n-st casino, and the number of coins will increase to\n3\n. Finally, after playing at the\n3\n-rd casino, you will have\n10\ncoins — this is the maximum possible amount.\nIn the second test case, you have no money, so you cannot earn more.\nIn the fourth test case, it is beneficial to play at the\n2\n-nd casino right away and earn\n4\ncoins.",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings"
+    ],
+    "rating": "1200"
+}

@@ -1,0 +1,63 @@
+{
+  "submission_id": "347497743",
+  "timestamp": "2025-11-05T11:17:04.334080",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=qore40lf6",
+    "rv_parameter": "qore40lf6",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"1\\r\\n1\\r\\n2\\r\\n3\\r\\n2\\r\\n3\\r\\n\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"WRONG_ANSWER\",\"checkerStdoutAndStderr#1\":\"wrong answer 2nd numbers differ - expected: \\u00272\\u0027, found: \\u00271\\u0027\\r\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"1\",\"timeConsumed#1\":\"46\",\"problemName\":\"(A) Against the Difference\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    ios_base::sync_with_stdio(false);\\r\\n    cin.tie(NULL);\\r\\n\\r\\n    int t;\\r\\n    cin \\u003e\\u003e t;\\r\\n    while(t--) {\\r\\n        int n;\\r\\n        cin \\u003e\\u003e n;\\r\\n        vector\\u003cint\\u003e a(n);\\r\\n        for(int i \\u003d 0; i \\u003c n; i++) {\\r\\n            cin \\u003e\\u003e a[i];\\r\\n        }\\r\\n        vector\\u003cint\\u003e cnt(n + 1, 0);\\r\\n        for(int i \\u003d 0; i \\u003c n; i++) {\\r\\n            cnt[a[i]]++;\\r\\n        }\\r\\n        sort(cnt.begin(), cnt.end());\\r\\n        int max1 \\u003d cnt[n], max2 \\u003d cnt[n - 1];\\r\\n        if(max1 \\u003d\\u003d max2) {\\r\\n            cout \\u003c\\u003c max1 \\u003c\\u003c \\\"\\\\n\\\";\\r\\n        } else {\\r\\n            cout \\u003c\\u003c min(max1 - 1, max2) + 1 \\u003c\\u003c \\\"\\\\n\\\";\\r\\n        }\\r\\n    }\\r\\n\\r\\n    return 0;\\r\\n}\",\"answer#1\":\"1\\r\\n2\\r\\n4\\r\\n5\\r\\n0\\r\\n5\\r\\n\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2135/submission/347497743\",\"compilationError\":\"false\",\"rejected#1\":\"true\",\"contestName\":\"Codeforces Round 1046 (Div. 1)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2135/challenge/347497743\",\"accepted#1\":\"false\",\"verdict\":\"\\u003cspan class\\u003d\\u0027verdict-rejected\\u0027\\u003eWrong answer on test \\u003cspan class\\u003d\\\"verdict-format-judged\\\"\\u003e1\\u003c/span\\u003e\\u003c/span\\u003e\",\"prevId\":\"347497378\",\"input#1\":\"6\\r\\n1\\r\\n1\\r\\n2\\r\\n2 2\\r\\n4\\r\\n2 2 1 1\\r\\n6\\r\\n1 2 3 3 3 1\\r\\n8\\r\\n8 8 8 8 8 8 8 7\\r\\n10\\r\\n2 3 3 1 2 3 5 1 1 7\\r\\n\",\"memoryConsumed#1\":\"0\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=04wymPf9%2F5PAbCycI5%2BQ6Nh6tx0ZCkbitbWcGwwvWGEyLJaVU4hzufWrTqBl9VPzFDmiafxpoCV9HHFb%2FyUPnpqAIXc568ae%2BbQlzdhx3ChHiL5QEwRksxalqKpR8apyDt%2BY%2BRDsPYS1rS6N\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfL4;desc=\"?proto=QUIC&rtt=62558&min_rtt=51574&rtt_var=9932&sent=117&recv=98&lost=0&retrans=0&sent_bytes=72369&recv_bytes=40377&delivery_rate=229044&cwnd=13200&unsent_bytes=0&cid=dcd05ff5f700bb33&ts=23141&x=1\", cfExtPri, cfHdrFlush;dur=0",
+      "date": "Wed, 05 Nov 2025 05:17:01 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-req-id": "neo:9999e1e4fb6133d1-SIN:/data/submitSource:qore40lf6",
+      "pragma": "no-cache",
+      "cf-ray": "9999e1e4fb6133d1-SIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "1\r\n1\r\n2\r\n3\r\n2\r\n3\r\n",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "WRONG_ANSWER",
+    "checkerStdoutAndStderr#1": "wrong answer 2nd numbers differ - expected: '2', found: '1'\r\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "1",
+    "timeConsumed#1": "46",
+    "problemName": "(A) Against the Difference",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    ios_base::sync_with_stdio(false);\r\n    cin.tie(NULL);\r\n\r\n    int t;\r\n    cin >> t;\r\n    while(t--) {\r\n        int n;\r\n        cin >> n;\r\n        vector<int> a(n);\r\n        for(int i = 0; i < n; i++) {\r\n            cin >> a[i];\r\n        }\r\n        vector<int> cnt(n + 1, 0);\r\n        for(int i = 0; i < n; i++) {\r\n            cnt[a[i]]++;\r\n        }\r\n        sort(cnt.begin(), cnt.end());\r\n        int max1 = cnt[n], max2 = cnt[n - 1];\r\n        if(max1 == max2) {\r\n            cout << max1 << \"\\n\";\r\n        } else {\r\n            cout << min(max1 - 1, max2) + 1 << \"\\n\";\r\n        }\r\n    }\r\n\r\n    return 0;\r\n}",
+    "answer#1": "1\r\n2\r\n4\r\n5\r\n0\r\n5\r\n",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2135/submission/347497743",
+    "compilationError": "false",
+    "rejected#1": "true",
+    "contestName": "Codeforces Round 1046 (Div. 1)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2135/challenge/347497743",
+    "accepted#1": "false",
+    "verdict": "<span class='verdict-rejected'>Wrong answer on test <span class=\"verdict-format-judged\">1</span></span>",
+    "prevId": "347497378",
+    "input#1": "6\r\n1\r\n1\r\n2\r\n2 2\r\n4\r\n2 2 1 1\r\n6\r\n1 2 3 3 3 1\r\n8\r\n8 8 8 8 8 8 8 7\r\n10\r\n2 3 3 1 2 3 5 1 1 7\r\n",
+    "memoryConsumed#1": "0"
+  }
+}

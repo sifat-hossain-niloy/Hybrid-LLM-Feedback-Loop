@@ -1,0 +1,19 @@
+{
+    "statement": "You are given two positive integers x and y (1≤ x, y≤ 10^9).Find a non-negative integer k≤ 10^{18}, such that (x+k) + (y+k) = (x+k)\\oplus (y+k) holds^{\\text{∗}}, or determine that such an integer does not exist.^{\\text{∗}}\\oplus denotes the bitwise XOR operation.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The only line of each test case contains two integers x and y (1≤ x, y≤ 10^9) — the given integers.",
+    "output_specification": "OutputFor each test case, output a single integer k (0≤ k≤ 10^{18}) — the integer you found. Print -1 if it is impossible to find such an integer.If there are multiple answers, you may print any of them.",
+    "sample_tests": [
+        {
+            "input": "5\n2 5\n6 6\n19 10\n1024 4096\n1198372 599188",
+            "output": "0\n-1\n1\n1024\n28"
+        }
+    ],
+    "note": "In the first test case, since\n(2+0)+(5+0)=(2+0)⊕(5+0)=7\n,\n𝑘=0\nis a possible answer. Note that\n𝑘=4\nis also a possible answer because\n(2+4)+(5+4)=(2+4)⊕(5+4)=15\n.\nIn the second test case,\n(𝑥+𝑘)⊕(𝑦+𝑘)=(6+𝑘)⊕(6+𝑘)=0\n. However,\n(𝑥+𝑘)+(𝑦+𝑘)>0\nholds for every\n𝑘≥0\n, implying that such an integer\n𝑘\ndoes not exist.",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "greedy"
+    ],
+    "rating": "1600"
+}

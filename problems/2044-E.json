@@ -1,7 +1,7 @@
 {
-    "statement": "Wave is given five integers\nk\n,\nl1\n,\nr1\n,\nl2\n, and\nr2\n. Wave wants you to help her count the number of ordered pairs\n(x,y)\nsuch that all of the following are satisfied:\nl1≤x≤r1\n.\nl2≤y≤r2\n.\nThere exists a non-negative integer\nn\nsuch that\ny\nx\n=kn\n.",
-    "input_specification": "The first line contains an integer\nt\n(\n1≤t≤104\n) — the number of test cases.\nThe only line of each test case contains five integers\nk\n,\nl1\n,\nr1\n,\nl2\n, and\nr2\n(\n2≤k≤109,1≤l1≤r1≤109,1≤l2≤r2≤109\n).",
-    "output_specification": "For each test case, output the number of matching ordered pairs\n(𝑥,𝑦)\non a new line.",
+    "statement": "Wave is given five integers k, l_1, r_1, l_2, and r_2. Wave wants you to help her count the number of ordered pairs (x, y) such that all of the following are satisfied: l_1 ≤q x ≤q r_1. l_2 ≤q y ≤q r_2. There exists a non-negative integer n such that \\frac{y}{x} = k^n.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 10^4) — the number of test cases.The only line of each test case contains five integers k, l_1, r_1, l_2, and r_2 (2 ≤q k ≤q 10^9, 1 ≤q l_1 ≤q r_1 ≤q 10^9, 1 ≤q l_2 ≤q r_2 ≤q 10^9).",
+    "output_specification": "OutputFor each test case, output the number of matching ordered pairs (x, y) on a new line.",
     "sample_tests": [
         {
             "input": "5\n2 2 6 2 12\n2 1 1000000000 1 1000000000\n3 5 7 15 63\n1000000000 1 5 6 1000000000\n15 17 78 2596 20914861",

@@ -26,11 +26,12 @@ from core.workflow_manager import WorkflowManager, WorkflowType
 class AutomatedProblemSolver:
     """Complete automated problem solving system with feedback loop"""
     
-    def __init__(self, base_dir: str = "problems_solved", workflow_type: WorkflowType = WorkflowType.GPT_MISTRAL):
+    def __init__(self, base_dir: str = "problems_solved", workflow_type: WorkflowType = WorkflowType.GPT_MISTRAL, interactive: bool = True):
         self.base_dir = Path(base_dir)
         self.base_dir.mkdir(exist_ok=True)
         self.workflow_manager = WorkflowManager()
         self.workflow_type = workflow_type
+        self.interactive = interactive
         
     def solve_problem(self, problem_id: str, max_attempts: int = 3, chromium_profile: str = "Sifat") -> Dict:
         """
@@ -109,7 +110,9 @@ class AutomatedProblemSolver:
                         hint = self._generate_hint(
                             problem_data, 
                             attempt_result, 
-                            solving_log["workflow_session"]
+                            solving_log["workflow_session"],
+                            problem_dir,
+                            attempt
                         )
                         attempt_result["hint"] = hint
                         print(f"💡 Hint: {hint[:200]}..." if len(hint) > 200 else f"💡 Hint: {hint}")
@@ -130,57 +133,96 @@ class AutomatedProblemSolver:
         return final_result
     
     def _setup_problem_directory(self, problem_id: str) -> Path:
-        """Create and return problem directory structure"""
-        problem_dir = self.base_dir / problem_id
+        """Create and return problem directory structure with workflow subfolder"""
+        # Get workflow name for folder structure
+        workflow_config = self.workflow_manager.WORKFLOWS[self.workflow_type]
+        
+        # Create sanitized workflow folder name (e.g., "gpt4_codestral", "gpt5_deepseek")
+        workflow_folder = workflow_config.name.lower()\
+            .replace(" + ", "_")\
+            .replace("-", "")\
+            .replace(" ", "_")\
+            .replace("gpt_4", "gpt4")\
+            .replace("gpt_5", "gpt5")
+        
+        # Create directory structure: problems_solved/2046_B/gpt4_codestral/
+        problem_dir = self.base_dir / problem_id / workflow_folder
         
         # Create subdirectories
         (problem_dir / "solutions").mkdir(parents=True, exist_ok=True)
         (problem_dir / "api_responses").mkdir(parents=True, exist_ok=True)
+        (problem_dir / "llm_responses").mkdir(parents=True, exist_ok=True)
         
         return problem_dir
     
     def _load_problem_data(self, problem_id: str) -> Optional[Dict]:
-        """Load problem data from database"""
+        """Load problem data from JSON file"""
         try:
-            with Session(engine) as session:
-                # Parse problem_id (e.g., "2045_A" -> contest_id=2045, letter="A")
-                if "_" not in problem_id:
-                    print(f"❌ Invalid problem ID format: {problem_id}. Expected format: contest_id_letter (e.g., 2045_A)")
-                    return None
+            # Parse problem_id (e.g., "2135_A" -> contest_id=2135, letter="A")
+            if "_" not in problem_id:
+                print(f"❌ Invalid problem ID format: {problem_id}. Expected format: contest_id_letter (e.g., 2135_A)")
+                return None
+            
+            contest_id_str, letter = problem_id.split("_", 1)
+            try:
+                contest_id = int(contest_id_str)
+            except ValueError:
+                print(f"❌ Invalid contest ID: {contest_id_str}")
+                return None
+            
+            # Load from JSON file (e.g., problems/2135-A.json)
+            json_filename = f"{contest_id}-{letter}.json"
+            json_path = Path("problems") / json_filename
+            
+            if not json_path.exists():
+                print(f"❌ Problem file not found: {json_path}")
+                return None
+            
+            with open(json_path, 'r', encoding='utf-8') as f:
+                problem_json = json.load(f)
+            
+            # Create a simple problem object from JSON
+            class SimpleProblem:
+                def __init__(self, data, contest_id, letter):
+                    self.id = f"{contest_id}_{letter}"
+                    self.contest_id = str(contest_id)
+                    self.letter = letter
+                    self.title = data.get("note", "Unknown").split('\n')[0][:50] if data.get("note") else f"Problem {letter}"
+                    self.statement_md = data.get("statement", "")
+                    self.rating = data.get("rating")
+                    self.tags = json.dumps(data.get("tags", []))
+                    self.input_spec = data.get("input_specification", "")
+                    self.output_spec = data.get("output_specification", "")
+            
+            problem = SimpleProblem(problem_json, contest_id, letter)
+            
+            # Extract test cases from sample_tests
+            test_cases = []
+            for sample in problem_json.get("sample_tests", []):
+                class SimpleTestCase:
+                    def __init__(self, input_text, output_text):
+                        self.input_text = input_text
+                        self.expected_output_text = output_text
+                        self.kind = type('Kind', (), {'value': 'sample'})()
                 
-                contest_id_str, letter = problem_id.split("_", 1)
-                try:
-                    contest_id = int(contest_id_str)
-                except ValueError:
-                    print(f"❌ Invalid contest ID: {contest_id_str}")
-                    return None
-                
-                # Find problem
-                problem = session.exec(
-                    select(Problem).where(
-                        Problem.contest_id == contest_id,
-                        Problem.letter == letter
-                    )
-                ).first()
-                
-                if not problem:
-                    print(f"❌ Problem {problem_id} not found in database")
-                    return None
-                
-                # Get test cases
-                test_cases = session.exec(
-                    select(TestCase).where(TestCase.problem_id == problem.id)
-                ).all()
-                
-                return {
-                    "problem": problem,
-                    "test_cases": test_cases,
-                    "contest_id": contest_id,
-                    "letter": letter
-                }
+                test_cases.append(SimpleTestCase(
+                    sample.get("input", ""),
+                    sample.get("output", "")
+                ))
+            
+            print(f"✅ Loaded problem {problem_id} from JSON file")
+            
+            return {
+                "problem": problem,
+                "test_cases": test_cases,
+                "contest_id": contest_id,
+                "letter": letter
+            }
                 
         except Exception as e:
             print(f"❌ Error loading problem data: {e}")
+            import traceback
+            traceback.print_exc()
             return None
     
     def _save_problem_info(self, problem_dir: Path, problem_data: Dict):
@@ -195,14 +237,14 @@ class AutomatedProblemSolver:
             "title": problem.title,
             "statement": problem.statement_md,
             "rating": problem.rating,
-            "tags": json.loads(problem.tags) if problem.tags else [],
+            "tags": json.loads(problem.tags) if isinstance(problem.tags, str) else problem.tags,
             "sample_tests": [
                 {
                     "input": tc.input_text,
                     "output": tc.expected_output_text,
-                    "kind": tc.kind.value
+                    "kind": tc.kind.value if hasattr(tc.kind, 'value') else 'sample'
                 }
-                for tc in test_cases if tc.kind.value == "sample"
+                for tc in test_cases
             ],
             "created_at": datetime.now().isoformat()
         }
@@ -219,9 +261,10 @@ class AutomatedProblemSolver:
         
         # Step 1: Generate solution
         print(f"🧠 Generating solution with GPT...")
-        solution_result = self._generate_solution(problem_data, previous_attempts, workflow_session)
+        solution_result = self._generate_solution(problem_data, previous_attempts, workflow_session, problem_dir, attempt_number)
         
         if "error" in solution_result:
+            print(f"❌ Error generating solution: {solution_result['error']}")
             return {
                 "attempt": attempt_number,
                 "timestamp": attempt_start.isoformat(),
@@ -272,10 +315,11 @@ class AutomatedProblemSolver:
             "verdict": verdict,
             "accepted": accepted,
             "api_response": submission_result.get("api_response"),
+            "detailed_api_response": submission_result.get("detailed_api_response"),  # Facebox data
             "test_results": submission_result.get("test_results", [])
         }
     
-    def _generate_solution(self, problem_data: Dict, previous_attempts: List[Dict], workflow_session: str) -> Dict:
+    def _generate_solution(self, problem_data: Dict, previous_attempts: List[Dict], workflow_session: str, problem_dir: Path, attempt_number: int) -> Dict:
         """Generate solution using GPT with context from previous attempts"""
         
         problem = problem_data["problem"]
@@ -289,20 +333,22 @@ class AutomatedProblemSolver:
             sample_tests_text += f"Sample Output {i}:\n{tc.expected_output_text}\n\n"
             sample_tests.append({"input": tc.input_text, "output": tc.expected_output_text})
         
-        # Prepare previous attempt context if available
+        # Prepare previous attempt context if available (ONLY THE MOST RECENT)
         previous_context = []
         if previous_attempts:
-            for attempt in previous_attempts:
-                if not attempt.get("accepted", False):
-                    # Parse API response for detailed test results
-                    test_results = self._extract_test_results_from_api(attempt.get("api_response"))
-                    
-                    previous_context.append({
-                        "attempt": attempt["attempt"],
-                        "solution_code": attempt.get("solution_code", ""),
-                        "verdict": attempt.get("verdict", "Unknown"),
-                        "test_results": test_results
-                    })
+            # Only use the most recent failed attempt
+            most_recent = previous_attempts[-1]
+            if not most_recent.get("accepted", False):
+                # Parse API response for detailed test results
+                test_results = self._extract_test_results_from_api(most_recent.get("api_response"))
+                
+                previous_context.append({
+                    "attempt": most_recent["attempt"],
+                    "solution_code": most_recent.get("solution_code", ""),
+                    "verdict": most_recent.get("verdict", "Unknown"),
+                    "test_results": test_results,
+                    "hint": most_recent.get("hint", "")  # Include the debugging hint!
+                })
         
         try:
             # Build complete problem statement (statement_md already contains formatted problem)
@@ -311,23 +357,63 @@ class AutomatedProblemSolver:
 Sample Tests:
 {sample_tests_text}"""
             
+            # Save the FULL prompt being sent
+            prompt_file = problem_dir / "llm_responses" / f"solution_attempt_{attempt_number}_PROMPT.txt"
+            with open(prompt_file, "w", encoding="utf-8") as f:
+                f.write(f"=== PROMPT SENT TO LLM (Solution Generation) ===\n")
+                f.write(f"Attempt: {attempt_number}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Model: {self.workflow_manager.WORKFLOWS[self.workflow_type].solution_model}\n")
+                f.write(f"Has Previous Context: {bool(previous_context)}\n")
+                f.write(f"\n{'='*70}\n")
+                f.write(f"PROBLEM STATEMENT:\n")
+                f.write(f"{'='*70}\n\n")
+                f.write(problem_statement)
+                if previous_context:
+                    ctx = previous_context[0]  # Only one context (most recent)
+                    f.write(f"\n\n{'='*70}\n")
+                    f.write(f"PREVIOUS ATTEMPT (Attempt {ctx['attempt']}):\n")
+                    f.write(f"{'='*70}\n\n")
+                    f.write(f"Verdict: {ctx['verdict']}\n")
+                    f.write(f"\nPrevious Code:\n{ctx['solution_code']}\n")
+                    if ctx.get('test_results'):
+                        f.write(f"\n📊 Test Results ({len(ctx['test_results'])} tests shown):\n")
+                        for tr in ctx['test_results'][:3]:  # Show first 3 tests
+                            f.write(f"  - Verdict: {tr.get('verdict', 'N/A')}\n")
+                    if ctx.get('hint'):
+                        f.write(f"\n🔍 DEBUGGING HINT:\n{ctx['hint']}\n")
+                f.write(f"\n\n{'='*70}\n")
+            print(f"💾 Prompt saved: {prompt_file}")
+            
             # Use workflow manager to generate solution
-            solution = self.workflow_manager.generate_solution(
+            raw_solution = self.workflow_manager.generate_solution(
                 workflow_session,
                 problem_statement,
                 previous_context if previous_context else None
             )
             
+            # Save raw LLM response
+            llm_response_file = problem_dir / "llm_responses" / f"solution_attempt_{attempt_number}_RESPONSE.txt"
+            with open(llm_response_file, "w", encoding="utf-8") as f:
+                f.write(f"=== RAW LLM RESPONSE (Solution Generation) ===\n")
+                f.write(f"Attempt: {attempt_number}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Model: {self.workflow_manager.WORKFLOWS[self.workflow_type].solution_model}\n")
+                f.write(f"Has Previous Context: {bool(previous_context)}\n")
+                f.write(f"\n{'='*70}\n\n")
+                f.write(raw_solution)
+            print(f"💾 Response saved: {llm_response_file}")
+            
             # Add header comment to solution
             header_comment = self._generate_solution_header(problem, len(previous_attempts) + 1)
-            final_solution = header_comment + "\n\n" + solution
+            final_solution = header_comment + "\n\n" + raw_solution
             
-            return {"solution": final_solution}
+            return {"solution": final_solution, "raw_response": raw_solution}
             
         except Exception as e:
             return {"error": f"Solution generation failed: {str(e)}"}
     
-    def _generate_hint(self, problem_data: Dict, failed_attempt: Dict, workflow_session: str) -> str:
+    def _generate_hint(self, problem_data: Dict, failed_attempt: Dict, workflow_session: str, problem_dir: Path, attempt_number: int) -> str:
         """Generate debugging hint using the configured hint provider"""
         
         problem = problem_data["problem"]
@@ -345,9 +431,78 @@ Sample Tests:
 Sample Tests:
 {sample_tests_text}"""
         
-        # Extract error details
+        # Extract error details from API response or facebox
         error_details = ""
-        if failed_attempt.get("test_results"):
+        
+        # First try parsed_api_response (from API interception - most reliable)
+        # Check both "api_response" (from file load) and "detailed_api_response" (from stdout capture)
+        api_data = failed_attempt.get("api_response") or failed_attempt.get("detailed_api_response")
+        
+        if api_data and api_data.get("parsed_api_response"):
+            parsed_api = api_data["parsed_api_response"]
+            test_count = int(parsed_api.get("testCount", 0))
+            
+            if test_count > 0:
+                error_details += "Detailed Test Results from Codeforces API:\n\n"
+                
+                for i in range(1, min(test_count + 1, 11)):  # Limit to first 10 tests
+                    error_details += f"{'='*50}\n"
+                    error_details += f"Test #{i}:\n"
+                    
+                    verdict = parsed_api.get(f"verdict#{i}", "Unknown")
+                    error_details += f"Verdict: {verdict}\n"
+                    
+                    input_data = parsed_api.get(f"input#{i}", "")
+                    if input_data:
+                        error_details += f"\nInput:\n{input_data}\n"
+                    
+                    output_data = parsed_api.get(f"output#{i}", "")
+                    if output_data:
+                        error_details += f"\nYour Output:\n{output_data}\n"
+                    
+                    answer_data = parsed_api.get(f"answer#{i}", "")
+                    if answer_data:
+                        error_details += f"\nExpected Answer:\n{answer_data}\n"
+                    
+                    checker_log = parsed_api.get(f"checkerStdoutAndStderr#{i}", "")
+                    if checker_log:
+                        error_details += f"\nChecker Comment:\n{checker_log}\n"
+                    
+                    time_consumed = parsed_api.get(f"timeConsumed#{i}", "")
+                    memory_consumed = parsed_api.get(f"memoryConsumed#{i}", "")
+                    if time_consumed:
+                        error_details += f"\nTime: {time_consumed} ms\n"
+                    if memory_consumed:
+                        error_details += f"Memory: {memory_consumed} KB\n"
+                    
+                    error_details += f"{'='*50}\n\n"
+                
+                if test_count > 10:
+                    error_details += f"\n(... and {test_count - 10} more tests)\n\n"
+        
+        # Fallback to facebox test_results (if API parsing didn't work)
+        elif api_data and api_data.get("test_results"):
+            error_details += "Detailed Test Results from Facebox:\n\n"
+            test_results = api_data["test_results"]
+            
+            for i, test in enumerate(test_results[:10], 1):
+                error_details += f"{'='*50}\n"
+                error_details += f"Test {test.get('test_id', i)}:\n"
+                error_details += f"Verdict: {test.get('verdict', 'Unknown')}\n"
+                
+                if test.get('input'):
+                    error_details += f"\nInput:\n{test['input']}\n"
+                if test.get('output'):
+                    error_details += f"\nYour Output:\n{test['output']}\n"
+                if test.get('answer'):
+                    error_details += f"\nExpected Answer:\n{test['answer']}\n"
+                if test.get('checker_log'):
+                    error_details += f"\nChecker Comment:\n{test['checker_log']}\n"
+                
+                error_details += f"{'='*50}\n\n"
+        
+        # Fallback to old test_results format
+        elif failed_attempt.get("test_results"):
             error_details += "Test Results:\n"
             for test in failed_attempt["test_results"]:
                 error_details += f"Test {test.get('test_number', '?')}: {test.get('verdict', 'Unknown')}\n"
@@ -361,14 +516,52 @@ Sample Tests:
         if not error_details:
             error_details = "No detailed error information available"
         
+        # Save the FULL hint prompt being sent
+        hint_prompt_file = problem_dir / "llm_responses" / f"hint_after_attempt_{attempt_number}_PROMPT.txt"
+        with open(hint_prompt_file, "w", encoding="utf-8") as f:
+            f.write(f"=== FULL PROMPT SENT TO LLM (Hint Generation) ===\n")
+            f.write(f"After Attempt: {attempt_number}\n")
+            f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+            f.write(f"Model: {self.workflow_manager.WORKFLOWS[self.workflow_type].hint_model}\n")
+            f.write(f"Verdict: {failed_attempt.get('verdict', 'Unknown')}\n")
+            f.write(f"\n{'='*70}\n")
+            f.write(f"SYSTEM MESSAGE:\n")
+            f.write(f"{'='*70}\n\n")
+            f.write("You are a code debugging assistant specializing in competitive programming.\n")
+            f.write("Identify logical errors, edge cases, or inefficiencies.\n")
+            f.write("Provide concise, targeted feedback.\n\n")
+            f.write(f"{'='*70}\n")
+            f.write(f"USER MESSAGE:\n")
+            f.write(f"{'='*70}\n\n")
+            f.write(f"Problem Statement:\n{problem_statement}\n\n")
+            f.write(f"Failed Solution:\n{failed_attempt.get('solution_code', '')}\n\n")
+            f.write(f"Verdict: {failed_attempt.get('verdict', 'Unknown')}\n\n")
+            f.write(f"Error Details:\n{error_details}\n\n")
+            f.write(f"{'='*70}\n")
+        print(f"💾 Hint prompt saved: {hint_prompt_file}")
+        
         # Use workflow manager to generate hint
-        return self.workflow_manager.generate_hint(
+        raw_hint = self.workflow_manager.generate_hint(
             workflow_session,
             problem_statement,
             failed_attempt.get("solution_code", ""),
             failed_attempt.get("verdict", "Unknown"),
             error_details
         )
+        
+        # Save raw LLM hint response
+        llm_hint_file = problem_dir / "llm_responses" / f"hint_after_attempt_{attempt_number}_RESPONSE.txt"
+        with open(llm_hint_file, "w", encoding="utf-8") as f:
+            f.write(f"=== RAW LLM RESPONSE (Hint Generation) ===\n")
+            f.write(f"After Attempt: {attempt_number}\n")
+            f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+            f.write(f"Model: {self.workflow_manager.WORKFLOWS[self.workflow_type].hint_model}\n")
+            f.write(f"Verdict: {failed_attempt.get('verdict', 'Unknown')}\n")
+            f.write(f"\n{'='*70}\n\n")
+            f.write(raw_hint)
+        print(f"💾 Hint response saved: {llm_hint_file}")
+        
+        return raw_hint
     
     def _extract_test_results_from_api(self, api_response: Optional[Dict]) -> List[Dict]:
         """Extract detailed test results from API response"""
@@ -403,10 +596,13 @@ Sample Tests:
     def _generate_solution_header(self, problem: Problem, attempt_number: int) -> str:
         """Generate header comment for solution file"""
         
+        workflow_config = self.workflow_manager.WORKFLOWS[self.workflow_type]
         return f"""/*
  * Problem: {problem.contest_id}_{problem.letter} - {problem.title}
  * Generated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
- * Model: GPT-4
+ * Workflow: {workflow_config.name}
+ * Solution Model: {workflow_config.solution_model}
+ * Debugging Critic: {workflow_config.hint_model}
  * Iteration: {attempt_number}
  * Rating: {problem.rating or "Unrated"}
  */"""
@@ -416,12 +612,18 @@ Sample Tests:
         
         try:
             # Use the existing submit_existing_chromium.py script
+            import sys
+            python_executable = sys.executable  # Use the same Python that's running this script
             cmd = [
-                "python3", 
+                python_executable, 
                 "apps/cli/submit_existing_chromium.py",
                 str(solution_path),
-                "--profile", chromium_profile
+                "--profile", chromium_profile,
+                "--no-interactive"  # Always use --no-interactive when running as subprocess
             ]
+            
+            # Note: self.interactive only controls whether we keep browser visible for manual review,
+            # but we always use --no-interactive to avoid blocking on input() calls in subprocess
             
             print(f"🔧 Running: {' '.join(cmd)}")
             
@@ -456,8 +658,30 @@ Sample Tests:
         
         info = {}
         found_api_response = None
+        capturing_detailed_response = False
+        detailed_response_lines = []
         
         for line in output_lines:
+            # Capture detailed API response between markers
+            if "📦 DETAILED_API_RESPONSE_START" in line:
+                capturing_detailed_response = True
+                detailed_response_lines = []
+                continue
+            elif "📦 DETAILED_API_RESPONSE_END" in line:
+                capturing_detailed_response = False
+                if detailed_response_lines:
+                    try:
+                        detailed_json = '\n'.join(detailed_response_lines)
+                        info["detailed_api_response"] = json.loads(detailed_json)
+                        print(f"✅ Captured detailed facebox data with {info['detailed_api_response'].get('test_count', 0)} tests")
+                    except Exception as e:
+                        print(f"⚠️  Could not parse detailed API response: {e}")
+                continue
+            
+            if capturing_detailed_response:
+                detailed_response_lines.append(line)
+                continue
+            
             # Extract submission ID
             if "Submission ID:" in line or "submission ID:" in line:
                 match = re.search(r'(?:S|s)ubmission ID:\s*(\d+)', line)

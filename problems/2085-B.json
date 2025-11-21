@@ -1,0 +1,17 @@
+{
+    "statement": "You are given an array a consisting of n≥ 4 non-negative integers.You need to perform the following operation on a until its length becomes 1: Select two indices l and r (1≤ {\\color{red}{ l < r }} ≤ |a|), and replace the subarray [a_l,a_{l+1},...,a_r] with a single integer \\operatorname{mex}([a_l,a_{l+1},...,a_r]), where \\operatorname{mex}(b) denotes the minimum excluded (MEX)^{\\text{∗}} of the integers in b. In other words, let x=\\operatorname{mex}([a_l,a_{l+1},...,a_r]), the array a will become [a_1,a_2,...,a_{l-1},x,a_{r+1},a_{r+2},...,a_{|a|}]. Note that the length of a decreases by (r-l) after this operation. Serval wants the final element in a to be 0. Help him! More formally, you have to find a sequence of operations, such that after performing these operations in order, the length of a becomes 1, and the final element in a is 0.It can be shown that at least one valid operation sequence exists under the constraints of the problem, and the length of any valid operation sequence does not exceed n.Note that you do not need to minimize the number of operations.^{\\text{∗}}The minimum excluded (MEX) of a collection of integers b_1, b_2, ..., b_k is defined as the smallest non-negative integer x which does not occur in the collection b.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows. The first line of each test case contains a single integer n (4≤ n≤ 5000) — the length of the array a.The second line contains n integers a_1, a_2, ..., a_n (0≤ a_i≤ n) — the elements of the array a.It is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output_specification": "OutputFor each test case, output a single integer k (0≤ k≤ n) in the first line of output — the length of the operation sequence.Then, output k lines, the i-th line containing two integers l_i and r_i (1≤ l_i<r_i≤ |a|) — the two indices you choose in the i-th operation, where |a| denotes the length of the array before this operation.If there are multiple answers, you may print any of them.",
+    "sample_tests": [
+        {
+            "input": "6\n4\n1 2 3 4\n5\n0 1 0 0 1\n6\n0 0 0 0 0 0\n6\n5 4 3 2 1 0\n4\n0 0 1 1\n4\n1 0 0 0",
+            "output": "1\n1 4\n4\n1 2\n1 2\n1 2\n1 2\n4\n5 6\n3 4\n1 2\n1 3\n3\n4 5\n4 5\n1 4\n2\n1 2\n1 3\n2\n2 4\n1 2"
+        }
+    ],
+    "note": "In the first test case, since\nmex([1,2,3,4])=0\n, after the only operation, the array becomes\n[0]\n.\nIn the second test case, the array\na\nchanges as follows:\n[\n0,1\n_\n,0,0,1]→[\n2,0\n_\n,0,1]→[\n1,0\n_\n,1]→[\n2,1\n_\n]→[0].\nIn the third test case, the array\na\nchanges as follows:\n[0,0,0,0,\n0,0\n_\n]→[0,0,\n0,0\n_\n,1]→[\n0,0\n_\n,1,1]→[\n1,1,1\n_\n]→[0].",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "rating": "1200"
+}

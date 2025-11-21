@@ -1,0 +1,17 @@
+{
+    "statement": "Aryan and Harshith play a game. They both start with three integers a, b, and k. Aryan then gives Harshith two integers n and m. Harshith then gives Aryan a matrix X with n rows and m columns, such that each of the elements of X is between 1 and k(inclusive). After that, Aryan wins if he can find a submatrix^{\\text{∗}} Y of X with a rows and b columns such that all elements of Y are equal.For example, when a=2, b=2, k=6, n=3 and m=3, if Harshith gives Aryan the matrix below, it is a win for Aryan as it has a submatrix of size 2× 2 with all elements equal to 1 as shown below. Example of a matrix where Aryan wins Aryan gives you the values of a, b, and k. He asks you to find the lexicographically minimum tuple (n,m) that he should give to Harshith such that Aryan always wins. Help Aryan win the game. Assume that Harshith plays optimally. The values of n and m can be large, so output them modulo 10^9+7. A tuple (n_1, m_1) is said to be lexicographically smaller than (n_2, m_2) if either n_1<n_2 or n_1=n_2 and m_1<m_2.^{\\text{∗}}A submatrix of a matrix is obtained by removing some rows and/or columns from the original matrix.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. Each test case contains a single line with three space-separated integers a, b and k (1≤q a,b,k≤q 10^5).It is guaranteed that the sum of \\max(a, b, k) over all test cases does not exceed 10^5.",
+    "output_specification": "OutputFor each test case, output a single line containing two space-separated integers n and m, denoting the answer to the problem. The values of n and m can be large, so output them modulo 10^9+7.",
+    "sample_tests": [
+        {
+            "input": "3\n1 1 5\n2 2 2\n90000 80000 70000",
+            "output": "1 1\n3 7\n299929959 603196135"
+        }
+    ],
+    "note": "For the first test case, every\nn×m\nmatrix contains a\n1×1\nsubmatrix with all elements equal.\n(1,1)\nis the lexicographically minimum tuple among all of them.\nFor the second test case, it can be verified that whatever\n3×7\nmatrix Harshith gives to Aryan, Aryan can always win by finding a\n2×2\nsubmatrix with all elements equal.\n(3,7)\nis also the lexicographically minimum tuple among all possible tuples where Aryan always wins.",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "rating": "1800"
+}

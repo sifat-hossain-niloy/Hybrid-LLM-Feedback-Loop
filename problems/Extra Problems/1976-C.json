@@ -1,0 +1,20 @@
+{
+    "statement": "Monocarp is opening his own IT company. He wants to hire n programmers and m testers. There are n+m+1 candidates, numbered from 1 to n+m+1 in chronological order of their arriving time. The i-th candidate has programming skill a_i and testing skill b_i (a person's programming skill is different from their testing skill). The skill of the team is the sum of the programming skills of all candidates hired as programmers, and the sum of the testing skills of all candidates hired as testers.When a candidate arrives to interview, Monocarp tries to assign them to the most suitable position for them (if their programming skill is higher, then he hires them as a programmer, otherwise as a tester). If all slots for that position are filled, Monocarp assigns them to the other position.Your task is, for each candidate, calculate the skill of the team if everyone except them comes to interview. Note that it means that exactly n+m candidates will arrive, so all n+m positions in the company will be filled.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.Each test case consists of three lines: the first line contains two integers n and m (0 ≤ n, m ≤ 2 · 10^5; 2 ≤ n + m + 1 ≤ 2 · 10^5) — the number of programmers and the number of testers Monocarp wants to hire, respectively; the second line contains n + m + 1 integers a_1, a_2, ..., a_{n+m+1} (1 ≤ a_i ≤ 10^9), where a_i is the programming skill of the i-th candidate; the third line contains n + m + 1 integers b_1, b_2, ..., b_{n+m+1} (1 ≤ b_i ≤ 10^9; b_i ≠ a_i), where b_i is the testing skill of the i-th candidate. Additional constraint on the input: the sum of (n + m + 1) over all test cases doesn't exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, print n + m + 1 integers, where the i-th integer should be equal to the skill of the team if everyone except the i-th candidate comes to interview.",
+    "sample_tests": [
+        {
+            "input": "4\n1 0\n2 1\n1 2\n0 2\n4 5 5\n5 4 1\n1 2\n2 1 5 4\n5 2 3 1\n3 1\n4 3 3 4 1\n5 5 4 5 2",
+            "output": "1 2 \n5 6 9 \n8 11 11 12 \n13 13 13 12 15"
+        }
+    ],
+    "note": "Let's consider the third test case of the example:",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "implementation",
+        "two pointers"
+    ],
+    "rating": "1600"
+}

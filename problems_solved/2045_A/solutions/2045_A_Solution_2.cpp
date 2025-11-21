@@ -1,6 +1,6 @@
 /*
  * Problem: 2045_A - Problem A
- * Generated: 2025-10-26 04:20:55
+ * Generated: 2025-10-31 05:45:12
  * Model: GPT-4
  * Iteration: 2
  * Rating: 1700
@@ -12,23 +12,15 @@ using namespace std;
 int main() {
     string s;
     cin >> s;
-    vector<int> count(26, 0);
-    int y = 0;
-    for(char c: s) {
-        if(c == 'Y')
-            y++;
-        else if(c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
-            count[26]++;
-        else
-            count[c - 'A']++;
+    int cnt[128] = {};
+    for (char c : s) {
+        cnt[c]++;
     }
-    int ng = min(count['N' - 'A'], count['G' - 'A']);
-    count['N' - 'A'] -= ng;
-    count['G' - 'A'] -= ng;
-    int vowels = count[26];
-    count[26] = 0;
-    int consonants = accumulate(count.begin(), count.end(), 0) + ng;
-    int syllables = min({consonants, vowels, (consonants + vowels + y) / 3});
+    int vowels = cnt['A'] + cnt['E'] + cnt['I'] + cnt['O'] + cnt['U'];
+    int y = cnt['Y'];
+    int ng = min(cnt['N'], cnt['G']);
+    int consonants = s.size() - vowels - y - ng;
+    int syllables = min({vowels + min(y, consonants), consonants + ng, s.size() / 3});
     cout << syllables * 3 << "\n";
     return 0;
 }

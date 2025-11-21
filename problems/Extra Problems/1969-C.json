@@ -1,0 +1,17 @@
+{
+    "statement": "You are given an integer array a of length n.You can perform the following operation: choose an element of the array and replace it with any of its neighbor's value.For example, if a=[3, 1, 2], you can get one of the arrays [3, 3, 2], [3, 2, 2] and [1, 1, 2] using one operation, but not [2, 1, 2] or [3, 4, 2]. Your task is to calculate the minimum possible total sum of the array if you can perform the aforementioned operation at most k times.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains two integers n and k (1 ≤ n ≤ 3 · 10^5; 0 ≤ k ≤ 10).The second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9).Additional constraint on the input: the sum of n over all test cases doesn't exceed 3 · 10^5.",
+    "output_specification": "OutputFor each test case, print a single integer — the minimum possible total sum of the array if you can perform the aforementioned operation at most k times.",
+    "sample_tests": [
+        {
+            "input": "4\n3 1\n3 1 2\n1 3\n5\n4 2\n2 2 1 3\n6 3\n4 1 2 2 4 3",
+            "output": "4\n5\n5\n10"
+        }
+    ],
+    "note": "In the first example, one of the possible sequences of operations is the following:\n[3,1,2]→[1,1,2\n].\nIn the second example, you do not need to apply the operation.\nIn the third example, one of the possible sequences of operations is the following:\n[2,2,1,3]→[2,1,1,3]→[2,1,1,1]\n.\nIn the fourth example, one of the possible sequences of operations is the following:\n[4,1,2,2,4,3]→[1,1,2,2,4,3]→[1,1,1,2,4,3]→[1,1,1,2,2,3]\n.",
+    "tags": [
+        "dp",
+        "implementation"
+    ],
+    "rating": "1700"
+}

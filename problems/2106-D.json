@@ -1,0 +1,19 @@
+{
+    "statement": "Flower boy has a garden of n flowers that can be represented as an integer sequence a_1, a_2, ..., a_n, where a_i is the beauty of the i-th flower from the left.Igor wants to collect exactly m flowers. To do so, he will walk the garden from left to right and choose whether to collect the flower at his current position. The i-th flower among ones he collects must have a beauty of at least b_i.Igor noticed that it might be impossible to collect m flowers that satisfy his beauty requirements, so before he starts collecting flowers, he can pick any integer k and use his magic wand to grow a new flower with beauty k and place it anywhere in the garden (between two flowers, before the first flower, or after the last flower). Because his magic abilities are limited, he may do this at most once.Output the minimum integer k Igor must pick when he performs the aforementioned operation to ensure that he can collect m flowers. If he can collect m flowers without using the operation, output 0. If it is impossible to collect m flowers despite using the operation, output -1.",
+    "input_specification": "InputThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains exactly two integers n and m (1 ≤ m ≤ n ≤ 2 · 10^5) — the number of flowers in the garden and the number of flowers Igor wants to collect, respectively.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — where a_i is the beauty of the i-th flower from the left in the garden.The third line of each test case contains m integers b_1, b_2, ..., b_m (1 ≤ b_i ≤ 10^9) — where b_i is the minimum beauty the i-th flower must have that Igor will collect.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, on a separate line, output the minimum integer k Igor must pick when he performs the aforementioned operation to ensure that he can collect m flowers. If he can collect m flowers without using the operation, output 0. If it is impossible to collect m flowers despite using the operation, output -1.",
+    "sample_tests": [
+        {
+            "input": "7\n9 5\n3 5 2 3 3 5 8 1 2\n4 6 2 4 6\n6 3\n1 2 6 8 2 1\n5 4 3\n5 3\n4 3 5 4 3\n7 4 5\n6 3\n8 4 2 1 2 5\n6 1 4\n5 5\n1 2 3 4 5\n5 4 3 2 1\n6 3\n1 2 3 4 5 6\n9 8 7\n5 5\n7 7 6 7 7\n7 7 7 7 7",
+            "output": "6\n3\n7\n0\n-1\n-1\n7"
+        }
+    ],
+    "note": "In the first test case, suppose Igor grows a flower of beauty\n6\nand places it between the third and the fourth flowers. Then, the garden will look like the following:\n[3,5,2,6,3,3,5,8,1,2]\n. Then, he can select the second, fourth, sixth, seventh, and eighth flowers with beauties\n[5,6,3,5,8]\n.\nIn the third test case, he can grow a flower of beauty\n7\nand place it before the first flower. The garden will look like the following:\n[7,4,3,5,4,3]\n. Now, he can choose the first, second, and fourth flowers.\nIn the fourth test case, Igor does not need to use the operation, so the answer is\n0\n.\nIn the sixth test case, no matter how Igor performs the operation, he cannot collect\n3\nflowers such that the\n𝑖\n-th flower he collects has a beauty of at least\n𝑏\n𝑖\n, therefore the answer is\n−1\n.",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "two pointers"
+    ],
+    "rating": "1500"
+}

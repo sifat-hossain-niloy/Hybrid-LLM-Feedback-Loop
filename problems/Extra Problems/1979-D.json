@@ -1,0 +1,22 @@
+{
+    "statement": "You are given a binary string s of length n, consisting of zeros and ones. You can perform the following operation exactly once: Choose an integer p (1 ≤ p ≤ n). Reverse the substring s_1 s_2 ... s_p. After this step, the string s_1 s_2 ... s_n will become s_p s_{p-1} ... s_1 s_{p+1} s_{p+2} ... s_n. Then, perform a cyclic shift of the string s to the left p times. After this step, the initial string s_1s_2 ... s_n will become s_{p+1}s_{p+2} ... s_n s_p s_{p-1} ... s_1. For example, if you apply the operation to the string 110001100110 with p=3, after the second step, the string will become 011001100110, and after the third step, it will become 001100110011.A string s is called k-proper if two conditions are met: s_1=s_2=...=s_k; s_{i+k} ≠q s_i for any i (1 ≤ i ≤ n - k). For example, with k=3, the strings 000, 111000111, and 111000 are k-proper, while the strings 000000, 001100, and 1110000 are not.You are given an integer k, which is a divisor of n. Find an integer p (1 ≤ p ≤ n) such that after performing the operation, the string s becomes k-proper, or determine that it is impossible. Note that if the string is initially k-proper, you still need to apply exactly one operation to it.",
+    "input_specification": "InputEach test consists of multiple test cases. The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.The first line of each test case contains two integers n and k (1 ≤ k ≤ n, 2 ≤ n ≤ 10^5) — the length of the string s and the value of k. It is guaranteed that k is a divisor of n.The second line of each test case contains a binary string s of length n, consisting of the characters 0 and 1.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer — the value of p to make the string k-proper, or -1 if it is impossible.If there are multiple solutions, output any of them.",
+    "sample_tests": [
+        {
+            "input": "7\n8 4\n11100001\n4 2\n1110\n12 3\n111000100011\n5 5\n00000\n6 1\n101001\n8 4\n01110001\n12 2\n110001100110",
+            "output": "3\n-1\n7\n5\n4\n-1\n3"
+        }
+    ],
+    "note": "In the first test case, if you apply the operation with\n𝑝=3\n, after the second step of the operation, the string becomes 11100001, and after the third step, it becomes 00001111. This string is\n4\n-proper.\nIn the second test case, it can be shown that there is no operation after which the string becomes\n2\n-proper.\nIn the third test case, if you apply the operation with\n𝑝=7\n, after the second step of the operation, the string becomes 100011100011, and after the third step, it becomes 000111000111. This string is\n3\n-proper.\nIn the fourth test case, after the operation with any\n𝑝\n, the string becomes\n5\n-proper.",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "hashing",
+        "strings"
+    ],
+    "rating": "1800"
+}

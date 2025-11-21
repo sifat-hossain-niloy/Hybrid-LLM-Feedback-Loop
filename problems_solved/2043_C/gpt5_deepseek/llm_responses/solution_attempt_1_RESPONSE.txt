@@ -1,0 +1,117 @@
+=== RAW LLM RESPONSE (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-07T02:40:24.858600
+Model: gpt-5
+Has Previous Context: False
+
+======================================================================
+
+#include<bits/stdc++.h>
+using namespace std;
+
+struct Info {
+    long long tot=0, pmin=0, pmax=0, smin=0, smax=0;
+    int len=0;
+};
+
+Info analyze(const vector<int>& b){
+    Info inf;
+    inf.len = (int)b.size();
+    long long p = 0;
+    long long mn = 0, mx = 0;
+    for(int x: b){
+        p += x;
+        mn = min(mn, p);
+        mx = max(mx, p);
+    }
+    inf.tot = p;
+    inf.pmin = mn;
+    inf.pmax = mx;
+    if(inf.len > 0){
+        long long minpref = 0, maxpref = 0;
+        long long cur = 0;
+        long long bestMax = LLONG_MIN/4, bestMin = LLONG_MAX/4;
+        for(int x: b){
+            cur += x;
+            bestMax = max(bestMax, cur - minpref);
+            minpref = min(minpref, cur);
+            bestMin = min(bestMin, cur - maxpref);
+            maxpref = max(maxpref, cur);
+        }
+        inf.smax = bestMax;
+        inf.smin = bestMin;
+    }
+    return inf;
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int T;
+    if(!(cin >> T)) return 0;
+    while(T--){
+        int n;
+        cin >> n;
+        vector<long long> a(n);
+        int pos = -1;
+        long long x = 0;
+        for(int i=0;i<n;i++){
+            cin >> a[i];
+            if(a[i] != -1 && a[i] != 1){
+                pos = i;
+                x = a[i];
+            }
+        }
+        vector<int> left, right;
+        if(pos == -1){
+            left.reserve(n);
+            for(int i=0;i<n;i++) left.push_back((int)a[i]);
+        }else{
+            left.reserve(pos);
+            for(int i=0;i<pos;i++) left.push_back((int)a[i]);
+            right.reserve(n-pos-1);
+            for(int i=pos+1;i<n;i++) right.push_back((int)a[i]);
+        }
+        Info L = analyze(left);
+        Info R = analyze(right);
+        vector<pair<long long,long long>> ranges;
+        ranges.push_back({0,0});
+        if(L.len > 0){
+            ranges.push_back({L.smin, L.smax});
+        }
+        if(R.len > 0){
+            ranges.push_back({R.smin, R.smax});
+        }
+        if(pos != -1){
+            long long LsufMin = L.tot - L.pmax;
+            long long LsufMax = L.tot - L.pmin;
+            long long RpreMin = R.pmin;
+            long long RpreMax = R.pmax;
+            long long cmin = x + (LsufMin + RpreMin);
+            long long cmax = x + (LsufMax + RpreMax);
+            if(cmin > cmax) swap(cmin, cmax);
+            ranges.push_back({cmin, cmax});
+        }
+        sort(ranges.begin(), ranges.end());
+        vector<pair<long long,long long>> merged;
+        for(auto &rg: ranges){
+            if(merged.empty() || rg.first > merged.back().second + 1){
+                merged.push_back(rg);
+            }else{
+                merged.back().second = max(merged.back().second, rg.second);
+            }
+        }
+        long long cnt = 0;
+        for(auto &rg: merged){
+            cnt += (rg.second - rg.first + 1);
+        }
+        cout << cnt << "\n";
+        for(auto &rg: merged){
+            for(long long v = rg.first; v <= rg.second; ++v){
+                cout << v << " ";
+            }
+        }
+        cout << "\n";
+    }
+    return 0;
+}

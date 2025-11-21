@@ -1,0 +1,18 @@
+{
+    "statement": "Juggernaut. - Lost Dream feat.星名はる You are given four positive integers n, l, r, k. You need to find the lexicographically smallest^{\\text{∗}} array a of length n, consisting of integers, such that: For every 1 ≤q i ≤q n, l ≤q a_i ≤q r. a_1 \\, \\& \\, a_2 \\, \\& \\, ... \\, \\& \\, a_n = a_1 \\oplus a_2 \\oplus ... \\oplus a_n, where \\& denotes the bitwise AND operation and \\oplus denotes the bitwise XOR operation. If no such array exists, output -1. Otherwise, since the entire array might be too large to output, output a_k only.^{\\text{∗}}An array a is lexicographically smaller than an array b if and only if one of the following holds: a is a prefix of b, but a ≠ b; or in the first position where a and b differ, the array a has a smaller element than the corresponding element in b.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. Each test case contains four positive integers n,l,r,k (1 ≤ k ≤ n ≤ 10^{18}, 1 ≤ l ≤ r ≤ 10^{18}).",
+    "output_specification": "OutputFor each test case, output a_k or -1 if no array meets the conditions.",
+    "sample_tests": [
+        {
+            "input": "9\n1 4 4 1\n3 1 3 3\n4 6 9 2\n4 6 9 3\n4 6 7 4\n2 5 5 1\n2 3 6 2\n999999999999999999 1000000000000000000 1000000000000000000 999999999999999999\n1000000000000000000 1 999999999999999999 1000000000000000000",
+            "output": "4\n1\n6\n8\n-1\n-1\n-1\n1000000000000000000\n2"
+        }
+    ],
+    "note": "In the first test case, the array\na=[4]\n. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.\nIn the second test case, the array\na=[1,1,1]\n. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.\nIn the third test case and the fourth test case, the array\na=[6,6,8,8]\n. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.\nIn the fifth test case and the sixth test case, it can be proven that there is no array that meets the above requirements.",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "math"
+    ],
+    "rating": "1300"
+}

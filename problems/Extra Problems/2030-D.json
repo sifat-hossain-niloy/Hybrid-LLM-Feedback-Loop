@@ -1,0 +1,18 @@
+{
+    "statement": "QED is given a permutation^{\\text{∗}} p of length n. He also has a string s of length n containing only characters \\texttt{L} and \\texttt{R}. QED only likes permutations that are sorted in non-decreasing order. To sort p, he can select any of the following operations and perform them any number of times: Choose an index i such that s_i = \\texttt{L}. Then, swap p_i and p_{i-1}. It is guaranteed that s_1 ≠q \\texttt{L}. Choose an index i such that s_i = \\texttt{R}. Then, swap p_i and p_{i+1}. It is guaranteed that s_n ≠q \\texttt{R}. He is also given q queries. In each query, he selects an index i and changes s_i from \\texttt{L} to \\texttt{R} (or from \\texttt{R} to \\texttt{L}). Note that the changes are persistent. After each query, he asks you if it is possible to sort p in non-decreasing order by performing the aforementioned operations any number of times. Note that before answering each query, the permutation p is reset to its original form.^{\\text{∗}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).",
+    "input_specification": "InputThe first line contains t (1 ≤q t ≤q 10^4) — the number of test cases.The first line of each test case contains two integers n and q (3 ≤q n ≤q 2 · 10^5, 1 ≤q q ≤q 2 · 10^5) – the length of the permutation and the number of queries.The following line contains n integers p_1, p_2, ..., p_n (1 ≤q p_i ≤q n, p is a permutation).The following line contains n characters s_1s_2 ... s_n. It is guaranteed that s_i is either \\texttt{L} or \\texttt{R}, s_1 = \\texttt{R}, and s_n = \\texttt{L}.The following q lines contain an integer i (2 ≤q i ≤q n-1), denoting that s_i is changed from \\texttt{L} to \\texttt{R} (or from \\texttt{R} to \\texttt{L}). It is guaranteed that the sum of n and q over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each query, output \"YES\" (without quotes) if it is possible, and \"NO\" (without quotes) otherwise.You can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "sample_tests": [
+        {
+            "input": "3\n5 3\n1 4 2 5 3\nRLRLL\n2\n4\n3\n8 5\n1 5 2 4 8 3 6 7\nRRLLRRRL\n4\n3\n5\n3\n4\n6 2\n1 2 3 4 5 6\nRLRLRL\n4\n5",
+            "output": "YES\nYES\nNO\nNO\nYES\nNO\nNO\nNO\nYES\nYES"
+        }
+    ],
+    "note": "In the first testcase,\ns=RRRLL\nafter the first query. QED may sort\np\nusing the following operations:\nIt can be shown that it is impossible to sort the array after all three updates of the first testcase.",
+    "tags": [
+        "data structures",
+        "implementation",
+        "sortings"
+    ],
+    "rating": "1700"
+}

@@ -1,0 +1,17 @@
+{
+    "statement": "Alice and Bob are planning to play an online game together but haven't decided on which one yet. Alice has a list of n games she enjoys: a_1, a_2, ..., a_n. Bob, on the other hand, has a list of m games he likes: b_1, b_2, ..., b_m. They share at least one game in common between their lists.To choose a game, they take turns suggesting games from their lists. Alice begins by suggesting one of her favorite games. If Bob likes it, they play that game. If not, Bob suggests one of his favorite games. If Alice likes it, they play that game. This alternating process continues, with Alice and Bob each suggesting games from their lists in turn, ensuring that no game is suggested more than once.Your task is to calculate the maximum possible number of suggestions they will make while choosing which game to play.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.The first line of each test case contains two integers n and m (1 ≤ n, m ≤ 100).The second line contains n integers a_1 < a_2 < ·s < a_n (1 ≤ a_i ≤ 100).The third line contains m integers b_1 < b_2 < ·s < b_m (1 ≤ b_i ≤ 100).Arrays a and b contain at least one common integer.",
+    "output_specification": "OutputFor each test case, print a single integer — the maximum possible number of suggestions they will make while choosing which game to play.",
+    "sample_tests": [
+        {
+            "input": "3\n2 3\n1 2\n2 3 5\n1 1\n5\n5\n4 2\n1 3 4 7\n4 6",
+            "output": "3\n1\n4"
+        }
+    ],
+    "note": "In the first test case, the maximum number of suggestions is\n3\n. It is achieved as follows:\nIn the second test case, Alice can only suggest game\n5\n, which Bob likes, so they will immediately go to play it.\nIn the third test case, the maximum number of suggestions is\n4\n. It is achieved as follows:",
+    "tags": [
+        "*special problem",
+        "greedy"
+    ],
+    "rating": "1200"
+}

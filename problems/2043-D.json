@@ -1,0 +1,19 @@
+{
+    "statement": "Given three integers l, r, and G, find two integers A and B (l ≤ A ≤ B ≤ r) such that their greatest common divisor (GCD) equals G and the distance |A - B| is maximized.If there are multiple such pairs, choose the one where A is minimized. If no such pairs exist, output \"-1 -1\".",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then, t test cases follow.Each test case consists of a single line containing three integers l, r, G (1 ≤ l ≤ r ≤ 10^{18}; 1 ≤ G ≤ 10^{18}) — the range boundaries and the required GCD.",
+    "output_specification": "OutputFor each test case, output two integers A and B — the solution to the problem, or \"-1 -1\" if no such pair exists.",
+    "sample_tests": [
+        {
+            "input": "4\n4 8 2\n4 8 3\n4 8 4\n5 7 6",
+            "output": "4 6\n-1 -1\n4 8\n6 6"
+        }
+    ],
+    "note": "Not found",
+    "tags": [
+        "brute force",
+        "flows",
+        "math",
+        "number theory"
+    ],
+    "rating": "1800"
+}

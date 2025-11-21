@@ -1,0 +1,17 @@
+{
+    "statement": "You are given two arrays of integers a_1, a_2, ..., a_n and b_1, b_2, ..., b_n. It is guaranteed that each integer from 1 to 2 · n appears in exactly one of the arrays.You need to perform a certain number of operations (possibly zero) so that both of the following conditions are satisfied: For each 1 ≤q i < n, it holds that a_i < a_{i + 1} and b_i < b_{i + 1}. For each 1 ≤q i ≤q n, it holds that a_i < b_i. During each operation, you can perform exactly one of the following three actions: Choose an index 1 ≤q i < n and swap the values a_i and a_{i + 1}. Choose an index 1 ≤q i < n and swap the values b_i and b_{i + 1}. Choose an index 1 ≤q i ≤q n and swap the values a_i and b_i.You do not need to minimize the number of operations, but the total number must not exceed 1709. Find any sequence of operations that satisfies both conditions.",
+    "input_specification": "InputEach test consists of multiple test cases. The first line contains a single integer t (1 ≤q t ≤q 100) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer n (1 ≤q n ≤q 40) — the length of the arrays a and b.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤q a_i ≤q 2 · n).The third line of each test case contains n integers b_1, b_2, ..., b_n (1 ≤q b_i ≤q 2 · n).It is guaranteed that each integer from 1 to 2 · n appears either in array a or in array b.",
+    "output_specification": "OutputFor each test case, output the sequence of operations. In the first line for each test case, output the number of operations k. Note that 0 ≤q k ≤q 1709. In the following k lines for each test case, output the operations themselves: If you want to swap the values a_i and a_{i + 1}, output two integers 1 and i. Note that 1 ≤q i < n. If you want to swap the values b_i and b_{i + 1}, output two integers 2 and i. Note that 1 ≤q i < n. If you want to swap the values a_i and b_i, output two integers 3 and i. Note that 1 ≤q i ≤q n.It can be shown that under the given constraints, a solution always exists.",
+    "sample_tests": [
+        {
+            "input": "6\n1\n1\n2\n1\n2\n1\n2\n1 3\n4 2\n2\n1 4\n3 2\n3\n6 5 4\n3 2 1\n3\n5 3 4\n2 6 1",
+            "output": "0\n1\n3 1\n1\n2 1\n1\n3 2\n9\n3 1\n3 2\n3 3\n1 1\n2 1\n2 2\n1 2\n1 1\n2 1\n6\n2 2\n1 1\n1 2\n2 1\n3 1\n3 2"
+        }
+    ],
+    "note": "In the first test case,\na1<b1\n, so no operations need to be applied.\nIn the second test case,\na1>b1\n. After applying the operation, these values will be swapped.\nIn the third test case, after applying the operation,\na=[1,3]\nand\nb=[2,4]\n.\nIn the fourth test case, after applying the operation,\na=[1,2]\nand\nb=[3,4]\n.",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "rating": "1300"
+}

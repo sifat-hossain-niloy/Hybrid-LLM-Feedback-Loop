@@ -1,0 +1,18 @@
+{
+    "statement": "Alice and Bob are given a binary string s of length n, and an integer k (1≤q k < n).Alice wins if she is able to transform all characters of s into zeroes. If Alice is unable to win in a finite number of moves, then Bob wins.Alice and Bob take turns, with Alice going first. On Alice's turn, she may choose any subsequence^{\\text{∗}} of length k in s, then set all characters in that subsequence to zero. On Bob's turn, he may choose any substring^{\\text{†}} of length k in s, then set all characters in that substring to one. Note that Alice wins if the string consists of all zeros at any point during the game, including in between Alice's and Bob's turns.Determine who wins with optimal play.^{\\text{∗}}A subsequence of a string s is a set of characters in s. Note that these characters do not have to be adjacent.^{\\text{†}}A substring of a string s is a contiguous group of characters in s. Note that these characters must be adjacent.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 10^4)  — the number of test cases.The first line of each test case contains two integers n and k (2≤q n ≤q 2· 10^5, 1≤q k < n).The second line of each test case contains a binary string s of length n.It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output on a single line \"Alice\" if Alice wins with optimal play, and \"Bob\" if Bob wins with optimal play.You can output the answer in any case (upper or lower). For example, the strings \"aLiCe\", \"alice\", \"ALICE\", and \"alICE\" will be recognized as \"Alice\".",
+    "sample_tests": [
+        {
+            "input": "6\n5 2\n11011\n7 4\n1011011\n6 1\n010000\n4 1\n1111\n8 3\n10110110\n6 4\n111111",
+            "output": "Bob\nAlice\nAlice\nBob\nBob\nAlice"
+        }
+    ],
+    "note": "In the third sample, Alice can choose the subsequence consisting of\n𝑠\n2\n, turning\n𝑠\ninto\n000000\n. Then she wins immediately.\nIn the fourth sample, it can be shown that there is no way for Alice to guarantee that she can turn\n𝑠\ninto\n0000\nwithin a finite number of moves.",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "greedy"
+    ],
+    "rating": "1200"
+}

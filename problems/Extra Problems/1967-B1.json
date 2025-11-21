@@ -1,0 +1,18 @@
+{
+    "statement": "The two versions are different problems. You may want to read both versions. You can make hacks only if both versions are solved.You are given two positive integers n, m.Calculate the number of ordered pairs (a, b) satisfying the following conditions: 1≤ a≤ n, 1≤ b≤ m; a+b is a multiple of b · \\gcd(a,b).",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.The first line of each test case contains two integers n, m (1≤ n,m≤ 2 · 10^6).It is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2 · 10^6.",
+    "output_specification": "OutputFor each test case, print a single integer: the number of valid pairs.",
+    "sample_tests": [
+        {
+            "input": "6\n1 1\n2 3\n3 5\n10 8\n100 1233\n1000000 1145141",
+            "output": "1\n3\n4\n14\n153\n1643498"
+        }
+    ],
+    "note": "In the first test case, only\n(1,1)\nsatisfies the conditions.\nIn the fourth test case,\n(1,1),(2,1),(2,2),(3,1),(4,1),(5,1),(6,1),(6,2),(6,3),(7,1),(8,1),(9,1),(10,1),(10,2)\nsatisfy the conditions.",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "rating": "1400"
+}

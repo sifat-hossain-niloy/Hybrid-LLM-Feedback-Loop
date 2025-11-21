@@ -1,0 +1,19 @@
+{
+    "statement": "The median of an array b_1, b_2, ... b_m, written as \\operatorname{med}(b_1, b_2, ..., b_m), is the ≤ft\\lceil \\frac{m}{2} \\right\\rceil-th^{\\text{∗}} smallest element of array b.You are given an array of integers a_1, a_2, ..., a_n and an integer k. You need to determine whether there exists a pair of indices 1 ≤ l < r < n such that:\\operatorname{med}(\\operatorname{med}(a_1, a_2, ..., a_l), \\operatorname{med}(a_{l+1}, a_{l+2}, ..., a_r), \\operatorname{med}(a_{r+1}, a_{r+2}, ..., a_n)) ≤ k.In other words, determine whether it is possible to split the array into three contiguous subarrays^{\\text{†}} such that the median of the three subarray medians is less than or equal to k.^{\\text{∗}}\\lceil x \\rceil is the ceiling function which returns the least integer greater than or equal to x.^{\\text{†}}An array x is a subarray of an array y if x can be obtained from y by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains two integers n and k (3 ≤ n ≤ 2 · 10^5, 1 ≤ k ≤ 10^9) — the length of the array a and the constant k.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each testcase, output \"YES\" if such a split exists, and \"NO\" otherwise.You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "sample_tests": [
+        {
+            "input": "6\n3 2\n3 2 1\n3 1\n3 2 1\n6 3\n8 5 3 1 6 4\n8 7\n10 7 12 16 3 15 6 11\n6 8\n7 11 12 4 9 17\n3 500000000\n1000 1000000000 1000",
+            "output": "YES\nNO\nNO\nYES\nYES\nYES"
+        }
+    ],
+    "note": "In the first and second test case, the only possible partition of the array into three contiguous subarrays is\n[3]\n,\n[2]\n,\n[1]\n. Their respective medians are\n3\n,\n2\n, and\n1\n. The median of the three subarray medians is\nmed(3,2,1)=2\n. Therefore, the answer for the first test case is \"YES\" since\n2≤2\n, while the answer for the second test case is \"NO\" since\n2>1\n.\nIn the third test case, it can be proven that no partition satisfies the constraints.\nIn the fourth test case, one of the partitions satisfying the constraints is\n[10,7]\n,\n[12,16,3,15]\n,\n[6,11]\n. The respective medians of subarrays are\n7\n,\n12\n, and\n6\n. The median of the three subarray medians is\nmed(7,12,6)=7≤𝑘\n, hence this partition satisfies the constraints.\nIn the fifth test case, one of the partitions satisfying the constraints is\n[7,11]\n,\n[12,4]\n,\n[9,17]\n. The respective medians of the subarrays are\n7\n,\n4\n, and\n9\n. The median of the three subarray medians is\nmed(7,4,9)=7≤𝑘\n, hence this partition satisfies the constraints.\nIn the sixth test case, the only possible partition of the array into three contiguous subarrays is\n[1000]\n,\n[\n10\n9\n]\n,\n[1000]\n. The respective medians of the subarrays are\n1000\n,\n10\n9\n, and\n1000\n. The median of the three subarray medians is\nmed(1000,\n10\n9\n,1000)=1000≤𝑘\n, hence this partition satisfies the constraints.",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "rating": "1600"
+}

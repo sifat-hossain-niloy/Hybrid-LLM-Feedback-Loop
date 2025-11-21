@@ -1,0 +1,20 @@
+{
+    "statement": "This is the easy version of the problem. The difference in this version is that t=1 and we work on an array-like tree.Ron and Hermione are playing a game on a tree of n nodes that are initially inactive. This tree is special because it has exactly two leaves. It can thus be seen as an array. The game consists of t rounds, each of which starts with a stone on exactly one node, which is considered as activated. A move consists of picking an inactive neighbor of the node with a stone on it and moving the stone there (thus activating this neighbor). Ron makes the first move, after which he alternates with Hermione until no valid move is available. The player that cannot make a move loses the round. If both players play optimally, who wins each round of this game? Note that all the rounds are played with the same tree; only the starting node changes. Moreover, after each round, all active nodes are considered inactive again.",
+    "input_specification": "InputThe first line contains integers n (2 ≤q n ≤q 2× 10^5), t (t=1), the number of nodes in the tree and the number of rounds, respectively.The next n-1 lines contain two integers 1 ≤q u, v ≤q n each, corresponding to an edge of the tree. It is guaranteed that the tree has exactly two leaves.The next line contains t integers 1 ≤q u_1 , ..., u_t ≤q n, corresponding to the node where the stone is initially put.",
+    "output_specification": "OutputThe output consists of t=1 line which is either \"Ron\" or \"Hermione\".",
+    "sample_tests": [
+        {
+            "input": "3 1\n2 3\n3 1\n3",
+            "output": "Ron"
+        },
+        {
+            "input": "5 1\n1 2\n2 3\n3 4\n4 5\n5",
+            "output": "Hermione"
+        }
+    ],
+    "note": "Not found",
+    "tags": [
+        "games"
+    ],
+    "rating": "1400"
+}

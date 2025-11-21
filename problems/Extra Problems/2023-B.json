@@ -1,0 +1,19 @@
+{
+    "statement": "It is already the year 3024, ideas for problems have long run out, and the olympiad now takes place in a modified individual format. The olympiad consists of n problems, numbered from 1 to n. The i-th problem has its own score a_i and a certain parameter b_i (1 ≤ b_i ≤ n).Initially, the testing system gives the participant the first problem. When the participant is given the i-th problem, they have two options: They can submit the problem and receive a_i points; They can skip the problem, in which case they will never be able to submit it. Then, the testing system selects the next problem for the participant from problems with indices j, such that: If he submitted the i-th problem, it looks at problems with indices j < i; If he skipped the i-th problem, it looks at problems with indices j ≤q b_i. Among these problems, it selects the problem with the maximum index that it has not previously given to the participant (he has neither submitted nor skipped it before). If there is no such problem, then the competition for the participant ends, and their result is equal to the sum of points for all submitted problems. In particular, if the participant submits the first problem, then the competition for them ends. Note that the participant receives each problem at most once.Prokhor has prepared thoroughly for the olympiad, and now he can submit any problem. Help him determine the maximum number of points he can achieve.",
+    "input_specification": "InputEach test consists of multiple test cases. The first line contains a single integer t (1 ≤q t ≤q 10^5) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer n (1 ≤q n ≤q 4 · 10^5) — the number of problems in the olympiad.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤q a_i ≤q 10^9) — the scores of the problems.The third line of each test case contains n integers b_1, b_2, ..., b_n (1 ≤q b_i ≤q n) — the parameters of the problems.It is guaranteed that the sum of n over all test cases does not exceed 4 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer — the maximum number of points that Prokhor can achieve.",
+    "sample_tests": [
+        {
+            "input": "4\n2\n15 16\n2 1\n5\n10 10 100 100 1000\n3 4 1 1 1\n3\n100 49 50\n3 2 2\n4\n100 200 300 1000\n2 3 4 1",
+            "output": "16\n200\n100\n1000"
+        }
+    ],
+    "note": "In the first test case, Prokhor can skip the first problem; then he will receive the problem with index\nb1=2\n. Prokhor can submit it and receive\na2=16\npoints. After that, the competition will end because Prokhor has already received all problems. Note that if Prokhor submits the first problem, he will receive\na1=15\npoints, but the competition will end immediately.\nIn the second test case, Prokhor can skip the first problem; then he will receive the problem with index\nb1=3\n. Prokhor can submit it and receive\na3=100\npoints. After that, Prokhor will receive the second problem, which he can skip to receive the problem with index\nb2=4\n. Prokhor can submit the fourth problem and receive another\na4=100\npoints. After that, the competition ends because Prokhor has already received all problems with indices not exceeding\n4\n. Thus, Prokhor will receive a total of\n200\npoints.\nIn the third test case, Prokhor can submit the first problem and receive\n100\npoints, after which the competition will end immediately.",
+    "tags": [
+        "binary search",
+        "dp",
+        "graphs",
+        "shortest paths"
+    ],
+    "rating": "1700"
+}

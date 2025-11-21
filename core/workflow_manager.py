@@ -9,11 +9,16 @@ import uuid
 from .llm_providers.openai_provider import OpenAIProvider
 from .llm_providers.mistral_provider import MistralProvider
 from .llm_providers.groq_provider import GroqProvider
+from .llm_providers.deepseek_provider import DeepSeekProvider
 
 class WorkflowType(Enum):
     """Available workflow types"""
     GPT_MISTRAL = "gpt_mistral"
     GPT_GROQ = "gpt_groq"
+    GPT_DEEPSEEK = "gpt_deepseek"
+    GPT5_MISTRAL = "gpt5_mistral"
+    GPT5_GROQ = "gpt5_groq"
+    GPT5_DEEPSEEK = "gpt5_deepseek"
     # Future workflows can be added here
     # GPT_CLAUDE = "gpt_claude"
     # MISTRAL_GROQ = "mistral_groq"
@@ -34,7 +39,7 @@ class WorkflowManager:
     # Predefined workflow configurations
     WORKFLOWS = {
         WorkflowType.GPT_MISTRAL: WorkflowConfig(
-            name="GPT + Mistral",
+            name="GPT-4 + Mistral",
             solution_provider="openai",
             hint_provider="mistral",
             solution_model="gpt-4",
@@ -42,12 +47,44 @@ class WorkflowManager:
             description="GPT-4 for solution generation, Codestral for debugging hints"
         ),
         WorkflowType.GPT_GROQ: WorkflowConfig(
-            name="GPT + Groq",
+            name="GPT-4 + Groq",
             solution_provider="openai", 
             hint_provider="groq",
             solution_model="gpt-4",
             hint_model="llama-3.3-70b-versatile",
             description="GPT-4 for solution generation, Llama 3.3 70B for debugging hints"
+        ),
+        WorkflowType.GPT_DEEPSEEK: WorkflowConfig(
+            name="GPT-4 + DeepSeek",
+            solution_provider="openai",
+            hint_provider="deepseek",
+            solution_model="gpt-4",
+            hint_model="deepseek-reasoner",
+            description="GPT-4 for solution generation, DeepSeek-R1 for debugging hints"
+        ),
+        WorkflowType.GPT5_MISTRAL: WorkflowConfig(
+            name="GPT-5 + Mistral",
+            solution_provider="openai",
+            hint_provider="mistral",
+            solution_model="gpt-5",
+            hint_model="codestral-2508",
+            description="GPT-5 for solution generation, Codestral for debugging hints"
+        ),
+        WorkflowType.GPT5_GROQ: WorkflowConfig(
+            name="GPT-5 + Groq",
+            solution_provider="openai",
+            hint_provider="groq",
+            solution_model="gpt-5",
+            hint_model="llama-3.3-70b-versatile",
+            description="GPT-5 for solution generation, Llama 3.3 70B for debugging hints"
+        ),
+        WorkflowType.GPT5_DEEPSEEK: WorkflowConfig(
+            name="GPT-5 + DeepSeek",
+            solution_provider="openai",
+            hint_provider="deepseek",
+            solution_model="gpt-5",
+            hint_model="deepseek-reasoner",
+            description="GPT-5 for solution generation, DeepSeek-R1 for debugging hints"
         )
     }
     
@@ -66,6 +103,8 @@ class WorkflowManager:
                 self._providers[provider_key] = MistralProvider(model_name=model_name)
             elif provider_type == "groq":
                 self._providers[provider_key] = GroqProvider(model_name=model_name)
+            elif provider_type == "deepseek":
+                self._providers[provider_key] = DeepSeekProvider(model_name=model_name)
             else:
                 raise ValueError(f"Unknown provider type: {provider_type}")
         

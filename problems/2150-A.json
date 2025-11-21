@@ -1,0 +1,18 @@
+{
+    "statement": "Rymdkraft - Rymdsylt⠀Hacks are disabled in this problem.There is a strip containing 10^9 cells, numbered from 1 to 10^9. Each cell is either black or white. Initially, m distinct cells a_1, a_2, ..., a_m are black, and the others are white.If a person is on some cell x, he might be given two types of commands: \\texttt{A}: jump to the next cell, i.e. cell x + 1; \\texttt{B}: jump to the next white cell, i.e. the minimum y > x such that cell y is white. There is a string s of length n, consisting of n commands. For each i from 1 to n in order, a person starts from cell 1; executes the first i commands in the string; colors the last visited cell black (if it was already black, it remains black). You wonder which cells are black at the end of the process. Print them in increasing order.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains two integers n and m (1 ≤q n ≤q 10^5, 1 ≤q m ≤q 10^5) — the number of commands and the number of black cells at the beginning.The second line of each test case contains a string s of length n, consisting of characters \\texttt{A} and \\texttt{B}, representing the commands.The third line of each test case contains m integers a_1, a_2, ..., a_m (1 ≤q a_1 < a_2 < ... < a_m ≤q 10^9) — the initial black cells.It is guaranteed that the sum of n over all test cases does not exceed 10^5, and the sum of m over all test cases does not exceed 10^5.",
+    "output_specification": "OutputFor each test case, print two lines: in the first line, print a single integer k: the number of black cells at the end; in the second line, print the labels of the black cells, in increasing order.",
+    "sample_tests": [
+        {
+            "input": "5\n3 2\nBAB\n2 5\n3 4\nABA\n1 4 9 10\n5 2\nABABB\n1 7\n3 1\nBBA\n6\n1 4\nA\n1 3 4 1000000000",
+            "output": "4\n2 3 5 6 \n7\n1 2 3 4 6 9 10 \n7\n1 2 3 5 6 7 9 \n3\n2 4 6 \n5\n1 2 3 4 1000000000"
+        }
+    ],
+    "note": "In the first test case, initially the only black cells are\n2\nand\n5\n.\nPerson\n1\n:\nPerson\n2\n:\nPerson\n3\n:\nAt the end, the black cells are\n{2,3,5,6}\n.\nIn the second test case, the three people end up in cells\n2\n,\n3\n, and\n6\n, respectively.",
+    "tags": [
+        "data structures",
+        "hashing",
+        "implementation"
+    ],
+    "rating": "1300"
+}

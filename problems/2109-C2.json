@@ -1,0 +1,19 @@
+{
+    "statement": "This is the medium version of the problem. In this version, you can send at most \\mathbf{4} commands. You can make hacks only if all versions of the problem are solved.This is an interactive problem.Welcome, Duelists! In this interactive challenge, there is an unknown integer x (1 ≤ x ≤ 10^9). You must make it equal to a given integer in the input n. By harnessing the power of \"Mathmech\" monsters, you can send a command to do one of the following: CommandConstraintResultCaseUpdateJury's response\"add y\"-10^{18} ≤ y ≤ 10^{18}\\mathrm{res} = x + y\\text{if } 1 ≤ \\mathrm{res} ≤ 10^{18}x ≤ftarrow \\mathrm{res}\"1\"\\mathrm{else}x ≤ftarrow x\"0\"\"mul y\"1 ≤ y ≤ 10^{18}\\mathrm{res} = x · y\\text{if } 1 ≤ \\mathrm{res} ≤ 10^{18}x ≤ftarrow \\mathrm{res}\"1\"\\mathrm{else}x ≤ftarrow x\"0\"\"div y\"1 ≤ y ≤ 10^{18}\\mathrm{res} = x/y\\text{if } y divides xx ≤ftarrow \\mathrm{res}\"1\"\\mathrm{else}x ≤ftarrow x\"0\"\"digit\"—\\mathrm{res} = S(x)^{\\text{∗}}—x ≤ftarrow \\mathrm{res}\"1\" You have to make x equal to n using at most \\mathbf{4} commands.^{\\text{∗}}S(n) is a function that returns the sum of all the individual digits of a non-negative integer n. For example, S(123) = 1 + 2 + 3 = 6",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows. The first and only line of each test case contains one integer n (1 ≤ n ≤ 10^9).",
+    "output_specification": "Not found",
+    "sample_tests": [
+        {
+            "input": "2\n100\n\n0\n\n1\n\n1\n\n1\n\n5\n\n1\n\n1\n\n1",
+            "output": "add -10\n\nadd 1\n\nmul 10\n\n!\n\ndigit\n\ndiv 2\n\n!"
+        }
+    ],
+    "note": "Note that the empty lines in the example input and output are for the sake of clarity, and do not occur in the real interaction.",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "number theory"
+    ],
+    "rating": "1700"
+}

@@ -1,0 +1,63 @@
+{
+  "submission_id": "347805136",
+  "timestamp": "2025-11-07T05:42:16.275419",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "api_response": {
+    "url": "https://codeforces.com/data/submitSource?rv=bv3dka2xc",
+    "rv_parameter": "bv3dka2xc",
+    "response_text": "{\"testCount\":\"1\",\"output#1\":\"6\\r\\n0 1 2 10 11 12 \\r\\n6\\r\\n-5 -4 -3 -2 -1 0 \\r\\n4\\r\\n-1 0 1 2 \\r\\n4\\r\\n0 1 7 8 \\r\\n4\\r\\n0 1 4 5 \\r\\n\",\"exitCode#1\":\"0\",\"waiting\":\"false\",\"verdict#1\":\"WRONG_ANSWER\",\"checkerStdoutAndStderr#1\":\"wrong answer 1st numbers differ - expected: \\u00278\\u0027, found: \\u00276\\u0027\\r\\n\",\"offerChallenge\":\"false\",\"checkerExitCode#1\":\"1\",\"timeConsumed#1\":\"46\",\"problemName\":\"(C) Sums on Segments\",\"source\":\"#include\\u003cbits/stdc++.h\\u003e\\r\\nusing namespace std;\\r\\n\\r\\nint main() {\\r\\n    ios_base::sync_with_stdio(false);\\r\\n    cin.tie(NULL);\\r\\n\\r\\n    int t;\\r\\n    cin \\u003e\\u003e t;\\r\\n    while(t--) {\\r\\n        int n;\\r\\n        cin \\u003e\\u003e n;\\r\\n        vector\\u003cint\\u003e a(n);\\r\\n        int sum \\u003d 0, min_val \\u003d 0, max_val \\u003d 0;\\r\\n        for(int i \\u003d 0; i \\u003c n; i++) {\\r\\n            cin \\u003e\\u003e a[i];\\r\\n            if(a[i] \\u003d\\u003d -1 || a[i] \\u003d\\u003d 1) {\\r\\n                sum +\\u003d a[i];\\r\\n                min_val \\u003d min(min_val, sum);\\r\\n                max_val \\u003d max(max_val, sum);\\r\\n            }\\r\\n        }\\r\\n        set\\u003cint\\u003e s;\\r\\n        for(int i \\u003d min_val; i \\u003c\\u003d max_val; i++) {\\r\\n            s.insert(i);\\r\\n        }\\r\\n        for(int i \\u003d 0; i \\u003c n; i++) {\\r\\n            if(a[i] !\\u003d -1 \\u0026\\u0026 a[i] !\\u003d 1) {\\r\\n                set\\u003cint\\u003e temp \\u003d s;\\r\\n                for(auto it : temp) {\\r\\n                    s.insert(it + a[i]);\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n        cout \\u003c\\u003c s.size() \\u003c\\u003c \\\"\\\\n\\\";\\r\\n        for(auto it : s) {\\r\\n            cout \\u003c\\u003c it \\u003c\\u003c \\\" \\\";\\r\\n        }\\r\\n        cout \\u003c\\u003c \\\"\\\\n\\\";\\r\\n    }\\r\\n\\r\\n    return 0;\\r\\n}\",\"answer#1\":\"8\\r\\n-1 0 1 2 9 10 11 12 \\r\\n6\\r\\n-5 -4 -3 -2 -1 0 \\r\\n4\\r\\n-1 0 1 2 \\r\\n4\\r\\n0 1 7 8 \\r\\n6\\r\\n-1 0 1 3 4 5 \\r\\n\",\"partyName\":\"\\u003cspan title\\u003d\\\"Unrated, Code-Metrics-thesis\\\" class\\u003d\\\"rated-user user-black\\\"\\u003eCode-Metrics-thesis\\u003c/span\\u003e\",\"prettifyClass\":\"lang-cpp\",\"href\":\"/contest/2043/submission/347805136\",\"compilationError\":\"false\",\"rejected#1\":\"true\",\"contestName\":\"Educational Codeforces Round 173 (Rated for Div. 2)\",\"winntStatus#1\":\"\",\"challengeLink\":\"/contest/2043/challenge/347805136\",\"accepted#1\":\"false\",\"verdict\":\"\\u003cspan class\\u003d\\u0027verdict-rejected\\u0027\\u003eWrong answer on test \\u003cspan class\\u003d\\\"verdict-format-judged\\\"\\u003e1\\u003c/span\\u003e\\u003c/span\\u003e\",\"prevId\":\"347805083\",\"input#1\":\"5\\r\\n5\\r\\n1 -1 10 1 1\\r\\n5\\r\\n-1 -1 -1 -1 -1\\r\\n2\\r\\n-1 2\\r\\n2\\r\\n7 1\\r\\n3\\r\\n1 4 -1\\r\\n\",\"memoryConsumed#1\":\"0\"}",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noai, noai",
+      "content-encoding": "gzip",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=DIndpFZoZA97dgRgkR1HeO9soNUuNiCRoj7sMU0%2FosrhngBWyBRZm%2FUKuNUTdS2%2FwqsA7Ma9lW2gWPqDPM7h16l8WCjRmRRYEuPO8%2FLHlPtL4nNTbGP8voI1etU8tom45tIZxuOt%2FeOg4ASR\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "x-content-type-options": "nosniff",
+      "expires": "-1",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfL4;desc=\"?proto=QUIC&rtt=49169&min_rtt=43237&rtt_var=5957&sent=118&recv=108&lost=0&retrans=0&sent_bytes=70646&recv_bytes=38530&delivery_rate=251877&cwnd=24000&unsent_bytes=0&cid=7516b8e9efacd606&ts=42614&x=1\", cfExtPri, cfHdrFlush;dur=0",
+      "date": "Thu, 06 Nov 2025 23:42:11 GMT",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Accept-Encoding, accept-encoding",
+      "priority": "u=1,i",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=86400",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-req-id": "neo:99a87229b92c252e-BOM:/data/submitSource:bv3dka2xc",
+      "pragma": "no-cache",
+      "cf-ray": "99a87229b92c252e-BOM",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    }
+  },
+  "parsed_api_response": {
+    "testCount": "1",
+    "output#1": "6\r\n0 1 2 10 11 12 \r\n6\r\n-5 -4 -3 -2 -1 0 \r\n4\r\n-1 0 1 2 \r\n4\r\n0 1 7 8 \r\n4\r\n0 1 4 5 \r\n",
+    "exitCode#1": "0",
+    "waiting": "false",
+    "verdict#1": "WRONG_ANSWER",
+    "checkerStdoutAndStderr#1": "wrong answer 1st numbers differ - expected: '8', found: '6'\r\n",
+    "offerChallenge": "false",
+    "checkerExitCode#1": "1",
+    "timeConsumed#1": "46",
+    "problemName": "(C) Sums on Segments",
+    "source": "#include<bits/stdc++.h>\r\nusing namespace std;\r\n\r\nint main() {\r\n    ios_base::sync_with_stdio(false);\r\n    cin.tie(NULL);\r\n\r\n    int t;\r\n    cin >> t;\r\n    while(t--) {\r\n        int n;\r\n        cin >> n;\r\n        vector<int> a(n);\r\n        int sum = 0, min_val = 0, max_val = 0;\r\n        for(int i = 0; i < n; i++) {\r\n            cin >> a[i];\r\n            if(a[i] == -1 || a[i] == 1) {\r\n                sum += a[i];\r\n                min_val = min(min_val, sum);\r\n                max_val = max(max_val, sum);\r\n            }\r\n        }\r\n        set<int> s;\r\n        for(int i = min_val; i <= max_val; i++) {\r\n            s.insert(i);\r\n        }\r\n        for(int i = 0; i < n; i++) {\r\n            if(a[i] != -1 && a[i] != 1) {\r\n                set<int> temp = s;\r\n                for(auto it : temp) {\r\n                    s.insert(it + a[i]);\r\n                }\r\n            }\r\n        }\r\n        cout << s.size() << \"\\n\";\r\n        for(auto it : s) {\r\n            cout << it << \" \";\r\n        }\r\n        cout << \"\\n\";\r\n    }\r\n\r\n    return 0;\r\n}",
+    "answer#1": "8\r\n-1 0 1 2 9 10 11 12 \r\n6\r\n-5 -4 -3 -2 -1 0 \r\n4\r\n-1 0 1 2 \r\n4\r\n0 1 7 8 \r\n6\r\n-1 0 1 3 4 5 \r\n",
+    "partyName": "<span title=\"Unrated, Code-Metrics-thesis\" class=\"rated-user user-black\">Code-Metrics-thesis</span>",
+    "prettifyClass": "lang-cpp",
+    "href": "/contest/2043/submission/347805136",
+    "compilationError": "false",
+    "rejected#1": "true",
+    "contestName": "Educational Codeforces Round 173 (Rated for Div. 2)",
+    "winntStatus#1": "",
+    "challengeLink": "/contest/2043/challenge/347805136",
+    "accepted#1": "false",
+    "verdict": "<span class='verdict-rejected'>Wrong answer on test <span class=\"verdict-format-judged\">1</span></span>",
+    "prevId": "347805083",
+    "input#1": "5\r\n5\r\n1 -1 10 1 1\r\n5\r\n-1 -1 -1 -1 -1\r\n2\r\n-1 2\r\n2\r\n7 1\r\n3\r\n1 4 -1\r\n",
+    "memoryConsumed#1": "0"
+  }
+}

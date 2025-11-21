@@ -1,0 +1,18 @@
+{
+    "statement": "Dimash learned that Mansur wrote something very unpleasant about him to a friend, so he decided to find out his password at all costs and discover what exactly he wrote.Believing in the strength of his password, Mansur stated that his password — is a binary string of length n. He is also ready to answer Dimash's questions of the following type:Dimash says a binary string t, and Mansur replies whether it is true that t is a substring of his password.Help Dimash find out the password in no more than 2n operations; otherwise, Mansur will understand the trick and stop communicating with him.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.",
+    "output_specification": "Not found",
+    "sample_tests": [
+        {
+            "input": "4\n3\n\n0\n\n0\n\n1\n\n4\n\n4\n\n2",
+            "output": "? 00\n\n? 000\n\n? 010\n\n! 010\n\n! 1100\n\n! 0110\n\n! 10"
+        }
+    ],
+    "note": "In the first example, the string\n010\nis given. Therefore, the answers to the queries are as follows:\n\"? 00\"\n00\nis not a substring of\n010\n, so the answer is\n0\n.\n\"? 000\"\n000\nis not a substring, so the answer is\n0\n.\n\"? 010\"\n010\nis a substring, so the answer is\n1\n.\nIn the second example, the string is\n1100\n, in the third\n0110\n, and in the fourth\n10\n.",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "strings"
+    ],
+    "rating": "1400"
+}

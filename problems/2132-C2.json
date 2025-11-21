@@ -1,0 +1,18 @@
+{
+    "statement": "This is the hard version of the problem. The easy version differs from the hard one in that it requires determining the minimum cost with the least number of deals, while the hard version requires determining the minimum cost with a limited number of deals.After the cunning seller sold three watermelons instead of one, he decided to increase his profit — namely, he bought even more watermelons. Now he can sell 3^x watermelons for 3^{x+1} + x · 3^{x-1} coins, where x is a non-negative integer. Such a sale is called a deal.A calculating buyer came to him, but he has little time, so the buyer can make no more than k deals and plans to buy exactly n watermelons.The buyer is in a hurry and has therefore turned to you to determine the minimum number of coins he must pay the seller for n watermelons if he makes no more than k deals. If it is impossible to buy exactly n watermelons while making no more than k deals, output -1.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of each test case follows.In a single line of each test case, there are two integers n and k (1 ≤ n, k ≤ 10^9) — how many watermelons need to be bought and how many deals can be made.",
+    "output_specification": "OutputFor each test case, output a single integer — the minimum cost of the watermelons or -1 if it is impossible to buy the watermelons while meeting all the conditions.",
+    "sample_tests": [
+        {
+            "input": "8\n1 1\n3 3\n8 3\n2 4\n10 10\n20 14\n3 2\n9 1",
+            "output": "3\n9\n-1\n6\n30\n63\n10\n33"
+        }
+    ],
+    "note": "Note that there is no point in buying more watermelons than needed, so we will not consider deals where there are more watermelons than necessary.\nLet's consider the costs of the first two deal options:\nDeal A:\n1\nwatermelon —\n3\ncoins.\nDeal B:\n3\nwatermelons —\n10\ncoins.\nIn the first sample, the only way to buy\n1\nwatermelon is to use Deal A, so the answer is\n3\n.\nIn the second sample, you can buy\n3\nwatermelons either with Deal B for\n10\ncoins or with three Deal A for\n9\ncoins, so the answer is\n9\n.\nIn the third sample, there are the following options for\n3\ndeals:\n3\nDeals A —\n3\nwatermelons.\n2\nDeals A and\n1\nDeal B —\n5\nwatermelons.\n1\nDeal A and\n2\nDeals B —\n7\nwatermelons.\n3\nDeals B —\n9\nwatermelons.\nIt can be seen that it is impossible to buy exactly 8 watermelons.",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math"
+    ],
+    "rating": "1400"
+}

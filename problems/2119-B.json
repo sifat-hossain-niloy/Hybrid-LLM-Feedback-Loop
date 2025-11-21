@@ -1,0 +1,18 @@
+{
+    "statement": "PIKASONIC - Lost My Mind (feat.nakotanmaru) You are given two points (p_x,p_y) and (q_x,q_y) on a Euclidean plane.You start at the starting point (p_x,p_y) and will perform n operations. In the i-th operation, you must choose any point such that the Euclidean distance^{\\text{∗}} between your current position and the point is exactly a_i, and then move to that point.Determine whether it is possible to reach the terminal point (q_x,q_y) after performing all operations.^{\\text{∗}}The Euclidean distance between (x_1, y_1) and (x_2, y_2) is \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains a single integer n (1≤q n ≤q 10^3) — the length of the sequence a.The second line of each test case contains four integers p_x,p_y,q_x,q_y (1≤q p_x,p_y,q_x,q_y≤q 10^7) — the coordinates of the starting point and terminal point.The third line of each test case contains n integers a_1,a_2,...,a_n (1 ≤ a_i ≤ 10^4) — the distance to move in each operation.It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output \"Yes\" if it is possible to reach the terminal point (q_x,q_y) after all operations; otherwise, output \"No\".You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "sample_tests": [
+        {
+            "input": "5\n2\n1 1 5 1\n3 3\n3\n1 1 3 3\n2 3 4\n2\n100 100 100 100\n4 5\n1\n5 1 1 4\n5\n2\n10000000 10000000 10000000 10000000\n10000 10000",
+            "output": "Yes\nYes\nNo\nYes\nYes"
+        }
+    ],
+    "note": "Here is a picture that shows a possible movement of the first test case. The coordinates of point\nr1\nare\n(3,1+\n√\n5\n)\n.\nHere is a picture that shows a possible movement of the second test case. The coordinates of point\nr1\nare\n(1+\n√\n3\n,0)\n, and the coordinates of point\nr2\nare\n(−\n(\n√\n3\n+4)(3\n√\n3(149−24\n√\n3\n)\n−7\n√\n3\n−38)\n104\n,−\n√\n3(1331−764\n√\n3\n)\n+12\n√\n3\n−27\n104\n)\n.\nFor the third test case, it can be shown that there is no set of moves that satisfies all requirements.\nHere is a picture that shows a possible movement of the fourth test case.",
+    "tags": [
+        "geometry",
+        "greedy",
+        "math"
+    ],
+    "rating": "1200"
+}

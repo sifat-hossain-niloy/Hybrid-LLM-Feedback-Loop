@@ -1,0 +1,17 @@
+{
+    "statement": "Ecrade has an integer x. There are two kinds of operations. Replace x with ≤ft\\lfloor \\dfrac{x}{2}\\right\\rfloor, where ≤ft\\lfloor \\dfrac{x}{2}\\right\\rfloor is the greatest integer ≤ \\dfrac{x}{2}. Replace x with ≤ft\\lceil \\dfrac{x}{2}\\right\\rceil, where ≤ft\\lceil \\dfrac{x}{2}\\right\\rceil is the smallest integer ≥ \\dfrac{x}{2}. Ecrade will perform exactly n first operations and m second operations in any order. He wants to know the minimum and the maximum possible value of x after n+m operations. However, it seems a little difficult, so please help him!",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The only line of each test case contains three integers x, n, and m (0 ≤ x, n, m ≤ 10^9).",
+    "output_specification": "OutputFor each test case, print two integers in one line, representing the minimum and the maximum possible value of x after n + m operations.",
+    "sample_tests": [
+        {
+            "input": "5\n12 1 2\n12 1 1\n12 0 0\n12 1000000000 1000000000\n706636307 0 3",
+            "output": "1 2\n3 3\n12 12\n0 0\n88329539 88329539"
+        }
+    ],
+    "note": "For simplicity, we call the first operation\nOPER 1\nand the second operation\nOPER 2\n.\nIn the first test case:",
+    "tags": [
+        "brute force",
+        "greedy"
+    ],
+    "rating": "1600"
+}

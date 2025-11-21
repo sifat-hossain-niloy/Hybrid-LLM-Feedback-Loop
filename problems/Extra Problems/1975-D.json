@@ -1,0 +1,21 @@
+{
+    "statement": "378QAQ has a tree with n vertices. Initially, all vertices are white. There are two chess pieces called P_A and P_B on the tree. P_A and P_B are initially located on vertices a and b respectively. In one step, 378QAQ will do the following in order: Move P_A to a neighboring vertex. If the target vertex is white, this vertex will be painted red. Move P_B to a neighboring vertex. If the target vertex is colored in red, this vertex will be painted blue. Initially, the vertex a is painted red. If a=b, the vertex a is painted blue instead. Note that both the chess pieces must be moved in each step. Two pieces can be on the same vertex at any given time.378QAQ wants to know the minimum number of steps to paint all vertices blue.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1≤q t≤q 10^4). The description of the test cases follows.The first line of each test case contains one integer n (1≤q n≤q 2· 10^5).The second line of each test case contains two integers a and b (1≤q a,b≤q n).Then n - 1 lines follow, each line contains two integers x_i and y_i (1 ≤ x_i,y_i ≤ n), indicating an edge between vertices x_i and y_i. It is guaranteed that these edges form a tree.It is guaranteed that the sum of n over all test cases does not exceed 2· 10^5.",
+    "output_specification": "OutputFor each test case, output the minimum number of steps to paint all vertices blue.",
+    "sample_tests": [
+        {
+            "input": "3\n2\n1 2\n1 2\n5\n1 2\n1 2\n1 3\n1 4\n1 5\n8\n5 4\n7 1\n1 5\n1 8\n8 3\n7 2\n8 6\n3 4",
+            "output": "2\n8\n13"
+        }
+    ],
+    "note": "In the first test case, 378QAQ can paint all vertices blue in the following order:",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "shortest paths",
+        "trees"
+    ],
+    "rating": "1700"
+}

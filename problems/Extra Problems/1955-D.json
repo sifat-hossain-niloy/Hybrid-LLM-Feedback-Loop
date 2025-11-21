@@ -1,0 +1,17 @@
+{
+    "statement": "Maxim has an array a of n integers and an array b of m integers (m ≤ n).Maxim considers an array c of length m to be good if the elements of array c can be rearranged in such a way that at least k of them match the elements of array b. For example, if b = [1, 2, 3, 4] and k = 3, then the arrays [4, 1, 2, 3] and [2, 3, 4, 5] are good (they can be reordered as follows: [1, 2, 3, 4] and [5, 2, 3, 4]), while the arrays [3, 4, 5, 6] and [3, 4, 3, 4] are not good.Maxim wants to choose every subsegment of array a of length m as the elements of array c. Help Maxim count how many selected arrays will be good.In other words, find the number of positions 1 ≤ l ≤ n - m + 1 such that the elements a_l, a_{l+1}, ..., a_{l + m - 1} form a good array.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.The first line of each test case contains three integers n, m, and k (1 ≤ k ≤ m ≤ n ≤ 2 · 10^5) — the number of elements in arrays a and b, the required number of matching elements.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^6) — the elements of array a. Elements of the array a are not necessarily unique.The third line of each test case contains m integers b_1, b_2, ..., b_m (1 ≤ b_i ≤ 10^6) — the elements of array b. Elements of the array b are not necessarily unique.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5. Similarly, it is guaranteed that the sum of m over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output the number of good subsegments of array a on a separate line.",
+    "sample_tests": [
+        {
+            "input": "5\n7 4 2\n4 1 2 3 4 5 6\n1 2 3 4\n7 4 3\n4 1 2 3 4 5 6\n1 2 3 4\n7 4 4\n4 1 2 3 4 5 6\n1 2 3 4\n11 5 3\n9 9 2 2 10 9 7 6 3 6 3\n6 9 7 8 10\n4 1 1\n4 1 5 6\n6",
+            "output": "4\n3\n2\n4\n1"
+        }
+    ],
+    "note": "In the first example, all subsegments are good.\nIn the second example, good subsegments start at positions\n1\n,\n2\n, and\n3\n.\nIn the third example, good subsegments start at positions\n1\nand\n2\n.",
+    "tags": [
+        "data structures",
+        "two pointers"
+    ],
+    "rating": "1400"
+}

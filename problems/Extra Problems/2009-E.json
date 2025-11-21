@@ -1,0 +1,18 @@
+{
+    "statement": "Klee has an array a of length n containing integers [k, k+1, ..., k+n-1] in that order. Klee wants to choose an index i (1 ≤q i ≤q n) such that x = |a_1 + a_2 + ... + a_i - a_{i+1} - ... - a_n| is minimized. Note that for an arbitrary integer z, |z| represents the absolute value of z. Output the minimum possible value of x.",
+    "input_specification": "InputThe first line contains t (1 ≤q t ≤q 10^4) — the number of test cases.Each test case contains two integers n and k (2 ≤q n, k ≤q 10^9) — the length of the array and the starting element of the array.",
+    "output_specification": "OutputFor each test case, output the minimum value of x on a new line.",
+    "sample_tests": [
+        {
+            "input": "4\n2 2\n7 2\n5 3\n1000000000 1000000000",
+            "output": "1\n5\n1\n347369930"
+        }
+    ],
+    "note": "In the first sample,\na=[2,3]\n. When\ni=1\nis chosen,\nx=|2−3|=1\n. It can be shown this is the minimum possible value of\nx\n.\nIn the third sample,\na=[3,4,5,6,7]\n. When\ni=3\nis chosen,\nx=|3+4+5−6−7|=1\n. It can be shown this is the minimum possible value of\nx\n.",
+    "tags": [
+        "binary search",
+        "math",
+        "ternary search"
+    ],
+    "rating": "1400"
+}

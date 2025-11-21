@@ -1,0 +1,19 @@
+{
+    "statement": "Alice and Bob are playing a game using an integer array a of size n.Initially, all elements of the array are colorless. First, Alice chooses 3 elements and colors them red. Then Bob chooses any element and colors it blue (if it was red — recolor it). Alice wins if the sum of the red elements is strictly greater than the value of the blue element.Your task is to calculate the number of ways that Alice can choose 3 elements in order to win regardless of Bob's actions.",
+    "input_specification": "InputThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.The first line of each test case contains a single integer n (3 ≤ n ≤ 5000).The second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_1 ≤ a_2 ≤ ·s ≤ a_n ≤ 10^5).Additional constraint on the input: the sum of n over all test cases doesn't exceed 5000.",
+    "output_specification": "OutputFor each test case, print a single integer — the number of ways that Alice can choose 3 elements in order to win regardless of Bob's actions.",
+    "sample_tests": [
+        {
+            "input": "6\n3\n1 2 3\n4\n1 1 2 4\n5\n7 7 7 7 7\n5\n1 1 2 2 4\n6\n2 3 3 4 5 5\n5\n1 1 1 1 3",
+            "output": "0\n0\n10\n2\n16\n0"
+        }
+    ],
+    "note": "In the first two test cases, no matter which three elements Alice chooses, Bob will be able to paint one element blue so that Alice does not win.\nIn the third test case, Alice can choose any three elements. If Bob colors one of the red elements, the sum of red elements will be\n14\n, and the sum of blue elements will be\n7\n. If Bob chooses an uncolored element, the sum of red elements will be\n21\n, and the sum of blue elements will be\n7\n.\nIn the fourth test case, Alice can choose either the\n1\n-st,\n3\n-rd and\n4\n-th element, or the\n2\n-nd,\n3\n-rd and\n4\n-th element.",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "two pointers"
+    ],
+    "rating": "1300"
+}

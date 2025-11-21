@@ -1,0 +1,20 @@
+{
+    "statement": "Find the minimum height of a rooted tree^{\\dagger} with a+b+c vertices that satisfies the following conditions: a vertices have exactly 2 children, b vertices have exactly 1 child, and c vertices have exactly 0 children. If no such tree exists, you should report it. The tree above is rooted at the top vertex, and each vertex is labeled with the number of children it has. Here a=2, b=1, c=3, and the height is 2. ^{\\dagger} A rooted tree is a connected graph without cycles, with a special vertex called the root. In a rooted tree, among any two vertices connected by an edge, one vertex is a parent (the one closer to the root), and the other one is a child. The distance between two vertices in a tree is the number of edges in the shortest path between them. The height of a rooted tree is the maximum distance from a vertex to the root.",
+    "input_specification": "InputThe first line contains an integer t (1 ≤q t ≤q 10^4) — the number of test cases.The only line of each test case contains three integers a, b, and c (0 ≤q a, b, c ≤q 10^5; 1 ≤q a + b + c).The sum of a + b + c over all test cases does not exceed 3 · 10^5.",
+    "output_specification": "OutputFor each test case, if no such tree exists, output -1. Otherwise, output one integer — the minimum height of a tree satisfying the conditions in the statement.",
+    "sample_tests": [
+        {
+            "input": "10\n2 1 3\n0 0 1\n0 1 1\n1 0 2\n1 1 3\n3 1 4\n8 17 9\n24 36 48\n1 0 0\n0 3 1",
+            "output": "2\n0\n1\n1\n-1\n3\n6\n-1\n-1\n3"
+        }
+    ],
+    "note": "The first test case is pictured in the statement. It can be proven that you can't get a height smaller than\n2\n.\nIn the second test case, you can form a tree with a single vertex and no edges. It has height\n0\n, which is clearly optimal.\nIn the third test case, you can form a tree with two vertices joined by a single edge. It has height\n1\n, which is clearly optimal.",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "implementation",
+        "trees"
+    ],
+    "rating": "1700"
+}

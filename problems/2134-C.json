@@ -1,0 +1,18 @@
+{
+    "statement": "An array is called good if, for every subarray^{\\text{∗}} of length at least 2, the sum of the elements at even indices (with respect to the original array) is greater than or equal to the sum of the elements at odd indices. Array indexing starts from 1.For example, the arrays [3,8,4,4] and [2,3,1,4,2] are good. The array [0,2,4,1] is not because, in the subarray [2,4,1], the elements at even indices in the original array are 2 (index 2) and 1 (index 4), while the only element at an odd index is 4 (index 3). Since 2 + 1 < 4, the condition does not hold for this subarray.You are given an array of n non-negative integers a_1,a_2,...,a_n. In one operation, you can decrease any element in the array by 1, but all elements must remain non-negative. Your task is to find the minimum number of operations needed to make the array a good. It can be proved that it is possible to make the array good using a finite number of operations.^{\\text{∗}}An array b is a subarray of an array a if b can be obtained from a by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows. The first line of each test case contains a single integer n (2 ≤ n ≤ 2 · 10^5) — the length of the array a.The second line of each test case contains n non-negative integers a_1,a_2,...,a_n (0 ≤ a_i ≤ 10^9) — the elements of the array a.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output a single integer in a new line — the minimum number of operations needed to make the array a good.",
+    "sample_tests": [
+        {
+            "input": "8\n4\n3 8 4 4\n4\n0 2 3 5\n2\n3 1\n5\n2 3 1 4 2\n4\n0 2 4 1\n5\n3 1 4 5 1\n11\n3 0 5 4 4 5 3 0 3 4 1\n12\n410748345 10753674 975233308 193331255 893457280 279719251 704970985 412553354 801228787 44181004 1000000000 3829103",
+            "output": "0\n1\n2\n0\n3\n6\n14\n4450984776"
+        }
+    ],
+    "note": "In the first test case, the array\n𝑎\nis already good, so the answer is\n0\n. Below are the checks for each subarray:\nIn the second test case, the array\n𝑎\nis not good:\nHowever, if we perform an operation on index\n3\n, the array becomes\n[0,2,2,5]\nand is good now:\nTherefore, the answer is\n1\n.",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation"
+    ],
+    "rating": "1200"
+}

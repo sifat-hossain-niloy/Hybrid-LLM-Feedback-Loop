@@ -1,0 +1,19 @@
+{
+    "statement": "Impress thy brother, yet fret not thy mother.Robin's brother and mother are visiting, and Robin gets to choose the start day for each visitor.All days are numbered from 1 to n. Visitors stay for d continuous days, all of those d days must be between day 1 and n inclusive.Robin has a total of k risky 'jobs' planned. The i-th job takes place between days l_i and r_i inclusive, for 1 ≤ i ≤ k. If a job takes place on any of the d days, the visit overlaps with this job (the length of overlap is unimportant).Robin wants his brother's visit to overlap with the maximum number of distinct jobs, and his mother's the minimum.Find suitable start days for the visits of Robin's brother and mother. If there are multiple suitable days, choose the earliest one.",
+    "input_specification": "InputThe first line of the input contains a single integer t (1≤q t ≤q 10^4) — the number of test cases.The first line of each test case consists of three integers n, d, k (1 ≤ n ≤ 10^5, 1 ≤ d, k ≤ n) — the number of total days, duration of the visits, and the number of jobs. Then follow k lines of each test case, each with two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the start and end day of each job.It is guaranteed that the sum of n over all test cases does not exceed 2 · 10^5.",
+    "output_specification": "OutputFor each test case, output two integers, the best starting days of Robin's brother and mother respectively. Both visits must fit between day 1 and n inclusive.",
+    "sample_tests": [
+        {
+            "input": "6\n2 1 1\n1 2\n4 1 2\n1 2\n2 4\n7 2 3\n1 2\n1 3\n6 7\n5 1 2\n1 2\n3 5\n9 2 1\n2 8\n9 2 4\n7 9\n4 8\n1 3\n2 3",
+            "output": "1 1\n2 1\n1 4\n1 1\n1 1\n3 4"
+        }
+    ],
+    "note": "In the first test case, the only job fills all\n2\ndays, both should visit on day\n1\n.\nIn the second test case, day\n2\noverlaps with\n2\njobs and day\n1\noverlaps with only\n1\n.\nIn the third test case, Robert visits for days\n[1,2]\n, Mrs. Hood visits for days\n[4,5]\n.",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "sortings"
+    ],
+    "rating": "1400"
+}

@@ -1,0 +1,18 @@
+{
+    "statement": "The HU - Shireg ShiregඞThere are n cows participating in a coding tournament. Cow i has a Cowdeforces rating of a_i (all distinct), and is initially in position i. The tournament consists of n-1 matches as follows: The first match is between the cow in position 1 and the cow in position 2. Subsequently, each match i is between the cow in position i+1 and the winner of match i-1. In each match, the cow with the higher Cowdeforces rating wins and proceeds to the next match. You are the owner of cow k. For you, winning the tournament is not important; rather, you want your cow to win in as many matches as possible. As an acquaintance of the tournament organizers, you can ask them to swap the position of your cow with another cow only once, or you can choose to do nothing.Find the maximum number of wins your cow can achieve.",
+    "input_specification": "InputEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.The first line of each test case contains two integers n and k (2 ≤ n ≤ 10^5, 1 ≤ k ≤ n) — the number of cows and your cow's index.The second line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — the Cowdeforces rating of the cows. It is guaranteed that a_i's are pairwise different.It is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output_specification": "OutputFor each test case, print one integer: the maximum number of wins cow k can achieve if you choose to swap (or do nothing) optimally.",
+    "sample_tests": [
+        {
+            "input": "3\n6 1\n12 10 14 11 8 3\n6 5\n7 2 727 10 12 13\n2 2\n1000000000 1",
+            "output": "1\n2\n0"
+        }
+    ],
+    "note": "In the first test case, it is optimal to do nothing. Let\na′\nbe the Cowdeforces rating of the cows in the original order (with your cow's rating bolded), then\nIn the second test case, it is optimal to swap your cow to position\n3\n. Then, let\na′\nbe the Cowdeforces rating of the cows in the order after the swap.",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy"
+    ],
+    "rating": "1200"
+}
