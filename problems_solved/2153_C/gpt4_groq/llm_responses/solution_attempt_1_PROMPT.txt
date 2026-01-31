@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T23:29:59
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2153_C**
+
+You are given n sticks, where the i-th stick has a length of a_i. You want to choose a non-empty subset of these sticks and use them as the sides of a polygon. Each selected stick must be used entirely as a single side of the polygon. It is not allowed for two or more sticks to be joined end-to-end in parallel to form a longer side.Your goal is to form a polygon that is symmetrical, strictly convex, and non-degenerate: Symmetrical: there exists a line of symmetry such that when the polygon is folded along this line, the two halves coincide exactly. Strictly convex: all its internal angles are strictly less than 180^\circ. Non-degenerate: no two consecutive sides coincide at least partially, no side has zero length, and no angle equals 180^\circ. Among all such polygons that you can form with the sticks, find the maximum possible perimeter^{\text{∗}}. If no valid polygon exists, output 0.^{\text{∗}}The perimeter of a polygon is equal to the sum of the lengths of its sides.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

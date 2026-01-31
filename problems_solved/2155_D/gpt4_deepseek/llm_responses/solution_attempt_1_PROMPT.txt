@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-24T08:10:47
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2155_D**
+
+This is an interactive problem. Refer to the Interaction section below for better understanding.There are n (2 ≤ n ≤ 40) batteries numbered 1, 2, ..., n. Some of them work while the others don't. Let a be the number of batteries that work. It is guaranteed that \mathbf{a ≥q 2}.You are given n but not a.There is a flashlight which can hold two batteries and it only turns on when both batteries work. The batteries have been shuffled and you don't know which ones work and which ones don't. You can choose two batteries and try them in the flashlight. You want to find a pair of batteries that work. However, you are worried about breaking the flashlight, so you want to limit the amount of trials you attempt.Therefore, you should find a pair of working batteries using at most ≤ft \lfloor \frac{n^2}{a} \right \rfloor trials.The interactor is adaptive. This means that whether battery i (1 ≤ i ≤ n) works is not fixed and may change during the interaction. However, it is guaranteed that there exi
+
+**Task:** Please provide a well-structured and optimized C++ solution.

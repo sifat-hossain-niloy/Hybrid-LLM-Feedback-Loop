@@ -1,0 +1,20 @@
+{
+  "problem_id": "2109_B",
+  "contest_id": "2109",
+  "letter": "B",
+  "title": "Problem 2109_B",
+  "statement": "Duelists Mouf and Fouad enter the arena, which is an n \u00d7 m grid!Fouad's monster starts at cell (a, b), where rows are numbered 1 to n and columns 1 to m.Mouf and Fouad will keep duelling until the grid consists of only one cell.In each turn: Mouf first cuts the grid along a row or column line into two parts, discarding the part without Fouad's monster. Note that the grid must have at least two cells; otherwise, the game has already ended. After that, in the same turn, Fouad moves his monster to ",
+  "rating": "1200",
+  "tags": [
+    "bitmasks",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "8\n2 2 1 1\n3 3 2 2\n2 7 1 4\n2 7 2 2\n8 9 4 6\n9 9 5 5\n2 20 2 11\n22 99 20 70",
+      "output": "2\n4\n4\n3\n6\n8\n6\n10"
+    }
+  ],
+  "created_at": "2025-11-23T13:10:53"
+}

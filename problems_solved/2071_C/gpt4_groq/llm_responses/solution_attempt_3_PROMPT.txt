@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-24T21:57:25
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2071_C**
+
+In an Italian village, a hungry mouse starts at vertex \textrm{st} on a given tree^{\text{∗}} with n vertices.Given a permutation p of length n^{\text{†}}, there are n steps. For the i-th step: A tempting piece of Parmesan cheese appears at vertex p_i. If the mouse is currently at vertex p_i, it will stay there and enjoy the moment. Otherwise, it will move along the simple path to vertex p_i by one edge. Your task is to find such a permutation so that, after all n steps, the mouse inevitably arrives at vertex \textrm{en}, where a trap awaits.Note that the mouse must arrive at \textrm{en} after all n steps, though it may pass through \textrm{en} earlier during the process.^{\text{∗}}A tree is a connected graph without cycles. ^{\text{†}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

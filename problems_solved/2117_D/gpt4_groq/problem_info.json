@@ -1,0 +1,20 @@
+{
+  "problem_id": "2117_D",
+  "contest_id": "2117",
+  "letter": "D",
+  "title": "Problem 2117_D",
+  "statement": "Yousef wants to explode an array a_1, a_2, ..., a_n. An array gets exploded when all of its elements become equal to zero.In one operation, Yousef can do exactly one of the following: For every index i in a, decrease a_i by i. For every index i in a, decrease a_i by n - i + 1. Your task is to help Yousef determine if it is possible to explode the array using any number of operations.",
+  "rating": "1200",
+  "tags": [
+    "binary search",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n4\n3 6 6 3\n5\n21 18 15 12 9\n10\n2 6 10 2 5 5 1 2 4 10\n7\n10 2 16 12 8 20 4\n2\n52 101\n2\n10 2",
+      "output": "NO\nYES\nNO\nNO\nYES\nNO"
+    }
+  ],
+  "created_at": "2025-11-25T06:05:50"
+}

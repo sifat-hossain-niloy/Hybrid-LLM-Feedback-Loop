@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-28T12:00:03
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2051_E**
+
+A batch of Christmas trees has arrived at the largest store in Berland. n customers have already come to the store, wanting to buy them.Before the sales begin, the store needs to determine the price for one tree (the price is the same for all customers). To do this, the store has some information about each customer.For the i-th customer, two integers a_i and b_i are known, which define their behavior: if the price of the product is at most a_i, the customer will buy a tree and leave a positive review; otherwise, if the price of the product is at most b_i, the customer will buy a tree but leave a negative review; otherwise, the customer will not buy a tree at all. Your task is to calculate the maximum possible earnings for the store, given that it can receive no more than k negative reviews.
+
+**Previous Attempt Failed:** Wrong answer on test 5
+
+**Task:** Please provide a corrected solution addressing the identified issues.

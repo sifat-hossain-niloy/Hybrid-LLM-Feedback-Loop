@@ -1,0 +1,49 @@
+{
+  "problem_id": "2050_F",
+  "workflow_type": "gpt4_groq",
+  "workflow_session": "2050_F_gpt4_groq_2875347b",
+  "start_time": "2025-11-23T08:06:53",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-23T08:06:53",
+      "duration_seconds": 278.39,
+      "solution_file": "2050_F_Solution_1.cpp",
+      "submission_id": "349831212",
+      "verdict": "Wrong answer on test 11",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-23T08:12:43",
+      "duration_seconds": 271.8,
+      "solution_file": "2050_F_Solution_2.cpp",
+      "submission_id": "349308209",
+      "verdict": "Memory limit exceeded on test 7",
+      "execution_time_ms": 16,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-23T08:18:35",
+      "duration_seconds": 169.86,
+      "solution_file": "2050_F_Solution_3.cpp",
+      "submission_id": "349772642",
+      "verdict": "Time limit exceeded on test 4",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-23T08:22:42",
+      "duration_seconds": 324.78,
+      "solution_file": "2050_F_Solution_4.cpp",
+      "submission_id": "348622311",
+      "verdict": "Runtime error on test 12",
+      "execution_time_ms": 1000,
+      "accepted": false
+    }
+  ]
+}

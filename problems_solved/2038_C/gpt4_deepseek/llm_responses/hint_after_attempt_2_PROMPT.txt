@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 2
+Timestamp: 2025-11-28T12:58:05
+Model: deepseek-r1-0528
+Verdict: Runtime error on test 14
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2038_C
+**Verdict:** Runtime error on test 14
+
+**Task:** Identify the bug and suggest improvements.

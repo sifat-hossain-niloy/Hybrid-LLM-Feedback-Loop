@@ -1,7 +1,7 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 05:32:52
- * Workflow: GPT-4 + Mistral
+ * Problem: 2043_C
+ * Generated: 2025-11-23T04:54:58
+ * Workflow: gpt4_mistral
  * Solution Model: gpt-4
  * Debugging Critic: codestral-2508
  * Iteration: 1
@@ -11,42 +11,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        int x = 0;
-        for(int i = 0; i < n; i++) {
+        vector<long long> a(n), prefix(n+1, 0);
+        for(int i=0;i<n;i++){{
             cin >> a[i];
-            if(a[i] != -1 && a[i] != 1) {
-                x = a[i];
-            }
-        }
-
-        set<int> sums;
-        int sum = 0;
-        for(int i = 0; i < n; i++) {
-            sum += a[i];
-            sums.insert(sum);
-        }
-
-        if(x != 0) {
-            for(int i = x - 1; i <= x + 1; i++) {
-                sums.insert(i);
-            }
-        }
-
-        for(auto it : sums) {
-            cout << it << " ";
-        }
-        cout << "\n";
-    }
-
+            prefix[i+1] = prefix[i] + a[i];
+        }}
+        
+        long long ans = LLONG_MIN;
+        for(int i=0;i<n;i++){{
+            for(int j=i+1;j<=n;j++){{
+                ans = max(ans, prefix[j] - prefix[i]);
+            }}
+        }}
+        cout << ans << "\n";
+    }}
     return 0;
-}
+}}

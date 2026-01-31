@@ -1,0 +1,18 @@
+{
+  "problem_id": "2160_C",
+  "status": "failed",
+  "accepted": false,
+  "total_attempts": 4,
+  "start_time": "2025-11-22T12:47:25",
+  "end_time": "2025-11-22T13:07:44",
+  "total_duration_minutes": 20.32,
+  "successful_attempt": null,
+  "best_verdict": null,
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 0,
+    "wrong_answers": 2,
+    "time_limit_exceeded": 1,
+    "memory_limit_exceeded": 1
+  }
+}

@@ -2,8 +2,8 @@
   "problem_id": "2135_A",
   "contest_id": "2135",
   "letter": "A",
-  "title": "In the first test case, the whole array",
-  "statement": "We define that a block is an array where all elements in it are equal to the length of the array. For example, [3, 3, 3], [1], and [4, 4, 4, 4] are blocks, while [1, 1, 1] and [2, 3, 3] are not.An array is called neat if it can be obtained by the concatenation of an arbitrary number of blocks (possibly zero). Note that an empty array is always neat.You are given an array a consisting of n integers. Find the length of its longest neat subsequence^{\\text{∗}}. ^{\\text{∗}}A sequence c is a subsequence of a sequence a if c can be obtained from a by the deletion of several (possibly, zero or all) element from arbitrary positions.",
+  "title": "Problem 2135_A",
+  "statement": "We define that a block is an array where all elements in it are equal to the length of the array. For example, [3, 3, 3], [1], and [4, 4, 4, 4] are blocks, while [1, 1, 1] and [2, 3, 3] are not.An array is called neat if it can be obtained by the concatenation of an arbitrary number of blocks (possibly zero). Note that an empty array is always neat.You are given an array a consisting of n integers. Find the length of its longest neat subsequence^{\\text{\u2217}}. ^{\\text{\u2217}}A sequence c is a subsequen",
   "rating": "1200",
   "tags": [
     "data structures",
@@ -12,9 +12,8 @@
   "sample_tests": [
     {
       "input": "6\n1\n1\n2\n2 2\n4\n2 2 1 1\n6\n1 2 3 3 3 1\n8\n8 8 8 8 8 8 8 7\n10\n2 3 3 1 2 3 5 1 1 7",
-      "output": "1\n2\n4\n5\n0\n5",
-      "kind": "sample"
+      "output": "1\n2\n4\n5\n0\n5"
     }
   ],
-  "created_at": "2025-11-05T11:16:29.555075"
+  "created_at": "2025-11-27T16:27:54"
 }

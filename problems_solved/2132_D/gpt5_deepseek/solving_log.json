@@ -1,0 +1,19 @@
+{
+  "problem_id": "2132_D",
+  "workflow_type": "gpt5_deepseek",
+  "workflow_session": "2132_D_gpt5_deepseek_971e947a",
+  "start_time": "2025-11-25T10:35:09",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-25T10:35:09",
+      "duration_seconds": 288.94,
+      "solution_file": "2132_D_Solution_1.cpp",
+      "submission_id": "349359761",
+      "verdict": "Accepted",
+      "execution_time_ms": 125,
+      "accepted": true
+    }
+  ]
+}

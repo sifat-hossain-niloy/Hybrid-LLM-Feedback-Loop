@@ -1,0 +1,49 @@
+{
+  "problem_id": "2065_C2",
+  "workflow_type": "gpt5_deepseek",
+  "workflow_session": "2065_C2_gpt5_deepseek_5b7e7229",
+  "start_time": "2025-11-23T08:55:17",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-23T08:55:17",
+      "duration_seconds": 237.02,
+      "solution_file": "2065_C2_Solution_1.cpp",
+      "submission_id": "349778864",
+      "verdict": "Time limit exceeded on test 8",
+      "execution_time_ms": 842,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-23T09:00:27",
+      "duration_seconds": 211.34,
+      "solution_file": "2065_C2_Solution_2.cpp",
+      "submission_id": "349572883",
+      "verdict": "Wrong answer on test 2",
+      "execution_time_ms": 68,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-23T09:05:21",
+      "duration_seconds": 204.95,
+      "solution_file": "2065_C2_Solution_3.cpp",
+      "submission_id": "348982547",
+      "verdict": "Wrong answer on test 14",
+      "execution_time_ms": 36,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-23T09:10:01",
+      "duration_seconds": 235.75,
+      "solution_file": "2065_C2_Solution_4.cpp",
+      "submission_id": "349263546",
+      "verdict": "Memory limit exceeded on test 8",
+      "execution_time_ms": 78,
+      "accepted": false
+    }
+  ]
+}

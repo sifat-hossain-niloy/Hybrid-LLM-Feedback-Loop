@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-21T23:09:20
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2039_C2**
+
+This is the hard version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.Shohag has two integers x and m. Help him count the number of integers 1 ≤ y ≤ m such that x \oplus y is divisible^{\text{∗}} by either x, y, or both. Here \oplus is the bitwise XOR operator.^{\text{∗}}The number a is divisible by the number b if there exists an integer c such that a = b · c.
+
+**Previous Attempt Failed:** Wrong answer on test 4
+
+**Task:** Please provide a corrected solution addressing the identified issues.

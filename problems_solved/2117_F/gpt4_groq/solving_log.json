@@ -1,0 +1,39 @@
+{
+  "problem_id": "2117_F",
+  "workflow_type": "gpt4_groq",
+  "workflow_session": "2117_F_gpt4_groq_590e3ae7",
+  "start_time": "2025-11-25T20:31:16",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-25T20:31:16",
+      "duration_seconds": 198.68,
+      "solution_file": "2117_F_Solution_1.cpp",
+      "submission_id": "349139434",
+      "verdict": "Wrong answer on test 15",
+      "execution_time_ms": 50,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-25T20:35:00",
+      "duration_seconds": 289.03,
+      "solution_file": "2117_F_Solution_2.cpp",
+      "submission_id": "348934996",
+      "verdict": "Wrong answer on test 10",
+      "execution_time_ms": 77,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-25T20:40:22",
+      "duration_seconds": 262.16,
+      "solution_file": "2117_F_Solution_3.cpp",
+      "submission_id": "348867757",
+      "verdict": "Accepted",
+      "execution_time_ms": 181,
+      "accepted": true
+    }
+  ]
+}

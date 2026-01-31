@@ -1,0 +1,20 @@
+{
+  "problem_id": "2117_F",
+  "contest_id": "2117",
+  "letter": "F",
+  "title": "Problem 2117_F",
+  "statement": "Yousef has a rooted tree^{\\text{\u2217}} consisting of exactly n vertices, which is rooted at vertex 1. You would like to give Yousef an array a of length n, where each a_i (1 \u2264 i \u2264 n) can either be 1 or 2.Let s_u denote the sum of a_v where vertex v is in the subtree^{\\text{\u2020}} of vertex u. Yousef considers the tree special if all the values in s are pairwise distinct (i.e., all subtree sums are unique).Your task is to help Yousef count the number of different arrays a that result in the tree being ",
+  "rating": "1800",
+  "tags": [
+    "combinatorics",
+    "dfs and similar",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "7\n2\n1 2\n8\n1 2\n2 3\n3 8\n2 4\n4 5\n5 6\n6 7\n10\n1 2\n2 3\n3 4\n4 5\n5 6\n4 7\n7 8\n4 9\n9 10\n7\n1 4\n4 2\n3 2\n3 5\n2 6\n6 7\n7\n1 2\n2 3\n3 4\n3 5\n4 6\n6 7\n7\n5 7\n4 6\n1 6\n1 3\n2 6\n6 7\n5\n3 4\n1 2\n1 3\n2 5",
+      "output": "4\n24\n0\n16\n48\n0\n4"
+    }
+  ],
+  "created_at": "2025-11-25T18:11:16"
+}

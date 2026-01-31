@@ -1,0 +1,22 @@
+{
+  "problem_id": "2153_C",
+  "contest_id": "2153",
+  "letter": "C",
+  "title": "Problem 2153_C",
+  "statement": "You are given n sticks, where the i-th stick has a length of a_i. You want to choose a non-empty subset of these sticks and use them as the sides of a polygon. Each selected stick must be used entirely as a single side of the polygon. It is not allowed for two or more sticks to be joined end-to-end in parallel to form a longer side.Your goal is to form a polygon that is symmetrical, strictly convex, and non-degenerate: Symmetrical: there exists a line of symmetry such that when the polygon is fo",
+  "rating": "1500",
+  "tags": [
+    "constructive algorithms",
+    "geometry",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n3\n5 5 7\n3\n4 5 7\n3\n5 5 10\n7\n4 3 5 1 5 3 3\n4\n2 3 5 7",
+      "output": "17\n0\n0\n23\n0"
+    }
+  ],
+  "created_at": "2025-11-27T19:49:59"
+}

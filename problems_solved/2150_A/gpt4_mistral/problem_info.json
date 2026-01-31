@@ -1,0 +1,20 @@
+{
+  "problem_id": "2150_A",
+  "contest_id": "2150",
+  "letter": "A",
+  "title": "Problem 2150_A",
+  "statement": "Rymdkraft - Rymdsylt\u2800Hacks are disabled in this problem.There is a strip containing 10^9 cells, numbered from 1 to 10^9. Each cell is either black or white. Initially, m distinct cells a_1, a_2, ..., a_m are black, and the others are white.If a person is on some cell x, he might be given two types of commands: \\texttt{A}: jump to the next cell, i.e. cell x + 1; \\texttt{B}: jump to the next white cell, i.e. the minimum y > x such that cell y is white. There is a string s of length n, consisting o",
+  "rating": "1300",
+  "tags": [
+    "data structures",
+    "hashing",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n3 2\nBAB\n2 5\n3 4\nABA\n1 4 9 10\n5 2\nABABB\n1 7\n3 1\nBBA\n6\n1 4\nA\n1 3 4 1000000000",
+      "output": "4\n2 3 5 6 \n7\n1 2 3 4 6 9 10 \n7\n1 2 3 5 6 7 9 \n3\n2 4 6 \n5\n1 2 3 4 1000000000"
+    }
+  ],
+  "created_at": "2025-11-28T00:56:25"
+}

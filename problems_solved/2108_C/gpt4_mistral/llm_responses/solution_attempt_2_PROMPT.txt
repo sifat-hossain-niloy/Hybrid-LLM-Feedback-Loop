@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-23T11:51:35
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2108_C**
+
+Neo wants to escape from the Matrix. In front of him are n buttons arranged in a row. Each button has a weight given by an integer: a_1, a_2, ..., a_n.Neo is immobilized, but he can create and move clones. This means he can perform an unlimited number of actions of the following two types in any order: Create a clone in front of a specific button. Move an existing clone one position to the left or right. As soon as a clone is in front of another button that has not yet been pressed—regardless of whether he was created or moved — he immediately presses it. If the button has already been pressed, a clone does nothing — buttons can only be pressed once.For Neo to escape, he needs to press all the buttons in such an order that the sequence of their weights is non-increasing — that is, if b_1, b_2, ..., b_n are the weights of the buttons in the order they are pressed, then it must hold that b_1 ≥q b_2 ≥q ·s ≥q b_n.Your task is to determine the minimum number of clones that Neo needs to crea
+
+**Previous Attempt Failed:** Time limit exceeded on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

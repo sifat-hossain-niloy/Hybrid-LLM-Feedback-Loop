@@ -1,0 +1,18 @@
+{
+  "problem_id": "2042_C",
+  "contest_id": "2042",
+  "letter": "C",
+  "title": "Problem 2042_C",
+  "statement": "Alice and Bob participate in a fishing contest! In total, they caught n fishes, numbered from 1 to n (the bigger the fish, the greater its index). Some of these fishes were caught by Alice, others \u2014 by Bob.Their performance will be evaluated as follows. First, an integer m will be chosen, and all fish will be split into m non-empty groups. The first group should contain several (at least one) smallest fishes, the second group \u2014 several (at least one) next smallest fishes, and so on. Each fish sh",
+  "rating": "1800",
+  "tags": [
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "7\n4 1\n1001\n4 1\n1010\n4 1\n0110\n4 2\n0110\n6 3\n001110\n10 20\n1111111111\n5 11\n11111",
+      "output": "2\n-1\n2\n-1\n3\n4\n-1"
+    }
+  ],
+  "created_at": "2025-11-21T16:19:10"
+}

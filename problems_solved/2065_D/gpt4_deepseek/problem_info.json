@@ -1,0 +1,19 @@
+{
+  "problem_id": "2065_D",
+  "contest_id": "2065",
+  "letter": "D",
+  "title": "Problem 2065_D",
+  "statement": "Let's denote the score of an array b with k elements as \u2211_{i=1}^{k}\u2264ft(\u2211_{j=1}^ib_j\\right). In other words, let S_i denote the sum of the first i elements of b. Then, the score can be denoted as S_1+S_2+...+S_k.Skibidus is given n arrays a_1,a_2,...,a_n, each of which contains m elements. Being the sigma that he is, he would like to concatenate them in any order to form a single array containing n\u00b7 m elements. Please find the maximum possible score Skibidus can achieve with his concatenated arra",
+  "rating": "1200",
+  "tags": [
+    "greedy",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n2 2\n4 4\n6 1\n3 4\n2 2 2 2\n3 2 1 2\n4 1 2 1\n2 3\n3 4 5\n1 1 9",
+      "output": "41\n162\n72"
+    }
+  ],
+  "created_at": "2025-11-23T10:08:53"
+}

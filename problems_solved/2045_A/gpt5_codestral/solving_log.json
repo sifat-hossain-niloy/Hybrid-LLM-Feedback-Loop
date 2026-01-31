@@ -1,0 +1,29 @@
+{
+  "problem_id": "2045_A",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2045_A_gpt5_codestral_851c4113",
+  "start_time": "2025-11-28T06:53:34",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T06:53:34",
+      "duration_seconds": 211.94,
+      "solution_file": "2045_A_Solution_1.cpp",
+      "submission_id": "348947709",
+      "verdict": "Memory limit exceeded on test 5",
+      "execution_time_ms": 671,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-28T06:57:54",
+      "duration_seconds": 250.82,
+      "solution_file": "2045_A_Solution_2.cpp",
+      "submission_id": "348839094",
+      "verdict": "Accepted",
+      "execution_time_ms": 196,
+      "accepted": true
+    }
+  ]
+}

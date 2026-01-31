@@ -1,0 +1,21 @@
+{
+  "problem_id": "2118_C",
+  "contest_id": "2118",
+  "letter": "C",
+  "title": "Problem 2118_C",
+  "statement": "You are given an array a of n integers. We define the \\text{beauty} of a number x to be the number of 1 bits in its binary representation. We define the beauty of an array to be the sum of beauties of the numbers it contains. In one operation, you can select an index i\u00a0(1 \u2264 i \u2264 n) and increase a_i by 1. Find the maximum beauty of the array after doing at most k operations.",
+  "rating": "1300",
+  "tags": [
+    "bitmasks",
+    "data structures",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n5 2\n0 1 7 2 4\n5 3\n0 1 7 2 4\n1 1\n3\n3 0\n2 0 3\n1 100000000000\n0",
+      "output": "8\n9\n2\n3\n36"
+    }
+  ],
+  "created_at": "2025-11-24T14:49:20"
+}

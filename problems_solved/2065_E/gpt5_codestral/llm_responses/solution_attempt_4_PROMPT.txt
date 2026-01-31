@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-23T01:12:54
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2065_E**
+
+With the approach of Valentine's Day, Skibidus desperately needs a way to rizz up his crush! Fortunately, he knows of just the way: creating the perfect Binary String!Given a binary string^{\text{∗}} t, let x represent the number of \texttt{0} in t and y represent the number of \texttt{1} in t. Its balance-value is defined as the value of \max(x-y, y-x).Skibidus gives you three integers n, m, and k. He asks for your help to construct a binary string s of length n+m with exactly n \texttt{0}'s and m \texttt{1}'s such that the maximum balance-value among all of its substrings^{\text{†}} is exactly k. If it is not possible, output -1.^{\text{∗}}A binary string only consists of characters \texttt{0} and \texttt{1}.^{\text{†}}A string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.
+
+**Previous Attempt Failed:** Wrong answer on test 14
+
+**Task:** Please provide a corrected solution addressing the identified issues.

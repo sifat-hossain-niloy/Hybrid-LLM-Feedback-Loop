@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-23T03:36:30
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2050_F**
+
+You are given an array a of length n and q queries l, r.For each query, find the maximum possible m, such that all elements a_l, a_{l+1}, ..., a_r are equal modulo m. In other words, a_l \bmod m = a_{l+1} \bmod m = ... = a_r \bmod m, where a \bmod b — is the remainder of division a by b. In particular, when m can be infinite, print 0.
+
+**Previous Attempt Failed:** Time limit exceeded on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

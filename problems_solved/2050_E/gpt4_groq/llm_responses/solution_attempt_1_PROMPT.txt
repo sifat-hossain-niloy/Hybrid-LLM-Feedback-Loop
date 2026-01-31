@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-26T17:47:20
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2050_E**
+
+You are given three strings: a, b, and c, consisting of lowercase Latin letters. The string c was obtained in the following way: At each step, either string a or string b was randomly chosen, and the first character of the chosen string was removed from it and appended to the end of string c, until one of the strings ran out. After that, the remaining characters of the non-empty string were added to the end of c. Then, a certain number of characters in string c were randomly changed. For example, from the strings a=\color{red}{\text{abra}} and b=\color{blue}{\text{cada}}, without character replacements, the strings \color{blue}{\text{ca}}\color{red}{\text{ab}}\color{blue}{\text{d}}\color{red}{\text{ra}}\color{blue}{\text{a}}, \color{red}{\text{abra}}\color{blue}{\text{cada}}, \color{red}{\text{a}}\color{blue}{\text{cada}}\color{red}{\text{bra}} could be obtained.Find the minimum number of characters that could have been changed in string c.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

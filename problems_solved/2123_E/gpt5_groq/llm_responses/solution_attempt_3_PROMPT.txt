@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-28T17:06:44
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2123_E**
+
+Define the \mathrm{MEX} (minimum excluded value) of an array to be the smallest nonnegative integer not present in the array. For example, \mathrm{MEX}([2, 2, 1]) = 0 because 0 is not in the array. \mathrm{MEX}([3, 1, 0, 1]) = 2 because 0 and 1 are in the array but 2 is not. \mathrm{MEX}([0, 3, 1, 2]) = 4 because 0, 1, 2, and 3 are in the array but 4 is not. You are given an array a of size n of nonnegative integers.For all k (0≤q k ≤q n), count the number of possible values of \mathrm{MEX}(a) after removing exactly k values from a.
+
+**Previous Attempt Failed:** Wrong answer on test 14
+
+**Task:** Please provide a corrected solution addressing the identified issues.

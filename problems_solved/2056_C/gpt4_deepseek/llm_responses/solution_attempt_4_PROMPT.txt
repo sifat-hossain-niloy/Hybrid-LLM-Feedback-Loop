@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-25T10:16:07
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2056_C**
+
+For an integer sequence a = [a_1, a_2, ..., a_n], we define f(a) as the length of the longest subsequence^{\text{∗}} of a that is a palindrome^{\text{†}}. Let g(a) represent the number of subsequences of length f(a) that are palindromes. In other words, g(a) counts the number of palindromic subsequences in a that have the maximum length.Given an integer n, your task is to find any sequence a of n integers that satisfies the following conditions: 1 ≤ a_i ≤ n for all 1 ≤ i ≤ n. g(a) > n It can be proven that such a sequence always exists under the given constraints.^{\text{∗}}A sequence x is a subsequence of a sequence y if x can be obtained from y by the deletion of several (possibly, zero or all) element from arbitrary positions. ^{\text{†}}A palindrome is a sequence that reads the same from left to right as from right to left. For example, [1, 2, 1, 3, 1, 2, 1], [5, 5, 5, 5], and [4, 3, 3, 4] are palindromes, while [1, 2] and [2, 3, 3, 3, 3] are not.
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

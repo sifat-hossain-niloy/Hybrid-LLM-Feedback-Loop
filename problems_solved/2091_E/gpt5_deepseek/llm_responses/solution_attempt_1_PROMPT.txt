@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T14:52:54
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2091_E**
+
+Recently, Misha at the IT Campus "NEIMARK" camp learned a new topic — the Euclidean algorithm.He was somewhat surprised when he realized that a · b = lcm(a, b) · gcd(a, b), where gcd(a, b) — is the greatest common divisor (GCD) of the numbers a and b and lcm(a, b) — is the least common multiple (LCM). Misha thought that since the product of LCM and GCD exists, it might be interesting to consider their quotient: F(a,b)=\frac{lcm(a, b)}{gcd(a, b)}.For example, he took a = 2 and b = 4, computed F(2, 4) = \frac{4}{2} = 2 and obtained a prime number (a number is prime if it has exactly two divisors)! Now he considers F(a, b) to be an interesting ratio if a < b and F(a, b) is a prime number.Since Misha has just started studying number theory, he needs your help to calculate — how many different pairs of numbers a and b are there such that F(a, b) is an interesting ratio and 1 ≤q a < b ≤q n?
+
+**Task:** Please provide a well-structured and optimized C++ solution.

@@ -1,0 +1,19 @@
+{
+  "problem_id": "2051_D",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2051_D_gpt5_codestral_7a56d8d8",
+  "start_time": "2025-11-28T10:46:03",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T10:46:03",
+      "duration_seconds": 250.41,
+      "solution_file": "2051_D_Solution_1.cpp",
+      "submission_id": "348709377",
+      "verdict": "Accepted",
+      "execution_time_ms": 164,
+      "accepted": true
+    }
+  ]
+}

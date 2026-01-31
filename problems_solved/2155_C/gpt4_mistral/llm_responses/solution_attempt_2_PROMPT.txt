@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-24T14:05:43
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2155_C**
+
+There are n wizards in a row numbered 1 to n from left to right. Each wizard has an invisibility cape which can be worn either on his left side or on his right side. Harry walks from the position of wizard 1 until the position of wizard n (1 ≤ n ≤ 10^5), and registers how many wizards he sees from each wizard's position. A wizard in position j is visible from position i if: Wizard j wears his cape on his left side and i ≥ j. Wizard j wears his cape on his right side and i ≤ j. In particular, note that wizard i is visible from position i. Harry's list is very old but, after much work, you managed to decipher it. The list is an array a of n elements, where the i-th element a_i (1 ≤ a_i ≤ n) is the number of wizards that Harry saw from the position of wizard i. Your task is to determine how many of all the possible cape arrangements that Harry could have seen are consistent with the data recorded by the list, modulo 676\,767\,677.
+
+**Previous Attempt Failed:** Wrong answer on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

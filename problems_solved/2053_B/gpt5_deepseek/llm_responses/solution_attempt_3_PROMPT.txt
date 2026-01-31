@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-25T08:59:28
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2053_B**
+
+If it was so, then let's make it a deal...— MayDay, GentlenessEven after copying the paintings from famous artists for ten years, unfortunately, Eric is still unable to become a skillful impressionist painter. He wants to forget something, but the white bear phenomenon just keeps hanging over him.Eric still remembers n pieces of impressions in the form of an integer array. He records them as w_1, w_2, ..., w_n. However, he has a poor memory of the impressions. For each 1 ≤q i ≤q n, he can only remember that l_i ≤q w_i ≤q r_i.Eric believes that impression i is unique if and only if there exists a possible array w_1, w_2, ..., w_n such that w_i ≠q w_j holds for all 1 ≤q j ≤q n with j ≠q i.Please help Eric determine whether impression i is unique for every 1 ≤q i ≤q n, independently for each i. Perhaps your judgment can help rewrite the final story.
+
+**Previous Attempt Failed:** Time limit exceeded on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

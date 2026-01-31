@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T07:08:51
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2097_A**
+
+The boarding process for various flights can occur in different ways: either by bus or through a telescopic jet bridge. Every day, exactly one flight is made from St. Petersburg to Minsk, and Vadim decided to demonstrate to the students that he always knows in advance how the boarding will take place.Vadim made a bet with n students, and with the i-th student, he made a bet on day a_i. Vadim wins the bet if he correctly predicts the boarding process on both day a_i+1 and day a_i+2.Although Vadim does not know in advance how the boarding will occur, he really wants to win the bet at least with one student and convince him of his predictive abilities. Check if there exists a strategy for Vadim that allows him to guarantee success.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

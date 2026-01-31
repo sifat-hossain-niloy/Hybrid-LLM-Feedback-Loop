@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-28T11:09:12
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2147_D**
+
+You are given an array a of n positive integers. Alice and Bob will play a game with this array. They will take alternating turns, with Alice going first.At each turn, the player must choose a value x>0 that appears in a at least once. Then, the player earns 1 point for each value x in the array, each value x in the array is decreased by 1 and becomes x-1. Note that the player can choose x only if it is present in a at the moment, so each valid move earns a positive amount of points. For example, if the array is [3,8,5,8] and Alice chooses x=8, the array will become [3,7,5,7] and Alice will earn 2 points.The game ends when no x can be chosen; that is, when all the elements in the array are zero.Given that both players want to maximize their points and play optimally, calculate the amount of points that each player will end up with.
+
+**Previous Attempt Failed:** Wrong answer on test 5
+
+**Task:** Please provide a corrected solution addressing the identified issues.

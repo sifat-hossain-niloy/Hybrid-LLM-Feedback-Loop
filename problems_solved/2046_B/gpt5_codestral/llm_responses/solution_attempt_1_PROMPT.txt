@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T10:06:36
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2046_B**
+
+You are given an array of integers a of length n. You can perform the following operation zero or more times: In one operation choose an index i (1 ≤ i ≤ n), assign a_i := a_i + 1, and then move a_i to the back of the array (to the rightmost position). For example, if a = [3, 5, 1, 9], and you choose i = 2, the array becomes [3, 1, 9, 6]. Find the lexicographically smallest^{\text{∗}} array you can get by performing these operations.^{\text{∗}}An array c is lexicographically smaller than an array d if and only if one of the following holds: c is a prefix of d, but c ≠ d; or in the first position where c and d differ, the array c has a smaller element than the corresponding element in d.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

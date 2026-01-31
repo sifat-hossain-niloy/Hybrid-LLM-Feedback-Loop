@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-24T23:26:35
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2124_C**
+
+Alice has an array a, consisting of n positive integers. The array satisfies the beautiful property that a_i divides a_{i+1} for each 1 ≤q i ≤q n - 1. Bob sees Alice's beautiful array and is jealous. To sabotage her, Bob first creates an array b of size n such that b_i=a_i for each 1 ≤q i ≤q n. Then, he chooses a positive integer x and multiplies some (possibly none, possibly all) elements in b by x. Formally, he chooses a (possibly-empty) subset S⊂eq\{1,2,...,n\}, and for each i∈ S, he sets b_i:=b_i· x. You are given an array b, but you don't know array a and the chosen number x. Please output any integer x that Bob could choose, so that multiplying some subset of elements of the correct array a by x would result in array b. It is guaranteed that the answer exists. If there are multiple possible integers, you can output any of them.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

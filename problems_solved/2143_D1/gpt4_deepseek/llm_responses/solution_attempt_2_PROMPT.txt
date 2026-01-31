@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-21T20:47:44
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2143_D1**
+
+This is the easy version of the problem. The difference between the versions is that in this version, n ≤ 300. You can hack only if you solved all versions of this problem. A sequence b_1, b_2, ..., b_k is called good if there exists a coloring of each index i in red or blue such that for every pair of indices i < j with b_i > b_j, the colors assigned to i and j are different.You are given a sequence a_1, a_2, ..., a_n. Compute the number of good subsequences of the sequence, including the empty subsequence^{\text{∗}}. Since the answer can be very large, output it modulo 10^9 + 7.^{\text{∗}}A sequence b is a subsequence of a sequence a if b can be obtained from a by the deletion of several (possibly, zero or all) element from arbitrary positions.
+
+**Previous Attempt Failed:** Wrong answer on test 14
+
+**Task:** Please provide a corrected solution addressing the identified issues.

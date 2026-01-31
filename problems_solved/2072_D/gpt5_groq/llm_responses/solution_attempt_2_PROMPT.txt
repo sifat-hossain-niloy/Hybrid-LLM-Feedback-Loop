@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-25T04:19:20
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2072_D**
+
+Akito got tired of being a simple locksmith at a bank, so he decided to enroll in the Magical Academy and become the best wizard in the world! However, to enroll, he needed to solve a single problem on the exam, which the ambitious hero could not manage.In the problem, he was given an array a of length n. He needed to minimize the number of inversions^{\text{∗}} in the array after applying the spell exactly once. The spell was simple; to apply it, Akito had to choose two numbers l and r such that 1 ≤ l ≤ r ≤ n and perform a cyclic shift of the subarray from l to r one position to the left.More formally, Akito selects the subarray [l, r] and modifies the array as follows: From the original array [a_1, a_2, ..., a_{l - 1}, \mathbf{ a_l }, \mathbf{ a_{l + 1} } , \mathbf{ ... }, \mathbf{ a_{r - 1} }, \mathbf{ a_r }, a_{r + 1}, ..., a_{n - 1}, a_n], he obtains the array [a_1, a_2, ..., a_{l - 1}, \mathbf{ a_{l + 1} }, \mathbf{ a_{l + 2} }, \mathbf{ ... }, \mathbf{ a_{r - 1} }, \mathbf{ a_{r
+
+**Previous Attempt Failed:** Wrong answer on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

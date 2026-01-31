@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-21T16:37:27
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2141_B**
+
+Alice and Bob are planning to play an online game together but haven't decided on which one yet. Alice has a list of n games she enjoys: a_1, a_2, ..., a_n. Bob, on the other hand, has a list of m games he likes: b_1, b_2, ..., b_m. They share at least one game in common between their lists.To choose a game, they take turns suggesting games from their lists. Alice begins by suggesting one of her favorite games. If Bob likes it, they play that game. If not, Bob suggests one of his favorite games. If Alice likes it, they play that game. This alternating process continues, with Alice and Bob each suggesting games from their lists in turn, ensuring that no game is suggested more than once.Your task is to calculate the maximum possible number of suggestions they will make while choosing which game to play.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

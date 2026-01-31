@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-28T17:38:33
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2074_E**
+
+This is an interactive problem. The pink soldiers hid from you n (3 ≤ n ≤ 1500) fixed points (x_1,y_1), (x_2,y_2), ..., (x_n,y_n), whose coordinates are not given to you. Also, it is known that no two points have the same coordinates, and no three points are collinear.You can ask the Frontman about three distinct indices i, j, k. Then, he will draw a triangle with points (x_i,y_i), (x_j,y_j), (x_k,y_k), and respond with the following: If at least one of the hidden points lies inside the triangle, then the Frontman gives you the index of one such point. Do note that if there are multiple such points, the Frontman can arbitrarily select one of them. Otherwise, the Frontman responds with 0. Your objective in this problem is to find a triangle not containing any other hidden point, such as the blue one in the diagram. Using at most \mathbf{75} queries, you must find any triangle formed by three of the points, not containing any other hidden point inside.Do note that the Frontman may be ada
+
+**Previous Attempt Failed:** Time limit exceeded on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

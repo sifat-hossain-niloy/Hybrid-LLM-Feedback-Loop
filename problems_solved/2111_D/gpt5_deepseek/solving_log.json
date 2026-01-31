@@ -1,0 +1,29 @@
+{
+  "problem_id": "2111_D",
+  "workflow_type": "gpt5_deepseek",
+  "workflow_session": "2111_D_gpt5_deepseek_1ab7b398",
+  "start_time": "2025-11-25T22:12:59",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-25T22:12:59",
+      "duration_seconds": 291.21,
+      "solution_file": "2111_D_Solution_1.cpp",
+      "submission_id": "349197761",
+      "verdict": "Time limit exceeded on test 15",
+      "execution_time_ms": 73,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-25T22:19:06",
+      "duration_seconds": 295.6,
+      "solution_file": "2111_D_Solution_2.cpp",
+      "submission_id": "349528843",
+      "verdict": "Accepted",
+      "execution_time_ms": 133,
+      "accepted": true
+    }
+  ]
+}

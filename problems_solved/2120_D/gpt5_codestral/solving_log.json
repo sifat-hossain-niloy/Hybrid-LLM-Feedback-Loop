@@ -1,0 +1,29 @@
+{
+  "problem_id": "2120_D",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2120_D_gpt5_codestral_eddca416",
+  "start_time": "2025-11-26T22:45:52",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-26T22:45:52",
+      "duration_seconds": 219.77,
+      "solution_file": "2120_D_Solution_1.cpp",
+      "submission_id": "348507982",
+      "verdict": "Time limit exceeded on test 7",
+      "execution_time_ms": 77,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-26T22:50:13",
+      "duration_seconds": 251.29,
+      "solution_file": "2120_D_Solution_2.cpp",
+      "submission_id": "349355123",
+      "verdict": "Accepted",
+      "execution_time_ms": 86,
+      "accepted": true
+    }
+  ]
+}

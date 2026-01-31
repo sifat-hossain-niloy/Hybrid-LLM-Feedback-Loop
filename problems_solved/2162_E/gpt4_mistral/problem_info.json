@@ -1,0 +1,20 @@
+{
+  "problem_id": "2162_E",
+  "contest_id": "2162",
+  "letter": "E",
+  "title": "Problem 2162_E",
+  "statement": "We call an array [b_1, b_2, ..., b_m] of length m palindromic if the following condition holds: b_i = b_{m-i+1} for all 1 \u2264 i \u2264 m In other words, an array is palindromic if it reads the same forward and backward.You are given an array [a_1, a_2, ... , a_n] of n integers where 1 \u2264 a_i \u2264 n and an integer k.You are required to perform the following operation exactly k times: choose an integer x such that 1 \u2264 x \u2264 n, append x to the end of the array a. Your goal is to perform these k operations in su",
+  "rating": "1600",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "schedules"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n4 1\n1 3 3 4\n4 2\n2 2 2 2\n5 1\n4 1 5 2 2\n6 3\n1 2 3 4 5 6\n5 3\n3 2 5 2 3",
+      "output": "2 \n1 3 \n3 \n3 4 1\n4 1 5"
+    }
+  ],
+  "created_at": "2025-11-25T18:35:28"
+}

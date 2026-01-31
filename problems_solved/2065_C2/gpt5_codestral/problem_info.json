@@ -1,0 +1,19 @@
+{
+  "problem_id": "2065_C2",
+  "contest_id": "2065",
+  "letter": "C2",
+  "title": "Problem 2065_C2",
+  "statement": "This is the hard version of the problem. In this version, m \u2264q 2\u00b7 10^5.Skibidus has obtained two arrays a and b, containing n and m elements respectively. For each integer i from 1 to n, he is allowed to perform the operation at most once: Choose an integer j such that 1 \u2264q j \u2264q m. Set a_i := b_j - a_i. Note that a_i may become non-positive as a result of this operation. Skibidus needs your help determining whether he can sort a in non-decreasing order^{\\text{\u2217}} by performing the above operatio",
+  "rating": "1300",
+  "tags": [
+    "binary search",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n1 3\n5\n9 1 1000000000\n3 2\n1 4 3\n3 4\n4 3\n2 4 6 5\n6 1 8\n5 2\n6 4 5 4 5\n4 1000\n3 1\n9 8 7\n8",
+      "output": "YES\nNO\nYES\nNO\nYES"
+    }
+  ],
+  "created_at": "2025-11-23T10:34:17"
+}

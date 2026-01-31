@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-22T02:43:30
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2116_B**
+
+Flower gives Gellyfish two permutations^{\text{∗}} of [0, 1, ..., n-1]: p_0, p_1, ..., p_{n-1} and q_0, q_1, ..., q_{n-1}.Now Gellyfish wants to calculate an array r_0,r_1,...,r_{n-1} through the following method: For all i (0 ≤q i ≤q n-1), r_i = \max\limits_{j=0}^{i} ≤ft(2^{p_j} + 2^{q_{i-j}} \right) But since Gellyfish is very lazy, you have to help her figure out the elements of r.Since the elements of r are very large, you are only required to output the elements of r modulo 998\,244\,353.^{\text{∗}}An array b is a permutation of an array a if b consists of the elements of a in arbitrary order. For example, [4,2,3,4] is a permutation of [3,2,4,4] while [1,2,2] is not a permutation of [1,2,3].
+
+**Previous Attempt Failed:** Runtime error on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

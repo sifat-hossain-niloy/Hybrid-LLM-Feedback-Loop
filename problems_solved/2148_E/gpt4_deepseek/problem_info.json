@@ -1,0 +1,20 @@
+{
+  "problem_id": "2148_E",
+  "contest_id": "2148",
+  "letter": "E",
+  "title": "Problem 2148_E",
+  "statement": "Farmer John has an array a containing n positive integers and an integer k. Let a[l, r] be a subarray^{\\text{\u2217}} of a. He performs the following procedure to independently determine if subarray a[l, r] is awesome: Initially, FJ has k empty multisets, numbered from 1 to k. Then, for each element a_i (1 \u2264q i \u2264q n) in a: If l\u2264q i\u2264q r (that is, a_i is in the subarray a[l, r]), he places a_i in multiset 1, Otherwise, he places a_i into any multiset he wants (which may be multiset 1). Subarray a[l, r]",
+  "rating": "1200",
+  "tags": [
+    "binary search",
+    "data structures",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n3 2\n1 1 1\n4 2\n1 2 1 2\n8 2\n3 3 3 3 2 2 2 2\n6 3\n1 1 1 1 1 1",
+      "output": "0\n7\n18\n11"
+    }
+  ],
+  "created_at": "2025-11-25T09:48:52"
+}

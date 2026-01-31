@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-23T16:52:46
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2065_C2**
+
+This is the hard version of the problem. In this version, m ≤q 2· 10^5.Skibidus has obtained two arrays a and b, containing n and m elements respectively. For each integer i from 1 to n, he is allowed to perform the operation at most once: Choose an integer j such that 1 ≤q j ≤q m. Set a_i := b_j - a_i. Note that a_i may become non-positive as a result of this operation. Skibidus needs your help determining whether he can sort a in non-decreasing order^{\text{∗}} by performing the above operation some number of times.^{\text{∗}}a is sorted in non-decreasing order if a_1 ≤q a_2 ≤q ... ≤q a_n.
+
+**Previous Attempt Failed:** Time limit exceeded on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,22 @@
+{
+  "problem_id": "2044_E",
+  "contest_id": "2044",
+  "letter": "E",
+  "title": "Problem 2044_E",
+  "statement": "Wave is given five integers k, l_1, r_1, l_2, and r_2. Wave wants you to help her count the number of ordered pairs (x, y) such that all of the following are satisfied: l_1 \u2264q x \u2264q r_1. l_2 \u2264q y \u2264q r_2. There exists a non-negative integer n such that \\frac{y}{x} = k^n.",
+  "rating": "1300",
+  "tags": [
+    "binary search",
+    "greedy",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n2 2 6 2 12\n2 1 1000000000 1 1000000000\n3 5 7 15 63\n1000000000 1 5 6 1000000000\n15 17 78 2596 20914861",
+      "output": "12\n1999999987\n6\n1\n197"
+    }
+  ],
+  "created_at": "2025-11-22T09:42:12"
+}

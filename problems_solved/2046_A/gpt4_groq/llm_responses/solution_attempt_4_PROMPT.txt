@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-22T03:17:44
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2046_A**
+
+There is a matrix consisting of 2 rows and n columns. The rows are numbered from 1 to 2 from top to bottom; the columns are numbered from 1 to n from left to right. Let's denote the cell on the intersection of the i-th row and the j-th column as (i,j). Each cell contains an integer; initially, the integer in the cell (i,j) is a_{i,j}.You can perform the following operation any number of times (possibly zero): choose two columns and swap them (i. e. choose two integers x and y such that 1 ≤ x < y ≤ n, then swap a_{1,x} with a_{1,y}, and then swap a_{2,x} with a_{2,y}). After performing the operations, you have to choose a path from the cell (1,1) to the cell (2,n). For every cell (i,j) in the path except for the last, the next cell should be either (i+1,j) or (i,j+1). Obviously, the path cannot go outside the matrix.The cost of the path is the sum of all integers in all (n+1) cells belonging to the path. You have to perform the operations and choose a path so that its cost is maximum po
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

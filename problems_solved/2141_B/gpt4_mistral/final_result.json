@@ -1,0 +1,20 @@
+{
+  "problem_id": "2141_B",
+  "status": "accepted",
+  "accepted": true,
+  "total_attempts": 3,
+  "start_time": "2025-11-21T22:45:27",
+  "end_time": "2025-11-21T23:00:35",
+  "total_duration_minutes": 15.13,
+  "successful_attempt": 3,
+  "best_verdict": "ACCEPTED",
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 0,
+    "wrong_answers": 0,
+    "time_limit_exceeded": 1,
+    "memory_limit_exceeded": 1
+  },
+  "execution_time_ms": 77,
+  "memory_kb": 11808
+}

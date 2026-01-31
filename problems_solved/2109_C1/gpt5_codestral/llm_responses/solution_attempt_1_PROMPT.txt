@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-21T23:51:57
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2109_C1**
+
+This is the easy version of the problem. In this version, you can send at most \mathbf{7} commands. You can make hacks only if all versions of the problem are solved.This is an interactive problem.Welcome, Duelists! In this interactive challenge, there is an unknown integer x (1 ≤ x ≤ 10^9). You must make it equal to a given integer in the input n. By harnessing the power of "Mathmech" monsters, you can send a command to do one of the following: CommandConstraintResultCaseUpdateJury's response"add y"-10^{18} ≤ y ≤ 10^{18}\mathrm{res} = x + y\text{if } 1 ≤ \mathrm{res} ≤ 10^{18}x ≤ftarrow \mathrm{res}"1"\mathrm{else}x ≤ftarrow x"0""mul y"1 ≤ y ≤ 10^{18}\mathrm{res} = x · y\text{if } 1 ≤ \mathrm{res} ≤ 10^{18}x ≤ftarrow \mathrm{res}"1"\mathrm{else}x ≤ftarrow x"0""div y"1 ≤ y ≤ 10^{18}\mathrm{res} = x/y\text{if } y divides xx ≤ftarrow \mathrm{res}"1"\mathrm{else}x ≤ftarrow x"0""digit"—\mathrm{res} = S(x)^{\text{∗}}—x ≤ftarrow \mathrm{res}"1" You have to make x equal to n using at most \ma
+
+**Task:** Please provide a well-structured and optimized C++ solution.

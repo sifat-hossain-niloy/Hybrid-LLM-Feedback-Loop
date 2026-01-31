@@ -1,0 +1,20 @@
+{
+  "problem_id": "2151_C",
+  "contest_id": "2151",
+  "letter": "C",
+  "title": "Problem 2151_C",
+  "statement": "Danimal Cannon, Zef - The Lunar Whale\u2800You are the security guard of a museum. The main door of the museum is both an entrance and an exit. At most one person can pass through the door every second. There is a sensor that detects when a visitor passes through the door. The sensor cannot determine neither who the visitor is, nor whether he entered or exited the museum. The sensor detected some activity in 2n distinct moments of time a_1, a_2, ..., a_{2n} (measured in seconds).For each visitor, his",
+  "rating": "1400",
+  "tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n1\n32 78\n2\n4 5 6 9\n4\n6149048 26582657 36124499 43993239 813829899 860114890 910238130 913669539",
+      "output": "46 \n4 6 \n78018749 1737022233 1845329695 3385003015"
+    }
+  ],
+  "created_at": "2025-11-22T18:35:15"
+}

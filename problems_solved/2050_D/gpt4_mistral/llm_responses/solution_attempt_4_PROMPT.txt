@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-29T01:59:37
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2050_D**
+
+You are given a string s, consisting of digits from 0 to 9. In one operation, you can pick any digit in this string, except for 0 or the leftmost digit, decrease it by 1, and then swap it with the digit left to the picked.For example, in one operation from the string 1023, you can get 1103 or 1022.Find the lexicographically maximum string you can obtain after any number of operations.
+
+**Previous Attempt Failed:** Runtime error on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

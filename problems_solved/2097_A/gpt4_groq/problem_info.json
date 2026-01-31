@@ -1,0 +1,21 @@
+{
+  "problem_id": "2097_A",
+  "contest_id": "2097",
+  "letter": "A",
+  "title": "Problem 2097_A",
+  "statement": "The boarding process for various flights can occur in different ways: either by bus or through a telescopic jet bridge. Every day, exactly one flight is made from St. Petersburg to Minsk, and Vadim decided to demonstrate to the students that he always knows in advance how the boarding will take place.Vadim made a bet with n students, and with the i-th student, he made a bet on day a_i. Vadim wins the bet if he correctly predicts the boarding process on both day a_i+1 and day a_i+2.Although Vadim",
+  "rating": "1400",
+  "tags": [
+    "2-sat",
+    "brute force",
+    "math",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n4\n1 1 1 1\n3\n2 2 2\n5\n2 4 3 2 4\n8\n6 3 1 1 5 1 2 6\n1\n1000000000",
+      "output": "Yes\nNo\nYes\nNo\nNo"
+    }
+  ],
+  "created_at": "2025-11-28T14:18:51"
+}

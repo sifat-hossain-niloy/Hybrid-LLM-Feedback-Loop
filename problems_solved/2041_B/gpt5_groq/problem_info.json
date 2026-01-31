@@ -1,0 +1,20 @@
+{
+  "problem_id": "2041_B",
+  "contest_id": "2041",
+  "letter": "B",
+  "title": "Problem 2041_B",
+  "statement": "Bowling is a national sport in Taiwan; everyone in the country plays the sport on a daily basis since their youth. Naturally, there are a lot of bowling alleys all over the country, and the competition between them is as intense as you can imagine.Maw-Shang owns one such bowling alley. To stand out from other competitors in the industry and draw attention from customers, he decided to hold a special event every month that features various unorthodox bowling rules. For the event this month, he ca",
+  "rating": "1200",
+  "tags": [
+    "binary search",
+    "brute force",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n1 2\n3 2\n3 3\n12 0",
+      "output": "2\n2\n3\n4"
+    }
+  ],
+  "created_at": "2025-11-25T07:26:12"
+}

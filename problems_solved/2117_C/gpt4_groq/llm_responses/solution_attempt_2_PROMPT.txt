@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-21T20:24:00
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2117_C**
+
+Yousef has an array a of size n. He wants to partition the array into one or more contiguous segments such that each element a_i belongs to exactly one segment.A partition is called cool if, for every segment b_j, all elements in b_j also appear in b_{j + 1} (if it exists). That is, every element in a segment must also be present in the segment following it.For example, if a = [1, 2, 2, 3, 1, 5], a cool partition Yousef can make is b_1 = [1, 2], b_2 = [2, 3, 1, 5]. This is a cool partition because every element in b_1 (which are 1 and 2) also appears in b_2. In contrast, b_1 = [1, 2, 2], b_2 = [3, 1, 5] is not a cool partition, since 2 appears in b_1 but not in b_2.Note that after partitioning the array, you do not change the order of the segments. Also, note that if an element appears several times in some segment b_j, it only needs to appear at least once in b_{j + 1}.Your task is to help Yousef by finding the maximum number of segments that make a cool partition.
+
+**Previous Attempt Failed:** Runtime error on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

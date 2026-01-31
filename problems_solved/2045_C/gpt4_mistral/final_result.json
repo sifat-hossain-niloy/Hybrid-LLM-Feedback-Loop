@@ -1,0 +1,18 @@
+{
+  "problem_id": "2045_C",
+  "status": "failed",
+  "accepted": false,
+  "total_attempts": 4,
+  "start_time": "2025-11-23T01:12:51",
+  "end_time": "2025-11-23T01:31:13",
+  "total_duration_minutes": 18.37,
+  "successful_attempt": null,
+  "best_verdict": null,
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 1,
+    "wrong_answers": 0,
+    "time_limit_exceeded": 3,
+    "memory_limit_exceeded": 0
+  }
+}

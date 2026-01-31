@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-24T01:02:01
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2110_D**
+
+In 2077, when robots took over the world, they decided to compete in the following game.There are n checkpoints, and the i-th checkpoint contains b_i batteries. Initially, the Robot starts at the 1-st checkpoint with no batteries and must reach the n-th checkpoint.There are a total of m one-way passages between the checkpoints. The i-th passage allows movement from point s_i to point t_i (s_i < t_i), but not the other way. Additionally, the i-th passage can only be used if the robot has at least w_i charged batteries; otherwise, it will run out of power on the way.When the robot arrives at point v, it can additionally take any number of batteries from 0 to b_v, inclusive. Moreover, it always carries all previously collected batteries, and at each checkpoint, it recharges all previously collected batteries.Find the minimum number of batteries that the robot can have at the end of the journey, or report that it is impossible to reach from the first checkpoint to the last.
+
+**Previous Attempt Failed:** Time limit exceeded on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

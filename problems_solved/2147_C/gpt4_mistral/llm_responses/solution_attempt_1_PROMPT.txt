@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T02:53:48
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2147_C**
+
+You have n flower pots arranged in a line numbered from 1 to n left to right. Some of the pots contain flowers, while others are empty. You are given a binary string s describing which pots contain flowers (s_i = 1) and which are empty (s_i = 0). You also have some rabbits, and you want to take a nice picture of rabbits and flowers. You want to put rabbits in every empty pot (s_i = 0), and for each rabbit, you can put it looking either to the left or to the right. Unfortunately, the rabbits are quite naughty, and they will try to jump, which will ruin the picture.Each rabbit will prepare to jump into the next pot in the direction they are looking, but they won't jump if there is a rabbit in that pot already or if there is another rabbit that prepares to jump into the same pot from the opposite side. Rabbits won't jump out of the borders (a rabbit at pot 1 looking to the left won't jump, same for a rabbit looking to the right at pot n).Your goal is to choose the directions of the rabbit
+
+**Task:** Please provide a well-structured and optimized C++ solution.

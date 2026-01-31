@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-25T13:44:15
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2150_B**
+
+ParagonX9 - HyperioxX⠀Alice has a grid of size n × n. Initially, all cells are colored white. Alice wants to color some cells black satisfying certain properties.Let (x_1, y_1), (x_2, y_2), ..., (x_m, y_m) be the cells colored black. You are given an array a of size n. The following conditions must be satisfied: For each row k (1 ≤ k ≤ n), there exists exactly a_k indices i (1 ≤ i ≤ m) such that x_i = k. Less formally, there should be a_k black cells in row k. For each k (1 ≤ k ≤ n), there exists exactly one index i such that \max(x_i, y_i) = k. For each k (1 ≤ k ≤ n), there exists exactly one index i such that \max(x_i, n + 1 - y_i) = k. For example, when a = [2, 2, 1, 0, 0], a possible set of black cells is \{(1, 1), (2, 2), (3, 3), (2, 4), (1, 5)\}. This corresponds to the following grid: 5×5 grid with specified black cells. Count the number of possible grids. 2 grids are said to be different if there is some cell which is colored black in one of the grids, and white in the other. S
+
+**Task:** Please provide a well-structured and optimized C++ solution.

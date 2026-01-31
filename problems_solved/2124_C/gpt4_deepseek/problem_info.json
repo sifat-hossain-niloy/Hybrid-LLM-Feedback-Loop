@@ -1,0 +1,21 @@
+{
+  "problem_id": "2124_C",
+  "contest_id": "2124",
+  "letter": "C",
+  "title": "Problem 2124_C",
+  "statement": "Alice has an array a, consisting of n positive integers. The array satisfies the beautiful property that a_i divides a_{i+1} for each 1 \u2264q i \u2264q n - 1. Bob sees Alice's beautiful array and is jealous. To sabotage her, Bob first creates an array b of size n such that b_i=a_i for each 1 \u2264q i \u2264q n. Then, he chooses a positive integer x and multiplies some (possibly none, possibly all) elements in b by x. Formally, he chooses a (possibly-empty) subset S\u2282eq\\{1,2,...,n\\}, and for each i\u2208 S, he sets b_i",
+  "rating": "1300",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n2\n2 4\n3\n1 1000000000 500000000\n4\n4 8 4 8\n7\n42 42 14 84 28 73080 255780",
+      "output": "343\n2\n4\n6"
+    }
+  ],
+  "created_at": "2025-11-25T02:49:35"
+}

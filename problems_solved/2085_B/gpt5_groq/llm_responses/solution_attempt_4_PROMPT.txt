@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-27T23:12:53
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2085_B**
+
+You are given an array a consisting of n≥ 4 non-negative integers.You need to perform the following operation on a until its length becomes 1: Select two indices l and r (1≤ {\color{red}{ l < r }} ≤ |a|), and replace the subarray [a_l,a_{l+1},...,a_r] with a single integer \operatorname{mex}([a_l,a_{l+1},...,a_r]), where \operatorname{mex}(b) denotes the minimum excluded (MEX)^{\text{∗}} of the integers in b. In other words, let x=\operatorname{mex}([a_l,a_{l+1},...,a_r]), the array a will become [a_1,a_2,...,a_{l-1},x,a_{r+1},a_{r+2},...,a_{|a|}]. Note that the length of a decreases by (r-l) after this operation. Serval wants the final element in a to be 0. Help him! More formally, you have to find a sequence of operations, such that after performing these operations in order, the length of a becomes 1, and the final element in a is 0.It can be shown that at least one valid operation sequence exists under the constraints of the problem, and the length of any valid operation sequence d
+
+**Previous Attempt Failed:** Time limit exceeded on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

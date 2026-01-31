@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-22T18:49:19
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2110_C**
+
+In 2077, a sport called hobby-droning is gaining popularity among robots.You already have a drone, and you want to win. For this, your drone needs to fly through a course with n obstacles.The i-th obstacle is defined by two numbers l_i, r_i. Let the height of your drone at the i-th obstacle be h_i. Then the drone passes through this obstacle if l_i ≤ h_i ≤ r_i. Initially, the drone is on the ground, meaning h_0 = 0.The flight program for the drone is represented by an array d_1, d_2, ..., d_n, where h_{i} - h_{i-1} = d_i, and 0 ≤q d_i ≤q 1. This means that your drone either does not change height between obstacles or rises by 1. You already have a flight program, but some d_i in it are unknown and marked as -1. Replace the unknown d_i with numbers 0 and 1 to create a flight program that passes through the entire obstacle course, or report that it is impossible.
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

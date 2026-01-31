@@ -1,0 +1,29 @@
+{
+  "problem_id": "2147_C",
+  "workflow_type": "gpt4_mistral",
+  "workflow_session": "2147_C_gpt4_mistral_614a1f42",
+  "start_time": "2025-11-27T02:53:48",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-27T02:53:48",
+      "duration_seconds": 323.24,
+      "solution_file": "2147_C_Solution_1.cpp",
+      "submission_id": "348522133",
+      "verdict": "Time limit exceeded on test 6",
+      "execution_time_ms": 674,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-27T02:59:27",
+      "duration_seconds": 168.87,
+      "solution_file": "2147_C_Solution_2.cpp",
+      "submission_id": "349618616",
+      "verdict": "Accepted",
+      "execution_time_ms": 190,
+      "accepted": true
+    }
+  ]
+}

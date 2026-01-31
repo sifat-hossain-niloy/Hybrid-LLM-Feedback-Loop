@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T14:37:11
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2067_C**
+
+You are given a positive integer n. In one operation, you can add to n any positive integer whose decimal representation contains only the digit 9, possibly repeated several times.What is the minimum number of operations needed to make the number n contain at least one digit 7 in its decimal representation?For example, if n = 80, it is sufficient to perform one operation: you can add 99 to n, after the operation n = 179, which contains the digit 7.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-27T18:20:43
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2092_D**
+
+In anticipation of a duel with his old friend Fernan, Edmond is preparing an energy drink called "Mishkin Energizer". The drink consists of a string s of length n, made up only of the characters L, I, and T, which correspond to the content of three different substances in the drink.We call the drink balanced if it contains an equal number of all substances. To boost his aura and ensure victory in the duel, Edmond must make the initial string balanced by applying the following operation: Choose an index i such that s_i ≠q s_{i+1} (where i + 1 must not exceed the current size of the string). Insert a character x, either L, I, or T, between them such that x ≠q s_i and x ≠q s_{i+1}. Help Edmond make the drink balanced and win the duel by performing no more than \textbf{2n} operations. If there are multiple solutions, any one of them can be output. If it is impossible, you must report this.
+
+**Previous Attempt Failed:** Time limit exceeded on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

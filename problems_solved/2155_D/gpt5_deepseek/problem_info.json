@@ -1,0 +1,23 @@
+{
+  "problem_id": "2155_D",
+  "contest_id": "2155",
+  "letter": "D",
+  "title": "Problem 2155_D",
+  "statement": "This is an interactive problem. Refer to the Interaction section below for better understanding.There are n (2 \u2264 n \u2264 40) batteries numbered 1, 2, ..., n. Some of them work while the others don't. Let a be the number of batteries that work. It is guaranteed that \\mathbf{a \u2265q 2}.You are given n but not a.There is a flashlight which can hold two batteries and it only turns on when both batteries work. The batteries have been shuffled and you don't know which ones work and which ones don't. You can ",
+  "rating": "1800",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "graph matchings",
+    "graphs",
+    "interactive",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n3\n\n0\n\n1\n10\n\n0\n\n0\n\n1",
+      "output": "1 2\n\n2 3\n\n\n1 2\n\n1 3\n\n1 4"
+    }
+  ],
+  "created_at": "2025-11-24T02:31:47"
+}

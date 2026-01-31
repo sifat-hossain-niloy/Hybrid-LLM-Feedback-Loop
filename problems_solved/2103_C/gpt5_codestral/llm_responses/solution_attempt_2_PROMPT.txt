@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-22T23:16:08
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2103_C**
+
+The median of an array b_1, b_2, ... b_m, written as \operatorname{med}(b_1, b_2, ..., b_m), is the ≤ft\lceil \frac{m}{2} \right\rceil-th^{\text{∗}} smallest element of array b.You are given an array of integers a_1, a_2, ..., a_n and an integer k. You need to determine whether there exists a pair of indices 1 ≤ l < r < n such that:\operatorname{med}(\operatorname{med}(a_1, a_2, ..., a_l), \operatorname{med}(a_{l+1}, a_{l+2}, ..., a_r), \operatorname{med}(a_{r+1}, a_{r+2}, ..., a_n)) ≤ k.In other words, determine whether it is possible to split the array into three contiguous subarrays^{\text{†}} such that the median of the three subarray medians is less than or equal to k.^{\text{∗}}\lceil x \rceil is the ceiling function which returns the least integer greater than or equal to x.^{\text{†}}An array x is a subarray of an array y if x can be obtained from y by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from t
+
+**Previous Attempt Failed:** Wrong answer on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,19 @@
+{
+  "problem_id": "2120_D",
+  "contest_id": "2120",
+  "letter": "D",
+  "title": "Problem 2120_D",
+  "statement": "Aryan and Harshith play a game. They both start with three integers a, b, and k. Aryan then gives Harshith two integers n and m. Harshith then gives Aryan a matrix X with n rows and m columns, such that each of the elements of X is between 1 and k(inclusive). After that, Aryan wins if he can find a submatrix^{\\text{\u2217}} Y of X with a rows and b columns such that all elements of Y are equal.For example, when a=2, b=2, k=6, n=3 and m=3, if Harshith gives Aryan the matrix below, it is a win for Arya",
+  "rating": "1800",
+  "tags": [
+    "combinatorics",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n1 1 5\n2 2 2\n90000 80000 70000",
+      "output": "1 1\n3 7\n299929959 603196135"
+    }
+  ],
+  "created_at": "2025-11-26T22:45:52"
+}

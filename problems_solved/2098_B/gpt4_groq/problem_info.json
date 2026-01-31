@@ -1,0 +1,19 @@
+{
+  "problem_id": "2098_B",
+  "contest_id": "2098",
+  "letter": "B",
+  "title": "Problem 2098_B",
+  "statement": "Sasha wants to buy an apartment on a street where the houses are numbered from 1 to 10^9 from left to right.There are n bars on this street, located in houses with numbers a_1, a_2, ..., a_n. Note that there might be multiple bars in the same house, and in this case, these bars are considered distinct.Sasha is afraid that by the time he buys the apartment, some bars may close, but no more than k bars can close.For any house with number x, define f(x) as the sum of |x - y| over all open bars y (t",
+  "rating": "1400",
+  "tags": [
+    "math",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n4 0\n1 2 3 4\n5 2\n7 6 6 7 1\n3 1\n6 7 9\n6 2\n5 1 9 10 13 2",
+      "output": "2\n2\n4\n9"
+    }
+  ],
+  "created_at": "2025-11-22T21:41:05"
+}

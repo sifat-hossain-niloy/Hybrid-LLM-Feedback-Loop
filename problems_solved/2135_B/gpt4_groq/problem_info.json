@@ -1,0 +1,20 @@
+{
+  "problem_id": "2135_B",
+  "contest_id": "2135",
+  "letter": "B",
+  "title": "Problem 2135_B",
+  "statement": "This is an interactive problem.The RiOI team is hosting a robot championship! This time, your robot is teleported into an infinite 2D plane with the Cartesian coordinate system on it. There are n anchor points on the plane, and the coordinates of the i-th anchor point are (x_i, y_i) (-10^9\u2264 x_i,y_i\u2264 10^9). These are given to your robot by the jury as soon as it is teleported into the plane. However, your robot doesn't know its initial coordinates at first.To test the IQ of your robot, the RiOI t",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "interactive",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n1\n0 0\n\n100\n\n1\n\n4\n1 1\n2 2\n3 3\n-1 -1\n\n1\n\n2\n\n0",
+      "output": "? D 99\n\n? L 101\n\n! 100 99\n\n\n\n\n\n? L 0\n\n? U 1\n\n? R 2\n\n! -1 0"
+    }
+  ],
+  "created_at": "2025-11-28T08:42:34"
+}

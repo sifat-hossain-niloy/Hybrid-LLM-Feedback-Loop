@@ -1,0 +1,18 @@
+{
+  "problem_id": "2109_C1",
+  "status": "failed",
+  "accepted": false,
+  "total_attempts": 4,
+  "start_time": "2025-11-22T08:40:57",
+  "end_time": "2025-11-22T08:55:15",
+  "total_duration_minutes": 14.3,
+  "successful_attempt": null,
+  "best_verdict": null,
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 1,
+    "wrong_answers": 0,
+    "time_limit_exceeded": 3,
+    "memory_limit_exceeded": 0
+  }
+}

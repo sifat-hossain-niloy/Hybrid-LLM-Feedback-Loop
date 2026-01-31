@@ -1,0 +1,20 @@
+{
+  "problem_id": "2091_F",
+  "contest_id": "2091",
+  "letter": "F",
+  "title": "Problem 2091_F",
+  "statement": "The visitors of the IT Campus \"NEIMARK\" are not only strong programmers but also physically robust individuals! Some practice swimming, some rowing, and some rock climbing!Master Igor is a prominent figure in the local rock climbing community. One day, he went on a mountain hike to ascend one of the peaks. As an experienced climber, Igor decided not to follow the established trails but to use his skills to climb strictly vertically.Igor found a rectangular vertical section of the mountain and me",
+  "rating": "1800",
+  "tags": [
+    "binary search",
+    "brute force",
+    "dp"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n3 4 1\nXX#X\n#XX#\n#X#X\n3 4 2\nXX#X\n#XX#\n#X#X\n3 1 3\nX\nX\n#",
+      "output": "2\n60\n0"
+    }
+  ],
+  "created_at": "2025-11-28T18:17:03"
+}

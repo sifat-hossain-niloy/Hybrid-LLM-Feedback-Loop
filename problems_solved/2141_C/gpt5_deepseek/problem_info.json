@@ -1,0 +1,19 @@
+{
+  "problem_id": "2141_C",
+  "contest_id": "2141",
+  "letter": "C",
+  "title": "Problem 2141_C",
+  "statement": "There is a variable sum, which is initially equal to 0.There is also a data structure that can perform the following operations: pushback x\u00a0\u2014 adds an element with value x to the end of the structure; pushfront x\u00a0\u2014 adds an element with value x to the beginning of the structure; popback\u00a0\u2014 removes the last element from the structure; popfront\u00a0\u2014 removes the first element from the structure; min\u00a0\u2014 adds the value of the minimum element currently in the structure to the variable sum. The operations pop",
+  "rating": "1800",
+  "tags": [
+    "*special problem",
+    "brute force"
+  ],
+  "sample_tests": [
+    {
+      "input": "1",
+      "output": "3\npushback a[0]\nmin\npopfront"
+    }
+  ],
+  "created_at": "2025-11-27T00:25:05"
+}

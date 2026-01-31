@@ -1,0 +1,20 @@
+{
+  "problem_id": "2134_C",
+  "contest_id": "2134",
+  "letter": "C",
+  "title": "Problem 2134_C",
+  "statement": "An array is called good if, for every subarray^{\\text{\u2217}} of length at least 2, the sum of the elements at even indices (with respect to the original array) is greater than or equal to the sum of the elements at odd indices. Array indexing starts from 1.For example, the arrays [3,8,4,4] and [2,3,1,4,2] are good. The array [0,2,4,1] is not because, in the subarray [2,4,1], the elements at even indices in the original array are 2 (index 2) and 1 (index 4), while the only element at an odd index is",
+  "rating": "1200",
+  "tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "8\n4\n3 8 4 4\n4\n0 2 3 5\n2\n3 1\n5\n2 3 1 4 2\n4\n0 2 4 1\n5\n3 1 4 5 1\n11\n3 0 5 4 4 5 3 0 3 4 1\n12\n410748345 10753674 975233308 193331255 893457280 279719251 704970985 412553354 801228787 44181004 1000000000 3829103",
+      "output": "0\n1\n2\n0\n3\n6\n14\n4450984776"
+    }
+  ],
+  "created_at": "2025-11-26T04:48:16"
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-25T08:05:17
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2121_D**
+
+You are given two arrays of integers a_1, a_2, ..., a_n and b_1, b_2, ..., b_n. It is guaranteed that each integer from 1 to 2 · n appears in exactly one of the arrays.You need to perform a certain number of operations (possibly zero) so that both of the following conditions are satisfied: For each 1 ≤q i < n, it holds that a_i < a_{i + 1} and b_i < b_{i + 1}. For each 1 ≤q i ≤q n, it holds that a_i < b_i. During each operation, you can perform exactly one of the following three actions: Choose an index 1 ≤q i < n and swap the values a_i and a_{i + 1}. Choose an index 1 ≤q i < n and swap the values b_i and b_{i + 1}. Choose an index 1 ≤q i ≤q n and swap the values a_i and b_i.You do not need to minimize the number of operations, but the total number must not exceed 1709. Find any sequence of operations that satisfies both conditions.
+
+**Previous Attempt Failed:** Wrong answer on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

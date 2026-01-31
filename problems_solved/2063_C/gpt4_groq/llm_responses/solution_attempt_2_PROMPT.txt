@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-26T15:39:15
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2063_C**
+
+Recently, Little John got a tree from his aunt to decorate his house. But as it seems, just one tree is not enough to decorate the entire house. Little John has an idea. Maybe he can remove a few vertices from the tree. That will turn it into more trees! Right? You are given a tree^{\text{∗}} of n vertices. You must perform the following operation exactly twice. Select a vertex v; Remove all edges incident to v, and also the vertex v. Please find the maximum number of connected components after performing the operation exactly twice.Two vertices x and y are in the same connected component if and only if there exists a path from x to y. For clarity, note that the graph with 0 vertices has 0 connected components by definition.^{\text{†}}^{\text{∗}}A tree is a connected graph without cycles. ^{\text{†}}But is such a graph connected?
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

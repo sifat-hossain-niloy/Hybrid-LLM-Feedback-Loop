@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-27T21:19:57
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2150_A**
+
+Rymdkraft - Rymdsylt⠀Hacks are disabled in this problem.There is a strip containing 10^9 cells, numbered from 1 to 10^9. Each cell is either black or white. Initially, m distinct cells a_1, a_2, ..., a_m are black, and the others are white.If a person is on some cell x, he might be given two types of commands: \texttt{A}: jump to the next cell, i.e. cell x + 1; \texttt{B}: jump to the next white cell, i.e. the minimum y > x such that cell y is white. There is a string s of length n, consisting of n commands. For each i from 1 to n in order, a person starts from cell 1; executes the first i commands in the string; colors the last visited cell black (if it was already black, it remains black). You wonder which cells are black at the end of the process. Print them in increasing order.
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

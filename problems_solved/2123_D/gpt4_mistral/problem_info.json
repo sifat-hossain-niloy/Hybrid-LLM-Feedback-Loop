@@ -1,0 +1,20 @@
+{
+  "problem_id": "2123_D",
+  "contest_id": "2123",
+  "letter": "D",
+  "title": "Problem 2123_D",
+  "statement": "Alice and Bob are given a binary string s of length n, and an integer k (1\u2264q k < n).Alice wins if she is able to transform all characters of s into zeroes. If Alice is unable to win in a finite number of moves, then Bob wins.Alice and Bob take turns, with Alice going first. On Alice's turn, she may choose any subsequence^{\\text{\u2217}} of length k in s, then set all characters in that subsequence to zero. On Bob's turn, he may choose any substring^{\\text{\u2020}} of length k in s, then set all characters",
+  "rating": "1200",
+  "tags": [
+    "constructive algorithms",
+    "games",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n5 2\n11011\n7 4\n1011011\n6 1\n010000\n4 1\n1111\n8 3\n10110110\n6 4\n111111",
+      "output": "Bob\nAlice\nAlice\nBob\nBob\nAlice"
+    }
+  ],
+  "created_at": "2025-11-28T12:56:28"
+}

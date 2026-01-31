@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T20:09:00
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2144_D**
+
+Imagine that you are the owner of a store. Before the start of a new season, you decided to clear your store of leftover goods, and therefore you decided to hold a total sale.You have n different items in your store: the i-th item costs c_i coins. Each item has a price tag with the corresponding price c_i. You decided to hold a sale in the format: "we divided all the prices x times." Formally, this means that you choose a common coefficient x, and during the sale, the i-th item will cost ≤ft\lceil \frac{c_i}{x} \right\rceil coins (where ≤ft\lceil y \right\rceil denotes rounding up).To avoid confusion among the customers, you need to pin new price tags with new prices on all items, but printing new price tags is costly. Specifically, each printed price tag will cost you y coins.Therefore, you had a brilliant idea — why not use the existing price tags and simply repin them on other items? So, you'll need to print price tags only for those items that do not have a corresponding price tag 
+
+**Task:** Please provide a well-structured and optimized C++ solution.

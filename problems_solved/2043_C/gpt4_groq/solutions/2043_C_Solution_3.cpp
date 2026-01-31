@@ -1,7 +1,7 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 05:37:58
- * Workflow: GPT-4 + Groq
+ * Problem: 2043_C
+ * Generated: 2025-11-23T07:38:30
+ * Workflow: gpt4_groq
  * Solution Model: gpt-4
  * Debugging Critic: llama-3.3-70b-versatile
  * Iteration: 3
@@ -11,45 +11,37 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+struct Node {{
+    long long sum, prefixMax, suffixMax, maxSum;
+}};
 
+Node merge(Node left, Node right){{
+    Node result;
+    result.sum = left.sum + right.sum;
+    result.prefixMax = max(left.prefixMax, left.sum + right.prefixMax);
+    result.suffixMax = max(right.suffixMax, right.sum + left.suffixMax);
+    result.maxSum = max({{left.maxSum, right.maxSum, left.suffixMax + right.prefixMax}});
+    return result;
+}}
+
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        set<int> sums;
-        sums.insert(0); // Initialize with 0 for the empty subarray
-
-        for(int i=0; i<n; i++) {
-            cin >> a[i];
-        }
-
-        // Use a more efficient approach to generate the possible sums
-        // by considering the prefix sums of the array
-        vector<int> prefixSums(n + 1, 0);
-        for(int i=0; i<n; i++) {
-            prefixSums[i + 1] = prefixSums[i] + a[i];
-        }
-
-        for(int i=0; i<n; i++) {
-            for(int j=i; j<=n; j++) {
-                sums.insert(prefixSums[j] - prefixSums[i]);
-            }
-        }
-
-        vector<int> result(sums.begin(), sums.end());
-        sort(result.begin(), result.end());
-
-        cout << result.size() << "\n";
-        for(int num : result) {
-            cout << num << " ";
-        }
-        cout << "\n";
-    }
-
+        vector<long long> a(n);
+        for(int i=0;i<n;i++) cin >> a[i];
+        
+        Node result = {{a[0], a[0], a[0], a[0]}};
+        for(int i=1;i<n;i++){{
+            Node curr = {{a[i], a[i], a[i], a[i]}};
+            result = merge(result, curr);
+        }}
+        cout << result.maxSum << "\n";
+    }}
     return 0;
-}
+}}

@@ -1,0 +1,20 @@
+{
+  "problem_id": "2070_D",
+  "contest_id": "2070",
+  "letter": "D",
+  "title": "Problem 2070_D",
+  "statement": "You are given a rooted tree, consisting of n vertices. The vertices in the tree are numbered from 1 to n, and the root is the vertex 1. Let d_x be the distance (the number of edges on the shortest path) from the root to the vertex x.There is a chip that is initially placed at the root. You can perform the following operation as many times as you want (possibly zero): move the chip from the current vertex v to a vertex u such that d_u = d_v + 1. If v is the root, you can choose any vertex u meeti",
+  "rating": "1600",
+  "tags": [
+    "dfs and similar",
+    "dp",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n4\n1 2 1\n3\n1 2\n7\n1 2 2 1 4 5",
+      "output": "4\n2\n8"
+    }
+  ],
+  "created_at": "2025-11-21T09:14:21"
+}

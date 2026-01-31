@@ -1,0 +1,29 @@
+{
+  "problem_id": "2085_B",
+  "workflow_type": "gpt4_deepseek",
+  "workflow_session": "2085_B_gpt4_deepseek_ddd9dea7",
+  "start_time": "2025-11-28T00:46:59",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T00:46:59",
+      "duration_seconds": 132.32,
+      "solution_file": "2085_B_Solution_1.cpp",
+      "submission_id": "349574153",
+      "verdict": "Wrong answer on test 9",
+      "execution_time_ms": 73,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-28T00:50:09",
+      "duration_seconds": 153.41,
+      "solution_file": "2085_B_Solution_2.cpp",
+      "submission_id": "348023573",
+      "verdict": "Accepted",
+      "execution_time_ms": 66,
+      "accepted": true
+    }
+  ]
+}

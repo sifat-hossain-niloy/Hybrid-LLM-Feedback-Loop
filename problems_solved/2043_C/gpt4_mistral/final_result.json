@@ -3,16 +3,16 @@
   "status": "failed",
   "accepted": false,
   "total_attempts": 4,
-  "start_time": "2025-11-07T05:32:44.033782",
-  "end_time": "2025-11-07T05:35:47.998697",
-  "total_duration_minutes": 3.0660819166666666,
+  "start_time": "2025-11-23T04:54:58",
+  "end_time": "2025-11-23T05:13:44",
+  "total_duration_minutes": 18.77,
   "successful_attempt": null,
   "best_verdict": null,
   "statistics": {
     "compilation_errors": 0,
-    "runtime_errors": 0,
-    "wrong_answers": 4,
-    "time_limit_exceeded": 0,
+    "runtime_errors": 1,
+    "wrong_answers": 1,
+    "time_limit_exceeded": 2,
     "memory_limit_exceeded": 0
   }
 }

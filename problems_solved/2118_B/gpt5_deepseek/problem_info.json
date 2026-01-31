@@ -1,0 +1,18 @@
+{
+  "problem_id": "2118_B",
+  "contest_id": "2118",
+  "letter": "B",
+  "title": "Problem 2118_B",
+  "statement": "There is a matrix A of size n\u00d7 n where A_{i,j}=j for all 1 \u2264 i,j \u2264 n. In one operation, you can select a row and reverse any subarray^{\\text{\u2217}} in it. Find a sequence of at most 2n operations such that every column will contain a permutation^{\\text{\u2020}} of length n.It can be proven that the construction is always possible. If there are multiple solutions, output any of them.^{\\text{\u2217}}An array a is a subarray of an array b if a can be obtained from b by deleting zero or more elements from the be",
+  "rating": "1200",
+  "tags": [
+    "constructive algorithms"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n3\n4",
+      "output": "4\n2 1 3\n2 2 3\n3 1 2\n3 2 3\n5\n2 1 4\n3 1 3\n3 2 4\n4 3 4\n4 1 2"
+    }
+  ],
+  "created_at": "2025-11-25T01:42:03"
+}

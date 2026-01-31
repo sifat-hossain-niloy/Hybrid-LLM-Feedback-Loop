@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-27T17:33:42
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2152_B**
+
+Doran and the Krug are playing a game on a grid consisting of (n + 1) × (n + 1) cells whose coordinates are pairs of integers from 0 to n, inclusive. The Krug's goal is not to be caught by Doran for as long as possible, while Doran's goal is to catch the Krug as early as possible. We say Doran caught the Krug if they stand on the same grid cell.To play the game, the Krug and Doran take turns alternately, starting from the Krug: The Krug can either stay in the same cell or move to a cell vertically or horizontally (but not diagonally) adjacent. Formally, if the Krug is currently at the cell (a, b), she can stay at (a, b) or move to either (a-1, b), (a, b-1), (a, b+1), (a+1, b). Doran can either stay in the same cell or move to a cell vertically, horizontally, or diagonally adjacent. Formally, if Doran is currently at the cell (c, d), he can stay at (c, d) or move to either (c-1, d-1), (c-1, d), (c-1, d+1), (c, d-1), (c, d+1), (c+1, d-1), (c+1, d), (c+1, d+1). Both players cannot go outs
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

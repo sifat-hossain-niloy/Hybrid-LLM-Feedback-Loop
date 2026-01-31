@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-26T14:33:59
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2091_D**
+
+For the final of the first Olympiad by IT Campus "NEIMARK", a rectangular venue was prepared. You may assume that the venue is divided into n rows, each containing m spots for participants' desks. A total of k participants have registered for the final, and each participant will sit at an individual desk. Now, the organizing committee must choose the locations for the desks in the venue.Each desk occupies one of the m spots in a row. Moreover, if several desks occupy consecutive spots in the same row, we call such a group of desks a bench, and the number of desks in the group is the bench's length. For example, seating 7 participants on a 3 × 4 venue (with n = 3, m = 4) can be arranged as follows: In the figure above, the first row has one bench of length 3, the second row has one bench of length 2, and the third row has two benches of length 1.The organizing committee wants to choose the locations so that the length of the longest bench is as small as possible. In particular, the same
+
+**Previous Attempt Failed:** Time limit exceeded on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

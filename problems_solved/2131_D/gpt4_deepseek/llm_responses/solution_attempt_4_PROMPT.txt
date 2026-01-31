@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-25T15:53:33
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2131_D**
+
+Kagari is preparing to archive a tree, and she knows the cost of doing so will depend on its diameter^{\text{∗}}. To keep the expense down, her goal is to shrink the diameter as much as possible first. She can perform the following operation on the tree: Choose two vertices s and t. Let the sequence of vertices on the simple path^{\text{†}} from s to t be v_0, v_1, ..., v_k, where v_0 = s and v_k = t. Remove all edges along the path. In other words, remove edges (v_0, v_1), (v_1, v_2), ..., (v_{k-1}, v_k). Connect vertices v_1, v_2, ..., v_k directly to v_0. In other words, add edges (v_0, v_1), (v_0, v_2), ..., (v_0, v_k). It can be shown that the graph is still a tree after the operation.Help her determine the minimum number of operations required to achieve the minimal diameter.^{\text{∗}}The diameter of a tree is the longest possible distance between any pair of vertices. The distance itself is measured by the number of edges on the unique simple path connecting them.^{\text{†}}A s
+
+**Previous Attempt Failed:** Runtime error on test 6
+
+**Task:** Please provide a corrected solution addressing the identified issues.

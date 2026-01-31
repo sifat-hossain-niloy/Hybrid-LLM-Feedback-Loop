@@ -1,0 +1,19 @@
+{
+  "problem_id": "2126_E",
+  "contest_id": "2126",
+  "letter": "E",
+  "title": "Problem 2126_E",
+  "statement": "Two arrays p and s of length n are given, where p is the prefix GCD^{\\text{\u2217}} of some array a, and s is the suffix GCD of the same array a. In other words, if the array a existed, then for each 1 \u2264 i \u2264 n, the following equalities would hold both: p_i = \\gcd(a_1, a_2, ..., a_i) s_i = \\gcd(a_i, a_{i+1}, ..., a_n). Determine whether there exists such an array a for which the given arrays p and s can be obtained.^{\\text{\u2217}}\\gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.",
+  "rating": "1400",
+  "tags": [
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n6\n72 24 3 3 3 3\n3 3 3 6 12 144\n3\n1 2 3\n4 5 6\n5\n125 125 125 25 25\n25 25 25 25 75\n4\n123 421 282 251\n125 1981 239 223\n3\n124 521 125\n125 121 121",
+      "output": "YES\nNO\nYES\nNO\nNO"
+    }
+  ],
+  "created_at": "2025-11-28T18:44:53"
+}

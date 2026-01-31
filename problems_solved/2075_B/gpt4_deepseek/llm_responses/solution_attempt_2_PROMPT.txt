@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-21T23:34:40
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2075_B**
+
+You are given an integer array a of size n. Initially, all elements of the array are colored red.You have to choose exactly k elements of the array and paint them blue. Then, while there is at least one red element, you have to select any red element with a blue neighbor and make it blue.The cost of painting the array is defined as the sum of the first k chosen elements and the last painted element. Your task is to calculate the maximum possible cost of painting for the given array.
+
+**Previous Attempt Failed:** Time limit exceeded on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

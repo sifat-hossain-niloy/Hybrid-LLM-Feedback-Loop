@@ -1,0 +1,19 @@
+{
+  "problem_id": "2128_C",
+  "contest_id": "2128",
+  "letter": "C",
+  "title": "Problem 2128_C",
+  "statement": "Consider an array a_1, ..., a_n. Initially, a_i = 0 for every i.You can do operations of the following form. You choose an integer x greater than \\min(a). Then, i is defined as the minimum index such that a_i < x. In other words, i is the unique integer between 1 and n inclusive such that a_i < x and a_j \u2265q x for every 1 \u2264q j \u2264q i-1. Finally, a_i is incremented by x. For example, if a = [6, 8, 2, 1] and you choose x = 6, then i will be equal to 3 (since a_1 \u2265q 6, a_2 \u2265q 6, and a_3 < 6) and a wil",
+  "rating": "1200",
+  "tags": [
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n4\n5 6 1 1\n3\n3 1 2\n3\n40 60 90\n2\n1 1",
+      "output": "YES\nNO\nNO\nYES"
+    }
+  ],
+  "created_at": "2025-11-24T00:26:30"
+}

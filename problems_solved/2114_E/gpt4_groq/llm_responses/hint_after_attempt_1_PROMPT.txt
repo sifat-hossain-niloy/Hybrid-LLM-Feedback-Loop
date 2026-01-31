@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 1
+Timestamp: 2025-11-23T03:18:42
+Model: llama-3.3-70b-versatile
+Verdict: Runtime error on test 10
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2114_E
+**Verdict:** Runtime error on test 10
+
+**Task:** Identify the bug and suggest improvements.

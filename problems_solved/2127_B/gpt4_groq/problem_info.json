@@ -1,0 +1,19 @@
+{
+  "problem_id": "2127_B",
+  "contest_id": "2127",
+  "letter": "B",
+  "title": "Problem 2127_B",
+  "statement": "Mani has locked Hamid in a 1 \u00d7 n grid. Initially, some cells of the grid contain walls and the rest are empty, and Hamid is in an empty cell.In each day, the following events happen in order: Mani selects an empty cell and builds a wall in that cell. Note that he can not build a wall in the cell which Hamid currently is at; Hamid selects a direction (left or right), then If there are no walls in that direction, he will escape the grid; Otherwise, he will move to the nearest wall in that directio",
+  "rating": "1300",
+  "tags": [
+    "games",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n3 1\n..#\n4 2\n....\n5 3\n##..#\n6 4\n#...#.",
+      "output": "1\n1\n3\n3"
+    }
+  ],
+  "created_at": "2025-11-27T14:14:53"
+}

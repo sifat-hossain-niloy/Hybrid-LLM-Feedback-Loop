@@ -1,0 +1,23 @@
+{
+  "problem_id": "2086_C",
+  "contest_id": "2086",
+  "letter": "C",
+  "title": "Problem 2086_C",
+  "statement": "A permutation of integers from 1 to n is an array of size n where each integer from 1 to n appears exactly once.You are given a permutation p of integers from 1 to n. You have to process n queries. During the i-th query, you replace p_{d_i} with 0. Each element is replaced with 0 exactly once. The changes made in the queries are saved, that is, after the i-th query, all integers p_{d_1}, p_{d_2}, ..., p_{d_i} are zeroes.After each query, you have to find the minimum number of operations required",
+  "rating": "1300",
+  "tags": [
+    "dfs and similar",
+    "dp",
+    "dsu",
+    "graphs",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n3\n1 2 3\n3 2 1\n5\n4 5 3 1 2\n4 5 1 3 2\n7\n4 3 1 2 7 5 6\n1 2 3 4 5 6 7",
+      "output": "1 2 3 \n2 4 4 5 5 \n4 4 4 4 7 7 7"
+    }
+  ],
+  "created_at": "2025-11-22T00:50:13"
+}

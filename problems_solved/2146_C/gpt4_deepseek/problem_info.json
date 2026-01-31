@@ -1,0 +1,19 @@
+{
+  "problem_id": "2146_C",
+  "contest_id": "2146",
+  "letter": "C",
+  "title": "Problem 2146_C",
+  "statement": "You are given an integer n and a binary string^{\\text{\u2217}} s of length n.For a permutation^{\\text{\u2020}} p of length n and an integer x, we define \\text{find}(x) as in the following pseudocode:function find(int x): l := 1 r := n while l <= r: let m be a random integer between l and r (inclusive) if p[m] == x return m if p[m] > x: r := m - 1 else: l := m + 1 return undefined // not foundWe call an integer x (1\u2264 x\u2264 n) stable if and only if \\text{find}(x) is always not undefined and p_{\\text{find}(x)}=",
+  "rating": "1300",
+  "tags": [
+    "binary search",
+    "constructive algorithms"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n3\n111\n5\n00000\n5\n10100\n7\n0010000\n11\n00001001100\n12\n011100010000",
+      "output": "YES\n1 2 3 \nYES\n2 4 3 5 1\nNO\nYES\n2 1 3 5 7 6 4\nYES\n2 1 4 3 5 7 6 8 9 11 10\nNO"
+    }
+  ],
+  "created_at": "2025-11-27T17:59:12"
+}

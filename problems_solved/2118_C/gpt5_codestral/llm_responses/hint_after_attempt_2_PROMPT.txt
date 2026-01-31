@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 2
+Timestamp: 2025-11-24T14:56:42
+Model: codestral-2508
+Verdict: Time limit exceeded on test 10
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2118_C
+**Verdict:** Time limit exceeded on test 10
+
+**Task:** Identify the bug and suggest improvements.

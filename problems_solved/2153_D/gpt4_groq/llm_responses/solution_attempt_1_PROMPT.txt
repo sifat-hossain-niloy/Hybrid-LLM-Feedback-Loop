@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T14:53:09
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2153_D**
+
+A circular array b of length m is nice if every element has at least one adjacent element^{\text{∗}} that is equal to it. Formally, for every 1≤ i≤ m, at least one of the following holds: b_i = b_{(i+m-2)\bmod m\;+1}, or b_i = b_{i\bmod m\;+1}, where x \bmod y denotes the remainder from dividing x by y. You are given a circular array a of length n. In one operation, you may increase or decrease any element of a by 1. Your task is to determine the minimum number of operations required to make array a nice. More formally, find the minimum value of ∑_{i=1}^n |b_i - a_i| among all nice circular arrays b of length n.^{\text{∗}}In a circular array of length m: For each index 2≤ i≤ m - 1, the element at index i is adjacent to the elements at indices i - 1 and i + 1. The element at index 1 is adjacent to the elements at indices 2 and m. The element at index m is adjacent to the elements at indices m - 1 and 1.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

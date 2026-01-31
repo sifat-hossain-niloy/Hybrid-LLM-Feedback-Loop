@@ -1,0 +1,49 @@
+{
+  "problem_id": "2159_A",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2159_A_gpt5_codestral_f8648249",
+  "start_time": "2025-11-22T07:33:52",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-22T07:33:52",
+      "duration_seconds": 253.89,
+      "solution_file": "2159_A_Solution_1.cpp",
+      "submission_id": "349742872",
+      "verdict": "Runtime error on test 12",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-22T07:39:31",
+      "duration_seconds": 296.18,
+      "solution_file": "2159_A_Solution_2.cpp",
+      "submission_id": "348646819",
+      "verdict": "Time limit exceeded on test 14",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-22T07:44:20",
+      "duration_seconds": 287.58,
+      "solution_file": "2159_A_Solution_3.cpp",
+      "submission_id": "349405062",
+      "verdict": "Time limit exceeded on test 5",
+      "execution_time_ms": 19,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-22T07:49:56",
+      "duration_seconds": 211.43,
+      "solution_file": "2159_A_Solution_4.cpp",
+      "submission_id": "348595991",
+      "verdict": "Memory limit exceeded on test 3",
+      "execution_time_ms": 28,
+      "accepted": false
+    }
+  ]
+}

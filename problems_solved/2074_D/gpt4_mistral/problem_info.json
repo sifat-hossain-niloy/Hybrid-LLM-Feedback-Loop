@@ -1,0 +1,22 @@
+{
+  "problem_id": "2074_D",
+  "contest_id": "2074",
+  "letter": "D",
+  "title": "Problem 2074_D",
+  "statement": "The pink soldiers drew n circles with their center on the x-axis of the plane. Also, they have told that the sum of radii is exactly m^{\\text{\u2217}}.Please find the number of integer points inside or on the border of at least one circle. Formally, the problem is defined as follows.You are given an integer sequence x_1,x_2,...,x_n and a positive integer sequence r_1,r_2,...,r_n, where it is known that \u2211_{i=1}^n r_i = m.You must count the number of integer pairs (x,y) that satisfy the following condi",
+  "rating": "1400",
+  "tags": [
+    "brute force",
+    "data structures",
+    "geometry",
+    "implementation",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n2 3\n0 0\n1 2\n2 3\n0 2\n1 2\n3 3\n0 2 5\n1 1 1\n4 8\n0 5 10 15\n2 2 2 2",
+      "output": "13\n16\n14\n52"
+    }
+  ],
+  "created_at": "2025-11-26T07:22:34"
+}

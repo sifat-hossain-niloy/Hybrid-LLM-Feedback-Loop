@@ -1,0 +1,19 @@
+{
+  "problem_id": "2061_D",
+  "contest_id": "2061",
+  "letter": "D",
+  "title": "Problem 2061_D",
+  "statement": "Kevin wrote an integer sequence a of length n on the blackboard.Kevin can perform the following operation any number of times: Select two integers x, y on the blackboard such that |x - y| \u2264q 1, erase them, and then write down an integer x + y instead. Kevin wants to know if it is possible to transform these integers into an integer sequence b of length m through some sequence of operations.Two sequences a and b are considered the same if and only if their multisets are identical. In other words,",
+  "rating": "1600",
+  "tags": [
+    "bitmasks",
+    "data structures"
+  ],
+  "sample_tests": [
+    {
+      "input": "9\n2 1\n4 5\n9\n2 1\n3 6\n9\n4 2\n1 2 2 2\n3 4\n4 2\n1 1 3 3\n3 5\n4 2\n1 2 3 4\n3 5\n5 5\n1 2 3 4 5\n5 4 3 2 1\n4 2\n1 1 1 1\n1 1\n4 4\n1 1 1 1\n1 1 1 2\n1 1\n1\n1000000000",
+      "output": "Yes\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo"
+    }
+  ],
+  "created_at": "2025-11-26T15:33:44"
+}

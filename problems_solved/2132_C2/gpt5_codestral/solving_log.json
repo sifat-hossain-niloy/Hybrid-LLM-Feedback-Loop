@@ -1,0 +1,49 @@
+{
+  "problem_id": "2132_C2",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2132_C2_gpt5_codestral_1d23843b",
+  "start_time": "2025-11-25T03:50:54",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-25T03:50:54",
+      "duration_seconds": 233.67,
+      "solution_file": "2132_C2_Solution_1.cpp",
+      "submission_id": "349940614",
+      "verdict": "Time limit exceeded on test 4",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-25T03:56:07",
+      "duration_seconds": 170.68,
+      "solution_file": "2132_C2_Solution_2.cpp",
+      "submission_id": "349537886",
+      "verdict": "Time limit exceeded on test 4",
+      "execution_time_ms": 47,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-25T03:59:01",
+      "duration_seconds": 259.23,
+      "solution_file": "2132_C2_Solution_3.cpp",
+      "submission_id": "349776044",
+      "verdict": "Runtime error on test 10",
+      "execution_time_ms": 73,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-25T04:05:06",
+      "duration_seconds": 195.74,
+      "solution_file": "2132_C2_Solution_4.cpp",
+      "submission_id": "349956626",
+      "verdict": "Wrong answer on test 12",
+      "execution_time_ms": 1000,
+      "accepted": false
+    }
+  ]
+}

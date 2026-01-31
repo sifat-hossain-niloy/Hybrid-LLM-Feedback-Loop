@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-26T08:38:19
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2039_C1**
+
+This is the easy version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.Shohag has two integers x and m. Help him count the number of integers 1 ≤ y ≤ m such that \mathbf{x ≠q y} and x \oplus y is a divisor^{\text{∗}} of either x, y, or both. Here \oplus is the bitwise XOR operator.^{\text{∗}}The number b is a divisor of the number a if there exists an integer c such that a = b · c.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

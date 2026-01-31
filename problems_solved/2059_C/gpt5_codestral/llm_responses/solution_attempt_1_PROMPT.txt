@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-26T22:13:23
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2059_C**
+
+Nikyr has started working as a queue manager at the company "Black Contour." He needs to choose the order of servicing customers. There are a total of n queues, each initially containing 0 people. In each of the next n moments of time, there are two sequential events: New customers arrive in all queues. More formally, at the j-th moment of time, the number of people in the i-th queue increases by a positive integer a_{i,j}. Nikyr chooses exactly one of the n queues to be served at that moment in time. The number of customers in this queue becomes 0.Let the number of people in the i-th queue after all events be x_i. Nikyr wants MEX^{\dagger} of the collection x_1, x_2, ..., x_n to be as large as possible. Help him determine the maximum value he can achieve with an optimal order of servicing the queues.^{\dagger}The minimum excluded (MEX) of a collection of integers c_1, c_2, ..., c_k is defined as the smallest non-negative integer y which does not occur in the collection c. For example:
+
+**Task:** Please provide a well-structured and optimized C++ solution.

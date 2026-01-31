@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 1
+Timestamp: 2025-11-26T21:53:20
+Model: llama-3.3-70b-versatile
+Verdict: Wrong answer on test 12
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2121_E
+**Verdict:** Wrong answer on test 12
+
+**Task:** Identify the bug and suggest improvements.

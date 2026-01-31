@@ -1,0 +1,23 @@
+{
+  "problem_id": "2129_A",
+  "contest_id": "2129",
+  "letter": "A",
+  "title": "Problem 2129_A",
+  "statement": "For a set of pairs S = \\{(a_1, b_1), (a_2, b_2), ..., (a_m, b_m)\\}, where a_i < b_i for all 1 \u2264 i \u2264 m, we define f(S) and g(S) as follows: Treating each (a_i, b_i) as a segment on the number line, f(S) is the length of their union. Formally, f(S) is the number of integers x such that there exists an i (1 \u2264q i \u2264q m) where [x, x+1] \u2282eq [a_i, b_i]. Treating each (a_i, b_i) as an undirected edge in a graph, g(S) is the number of nodes that lie on at least one simple cycle with at least 3 edges. Form",
+  "rating": "1300",
+  "tags": [
+    "constructive algorithms",
+    "dp",
+    "dsu",
+    "graphs",
+    "greedy",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n1\n1 2\n4\n1 2\n2 3\n1 3\n3 5",
+      "output": "1\n1\n3\n1 2 4"
+    }
+  ],
+  "created_at": "2025-11-27T08:29:54"
+}

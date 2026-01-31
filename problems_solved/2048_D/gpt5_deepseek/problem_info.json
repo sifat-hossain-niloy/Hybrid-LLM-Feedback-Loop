@@ -1,0 +1,23 @@
+{
+  "problem_id": "2048_D",
+  "contest_id": "2048",
+  "letter": "D",
+  "title": "Problem 2048_D",
+  "statement": "Kevin used to get into Rio's Memories, and in Rio's Memories, a series of contests was once held. Kevin remembers all the participants and all the contest problems from that time, but he has forgotten the specific rounds, the distribution of problems, and the exact rankings.There are m problems in total, with the i -th problem having a difficulty of b_i . Let each contest consist of k problems, resulting in a total of \\lfloor \\frac{m}{k} \\rfloor contests. This means that you select exactly \\lflo",
+  "rating": "1600",
+  "tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n4 4\n4 3 7 5\n2 5 4 6\n5 5\n5 0 4 8 6\n1 3 9 2 7\n6 7\n1 1 4 5 1 4\n1 9 1 9 8 1 0\n7 6\n1 9 1 9 8 1 0\n1 1 4 5 1 4",
+      "output": "7 4 2 3\n6 2 1 1 2\n7 3 2 1 1 1 1\n15 9 5 4 4 4"
+    }
+  ],
+  "created_at": "2025-11-25T10:49:19"
+}

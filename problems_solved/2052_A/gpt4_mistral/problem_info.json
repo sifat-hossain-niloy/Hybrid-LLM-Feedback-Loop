@@ -1,0 +1,18 @@
+{
+  "problem_id": "2052_A",
+  "contest_id": "2052",
+  "letter": "A",
+  "title": "Problem 2052_A",
+  "statement": "Alice's friend is a big fan of the Adrenaline Rush racing competition and always strives to attend every race. However, this time, Alice is the one watching the race. To ensure her friend does not miss any important details, Alice decides to take notes on everything that happens on the track.The first thing Alice notices before the race begins is the numbering of the cars. All the cars line up in front of the starting line in a specific order. The car closest to the line is numbered 1, the secon",
+  "rating": "1600",
+  "tags": [
+    "constructive algorithms"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n2 3 1",
+      "output": "4\n2 1\n3 1\n3 2\n2 3"
+    }
+  ],
+  "created_at": "2025-11-21T21:40:27"
+}

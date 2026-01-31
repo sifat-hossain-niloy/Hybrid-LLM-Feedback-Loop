@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-23T16:14:54
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2094_G**
+
+Chimpanzini Bananini stands on the brink of a momentous battle—one destined to bring finality.For an arbitrary array b of length m, let's denote the rizziness of the array to be ∑_{i=1}^mb_i· i=b_1· 1+b_2· 2+b_3· 3+... + b_m· m.Chimpanzini Bananini gifts you an empty array. There are three types of operations you can perform on it. Perform a cyclic shift on the array. That is, the array [a_1, a_2, ..., a_n] becomes [a_n, a_1, a_2, ..., a_{n-1}]. Reverse the entire array. That is, the array [a_1, a_2, ..., a_n] becomes [a_n, a_{n-1}, ..., a_1]. Append an element to the end of the array. The array [a_1, a_2, ..., a_n] becomes [a_1, a_2, ..., a_n, k] after appending k to the end of the array. After each operation, you are interested in calculating the rizziness of your array. Note that all operations are persistent. This means that each operation modifies the array, and subsequent operations should be applied to the current state of the array after the previous operations.
+
+**Previous Attempt Failed:** Time limit exceeded on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

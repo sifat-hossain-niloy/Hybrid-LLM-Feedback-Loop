@@ -1,0 +1,29 @@
+{
+  "problem_id": "2041_B",
+  "workflow_type": "gpt4_groq",
+  "workflow_session": "2041_B_gpt4_groq_9d7efbfb",
+  "start_time": "2025-11-25T13:08:12",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-25T13:08:12",
+      "duration_seconds": 172.68,
+      "solution_file": "2041_B_Solution_1.cpp",
+      "submission_id": "349297589",
+      "verdict": "Time limit exceeded on test 3",
+      "execution_time_ms": 838,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-25T13:12:38",
+      "duration_seconds": 167.41,
+      "solution_file": "2041_B_Solution_2.cpp",
+      "submission_id": "348346985",
+      "verdict": "Accepted",
+      "execution_time_ms": 132,
+      "accepted": true
+    }
+  ]
+}

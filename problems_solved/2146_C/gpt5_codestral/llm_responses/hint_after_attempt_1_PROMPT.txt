@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 1
+Timestamp: 2025-11-27T14:34:24
+Model: codestral-2508
+Verdict: Wrong answer on test 10
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2146_C
+**Verdict:** Wrong answer on test 10
+
+**Task:** Identify the bug and suggest improvements.

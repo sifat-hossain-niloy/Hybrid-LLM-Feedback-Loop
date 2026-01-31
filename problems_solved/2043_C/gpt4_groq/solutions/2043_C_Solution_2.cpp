@@ -1,7 +1,7 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 05:36:58
- * Workflow: GPT-4 + Groq
+ * Problem: 2043_C
+ * Generated: 2025-11-23T07:34:35
+ * Workflow: gpt4_groq
  * Solution Model: gpt-4
  * Debugging Critic: llama-3.3-70b-versatile
  * Iteration: 2
@@ -11,40 +11,39 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+long long crossSum(vector<long long>& a, int l, int m, int r){{
+    long long leftSum = LLONG_MIN, rightSum = LLONG_MIN;
+    long long sum = 0;
+    for(int i=m; i>=l; i--){{
+        sum += a[i];
+        leftSum = max(leftSum, sum);
+    }}
+    sum = 0;
+    for(int i=m+1; i<=r; i++){{
+        sum += a[i];
+        rightSum = max(rightSum, sum);
+    }}
+    return leftSum + rightSum;
+}}
 
+long long maxSubArray(vector<long long>& a, int l, int r){{
+    if(l == r) return a[l];
+    int m = (l + r) / 2;
+    return max({{maxSubArray(a, l, m), maxSubArray(a, m+1, r), crossSum(a, l, m, r)}});
+}}
+
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        set<int> sums;
-        sums.insert(0); // Initialize with 0 for the empty subarray
-
-        for(int i=0; i<n; i++) {
-            cin >> a[i];
-        }
-
-        for(int i=0; i<n; i++) {
-            int sum = 0;
-            for(int j=i; j<n; j++) {
-                sum += a[j];
-                sums.insert(sum);
-            }
-        }
-
-        vector<int> result(sums.begin(), sums.end());
-        sort(result.begin(), result.end());
-
-        cout << result.size() << "\n";
-        for(int num : result) {
-            cout << num << " ";
-        }
-        cout << "\n";
-    }
-
+        vector<long long> a(n);
+        for(int i=1;i<n;i++) cin >> a[i];
+        cout << maxSubArray(a, 0, n-1) << "\n";
+    }}
     return 0;
-}
+}}

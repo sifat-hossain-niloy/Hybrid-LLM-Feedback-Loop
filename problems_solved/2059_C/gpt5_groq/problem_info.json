@@ -1,0 +1,23 @@
+{
+  "problem_id": "2059_C",
+  "contest_id": "2059",
+  "letter": "C",
+  "title": "Problem 2059_C",
+  "statement": "Nikyr has started working as a queue manager at the company \"Black Contour.\" He needs to choose the order of servicing customers. There are a total of n queues, each initially containing 0 people. In each of the next n moments of time, there are two sequential events: New customers arrive in all queues. More formally, at the j-th moment of time, the number of people in the i-th queue increases by a positive integer a_{i,j}. Nikyr chooses exactly one of the n queues to be served at that moment in",
+  "rating": "1600",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "graph matchings",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n2\n1 2\n2 1\n2\n10 10\n10 10\n3\n2 3 3\n4 4 1\n2 1 1\n4\n4 2 2 17\n1 9 3 1\n5 5 5 11\n1 2 1 1",
+      "output": "2\n1\n3\n3"
+    }
+  ],
+  "created_at": "2025-11-26T23:54:23"
+}

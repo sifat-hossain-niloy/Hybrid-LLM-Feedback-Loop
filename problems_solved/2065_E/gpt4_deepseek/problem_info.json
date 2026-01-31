@@ -1,0 +1,20 @@
+{
+  "problem_id": "2065_E",
+  "contest_id": "2065",
+  "letter": "E",
+  "title": "Problem 2065_E",
+  "statement": "With the approach of Valentine's Day, Skibidus desperately needs a way to rizz up his crush! Fortunately, he knows of just the way: creating the perfect Binary String!Given a binary string^{\\text{\u2217}} t, let x represent the number of \\texttt{0} in t and y represent the number of \\texttt{1} in t. Its balance-value is defined as the value of \\max(x-y, y-x).Skibidus gives you three integers n, m, and k. He asks for your help to construct a binary string s of length n+m with exactly n \\texttt{0}'s an",
+  "rating": "1600",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n1 2 1\n4 3 2\n2 4 3\n8 3 2\n5 0 4\n5 0 5",
+      "output": "101\n0100101\n011011\n-1\n-1\n00000"
+    }
+  ],
+  "created_at": "2025-11-23T04:14:10"
+}

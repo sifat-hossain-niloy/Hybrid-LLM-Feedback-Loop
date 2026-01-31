@@ -1,9 +1,9 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 06:20:09
- * Workflow: GPT-4 + DeepSeek
+ * Problem: 2043_C
+ * Generated: 2025-11-23T02:57:58
+ * Workflow: gpt4_deepseek
  * Solution Model: gpt-4
- * Debugging Critic: deepseek-reasoner
+ * Debugging Critic: deepseek-r1-0528
  * Iteration: 1
  * Rating: 1600
  */
@@ -11,44 +11,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        int sum = 0, max_val = INT_MIN, min_val = INT_MAX;
-        for(int i = 0; i < n; i++) {
-            cin >> a[i];
-            if(a[i] == 1 || a[i] == -1) {
-                sum += a[i];
-            } else {
-                max_val = max(max_val, a[i]);
-                min_val = min(min_val, a[i]);
-            }
-        }
-        set<int> ans;
-        for(int i = min(sum, 0); i <= max(sum, 0); i++) {
-            ans.insert(i);
-        }
-        if(max_val != INT_MIN) {
-            for(int i = min(sum + min_val, 0); i <= max(sum + min_val, 0); i++) {
-                ans.insert(i);
-            }
-            for(int i = min(sum + max_val, 0); i <= max(sum + max_val, 0); i++) {
-                ans.insert(i);
-            }
-        }
-        cout << ans.size() << "\n";
-        for(auto it : ans) {
-            cout << it << " ";
-        }
-        cout << "\n";
-    }
-
+        vector<long long> a(n);
+        for(int i=0;i<n;i++) cin >> a[i];
+        
+        // Kadane's algorithm
+        long long maxSum = a[0], currentSum = a[0];
+        for(int i=1;i<n;i++){{
+            currentSum = max(a[i], currentSum + a[i]);
+            maxSum = max(maxSum, currentSum);
+        }}
+        cout << maxSum << "\n";
+    }}
     return 0;
-}
+}}

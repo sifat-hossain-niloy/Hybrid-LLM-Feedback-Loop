@@ -1,0 +1,21 @@
+{
+  "submission_id": "348123456",
+  "timestamp": "2025-11-22T08:46:12.456789",
+  "collection_methods": ["api_interception_via_click"],
+  "parsed_api_response": {
+    "testCount": "3",
+    "verdict": "<span class='verdict-rejected'>Wrong answer on test <span class=\"verdict-format-judged\">3</span></span>",
+    "verdict#1": "OK",
+    "verdict#2": "OK",
+    "verdict#3": "WRONG_ANSWER",
+    "timeConsumed#1": "15",
+    "timeConsumed#2": "31",
+    "timeConsumed#3": "46",
+    "memoryConsumed#1": "4096",
+    "memoryConsumed#2": "4096",
+    "memoryConsumed#3": "4096",
+    "problemName": "(C) Sums on Segments",
+    "contestName": "Educational Codeforces Round 173 (Rated for Div. 2)",
+    "compilationError": "false"
+  }
+}

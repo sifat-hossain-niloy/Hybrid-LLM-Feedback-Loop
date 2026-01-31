@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-26T05:19:05
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2138_C1**
+
+This is the easy version of the problem. The difference between the versions is that in this version, the constraints on t and n are smaller. You can hack only if you solved all versions of this problem. Maple is given a rooted tree consisting of n vertices numbered from 1 to n, where the root has index 1. Each vertex of the tree is labeled either zero or one. Unfortunately, Maple forgot how the vertices are labeled and only remembers that there are exactly k zeros and n - k ones.For each vertex, we define the name of the vertex as the binary string formed by concatenating the labels of the vertices from the root to the vertex. More formally, \text{name}_1 = \text{label}_1 and \text{name}_u = \text{name}_{p_u} + \text{label}_u for all 2≤ u≤ n, where p_u is the parent of vertex u and + represents string concatenation.The beauty of the tree is equal to the length of the longest common subsequence^{\text{∗}} of the names of all the leaves^{\text{†}}. Your task is to determine the maximum 
+
+**Previous Attempt Failed:** Time limit exceeded on test 1
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,7 +1,7 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 05:34:30
- * Workflow: GPT-4 + Mistral
+ * Problem: 2043_C
+ * Generated: 2025-11-23T05:03:45
+ * Workflow: gpt4_mistral
  * Solution Model: gpt-4
  * Debugging Critic: codestral-2508
  * Iteration: 3
@@ -11,50 +11,37 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+struct Node {{
+    long long sum, prefixMax, suffixMax, maxSum;
+}};
 
+Node merge(Node left, Node right){{
+    Node result;
+    result.sum = left.sum + right.sum;
+    result.prefixMax = max(left.prefixMax, left.sum + right.prefixMax);
+    result.suffixMax = max(right.suffixMax, right.sum + left.suffixMax);
+    result.maxSum = max({{left.maxSum, right.maxSum, left.suffixMax + right.prefixMax}});
+    return result;
+}}
+
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        int x = 0;
-        int ones = 0, minus_ones = 0;
-        for(int i = 0; i < n; i++) {
-            cin >> a[i];
-            if(a[i] != -1 && a[i] != 1) {
-                x = a[i];
-            } else if(a[i] == 1) {
-                ones++;
-            } else if(a[i] == -1) {
-                minus_ones++;
-            }
-        }
-
-        set<int> sums;
-        sums.insert(0);
-        for(int i = 1; i <= ones; i++) {
-            sums.insert(i);
-        }
-        for(int i = 1; i <= minus_ones; i++) {
-            sums.insert(-i);
-        }
-
-        if(x != 0) {
-            vector<int> temp(sums.begin(), sums.end());
-            for(int i = 0; i < temp.size(); i++) {
-                sums.insert(temp[i] + x);
-            }
-        }
-
-        for(auto it : sums) {
-            cout << it << " ";
-        }
-        cout << "\n";
-    }
-
+        vector<long long> a(n);
+        for(int i=0;i<n;i++) cin >> a[i];
+        
+        Node result = {{a[0], a[0], a[0], a[0]}};
+        for(int i=1;i<n;i++){{
+            Node curr = {{a[i], a[i], a[i], a[i]}};
+            result = merge(result, curr);
+        }}
+        cout << result.maxSum << "\n";
+    }}
     return 0;
-}
+}}

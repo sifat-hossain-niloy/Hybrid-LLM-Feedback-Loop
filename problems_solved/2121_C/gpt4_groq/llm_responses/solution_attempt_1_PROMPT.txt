@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T08:00:46
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2121_C**
+
+You are given a matrix of integers with n rows and m columns. The cell at the intersection of the i-th row and the j-th column contains the number a_{ij}.You can perform the following operation exactly once: Choose two numbers 1 ≤q r ≤q n and 1 ≤q c ≤q m. For all cells (i, j) in the matrix such that i = r or j = c, decrease a_{ij} by one.You need to find the minimal possible maximum value in the matrix a after performing exactly one such operation.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

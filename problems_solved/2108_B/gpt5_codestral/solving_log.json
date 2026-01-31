@@ -1,0 +1,29 @@
+{
+  "problem_id": "2108_B",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2108_B_gpt5_codestral_6f3a3131",
+  "start_time": "2025-11-21T22:40:45",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-21T22:40:45",
+      "duration_seconds": 268.22,
+      "solution_file": "2108_B_Solution_1.cpp",
+      "submission_id": "349238297",
+      "verdict": "Wrong answer on test 7",
+      "execution_time_ms": 642,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-21T22:46:37",
+      "duration_seconds": 277.67,
+      "solution_file": "2108_B_Solution_2.cpp",
+      "submission_id": "349803081",
+      "verdict": "Accepted",
+      "execution_time_ms": 126,
+      "accepted": true
+    }
+  ]
+}

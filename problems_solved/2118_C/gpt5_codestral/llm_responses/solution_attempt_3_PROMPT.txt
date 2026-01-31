@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-24T15:00:28
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2118_C**
+
+You are given an array a of n integers. We define the \text{beauty} of a number x to be the number of 1 bits in its binary representation. We define the beauty of an array to be the sum of beauties of the numbers it contains. In one operation, you can select an index i (1 ≤ i ≤ n) and increase a_i by 1. Find the maximum beauty of the array after doing at most k operations.
+
+**Previous Attempt Failed:** Time limit exceeded on test 10
+
+**Task:** Please provide a corrected solution addressing the identified issues.

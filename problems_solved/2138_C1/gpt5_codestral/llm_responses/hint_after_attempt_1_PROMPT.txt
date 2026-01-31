@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 1
+Timestamp: 2025-11-25T20:59:57
+Model: codestral-2508
+Verdict: Memory limit exceeded on test 10
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2138_C1
+**Verdict:** Memory limit exceeded on test 10
+
+**Task:** Identify the bug and suggest improvements.

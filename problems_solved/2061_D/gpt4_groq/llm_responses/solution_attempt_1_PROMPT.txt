@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-26T23:42:44
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2061_D**
+
+Kevin wrote an integer sequence a of length n on the blackboard.Kevin can perform the following operation any number of times: Select two integers x, y on the blackboard such that |x - y| ≤q 1, erase them, and then write down an integer x + y instead. Kevin wants to know if it is possible to transform these integers into an integer sequence b of length m through some sequence of operations.Two sequences a and b are considered the same if and only if their multisets are identical. In other words, for any number x, the number of times it appears in a must be equal to the number of times it appears in b.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

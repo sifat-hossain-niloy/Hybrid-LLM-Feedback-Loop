@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-24T22:23:17
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2065_G**
+
+Skibidus was abducted by aliens of Amog! Skibidus tries to talk his way out, but the Amog aliens don't believe him. To prove that he is not totally capping, the Amog aliens asked him to solve this task:An integer x is considered a semi-prime if it can be written as p · q where p and q are (not necessarily distinct) prime numbers. For example, 9 is a semi-prime since it can be written as 3 · 3, and 3 is a prime number.Skibidus was given an array a containing n integers. He must report the number of pairs (i, j) such that i ≤q j and \operatorname{lcm}(a_i, a_j)^{\text{∗}} is semi-prime.^{\text{∗}}Given two integers x and y, \operatorname{lcm}(x, y) denotes the least common multiple of x and y.
+
+**Previous Attempt Failed:** Time limit exceeded on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

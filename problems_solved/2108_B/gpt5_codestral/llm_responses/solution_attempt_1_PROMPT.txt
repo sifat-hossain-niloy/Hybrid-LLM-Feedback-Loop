@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-21T22:40:45
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2108_B**
+
+On a recent birthday, your best friend Maurice gave you a pair of numbers n and x, and asked you to construct an array of positive numbers a of length n such that a_1 \oplus a_2 \oplus ·s \oplus a_n = x ^{\text{∗}}. This task seemed too simple to you, and therefore you decided to give Maurice a return gift by constructing an array among all such arrays that has the smallest sum of its elements. You immediately thought of a suitable array; however, since writing it down turned out to be too time-consuming, Maurice will have to settle for just the sum of its elements.^{\text{∗}}\oplus denotes the bitwise XOR operation.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

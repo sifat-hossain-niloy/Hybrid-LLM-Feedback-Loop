@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-25T06:16:34
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2055_C**
+
+There are no mountains in Florida, and Florida Man cannot comprehend their existence. As such, he really needs your help with this one.In the wilderness lies a region of mountainous terrain represented as a rectangular grid with n rows and m columns. Each cell in the grid is identified by its position (i, j), where i is the row index and j is the column index. The altitude of cell (i, j) is denoted by a_{i,j}.However, this region has been tampered with. A path consisting of n + m - 1 cells, starting from the top-left corner (1, 1) and ending at the bottom-right corner (n, m), has been cleared. For every cell (i, j) along this path, the altitude a_{i,j} has been set to 0. The path moves strictly via downward (\mathtt{D}) or rightward (\mathtt{R}) steps.To restore the terrain to its original state, it is known that the region possessed a magical property before it was tampered with: all rows and all columns shared the same sum of altitudes. More formally, there exists an integer x such t
+
+**Task:** Please provide a well-structured and optimized C++ solution.

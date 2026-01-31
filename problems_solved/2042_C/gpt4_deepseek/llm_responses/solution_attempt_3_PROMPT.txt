@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-21T18:19:49
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2042_C**
+
+Alice and Bob participate in a fishing contest! In total, they caught n fishes, numbered from 1 to n (the bigger the fish, the greater its index). Some of these fishes were caught by Alice, others — by Bob.Their performance will be evaluated as follows. First, an integer m will be chosen, and all fish will be split into m non-empty groups. The first group should contain several (at least one) smallest fishes, the second group — several (at least one) next smallest fishes, and so on. Each fish should belong to exactly one group, and each group should be a contiguous subsegment of fishes. Note that the groups are numbered in exactly that order; for example, the fishes from the second group cannot be smaller than the fishes from the first group, since the first group contains the smallest fishes.Then, each fish will be assigned a value according to its group index: each fish in the first group gets value equal to 0, each fish in the second group gets value equal to 1, and so on. So, each 
+
+**Previous Attempt Failed:** Wrong answer on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

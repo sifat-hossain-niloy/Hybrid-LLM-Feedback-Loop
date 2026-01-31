@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-24T05:56:48
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2053_C**
+
+I'm praying for owning a transparent heart; as well as eyes with tears more than enough...— Escape Plan, Brightest Star in the DarkIris looked at the stars and a beautiful problem emerged in her mind. She is inviting you to solve it so that a meteor shower is believed to form.There are n stars in the sky, arranged in a row. Iris has a telescope, which she uses to look at the stars.Initially, Iris observes stars in the segment [1, n], and she has a lucky value of 0. Iris wants to look for the star in the middle position for each segment [l, r] that she observes. So the following recursive procedure is used: First, she will calculate m = ≤ft\lfloor \frac{l+r}{2} \right\rfloor. If the length of the segment (i.e. r - l + 1) is even, Iris will divide it into two equally long segments [l, m] and [m+1, r] for further observation. Otherwise, Iris will aim the telescope at star m, and her lucky value will increase by m; subsequently, if l ≠q r, Iris will continue to observe two segments [l, m-1
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

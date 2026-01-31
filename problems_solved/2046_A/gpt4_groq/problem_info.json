@@ -1,0 +1,19 @@
+{
+  "problem_id": "2046_A",
+  "contest_id": "2046",
+  "letter": "A",
+  "title": "Problem 2046_A",
+  "statement": "There is a matrix consisting of 2 rows and n columns. The rows are numbered from 1 to 2 from top to bottom; the columns are numbered from 1 to n from left to right. Let's denote the cell on the intersection of the i-th row and the j-th column as (i,j). Each cell contains an integer; initially, the integer in the cell (i,j) is a_{i,j}.You can perform the following operation any number of times (possibly zero): choose two columns and swap them (i.\u2009e. choose two integers x and y such that 1 \u2264 x < y",
+  "rating": "1200",
+  "tags": [
+    "greedy",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n1\n-10\n5\n3\n1 2 3\n10 -5 -3\n4\n2 8 5 3\n1 10 3 4",
+      "output": "-5\n16\n29"
+    }
+  ],
+  "created_at": "2025-11-22T03:06:16"
+}

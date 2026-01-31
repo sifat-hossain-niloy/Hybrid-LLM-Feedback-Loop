@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-25T14:30:58
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2118_D1**
+
+This is the easy version of the problem. The only difference is the constraint on k and the total sum of n and q across all test cases. You can make hacks only if both versions of the problem are solved.You are given a strip of length 10^{15} and a constant k. There are exactly n cells that contain a traffic light; each has a position p_i and an initial delay d_i for which d_i < k. The i-th traffic light works the following way: it shows red at the l · k + d_i-th second, where l is an integer, it shows green otherwise. At second 0, you are initially positioned at some cell on the strip, facing the positive direction. At each second, you perform the following actions in order: If the current cell contains a red traffic light, you turn around. Move one cell in the direction you are currently facing. You are given q different starting positions. For each one, determine whether you will eventually leave the strip within 10^{100} seconds.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

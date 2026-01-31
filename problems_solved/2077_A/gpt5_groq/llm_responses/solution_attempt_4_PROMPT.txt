@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-26T13:52:05
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2077_A**
+
+Breach of Faith - Supire feat.eili You and your team have worked tirelessly until you have a sequence a_1, a_2, ..., a_{2n+1} of positive integers satisfying these properties. 1 ≤ a_i ≤ 10^{18} for all 1 ≤ i ≤ 2n + 1. a_1, a_2, ..., a_{2n+1} are pairwise distinct. a_1 = a_2 - a_3 + a_4 - a_5 + ... + a_{2n} - a_{2n+1}. However, the people you worked with sabotaged you because they wanted to publish this sequence first. They deleted one number from this sequence and shuffled the rest, leaving you with a sequence b_1, b_2, ..., b_{2n}. You have forgotten the sequence a and want to find a way to recover it.If there are many possible sequences, you can output any of them. It can be proven under the constraints of the problem that at least one sequence a exists.
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

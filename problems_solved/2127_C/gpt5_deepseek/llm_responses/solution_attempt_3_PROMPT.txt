@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-28T19:22:46
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2127_C**
+
+Ali and Bahamin decided to spend their summer vacation on the beautiful southern coasts of Iran. They also agreed to do some shopping during the trip — but instead of setting a fixed budget, they decided to determine how much they would spend by playing a game.The game is played on two arrays a and b, each containing n integers.The game will last for k rounds. In one round: First, Ali selects two indices i and j (1 ≤q i < j ≤q n); Then, Bahamin rearranges the four integers a_i, a_j, b_i, and b_j arbitrarily. Note that Bahamin can swap numbers between two arrays. He can also keep the two arrays unchanged. After all the k rounds, the value of the game is defined as v=∑\limits_{i=1}^{n} |a_i-b_i|. Ali and Bahamin will spend exactly v coins during their trip.However, their goals are quite different: Ali wants to spend as little as possible, that is, to minimize v; Bahamin wants to spend as much as possible, that is, to maximize v. You have to find the final amount of coins they will spend 
+
+**Previous Attempt Failed:** Wrong answer on test 1
+
+**Task:** Please provide a corrected solution addressing the identified issues.

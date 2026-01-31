@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-28T13:28:45
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2090_C**
+
+Inside the large kingdom, there is an infinite dining hall. It can be represented as a set of cells (x, y), where x and y are non-negative integers. There are an infinite number of tables in the hall. Each table occupies four cells (3x + 1, 3y + 1), (3x + 1, 3y + 2), (3x + 2, 3y + 1), (3x + 2, 3y + 2), where x and y are arbitrary non-negative integers. All cells that do not belong to any of the tables are corridors.There are n guests that come to the dining hall one by one. Each guest appears in the cell (0, 0) and wants to reach a table cell. In one step, they can move to any neighboring by side corridor cell, and in their last step, they must move to a neighboring by side a free table cell. They occupy the chosen table cell, and no other guest can move there.Each guest has a characteristic t_i, which can either be 0 or 1. They enter the hall in order, starting to walk from the cell (0, 0). If t_i=1, the i-th guest walks to the nearest vacant table cell. If t_i=0, they walk to the nea
+
+**Previous Attempt Failed:** Runtime error on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-27T10:56:09
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2127_B**
+
+Mani has locked Hamid in a 1 × n grid. Initially, some cells of the grid contain walls and the rest are empty, and Hamid is in an empty cell.In each day, the following events happen in order: Mani selects an empty cell and builds a wall in that cell. Note that he can not build a wall in the cell which Hamid currently is at; Hamid selects a direction (left or right), then If there are no walls in that direction, he will escape the grid; Otherwise, he will move to the nearest wall in that direction and destroy that wall. Hamid is at the position of the destroyed wall after this day.Here is an example of a possible sequence of actions when n=6: Hamid is always aware of where the walls are. He wants to minimize the number of days that he needs to escape the grid, while Mani wants to maximize it.You have to determine the number of days Hamid needs to escape the grid if they both act optimally.
+
+**Previous Attempt Failed:** Time limit exceeded on test 10
+
+**Task:** Please provide a corrected solution addressing the identified issues.

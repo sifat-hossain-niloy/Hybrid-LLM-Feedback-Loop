@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T05:44:52
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2159_A**
+
+This is an interactive problem. There is a secret sequence a_1, a_2, ..., a_{2n-1},a_{2n}, which contains each integer from 1 to n exactly twice.Your task is to guess the sequence by using queries of the following type: "? k\;j_1\;j_2\;...\;j_k" — select the integer k (1 ≤ k ≤ 2n) and k distinct indices j_1, j_2, ..., j_k (1 ≤ j_1 , j_2 , ... , j_k ≤ 2n). In response to the query, the jury will return \text{MAD}([a_{j_1}, a_{j_2}, ..., a_{j_k}]). We define the \operatorname{MAD} (Maximum Appearing Duplicate) of an integer sequence as the largest integer that appears at least twice. Specifically, if there is no number that appears at least twice, the \operatorname{MAD} value is 0. Some examples are as follows: \operatorname{MAD}([1, 2, 1]) = 1; \operatorname{MAD}([2, 2, 3, 3]) = 3; \operatorname{MAD}([1, 2, 3, 4]) = 0. Please identify the secret sequence using at most 3n queries.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

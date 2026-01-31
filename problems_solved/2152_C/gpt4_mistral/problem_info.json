@@ -1,0 +1,20 @@
+{
+  "problem_id": "2152_C",
+  "contest_id": "2152",
+  "letter": "C",
+  "title": "Problem 2152_C",
+  "statement": "Tired of supporting ranged carries, Keria is now creating a data structure problem about supporting range queries.For an array b = [b_1, b_2, ..., b_m] of length m where b_i=0 or b_i=1, consider the following triple removal operation: Choose three indices 1 \u2264 i < j < k \u2264 m such that the elements at these positions are identical (b_i = b_j = b_k). Remove these three elements from the array. The cost of this operation is defined as \\min(k-j, j-i). After the removal, the remaining parts of the arra",
+  "rating": "1400",
+  "tags": [
+    "data structures",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n12 4\n0 0 1 1 0 1 0 1 0 1 1 0\n1 12\n2 7\n5 10\n6 11\n6 3\n0 0 0 1 1 1\n1 3\n4 6\n1 6",
+      "output": "4\n2\n3\n-1\n1\n1\n2"
+    }
+  ],
+  "created_at": "2025-11-26T12:29:06"
+}

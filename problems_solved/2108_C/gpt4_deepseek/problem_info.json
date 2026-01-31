@@ -1,0 +1,25 @@
+{
+  "problem_id": "2108_C",
+  "contest_id": "2108",
+  "letter": "C",
+  "title": "Problem 2108_C",
+  "statement": "Neo wants to escape from the Matrix. In front of him are n buttons arranged in a row. Each button has a weight given by an integer: a_1, a_2, ..., a_n.Neo is immobilized, but he can create and move clones. This means he can perform an unlimited number of actions of the following two types in any order: Create a clone in front of a specific button. Move an existing clone one position to the left or right. As soon as a clone is in front of another button that has not yet been pressed\u2014regardless of",
+  "rating": "1500",
+  "tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "dp",
+    "dsu",
+    "graphs",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n5\n4 3 2 1 5\n3\n1 1 1\n6\n7 8 1 5 9 2\n10\n1 7 9 7 1 10 2 10 10 7",
+      "output": "2\n1\n2\n3"
+    }
+  ],
+  "created_at": "2025-11-23T09:52:12"
+}

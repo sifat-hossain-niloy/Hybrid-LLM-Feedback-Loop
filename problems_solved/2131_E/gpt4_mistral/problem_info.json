@@ -1,0 +1,19 @@
+{
+  "problem_id": "2131_E",
+  "contest_id": "2131",
+  "letter": "E",
+  "title": "Problem 2131_E",
+  "statement": "You're given an array a of length n. For each index i such that 1 \u2264 i < n, you can perform the following operation at most once: Assign a_i := a_i \\oplus a_{i+1}, where \\oplus denotes the bitwise XOR operation. . You can choose indices and perform the operations in any sequential order.Given another array b of length n, determine if it is possible to transform a to b.",
+  "rating": "1400",
+  "tags": [
+    "brute force",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "7\n5\n1 2 3 4 5\n3 2 7 1 5\n3\n0 0 1\n1 0 1\n3\n0 0 1\n0 0 0\n4\n0 0 1 2\n1 3 3 2\n6\n1 1 4 5 1 4\n0 5 4 5 5 4\n3\n0 1 2\n2 3 2\n2\n10 10\n11 10",
+      "output": "YES\nNO\nNO\nNO\nYES\nNO\nNO"
+    }
+  ],
+  "created_at": "2025-11-28T00:29:56"
+}

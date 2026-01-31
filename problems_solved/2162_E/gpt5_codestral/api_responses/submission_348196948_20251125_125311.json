@@ -1,0 +1,38 @@
+{
+  "submission_id": "348196948",
+  "timestamp": "2025-11-25T12:53:11",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "parsed_api_response": {
+    "testCount": "13",
+    "verdict": "<span class='verdict-rejected'>Time limit exceeded on test 7</span>",
+    "compilationError": "false",
+    "verdict#1": "OK",
+    "timeConsumed#1": "40",
+    "verdict#2": "OK",
+    "timeConsumed#2": "86",
+    "verdict#3": "OK",
+    "timeConsumed#3": "105",
+    "verdict#4": "OK",
+    "timeConsumed#4": "54",
+    "verdict#5": "OK",
+    "timeConsumed#5": "87",
+    "verdict#6": "OK",
+    "timeConsumed#6": "28",
+    "verdict#7": "WRONG_ANSWER",
+    "timeConsumed#7": "946",
+    "verdict#8": "OK",
+    "timeConsumed#8": "33",
+    "verdict#9": "OK",
+    "timeConsumed#9": "63",
+    "verdict#10": "OK",
+    "timeConsumed#10": "89",
+    "verdict#11": "OK",
+    "timeConsumed#11": "48",
+    "verdict#12": "OK",
+    "timeConsumed#12": "138",
+    "verdict#13": "OK",
+    "timeConsumed#13": "99"
+  }
+}

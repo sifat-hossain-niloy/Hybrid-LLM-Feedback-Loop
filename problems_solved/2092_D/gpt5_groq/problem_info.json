@@ -1,0 +1,22 @@
+{
+  "problem_id": "2092_D",
+  "contest_id": "2092",
+  "letter": "D",
+  "title": "Problem 2092_D",
+  "statement": "In anticipation of a duel with his old friend Fernan, Edmond is preparing an energy drink called \"Mishkin Energizer\". The drink consists of a string s of length n, made up only of the characters L, I, and T, which correspond to the content of three different substances in the drink.We call the drink balanced if it contains an equal number of all substances. To boost his aura and ensure victory in the duel, Edmond must make the initial string balanced by applying the following operation: Choose a",
+  "rating": "1800",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n5\nTILII\n1\nL\n3\nLIT",
+      "output": "4\n1\n2\n3\n4\n-1\n0"
+    }
+  ],
+  "created_at": "2025-11-27T16:14:12"
+}

@@ -1,0 +1,21 @@
+{
+  "problem_id": "2045_M",
+  "contest_id": "2045",
+  "letter": "M",
+  "title": "Problem 2045_M",
+  "statement": "You are given a grid of R rows (numbered from 1 to R from north to south) and C columns (numbered from 1 to C from west to east). Every cell in this grid is a square of the same size. The cell located at row r and column c is denoted as (r, c). Each cell can either be empty or have a mirror in one of the cell's diagonals. Each mirror is represented by a line segment. The mirror is type 1 if it is positioned diagonally from the southwest corner to the northeast corner of the cell, or type 2 for t",
+  "rating": "1800",
+  "tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "4 4\n.//.\n.\\\\.\n.\\/.\n....",
+      "output": "2\nN3 W2"
+    }
+  ],
+  "created_at": "2025-11-23T22:24:55"
+}

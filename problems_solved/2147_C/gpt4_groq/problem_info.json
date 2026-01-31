@@ -1,0 +1,21 @@
+{
+  "problem_id": "2147_C",
+  "contest_id": "2147",
+  "letter": "C",
+  "title": "Problem 2147_C",
+  "statement": "You have n flower pots arranged in a line numbered from 1 to n left to right. Some of the pots contain flowers, while others are empty. You are given a binary string s describing which pots contain flowers (s_i = 1) and which are empty (s_i = 0). You also have some rabbits, and you want to take a nice picture of rabbits and flowers. You want to put rabbits in every empty pot (s_i = 0), and for each rabbit, you can put it looking either to the left or to the right. Unfortunately, the rabbits are ",
+  "rating": "1500",
+  "tags": [
+    "constructive algorithms",
+    "dp",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "12\n4\n0100\n3\n000\n8\n11011011\n5\n00100\n1\n1\n5\n01011\n2\n01\n7\n0101011\n7\n1101010\n5\n11001\n4\n1101\n9\n001101100",
+      "output": "YES\nYES\nNO\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nNO\nNO"
+    }
+  ],
+  "created_at": "2025-11-27T04:37:48"
+}

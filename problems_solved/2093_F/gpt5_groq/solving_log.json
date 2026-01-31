@@ -1,0 +1,39 @@
+{
+  "problem_id": "2093_F",
+  "workflow_type": "gpt5_groq",
+  "workflow_session": "2093_F_gpt5_groq_5aede737",
+  "start_time": "2025-11-21T16:30:47",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-21T16:30:47",
+      "duration_seconds": 129.91,
+      "solution_file": "2093_F_Solution_1.cpp",
+      "submission_id": "349341816",
+      "verdict": "Runtime error on test 10",
+      "execution_time_ms": 91,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-21T16:34:05",
+      "duration_seconds": 216.34,
+      "solution_file": "2093_F_Solution_2.cpp",
+      "submission_id": "349038310",
+      "verdict": "Runtime error on test 2",
+      "execution_time_ms": 670,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-21T16:38:32",
+      "duration_seconds": 269.1,
+      "solution_file": "2093_F_Solution_3.cpp",
+      "submission_id": "349520729",
+      "verdict": "Accepted",
+      "execution_time_ms": 168,
+      "accepted": true
+    }
+  ]
+}

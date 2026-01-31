@@ -1,0 +1,19 @@
+{
+  "problem_id": "2045_C",
+  "contest_id": "2045",
+  "letter": "C",
+  "title": "Problem 2045_C",
+  "statement": "The word saraga is an abbreviation of sarana olahraga, an Indonesian term for a sports facility. It is created by taking the prefix sara of the word sarana and the suffix ga of the word olahraga. Interestingly, it can also be created by the prefix sa of the word sarana and the suffix raga of the word olahraga.An abbreviation of two strings S and T is interesting if there are at least two different ways to split the abbreviation into two non-empty substrings such that the first substring is a pre",
+  "rating": "1400",
+  "tags": [
+    "greedy",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "sarana\nolahraga",
+      "output": "saga"
+    }
+  ],
+  "created_at": "2025-11-22T22:27:51"
+}

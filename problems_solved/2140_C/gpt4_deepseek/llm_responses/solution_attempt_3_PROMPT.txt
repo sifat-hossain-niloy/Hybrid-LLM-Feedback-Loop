@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-22T15:56:54
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2140_C**
+
+Let's define a function f(a) for an array a of length n as f(a) = \textrm{cost} + (a_1 - a_2 + a_3 - a_4 ·s a_n) where \textrm{cost} is zero initially.Now consider the scenario where Alice and Bob are given an array a of length n. They play a game taking at most 10^{100} turns alternately with Alice going first.In each turn, they must perform any one (only one) of the following operations: End the game for both Alice and Bob. Choose two indices l,r with 1 ≤ l ≤ r ≤ n and swap a_l and a_r; this adds (r - l) to the \textrm{cost}. Assume that Alice tries to maximize f(a) and Bob tries to minimize it. Your task is to determine the final value of f(a) assuming both players play optimally.
+
+**Previous Attempt Failed:** Wrong answer on test 5
+
+**Task:** Please provide a corrected solution addressing the identified issues.

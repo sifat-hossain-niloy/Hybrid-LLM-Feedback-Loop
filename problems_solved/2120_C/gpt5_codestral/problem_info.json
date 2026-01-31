@@ -1,0 +1,22 @@
+{
+  "problem_id": "2120_C",
+  "contest_id": "2120",
+  "letter": "C",
+  "title": "Problem 2120_C",
+  "statement": "Harshith attained enlightenment in Competitive Programming by training under a Divine Tree. A divine tree is a rooted tree^{\\text{\u2217}} with n nodes, labelled from 1 to n. The divineness of a node v, denoted d(v), is defined as the smallest node label on the unique simple path from the root to node v.Aryan, being a hungry Competitive Programmer, asked Harshith to pass on the knowledge. Harshith agreed on the condition that Aryan would be given two positive integers n and m, and he had to construct",
+  "rating": "1400",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "sortings",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n1 2\n4 6",
+      "output": "-1\n3\n3 1\n1 2\n2 4"
+    }
+  ],
+  "created_at": "2025-11-22T00:36:15"
+}

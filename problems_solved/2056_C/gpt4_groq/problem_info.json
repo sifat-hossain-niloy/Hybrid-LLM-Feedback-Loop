@@ -1,0 +1,20 @@
+{
+  "problem_id": "2056_C",
+  "contest_id": "2056",
+  "letter": "C",
+  "title": "Problem 2056_C",
+  "statement": "For an integer sequence a = [a_1, a_2, ..., a_n], we define f(a) as the length of the longest subsequence^{\\text{\u2217}} of a that is a palindrome^{\\text{\u2020}}. Let g(a) represent the number of subsequences of length f(a) that are palindromes. In other words, g(a) counts the number of palindromic subsequences in a that have the maximum length.Given an integer n, your task is to find any sequence a of n integers that satisfies the following conditions: 1 \u2264 a_i \u2264 n for all 1 \u2264 i \u2264 n. g(a) > n It can be ",
+  "rating": "1200",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n6\n9\n15",
+      "output": "1 1 2 3 1 2\n7 3 3 7 5 3 7 7 3\n15 8 8 8 15 5 8 1 15 5 8 15 15 15 8"
+    }
+  ],
+  "created_at": "2025-11-25T14:34:34"
+}

@@ -1,0 +1,19 @@
+{
+  "problem_id": "2149_E",
+  "workflow_type": "gpt5_groq",
+  "workflow_session": "2149_E_gpt5_groq_79072200",
+  "start_time": "2025-11-23T02:05:55",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-23T02:05:55",
+      "duration_seconds": 208.77,
+      "solution_file": "2149_E_Solution_1.cpp",
+      "submission_id": "349605600",
+      "verdict": "Accepted",
+      "execution_time_ms": 178,
+      "accepted": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-25T14:19:03
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2117_F**
+
+Yousef has a rooted tree^{\text{∗}} consisting of exactly n vertices, which is rooted at vertex 1. You would like to give Yousef an array a of length n, where each a_i (1 ≤ i ≤ n) can either be 1 or 2.Let s_u denote the sum of a_v where vertex v is in the subtree^{\text{†}} of vertex u. Yousef considers the tree special if all the values in s are pairwise distinct (i.e., all subtree sums are unique).Your task is to help Yousef count the number of different arrays a that result in the tree being special. Two arrays b and c are different if there exists an index i such that b_i ≠q c_i.As the result can be very large, you should print it modulo 10^9 + 7.^{\text{∗}}A tree is a connected undirected graph with n - 1 edges.^{\text{†}}The subtree of a vertex v is the set of all vertices that pass through v on a simple path to the root. Note that vertex v is also included in the set.
+
+**Previous Attempt Failed:** Runtime error on test 10
+
+**Task:** Please provide a corrected solution addressing the identified issues.

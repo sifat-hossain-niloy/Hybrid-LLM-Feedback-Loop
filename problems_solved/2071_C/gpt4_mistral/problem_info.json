@@ -1,0 +1,24 @@
+{
+  "problem_id": "2071_C",
+  "contest_id": "2071",
+  "letter": "C",
+  "title": "Problem 2071_C",
+  "statement": "In an Italian village, a hungry mouse starts at vertex \\textrm{st} on a given tree^{\\text{\u2217}} with n vertices.Given a permutation p of length n^{\\text{\u2020}}, there are n steps. For the i-th step: A tempting piece of Parmesan cheese appears at vertex p_i. If the mouse is currently at vertex p_i, it will stay there and enjoy the moment. Otherwise, it will move along the simple path to vertex p_i by one edge. Your task is to find such a permutation so that, after all n steps, the mouse inevitably arr",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "sortings",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n1 1 1\n2 1 2\n1 2\n3 2 2\n1 2\n2 3\n6 1 4\n1 2\n1 3\n4 5\n5 6\n1 4",
+      "output": "1 \n1 2 \n3 1 2 \n1 4 3 2 6 5"
+    }
+  ],
+  "created_at": "2025-11-24T19:59:40"
+}

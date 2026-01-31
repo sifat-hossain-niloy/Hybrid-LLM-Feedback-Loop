@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T19:18:00
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2079_D**
+
+Boneca Ambalabu gives you a sequence of n integers a_1,a_2,...,a_n.Output the maximum value of (a_k\oplus a_1)+(a_k\oplus a_2)+...+(a_k\oplus a_n) among all 1 ≤q k ≤q n. Note that \oplus denotes the bitwise XOR operation.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

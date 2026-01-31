@@ -1,0 +1,39 @@
+{
+  "problem_id": "2162_D",
+  "workflow_type": "gpt4_mistral",
+  "workflow_session": "2162_D_gpt4_mistral_b1187ec7",
+  "start_time": "2025-11-27T23:03:44",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-27T23:03:44",
+      "duration_seconds": 222.88,
+      "solution_file": "2162_D_Solution_1.cpp",
+      "submission_id": "349791261",
+      "verdict": "Memory limit exceeded on test 14",
+      "execution_time_ms": 42,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-27T23:07:38",
+      "duration_seconds": 223.3,
+      "solution_file": "2162_D_Solution_2.cpp",
+      "submission_id": "348706263",
+      "verdict": "Memory limit exceeded on test 9",
+      "execution_time_ms": 857,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-27T23:12:07",
+      "duration_seconds": 206.41,
+      "solution_file": "2162_D_Solution_3.cpp",
+      "submission_id": "349642315",
+      "verdict": "Accepted",
+      "execution_time_ms": 167,
+      "accepted": true
+    }
+  ]
+}

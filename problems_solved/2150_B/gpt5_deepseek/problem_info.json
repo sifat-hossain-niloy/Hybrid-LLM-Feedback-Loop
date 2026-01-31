@@ -1,0 +1,20 @@
+{
+  "problem_id": "2150_B",
+  "contest_id": "2150",
+  "letter": "B",
+  "title": "Problem 2150_B",
+  "statement": "ParagonX9 - HyperioxX\u2800Alice has a grid of size n \u00d7 n. Initially, all cells are colored white. Alice wants to color some cells black satisfying certain properties.Let (x_1, y_1), (x_2, y_2), ..., (x_m, y_m) be the cells colored black. You are given an array a of size n. The following conditions must be satisfied: For each row k (1 \u2264 k \u2264 n), there exists exactly a_k indices i (1 \u2264 i \u2264 m) such that x_i = k. Less formally, there should be a_k black cells in row k. For each k (1 \u2264 k \u2264 n), there exist",
+  "rating": "1700",
+  "tags": [
+    "combinatorics",
+    "implementation",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n5\n2 2 1 0 0\n2\n2 0\n2\n1 1\n4\n3 1 0 0\n4\n0 0 0 0",
+      "output": "1\n1\n0\n2\n0"
+    }
+  ],
+  "created_at": "2025-11-25T11:59:15"
+}

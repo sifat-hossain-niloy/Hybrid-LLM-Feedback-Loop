@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T21:57:16
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2072_C**
+
+Akito still has nowhere to live, and the price for a small room is everywhere. For this reason, Akito decided to get a job at a bank as a key creator for storages.In this magical world, everything is different. For example, the key for a storage with the code (n, x) is an array a of length n such that: a_1 \ | \ a_2 \ | \ a_3 \ | \ ... \ | \ a_n = x, where a \ | \ b is the bitwise "OR" of numbers a and b. \text{MEX}(\{ a_1, a_2, a_3, ..., a_n \})^{\text{∗}} is maximized among all such arrays. Akito diligently performed his job for several hours, but suddenly he got a headache. Substitute for him for an hour; for the given n and x, create any key for the storage with the code (n, x).^{\text{∗}}\text{MEX}(S) is the minimum non-negative integer z such that z is not contained in the set S and all 0 ≤ y < z are contained in S.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

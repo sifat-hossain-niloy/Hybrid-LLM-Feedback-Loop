@@ -1,0 +1,49 @@
+{
+  "problem_id": "2091_F",
+  "workflow_type": "gpt4_mistral",
+  "workflow_session": "2091_F_gpt4_mistral_48eb3724",
+  "start_time": "2025-11-28T16:18:03",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T16:18:03",
+      "duration_seconds": 221.28,
+      "solution_file": "2091_F_Solution_1.cpp",
+      "submission_id": "349869859",
+      "verdict": "Wrong answer on test 6",
+      "execution_time_ms": 545,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-28T16:23:12",
+      "duration_seconds": 138.76,
+      "solution_file": "2091_F_Solution_2.cpp",
+      "submission_id": "349697590",
+      "verdict": "Wrong answer on test 9",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-28T16:27:17",
+      "duration_seconds": 258.78,
+      "solution_file": "2091_F_Solution_3.cpp",
+      "submission_id": "349737055",
+      "verdict": "Runtime error on test 9",
+      "execution_time_ms": 23,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-28T16:32:21",
+      "duration_seconds": 195.51,
+      "solution_file": "2091_F_Solution_4.cpp",
+      "submission_id": "349398408",
+      "verdict": "Accepted",
+      "execution_time_ms": 163,
+      "accepted": true
+    }
+  ]
+}

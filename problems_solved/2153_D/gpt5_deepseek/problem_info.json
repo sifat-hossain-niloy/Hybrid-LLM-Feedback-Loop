@@ -1,0 +1,19 @@
+{
+  "problem_id": "2153_D",
+  "contest_id": "2153",
+  "letter": "D",
+  "title": "Problem 2153_D",
+  "statement": "A circular array b of length m is nice if every element has at least one adjacent element^{\\text{\u2217}} that is equal to it. Formally, for every 1\u2264 i\u2264 m, at least one of the following holds: b_i = b_{(i+m-2)\\bmod m\\;+1}, or b_i = b_{i\\bmod m\\;+1}, where x \\bmod y denotes the remainder from dividing x by y. You are given a circular array a of length n. In one operation, you may increase or decrease any element of a by 1. Your task is to determine the minimum number of operations required to make arr",
+  "rating": "1800",
+  "tags": [
+    "dp",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n5\n1 1 1 1 1\n4\n2 100 99 3\n5\n2 2 5 9 5\n6\n1 1 1 2 1 2",
+      "output": "0\n2\n4\n1"
+    }
+  ],
+  "created_at": "2025-11-28T04:39:09"
+}

@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T00:30:55
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2149_E**
+
+In the world of Deepwoken, there exists an ancient artifact — Tablet of Infinite Knowledge, on which a sequence of n mysterious symbols (each symbol is an integer) is engraved.It is said that the true power of the artifact can only be revealed by finding all sacred fragments — continuous segments of the tablet that contain exactly k distinct numbers, and their length must be between l and r (inclusive).Formally: Given a sequence a of length n and integers k, l, r. You need to find the number of such boundaries b and c such that: 1 ≤ b ≤ c ≤ n; among the elements [a_{b}, a_{b + 1}, ..., a_{c}] there are exactly k distinct numbers; l ≤q c - b + 1 ≤q r.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

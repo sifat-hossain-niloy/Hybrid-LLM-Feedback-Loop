@@ -1,0 +1,20 @@
+{
+  "problem_id": "2050_C",
+  "contest_id": "2050",
+  "letter": "C",
+  "title": "Problem 2050_C",
+  "statement": "You are given a number n with a length of no more than 10^5.You can perform the following operation any number of times: choose one of its digits, square it, and replace the original digit with the result. The result must be a digit (that is, if you choose the digit x, then the value of x^2 must be less than 10).Is it possible to obtain a number that is divisible by 9 through these operations?",
+  "rating": "1200",
+  "tags": [
+    "brute force",
+    "dp",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "9\n123\n322\n333333333333\n9997\n5472778912773\n1234567890\n23\n33\n52254522632",
+      "output": "NO\nYES\nYES\nNO\nNO\nYES\nNO\nYES\nYES"
+    }
+  ],
+  "created_at": "2025-11-23T15:12:02"
+}

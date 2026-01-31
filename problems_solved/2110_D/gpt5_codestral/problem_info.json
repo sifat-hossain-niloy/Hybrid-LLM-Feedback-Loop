@@ -1,0 +1,23 @@
+{
+  "problem_id": "2110_D",
+  "contest_id": "2110",
+  "letter": "D",
+  "title": "Problem 2110_D",
+  "statement": "In 2077, when robots took over the world, they decided to compete in the following game.There are n checkpoints, and the i-th checkpoint contains b_i batteries. Initially, the Robot starts at the 1-st checkpoint with no batteries and must reach the n-th checkpoint.There are a total of m one-way passages between the checkpoints. The i-th passage allows movement from point s_i to point t_i (s_i < t_i), but not the other way. Additionally, the i-th passage can only be used if the robot has at least",
+  "rating": "1700",
+  "tags": [
+    "binary search",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy",
+    "hashing"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n3 3\n2 0 0\n1 2 1\n2 3 1\n1 3 2\n5 6\n2 2 5 0 1\n1 2 2\n1 3 1\n1 4 3\n3 5 5\n2 4 4\n4 5 3\n2 0\n1 1\n4 4\n3 10 0 0\n1 2 1\n1 3 3\n2 3 10\n3 4 5",
+      "output": "1\n4\n-1\n10"
+    }
+  ],
+  "created_at": "2025-11-23T17:29:51"
+}

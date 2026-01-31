@@ -1,0 +1,20 @@
+{
+  "problem_id": "2072_D",
+  "contest_id": "2072",
+  "letter": "D",
+  "title": "Problem 2072_D",
+  "statement": "Akito got tired of being a simple locksmith at a bank, so he decided to enroll in the Magical Academy and become the best wizard in the world! However, to enroll, he needed to solve a single problem on the exam, which the ambitious hero could not manage.In the problem, he was given an array a of length n. He needed to minimize the number of inversions^{\\text{\u2217}} in the array after applying the spell exactly once. The spell was simple; to apply it, Akito had to choose two numbers l and r such tha",
+  "rating": "1300",
+  "tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "9\n7\n1 4 3 2 5 3 3\n6\n1 4 3 2 5 3\n8\n7 6 5 8 4 3 2 1\n10\n1 1 1 5 1 1 5 6 7 8\n2\n1337 69\n4\n2 1 2 1\n3\n998 244 353\n3\n1 2 1\n9\n1 1 2 3 5 8 13 21 34",
+      "output": "2 7\n2 4\n1 8\n4 6\n1 2\n1 4\n1 3\n2 3\n5 5"
+    }
+  ],
+  "created_at": "2025-11-25T05:17:44"
+}

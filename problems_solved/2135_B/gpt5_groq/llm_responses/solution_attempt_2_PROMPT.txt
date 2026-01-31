@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-28T02:41:47
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2135_B**
+
+This is an interactive problem.The RiOI team is hosting a robot championship! This time, your robot is teleported into an infinite 2D plane with the Cartesian coordinate system on it. There are n anchor points on the plane, and the coordinates of the i-th anchor point are (x_i, y_i) (-10^9≤ x_i,y_i≤ 10^9). These are given to your robot by the jury as soon as it is teleported into the plane. However, your robot doesn't know its initial coordinates at first.To test the IQ of your robot, the RiOI team has come up with an interesting game. Your robot needs to find out the initial coordinates (X, Y) (-10^9≤ X, Y≤ 10^9) by making the following moves.In one move, assuming that its current coordinates are (a,b), your robot can choose a non-negative integer k (0≤ k≤ 10^9) and do one of the following four types of operations: Move up by k units, i.e., your robot will move to (a,b+k); Move down by k units, i.e., your robot will move to (a,b-k); Move left by k units, i.e., your robot will move to 
+
+**Previous Attempt Failed:** Time limit exceeded on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

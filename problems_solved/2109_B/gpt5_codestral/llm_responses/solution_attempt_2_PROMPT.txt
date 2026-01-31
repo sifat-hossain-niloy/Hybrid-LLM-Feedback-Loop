@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-23T15:21:33
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2109_B**
+
+Duelists Mouf and Fouad enter the arena, which is an n × m grid!Fouad's monster starts at cell (a, b), where rows are numbered 1 to n and columns 1 to m.Mouf and Fouad will keep duelling until the grid consists of only one cell.In each turn: Mouf first cuts the grid along a row or column line into two parts, discarding the part without Fouad's monster. Note that the grid must have at least two cells; otherwise, the game has already ended. After that, in the same turn, Fouad moves his monster to any cell (possibly the same one it was in) within the remaining grid. Visualization of the phases of the fourth test case. Mouf wants to minimize the number of turns, while Fouad wants to maximize them. How many turns will this epic duel last if both play optimally?
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

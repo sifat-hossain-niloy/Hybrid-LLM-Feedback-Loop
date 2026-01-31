@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-24T07:56:52
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2107_C**
+
+You are given an array a_1,a_2,...,a_n of length n and a positive integer k, but some parts of the array a are missing. Your task is to fill the missing part so that the maximum subarray sum^{\text{∗}} of a is exactly k, or report that no solution exists.Formally, you are given a binary string s and a partially filled array a, where: If you remember the value of a_i, s_i = 1 to indicate that, and you are given the real value of a_i. If you don't remember the value of a_i, s_i = 0 to indicate that, and you are given a_i = 0. All the values that you remember satisfy |a_i| ≤ 10^6. However, you may use values up to 10^{18} to fill in the values that you do not remember. It can be proven that if a solution exists, a solution also exists satisfying |a_i| ≤ 10^{18}. ^{\text{∗}}The maximum subarray sum of an array a of length n, i.e. a_1, a_2, ... a_n is defined as \max_{1 ≤ i ≤ j ≤ n} S(i, j) where S(i, j) = a_i + a_{i + 1} + ... + a_j.
+
+**Previous Attempt Failed:** Wrong answer on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

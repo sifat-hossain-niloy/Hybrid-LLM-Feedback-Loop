@@ -1,0 +1,21 @@
+{
+  "problem_id": "2039_D",
+  "contest_id": "2039",
+  "letter": "D",
+  "title": "Problem 2039_D",
+  "statement": "Shohag has an integer n and a set S of m unique integers. Help him find the lexicographically largest^{\\text{\u2217}} integer array a_1, a_2, ..., a_n such that a_i \u2208 S for each 1 \u2264 i \u2264 n and a_{\\operatorname{gcd}(i, j)} \u2260q \\operatorname{gcd}(a_i, a_j)^{\\text{\u2020}} is satisfied over all pairs 1 \u2264 i \\lt j \u2264 n, or state that no such array exists.^{\\text{\u2217}}An array a is lexicographically larger than an array b of the same length if a \u2260 b, and in the first position where a and b differ, the array a has a ",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n6 3\n3 4 6\n1 1\n1\n2 1\n2",
+      "output": "6 4 4 3 4 3 \n1 \n-1"
+    }
+  ],
+  "created_at": "2025-11-26T16:28:44"
+}

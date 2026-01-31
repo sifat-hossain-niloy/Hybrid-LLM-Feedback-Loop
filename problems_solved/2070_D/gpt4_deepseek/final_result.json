@@ -1,0 +1,20 @@
+{
+  "problem_id": "2070_D",
+  "status": "accepted",
+  "accepted": true,
+  "total_attempts": 3,
+  "start_time": "2025-11-21T15:38:21",
+  "end_time": "2025-11-21T15:54:17",
+  "total_duration_minutes": 15.93,
+  "successful_attempt": 3,
+  "best_verdict": "ACCEPTED",
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 0,
+    "wrong_answers": 2,
+    "time_limit_exceeded": 0,
+    "memory_limit_exceeded": 0
+  },
+  "execution_time_ms": 152,
+  "memory_kb": 8114
+}

@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-26T07:50:16
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2145_D**
+
+A permutation of length n is an array of n integers, where each number from 1 to n appears exactly once. An inversion in a permutation p is a pair of indices (i, j) such that i < j and p_i > p_j.For a permutation p, we define its inversion value as the number of its subsegments that contain at least one inversion. Formally, this is the number of pairs of integers (l, r) (1 ≤ l < r ≤ n) for which there exists a pair of indices (i, j) satisfying the following conditions: l ≤ i < j ≤ r and p_i > p_j.For example, for the permutation [3, 1, 4, 2], the inversion value is 5.You are given two integers n and k. Your task is to construct a permutation of length n with an inversion value equal to exactly k.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

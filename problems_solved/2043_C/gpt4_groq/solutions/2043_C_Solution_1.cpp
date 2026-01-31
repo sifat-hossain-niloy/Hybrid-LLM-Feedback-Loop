@@ -1,7 +1,7 @@
 /*
- * Problem: 2043_C - Let's define
- * Generated: 2025-11-07 05:36:10
- * Workflow: GPT-4 + Groq
+ * Problem: 2043_C
+ * Generated: 2025-11-23T07:28:58
+ * Workflow: gpt4_groq
  * Solution Model: gpt-4
  * Debugging Critic: llama-3.3-70b-versatile
  * Iteration: 1
@@ -11,43 +11,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
         vector<int> a(n);
-        int max_val = INT_MIN;
-        int min_val = INT_MAX;
-        int ones = 0;
-        int minus_ones = 0;
-        for(int i=0; i<n; i++) {
-            cin >> a[i];
-            if(a[i] == 1) ones++;
-            else if(a[i] == -1) minus_ones++;
-            else {
-                max_val = max(max_val, a[i]);
-                min_val = min(min_val, a[i]);
-            }
-        }
-        set<int> sums;
-        for(int i=minus_ones; i<=ones; i++) {
-            if(min_val != INT_MAX) {
-                sums.insert(min_val + i);
-                sums.insert(max_val + i);
-            } else {
-                sums.insert(i);
-            }
-        }
-        for(auto it: sums) {
-            cout << it << " ";
-        }
-        cout << "\n";
-    }
-
+        for(int i=0;i<n;i++) cin >> a[i];
+        
+        // Brute force O(n^2) approach
+        int ans = 0;
+        for(int i=0;i<n;i++){{
+            for(int j=i;j<n;j++){{
+                int sum = 0;
+                for(int k=i;k<=j;k++) sum += a[k];
+                ans = max(ans, sum);
+            }}
+        }}
+        cout << ans << "\n";
+    }}
     return 0;
-}
+}}

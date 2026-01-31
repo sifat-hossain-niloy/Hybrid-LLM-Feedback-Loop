@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-25T08:00:00
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2141_D**
+
+You are given an integer array a_1, a_2, a_3, ..., a_n. Your task is to make all elements of a equal. In order to do it, you can perform the following operation at most k times: choose any index i from 1 to n and increase a_i by one. You can choose any element of the array, but if the chosen a_i is strictly greater than the current minimum of the array, you'll earn one coin.What is the maximum number of coins you can earn among all possible ways to make the array equal?
+
+**Previous Attempt Failed:** Time limit exceeded on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 1
+Timestamp: 2025-11-28T18:34:41
+Model: llama-3.3-70b-versatile
+Verdict: Time limit exceeded on test 4
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2051_D
+**Verdict:** Time limit exceeded on test 4
+
+**Task:** Identify the bug and suggest improvements.

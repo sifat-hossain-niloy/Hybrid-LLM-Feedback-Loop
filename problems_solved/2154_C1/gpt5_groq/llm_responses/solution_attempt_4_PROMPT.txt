@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-29T00:13:45
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2154_C1**
+
+This is the easy version of the problem. The difference between the versions is that in this version, b_i = 1 for all i (1 ≤ i ≤ n). You can hack only if you solved all versions of this problem. You find yourself with two arrays of positive integers a and b, both of length n. You will perform the following operation any number of times (possibly none): select an integer i (1 ≤ i ≤ n) and increase a_i by 1. This has a cost of b_i. Determine the minimum total cost to make it so that there exists two integers i, j where 1 ≤ i < j ≤ n and \gcd(a_i, a_j)^{\text{∗}} > 1.^{\text{∗}}\gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.
+
+**Previous Attempt Failed:** Time limit exceeded on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,22 @@
+{
+  "problem_id": "2038_L",
+  "contest_id": "2038",
+  "letter": "L",
+  "title": "Problem 2038_L",
+  "statement": "Recently, Monocarp started working as a director of a park located near his house. The park is quite large, so it even has a small river splitting it into several zones. Several bridges are built across this river. Three of these bridges are especially old and need to be repaired.All three bridges have the same length but differ in width. Their widths are 18, 21 and 25 units, respectively.During the park renovation process, Monocarp has to replace the old planks that served as the surface of the",
+  "rating": "1400",
+  "tags": [
+    "brute force",
+    "dp",
+    "greedy",
+    "math",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "1",
+      "output": "2"
+    }
+  ],
+  "created_at": "2025-11-24T15:29:21"
+}

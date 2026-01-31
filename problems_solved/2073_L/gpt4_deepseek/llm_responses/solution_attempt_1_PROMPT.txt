@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T06:39:22
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2073_L**
+
+Consider the following game. In this game, a level consists of n pairs of gates. Each pair contains one left gate and one right gate. Each gate performs one of two operations: Addition Operation (+ a): Increases the number of people in a lane by a constant amount a. Multiplication Operation (x a): Multiplies the current number of people in a lane by an integer a. This means the number of people increases by (a - 1) times the current count in that lane. The additional people gained from each operation can be assigned to either lane. However, people already in a lane cannot be moved to the other lane.Initially, there is one person in each lane. Your task is to determine the maximum total number of people that can be achieved by the end of the level.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

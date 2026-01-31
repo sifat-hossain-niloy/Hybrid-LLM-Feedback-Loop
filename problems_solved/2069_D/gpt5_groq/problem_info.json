@@ -1,0 +1,22 @@
+{
+  "problem_id": "2069_D",
+  "contest_id": "2069",
+  "letter": "D",
+  "title": "Problem 2069_D",
+  "statement": "You are given a string s consisting of lowercase Latin letters.You can perform the following operation with the string s: choose a contiguous substring (possibly empty) of s and shuffle it (reorder the characters in the substring as you wish).Recall that a palindrome is a string that reads the same way from the first character to the last and from the last character to the first. For example, the strings a, bab, acca, bcabcbacb are palindromes, but the strings ab, abbbaa, cccb are not.Your task ",
+  "rating": "1800",
+  "tags": [
+    "binary search",
+    "greedy",
+    "hashing",
+    "strings",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\nbaba\ncc\nddaa\nacbacddacbca",
+      "output": "2\n0\n3\n2"
+    }
+  ],
+  "created_at": "2025-11-22T18:11:59"
+}

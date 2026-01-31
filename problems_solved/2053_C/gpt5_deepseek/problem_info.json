@@ -1,0 +1,21 @@
+{
+  "problem_id": "2053_C",
+  "contest_id": "2053",
+  "letter": "C",
+  "title": "Problem 2053_C",
+  "statement": "I'm praying for owning a transparent heart; as well as eyes with tears more than enough...\u2014 Escape Plan, Brightest Star in the DarkIris looked at the stars and a beautiful problem emerged in her mind. She is inviting you to solve it so that a meteor shower is believed to form.There are n stars in the sky, arranged in a row. Iris has a telescope, which she uses to look at the stars.Initially, Iris observes stars in the segment [1, n], and she has a lucky value of 0. Iris wants to look for the sta",
+  "rating": "1500",
+  "tags": [
+    "bitmasks",
+    "divide and conquer",
+    "dp",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n7 2\n11 3\n55 13\n5801 6\n8919 64\n8765432 1",
+      "output": "12\n18\n196\n1975581\n958900\n38416403456028"
+    }
+  ],
+  "created_at": "2025-11-23T19:35:20"
+}

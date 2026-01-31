@@ -1,0 +1,30 @@
+{
+  "submission_id": "349445871",
+  "timestamp": "2025-11-27T06:02:17",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "parsed_api_response": {
+    "testCount": "9",
+    "verdict": "<span class='verdict-rejected'>Runtime error on test 4</span>",
+    "compilationError": "false",
+    "verdict#1": "OK",
+    "timeConsumed#1": "85",
+    "verdict#2": "OK",
+    "timeConsumed#2": "140",
+    "verdict#3": "OK",
+    "timeConsumed#3": "143",
+    "verdict#4": "WRONG_ANSWER",
+    "timeConsumed#4": "88",
+    "verdict#5": "OK",
+    "timeConsumed#5": "85",
+    "verdict#6": "OK",
+    "timeConsumed#6": "95",
+    "verdict#7": "OK",
+    "timeConsumed#7": "145",
+    "verdict#8": "OK",
+    "timeConsumed#8": "38",
+    "verdict#9": "OK",
+    "timeConsumed#9": "109"
+  }
+}

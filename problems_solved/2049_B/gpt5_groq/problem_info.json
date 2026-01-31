@@ -1,0 +1,21 @@
+{
+  "problem_id": "2049_B",
+  "contest_id": "2049",
+  "letter": "B",
+  "title": "Problem 2049_B",
+  "statement": "Cats are attracted to pspspsps, but Evirir, being a dignified dragon, is only attracted to pspspsps with oddly specific requirements...Given a string s = s_1s_2... s_n of length n consisting of characters p, s, and . (dot), determine whether a permutation^{\\text{\u2217}} p of length n exists, such that for all integers i (1 \u2264 i \u2264 n): If s_i is p, then [p_1, p_2, ..., p_i] forms a permutation (of length i); If s_i is s, then [p_i, p_{i+1}, ..., p_{n}] forms a permutation (of length n-i+1); If s_i is .",
+  "rating": "1300",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "graph matchings",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "9\n4\ns.sp\n6\npss..s\n5\nppppp\n2\nsp\n4\n.sp.\n8\npsss....\n1\n.\n8\npspspsps\n20\n....................",
+      "output": "YES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\nYES"
+    }
+  ],
+  "created_at": "2025-11-24T06:18:39"
+}

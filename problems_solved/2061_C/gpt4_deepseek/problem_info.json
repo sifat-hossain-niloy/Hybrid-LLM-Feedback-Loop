@@ -1,0 +1,20 @@
+{
+  "problem_id": "2061_C",
+  "contest_id": "2061",
+  "letter": "C",
+  "title": "Problem 2061_C",
+  "statement": "Kevin enjoys logic puzzles.He played a game with n classmates who stand in a line. The i-th person from the left says that there are a_i liars to their left (not including themselves).Each classmate is either honest or a liar, with the restriction that no two liars can stand next to each other. Honest classmates always say the truth. Liars can say either the truth or lies, meaning their statements are considered unreliable.Kevin wants to determine the number of distinct possible game configurati",
+  "rating": "1600",
+  "tags": [
+    "2-sat",
+    "combinatorics",
+    "dp"
+  ],
+  "sample_tests": [
+    {
+      "input": "8\n3\n0 1 2\n5\n0 0 0 0 0\n5\n0 0 1 1 2\n5\n0 1 2 3 4\n5\n0 0 1 1 1\n5\n5 1 5 2 5\n1\n0\n4\n2 3 1 1",
+      "output": "1\n2\n3\n0\n4\n1\n2\n0"
+    }
+  ],
+  "created_at": "2025-11-28T07:10:05"
+}

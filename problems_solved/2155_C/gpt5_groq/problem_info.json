@@ -1,0 +1,20 @@
+{
+  "problem_id": "2155_C",
+  "contest_id": "2155",
+  "letter": "C",
+  "title": "Problem 2155_C",
+  "statement": "There are n wizards in a row numbered 1 to n from left to right. Each wizard has an invisibility cape which can be worn either on his left side or on his right side. Harry walks from the position of wizard 1 until the position of wizard n (1 \u2264 n \u2264 10^5), and registers how many wizards he sees from each wizard's position. A wizard in position j is visible from position i if: Wizard j wears his cape on his left side and i \u2265 j. Wizard j wears his cape on his right side and i \u2264 j. In particular, not",
+  "rating": "1500",
+  "tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "7\n1\n1\n4\n4 4 3 2\n3\n1 3 2\n2\n2 1\n3\n2 2 2\n3\n3 2 3\n3\n3 2 2",
+      "output": "2\n1\n0\n1\n2\n0\n0"
+    }
+  ],
+  "created_at": "2025-11-24T09:47:15"
+}

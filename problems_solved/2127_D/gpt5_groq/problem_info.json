@@ -1,0 +1,21 @@
+{
+  "problem_id": "2127_D",
+  "contest_id": "2127",
+  "letter": "D",
+  "title": "Problem 2127_D",
+  "statement": "Heartfall River runs horizontally through Destinyland and divides it into the northern and southern sides.Engineer Root wants to build n houses along the river, numbered from 1 to n. All houses on the northern side and all houses on the southern side must lie along straight lines parallel to Heartfall River.There will be m bridges, with the i-th bridge connecting house u_i and house v_i (u_i \u2260 v_i). It is guaranteed that all n houses are connected by these bridges, that is, you can travel from a",
+  "rating": "1800",
+  "tags": [
+    "combinatorics",
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n2 1\n1 2\n3 3\n1 2\n1 3\n2 3\n5 4\n1 2\n1 3\n3 4\n3 5\n4 3\n1 2\n1 3\n1 4",
+      "output": "2\n0\n8\n12"
+    }
+  ],
+  "created_at": "2025-11-22T14:35:05"
+}

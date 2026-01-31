@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-26T09:03:02
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2113_C**
+
+The boy Smilo is playing Minecraft! To prepare for the battle with the dragon, he needs a lot of golden apples, and for that, he requires a lot of gold. Therefore, Smilo goes to the mine.The mine is a rectangular grid of size n × m, where each cell can be either gold ore, stone, or an empty cell. Smilo can blow up dynamite in any empty cell. When dynamite explodes in an empty cell with coordinates (x, y), all cells within a square of side 2k + 1 centered at cell (x, y) become empty. If gold ore was located strictly inside this square (not on the boundary), it disappears. However, if the gold ore was on the boundary of this square, Smilo collects that gold.Dynamite can only be detonated inside the mine, but the explosion square can extend beyond the mine's boundaries.Determine the maximum amount of gold that Smilo can collect.
+
+**Previous Attempt Failed:** Wrong answer on test 9
+
+**Task:** Please provide a corrected solution addressing the identified issues.

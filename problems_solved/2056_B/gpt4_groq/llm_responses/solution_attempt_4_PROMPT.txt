@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-28T05:20:05
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2056_B**
+
+You are given an undirected graph with n vertices, labeled from 1 to n. This graph encodes a hidden permutation^{\text{∗}} p of size n. The graph is constructed as follows: For every pair of integers 1 ≤ i < j ≤ n, an undirected edge is added between vertex p_i and vertex p_j if and only if p_i < p_j. Note that the edge is not added between vertices i and j, but between the vertices of their respective elements. Refer to the notes section for better understanding. Your task is to reconstruct and output the permutation p. It can be proven that permutation p can be uniquely determined.^{\text{∗}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

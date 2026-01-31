@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-26T14:49:45
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2152_C**
+
+Tired of supporting ranged carries, Keria is now creating a data structure problem about supporting range queries.For an array b = [b_1, b_2, ..., b_m] of length m where b_i=0 or b_i=1, consider the following triple removal operation: Choose three indices 1 ≤ i < j < k ≤ m such that the elements at these positions are identical (b_i = b_j = b_k). Remove these three elements from the array. The cost of this operation is defined as \min(k-j, j-i). After the removal, the remaining parts of the array are concatenated, and their indices are relabeled. We want to make the array b empty using the triple removal operation. Hence, we define the total cost of an array as the minimum possible sum of the costs of triple removal operations required to make the array empty. If it is impossible to make the array empty, the cost is defined to be -1.Keria wants to test his data structure. For this, you must answer q independent queries. Initially, you are given an array a = [a_1, a_2, ..., a_n] of leng
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

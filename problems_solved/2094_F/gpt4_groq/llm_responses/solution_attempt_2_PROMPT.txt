@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-22T00:02:48
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2094_F**
+
+Trulicina gives you integers n, m, and k. It is guaranteed that k≥q 2 and n· m≡ 0 ±od{k}.Output a n by m grid of integers such that each of the following criteria hold: Each integer in the grid is between 1 and k, inclusive. Each integer from 1 to k appears an equal number of times. No two cells that share an edge have the same integer. It can be shown that such a grid always exists. If there are multiple solutions, output any.
+
+**Previous Attempt Failed:** Time limit exceeded on test 10
+
+**Task:** Please provide a corrected solution addressing the identified issues.

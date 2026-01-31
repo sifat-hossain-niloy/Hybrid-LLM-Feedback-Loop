@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T15:47:13
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2119_B**
+
+PIKASONIC - Lost My Mind (feat.nakotanmaru) You are given two points (p_x,p_y) and (q_x,q_y) on a Euclidean plane.You start at the starting point (p_x,p_y) and will perform n operations. In the i-th operation, you must choose any point such that the Euclidean distance^{\text{∗}} between your current position and the point is exactly a_i, and then move to that point.Determine whether it is possible to reach the terminal point (q_x,q_y) after performing all operations.^{\text{∗}}The Euclidean distance between (x_1, y_1) and (x_2, y_2) is \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
+
+**Task:** Please provide a well-structured and optimized C++ solution.

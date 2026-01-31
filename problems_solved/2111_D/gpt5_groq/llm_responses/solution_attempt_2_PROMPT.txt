@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-26T02:30:25
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2111_D**
+
+A new semester is about to begin, and it is necessary to create a schedule for the first day. There are a total of n groups and m classrooms in the faculty. It is also known that each group has exactly 6 classes on the first day, and the k-th class of each group takes place at the same time. Each class must be held in a classroom, and at the same time, there cannot be classes for more than one group in the same classroom.Each classroom has its own index (at least three digits), and all digits of this index, except for the last two, indicate the floor on which the classroom is located. For example, classroom 479 is located on the 4-th floor, while classroom 31415 is on the 314-th floor. Between floors, one can move by stairs; for any floor x > 1, one can either go down to floor x - 1 or go up to floor x + 1; from the first floor, one can only go up to the second; from the floor 10^7 (which is the last one), it is possible to go only to the floor 9999999.The faculty's dean's office has d
+
+**Previous Attempt Failed:** Time limit exceeded on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

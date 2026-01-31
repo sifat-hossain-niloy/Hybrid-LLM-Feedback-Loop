@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 3
+Timestamp: 2025-11-26T08:47:11
+Model: deepseek-r1-0528
+Verdict: Memory limit exceeded on test 7
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2038_A
+**Verdict:** Memory limit exceeded on test 7
+
+**Task:** Identify the bug and suggest improvements.

@@ -1,0 +1,21 @@
+{
+  "problem_id": "2039_C2",
+  "contest_id": "2039",
+  "letter": "C2",
+  "title": "Problem 2039_C2",
+  "statement": "This is the hard version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.Shohag has two integers x and m. Help him count the number of integers 1 \u2264 y \u2264 m such that x \\oplus y is divisible^{\\text{\u2217}} by either x, y, or both. Here \\oplus is the bitwise XOR operator.^{\\text{\u2217}}The number a is divisible by the number b if there exists an integer c such that a = b \u00b7 c.",
+  "rating": "1800",
+  "tags": [
+    "bitmasks",
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n7 10\n2 3\n6 4\n1 6\n4 1",
+      "output": "3\n2\n2\n6\n1"
+    }
+  ],
+  "created_at": "2025-11-21T23:00:00"
+}

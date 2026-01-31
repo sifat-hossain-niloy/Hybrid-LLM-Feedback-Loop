@@ -1,0 +1,18 @@
+{
+  "problem_id": "2149_D",
+  "contest_id": "2149",
+  "letter": "D",
+  "title": "Problem 2149_D",
+  "statement": "Given a string s of length n, consisting only of the characters 'a' and 'b'.In one operation, you can choose a position i (1 \u2264 i \u2264 n-1) and swap the neighboring characters s_i and s_{i+1}.You need to perform the minimum number of operations to ensure that all characters of one type (either a or b) are located strictly together, forming exactly one continuous block.Characters of the other type can be positioned either before or after this block, forming two (possibly empty) blocks.Examples of val",
+  "rating": "1200",
+  "tags": [
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n4\nabab\n6\nbababa\n7\nabababa\n2\nab\n1\nb",
+      "output": "1\n2\n2\n0\n0"
+    }
+  ],
+  "created_at": "2025-11-27T16:59:14"
+}

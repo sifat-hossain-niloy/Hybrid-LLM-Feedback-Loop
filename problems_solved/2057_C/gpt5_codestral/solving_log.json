@@ -1,0 +1,29 @@
+{
+  "problem_id": "2057_C",
+  "workflow_type": "gpt5_codestral",
+  "workflow_session": "2057_C_gpt5_codestral_37a127e0",
+  "start_time": "2025-11-22T08:41:07",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-22T08:41:07",
+      "duration_seconds": 214.65,
+      "solution_file": "2057_C_Solution_1.cpp",
+      "submission_id": "348378078",
+      "verdict": "Runtime error on test 3",
+      "execution_time_ms": 931,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-22T08:45:11",
+      "duration_seconds": 155.19,
+      "solution_file": "2057_C_Solution_2.cpp",
+      "submission_id": "349087872",
+      "verdict": "Accepted",
+      "execution_time_ms": 94,
+      "accepted": true
+    }
+  ]
+}

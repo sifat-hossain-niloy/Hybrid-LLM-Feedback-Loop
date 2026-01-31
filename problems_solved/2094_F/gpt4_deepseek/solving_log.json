@@ -1,0 +1,49 @@
+{
+  "problem_id": "2094_F",
+  "workflow_type": "gpt4_deepseek",
+  "workflow_session": "2094_F_gpt4_deepseek_cac0fc6d",
+  "start_time": "2025-11-21T19:50:34",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-21T19:50:34",
+      "duration_seconds": 170.08,
+      "solution_file": "2094_F_Solution_1.cpp",
+      "submission_id": "348603825",
+      "verdict": "Wrong answer on test 9",
+      "execution_time_ms": 825,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-21T19:54:34",
+      "duration_seconds": 278.18,
+      "solution_file": "2094_F_Solution_2.cpp",
+      "submission_id": "349389318",
+      "verdict": "Wrong answer on test 9",
+      "execution_time_ms": 56,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-21T20:00:25",
+      "duration_seconds": 311.22,
+      "solution_file": "2094_F_Solution_3.cpp",
+      "submission_id": "348931665",
+      "verdict": "Wrong answer on test 6",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-21T20:07:13",
+      "duration_seconds": 245.96,
+      "solution_file": "2094_F_Solution_4.cpp",
+      "submission_id": "349539310",
+      "verdict": "Wrong answer on test 9",
+      "execution_time_ms": 56,
+      "accepted": false
+    }
+  ]
+}

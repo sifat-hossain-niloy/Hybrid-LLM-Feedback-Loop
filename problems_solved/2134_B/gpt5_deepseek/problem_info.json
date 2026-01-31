@@ -1,0 +1,20 @@
+{
+  "problem_id": "2134_B",
+  "contest_id": "2134",
+  "letter": "B",
+  "title": "Problem 2134_B",
+  "statement": "You are given an array of n positive integers a_1, a_2, ..., a_n and a positive integer k.In one operation, you may add either 0 or k to each a_i, i.e., choose another array of n integers b_1, b_2, ..., b_n where each b_i is either 0 or k, and update a_i to a_i + b_i for 1 \u2264 i \u2264 n. Note that you can choose different values for each element of the array b.Your task is to perform at most k such operations to make \\gcd(a_1, a_2, ..., a_n) > 1 ^{\\text{\u2217}}. It can be proved that this is always possib",
+  "rating": "1200",
+  "tags": [
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "8\n3 3\n2 7 1\n4 5\n2 9 16 14\n4 1\n1 2 3 4\n5 2\n5 6 7 8 9\n2 10\n7 9\n1 1000000000\n1\n1 371\n1000000000\n3 6\n1 3 5",
+      "output": "8 10 10\n7 14 21 14\n2 2 4 4\n9 6 9 12 9\n77 99\n1000000000000000001\n1000000000\n25 15 5"
+    }
+  ],
+  "created_at": "2025-11-24T18:12:03"
+}

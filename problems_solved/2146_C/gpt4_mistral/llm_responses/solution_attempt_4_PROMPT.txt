@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-27T20:20:47
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2146_C**
+
+You are given an integer n and a binary string^{\text{∗}} s of length n.For a permutation^{\text{†}} p of length n and an integer x, we define \text{find}(x) as in the following pseudocode:function find(int x): l := 1 r := n while l <= r: let m be a random integer between l and r (inclusive) if p[m] == x return m if p[m] > x: r := m - 1 else: l := m + 1 return undefined // not foundWe call an integer x (1≤ x≤ n) stable if and only if \text{find}(x) is always not undefined and p_{\text{find}(x)}=x always holds, no matter how the value of m is selected in the process of the pseudocode.You have to construct a permutation p of length n, such that: For each 1≤ i≤ n, the integer i is stable if and only if s_i=\mathtt{1}. Or determine that no such permutation exists.^{\text{∗}}A binary string is a string where each character is either \mathtt{0} or \mathtt{1}.^{\text{†}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,
+
+**Previous Attempt Failed:** Wrong answer on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

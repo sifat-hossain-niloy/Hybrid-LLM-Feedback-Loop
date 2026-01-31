@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T02:09:05
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2061_C**
+
+Kevin enjoys logic puzzles.He played a game with n classmates who stand in a line. The i-th person from the left says that there are a_i liars to their left (not including themselves).Each classmate is either honest or a liar, with the restriction that no two liars can stand next to each other. Honest classmates always say the truth. Liars can say either the truth or lies, meaning their statements are considered unreliable.Kevin wants to determine the number of distinct possible game configurations modulo 998\,244\,353. Two configurations are considered different if at least one classmate is honest in one configuration and a liar in the other.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

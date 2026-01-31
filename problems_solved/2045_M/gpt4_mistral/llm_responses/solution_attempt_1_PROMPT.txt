@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T22:24:55
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2045_M**
+
+You are given a grid of R rows (numbered from 1 to R from north to south) and C columns (numbered from 1 to C from west to east). Every cell in this grid is a square of the same size. The cell located at row r and column c is denoted as (r, c). Each cell can either be empty or have a mirror in one of the cell's diagonals. Each mirror is represented by a line segment. The mirror is type 1 if it is positioned diagonally from the southwest corner to the northeast corner of the cell, or type 2 for the other diagonal.These mirrors follow the law of reflection, that is, the angle of reflection equals the angle of incidence. Formally, for type 1 mirror, if a beam of light comes from the north, south, west, or east of the cell, then it will be reflected to the west, east, north, and south of the cell, respectively. Similarly, for type 2 mirror, if a beam of light comes from the north, south, west, or east of the cell, then it will be reflected to the east, west, south, and north of the cell, r
+
+**Task:** Please provide a well-structured and optimized C++ solution.

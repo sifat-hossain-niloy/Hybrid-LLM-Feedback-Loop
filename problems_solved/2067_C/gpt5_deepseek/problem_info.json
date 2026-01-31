@@ -1,0 +1,21 @@
+{
+  "problem_id": "2067_C",
+  "contest_id": "2067",
+  "letter": "C",
+  "title": "Problem 2067_C",
+  "statement": "You are given a positive integer n. In one operation, you can add to n any positive integer whose decimal representation contains only the digit 9, possibly repeated several times.What is the minimum number of operations needed to make the number n contain at least one digit 7 in its decimal representation?For example, if n = 80, it is sufficient to perform one operation: you can add 99 to n, after the operation n = 179, which contains the digit 7.",
+  "rating": "1500",
+  "tags": [
+    "brute force",
+    "dfs and similar",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "16\n51\n60\n61\n777\n12345689\n1000000000\n2002\n3001\n977\n989898986\n80\n800001\n96\n70\n15\n90",
+      "output": "3\n2\n1\n0\n1\n3\n5\n4\n0\n7\n1\n2\n7\n0\n7\n3"
+    }
+  ],
+  "created_at": "2025-11-23T08:49:11"
+}

@@ -1,0 +1,21 @@
+{
+  "problem_id": "2109_C2",
+  "contest_id": "2109",
+  "letter": "C2",
+  "title": "Problem 2109_C2",
+  "statement": "This is the medium version of the problem. In this version, you can send at most \\mathbf{4} commands. You can make hacks only if all versions of the problem are solved.This is an interactive problem.Welcome, Duelists! In this interactive challenge, there is an unknown integer x (1 \u2264 x \u2264 10^9). You must make it equal to a given integer in the input n. By harnessing the power of \"Mathmech\" monsters, you can send a command to do one of the following: CommandConstraintResultCaseUpdateJury's response",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "interactive",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n100\n\n0\n\n1\n\n1\n\n1\n\n5\n\n1\n\n1\n\n1",
+      "output": "add -10\n\nadd 1\n\nmul 10\n\n!\n\ndigit\n\ndiv 2\n\n!"
+    }
+  ],
+  "created_at": "2025-11-26T08:21:07"
+}

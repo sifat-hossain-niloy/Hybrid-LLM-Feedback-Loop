@@ -1,0 +1,19 @@
+{
+  "problem_id": "2045_A",
+  "contest_id": "2045",
+  "letter": "A",
+  "title": "Problem 2045_A",
+  "statement": "You are playing a word game using a standard set of 26 uppercase English letters: A \u2014 Z. In this game, you can form vowels and consonants as follows. The letters A, E, I, O, and U can only form a vowel. The letter Y can form either a vowel or a consonant. Each of the remaining letters other than A, E, I, O, U, and Y can only form a consonant. The string NG can form a single consonant when concatenated together. Denote a syllable as a concatenation of a consonant, a vowel, and a consonant in that",
+  "rating": "1700",
+  "tags": [
+    "brute force",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "ICPCJAKARTA",
+      "output": "9"
+    }
+  ],
+  "created_at": "2025-11-28T12:15:34"
+}

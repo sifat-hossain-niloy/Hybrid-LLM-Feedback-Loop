@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-25T04:06:33
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2152_D**
+
+For an array b=[b_1,b_2,...,b_m] of length m (b_i ≥q 2), consider the following two-player game played by Poby and Rekkles. The players take turns, with Poby moving first. On Poby's turn, he must choose an element x ≥ 2 and replace it with ≤ft\lfloor \frac{x}{2} \right\rfloor. In other words, he picks i (1 ≤q i ≤q m) such that b_i ≥ 2, then does b_i := ≤ft\lfloor \frac{b_i}{2} \right\rfloor. On Rekkles' turn, he must choose an element x ≥ 2 from the array b and replace it with x+1. In other words, he picks i (1 ≤q i ≤q m) such that b_i ≥ 2, then does b_i := b_i+1. The game ends once all elements in the array b are equal to 1.Define the score of the game as the number of moves that Poby makes. Poby's goal is to minimize the score, while Rekkles's goal is to maximize the score.Then, the value of the array b is the score of the game when both players play optimally.You are given an integer array a of length n (a_i ≥ 2).Answer q independent queries. In each query, you are given a range 1 ≤
+
+**Task:** Please provide a well-structured and optimized C++ solution.

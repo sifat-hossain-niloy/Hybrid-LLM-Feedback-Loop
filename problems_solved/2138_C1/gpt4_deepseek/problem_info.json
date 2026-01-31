@@ -1,0 +1,22 @@
+{
+  "problem_id": "2138_C1",
+  "contest_id": "2138",
+  "letter": "C1",
+  "title": "Problem 2138_C1",
+  "statement": "This is the easy version of the problem. The difference between the versions is that in this version, the constraints on t and n are smaller. You can hack only if you solved all versions of this problem. Maple is given a rooted tree consisting of n vertices numbered from 1 to n, where the root has index 1. Each vertex of the tree is labeled either zero or one. Unfortunately, Maple forgot how the vertices are labeled and only remembers that there are exactly k zeros and n - k ones.For each vertex",
+  "rating": "1800",
+  "tags": [
+    "brute force",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n7 3\n1 1 2 2 3 3\n7 2\n1 1 2 3 1 1\n5 0\n1 2 3 4\n5 2\n1 1 1 1\n5 4\n1 1 1 1",
+      "output": "3\n2\n5\n1\n2"
+    }
+  ],
+  "created_at": "2025-11-26T01:44:54"
+}

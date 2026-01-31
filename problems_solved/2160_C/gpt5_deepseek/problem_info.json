@@ -1,0 +1,18 @@
+{
+  "problem_id": "2160_C",
+  "contest_id": "2160",
+  "letter": "C",
+  "title": "Problem 2160_C",
+  "statement": "Given a positive integer x, let f(x) be the positive integer formed by reversing the binary representation of x without leading zeroes. For example, if x=12=1100_2, then f(x)=0011_2=3. You are given an integer n. Please determine if there exists a positive integer x such that x \\oplus f(x) = n^{\\text{\u2217}}.^{\\text{\u2217}}Here, \\oplus denotes the bitwise XOR operation.",
+  "rating": "1300",
+  "tags": [
+    "bitmasks"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n0\n3\n6\n8\n10\n11",
+      "output": "YES\nYES\nYES\nNO\nYES\nNO"
+    }
+  ],
+  "created_at": "2025-11-22T12:47:25"
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-25T00:12:40
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2093_E**
+
+You are given an array a of length n and a number k.A subarray is defined as a sequence of one or more consecutive elements of the array. You need to split the array a into k non-overlapping subarrays b_1, b_2, ..., b_k such that the union of these subarrays equals the entire array. Additionally, you need to maximize the value of x, which is equal to the minimum MEX(b_i), for i ∈ [1..k].MEX(v) denotes the smallest non-negative integer that is not present in the array v.
+
+**Previous Attempt Failed:** Wrong answer on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

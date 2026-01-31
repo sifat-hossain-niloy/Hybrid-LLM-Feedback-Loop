@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-27T23:46:55
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2149_D**
+
+Given a string s of length n, consisting only of the characters 'a' and 'b'.In one operation, you can choose a position i (1 ≤ i ≤ n-1) and swap the neighboring characters s_i and s_{i+1}.You need to perform the minimum number of operations to ensure that all characters of one type (either a or b) are located strictly together, forming exactly one continuous block.Characters of the other type can be positioned either before or after this block, forming two (possibly empty) blocks.Examples of valid final forms: 'aaabbbaaa' — all 'b's are located together (one block), 'a's can be both before and after this block; 'bbbaaaaaabbb' — all 'a's together, 'b's are at the edges of the string; 'aaaaabbbb' or 'bbbbaaaaa' — both types of characters form one continuous block each. You need to find the minimum number of described operations required to achieve the specified state.
+
+**Previous Attempt Failed:** Runtime error on test 2
+
+**Task:** Please provide a corrected solution addressing the identified issues.

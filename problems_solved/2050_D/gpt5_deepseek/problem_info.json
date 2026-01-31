@@ -1,0 +1,21 @@
+{
+  "problem_id": "2050_D",
+  "contest_id": "2050",
+  "letter": "D",
+  "title": "Problem 2050_D",
+  "statement": "You are given a string s, consisting of digits from 0 to 9. In one operation, you can pick any digit in this string, except for 0 or the leftmost digit, decrease it by 1, and then swap it with the digit left to the picked.For example, in one operation from the string 1023, you can get 1103 or 1022.Find the lexicographically maximum string you can obtain after any number of operations.",
+  "rating": "1300",
+  "tags": [
+    "brute force",
+    "greedy",
+    "math",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n19\n1709\n11555\n51476\n9876543210\n5891917899",
+      "output": "81\n6710\n33311\n55431\n9876543210\n7875567711"
+    }
+  ],
+  "created_at": "2025-11-28T17:26:31"
+}

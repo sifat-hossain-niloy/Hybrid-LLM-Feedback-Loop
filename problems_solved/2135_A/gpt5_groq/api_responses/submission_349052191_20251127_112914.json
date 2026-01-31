@@ -1,0 +1,36 @@
+{
+  "submission_id": "349052191",
+  "timestamp": "2025-11-27T11:29:14",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "parsed_api_response": {
+    "testCount": "12",
+    "verdict": "<span class='verdict-rejected'>Memory limit exceeded on test 8</span>",
+    "compilationError": "false",
+    "verdict#1": "OK",
+    "timeConsumed#1": "133",
+    "verdict#2": "OK",
+    "timeConsumed#2": "36",
+    "verdict#3": "OK",
+    "timeConsumed#3": "143",
+    "verdict#4": "OK",
+    "timeConsumed#4": "79",
+    "verdict#5": "OK",
+    "timeConsumed#5": "102",
+    "verdict#6": "OK",
+    "timeConsumed#6": "116",
+    "verdict#7": "OK",
+    "timeConsumed#7": "117",
+    "verdict#8": "WRONG_ANSWER",
+    "timeConsumed#8": "37",
+    "verdict#9": "OK",
+    "timeConsumed#9": "69",
+    "verdict#10": "OK",
+    "timeConsumed#10": "84",
+    "verdict#11": "OK",
+    "timeConsumed#11": "117",
+    "verdict#12": "OK",
+    "timeConsumed#12": "119"
+  }
+}

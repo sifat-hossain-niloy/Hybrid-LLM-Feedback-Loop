@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T04:54:58
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2053_D**
+
+As a tester, when my solution has a different output from the example during testing, I suspect the author first.— Chris, a commentAlthough Iris occasionally sets a problem where the solution is possibly wrong, she still insists on creating problems with her imagination; after all, everyone has always been on the road with their stubbornness... And like ever before, Iris has set a problem to which she gave a wrong solution, but Chris is always supposed to save it! You are going to play the role of Chris now: Chris is given two arrays a and b, both consisting of n integers. Iris is interested in the largest possible value of P = ∏\limits_{i=1}^n \min(a_i, b_i) after an arbitrary rearrangement of b. Note that she only wants to know the maximum value of P, and no actual rearrangement is performed on b. There will be q modifications. Each modification can be denoted by two integers o and x (o is either 1 or 2, 1 ≤q x ≤q n). If o = 1, then Iris will increase a_x by 1; otherwise, she will in
+
+**Task:** Please provide a well-structured and optimized C++ solution.

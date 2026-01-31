@@ -1,0 +1,21 @@
+{
+  "problem_id": "2085_C",
+  "contest_id": "2085",
+  "letter": "C",
+  "title": "Problem 2085_C",
+  "statement": "You are given two positive integers x and y (1\u2264 x, y\u2264 10^9).Find a non-negative integer k\u2264 10^{18}, such that (x+k) + (y+k) = (x+k)\\oplus (y+k) holds^{\\text{\u2217}}, or determine that such an integer does not exist.^{\\text{\u2217}}\\oplus denotes the bitwise XOR operation.",
+  "rating": "1600",
+  "tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n2 5\n6 6\n19 10\n1024 4096\n1198372 599188",
+      "output": "0\n-1\n1\n1024\n28"
+    }
+  ],
+  "created_at": "2025-11-21T19:38:20"
+}

@@ -1,0 +1,20 @@
+{
+  "problem_id": "2092_C",
+  "contest_id": "2092",
+  "letter": "C",
+  "title": "Problem 2092_C",
+  "statement": "For her birthday, each of Asuna's n admirers gifted her a tower. The height of the tower from the i-th admirer is equal to a_i. Asuna evaluates the beauty of the received gifts as \\max(a_1, a_2, ..., a_n). She can perform the following operation an arbitrary number of times (possibly, zero). Take such 1 \u2264 i \u2260q j \u2264 n that a_i + a_j is odd and a_i > 0, then decrease a_i by 1 and increase a_j by 1. It is easy to see that the heights of the towers remain non-negative during the operations. Help Asun",
+  "rating": "1200",
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n3\n5 3 9\n2\n3 2\n4\n1 2 2 1\n5\n5 4 3 2 9",
+      "output": "9\n5\n5\n21"
+    }
+  ],
+  "created_at": "2025-11-24T13:52:20"
+}

@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T03:26:20
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2085_C**
+
+You are given two positive integers x and y (1≤ x, y≤ 10^9).Find a non-negative integer k≤ 10^{18}, such that (x+k) + (y+k) = (x+k)\oplus (y+k) holds^{\text{∗}}, or determine that such an integer does not exist.^{\text{∗}}\oplus denotes the bitwise XOR operation.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

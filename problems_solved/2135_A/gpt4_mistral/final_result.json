@@ -3,15 +3,15 @@
   "status": "failed",
   "accepted": false,
   "total_attempts": 4,
-  "start_time": "2025-11-05T11:05:19.369793",
-  "end_time": "2025-11-05T11:07:57.134609",
-  "total_duration_minutes": 2.6294136,
+  "start_time": "2025-11-27T15:10:54",
+  "end_time": "2025-11-27T15:28:20",
+  "total_duration_minutes": 17.43,
   "successful_attempt": null,
   "best_verdict": null,
   "statistics": {
     "compilation_errors": 0,
     "runtime_errors": 0,
-    "wrong_answers": 2,
+    "wrong_answers": 4,
     "time_limit_exceeded": 0,
     "memory_limit_exceeded": 0
   }

@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-23T01:08:19
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2132_E**
+
+In the arithmetic competition, participants need to achieve the highest possible sum from the cards they have. In the team "fst_ezik", Vadim has n cards with numbers a_i, and Kostya has m cards with numbers b_i. In each of the q rounds, they want to win, but this time the rules of the competition are slightly different from the usual ones.In each round, the participants are given three numbers x_i, y_i, and z_i. The team "fst_ezik" must choose exactly z_i cards from all the cards they have, but Vadim can choose no more than x_i cards from his set, and Kostya can choose no more than y_i cards from his set. Help them find the highest possible sum for each of the q rounds.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-21T21:01:25
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2089_A**
+
+Given an integer n. Construct a permutation p_1, p_2, ..., p_n of length n that satisfies the following property:For 1 ≤ i ≤ n, define c_i = \lceil \frac{p_1+p_2+... +p_i}{i} \rceil, then among c_1,c_2,...,c_n there must be at least \lfloor \frac{n}{3} \rfloor - 1 prime numbers.
+
+**Previous Attempt Failed:** Wrong answer on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

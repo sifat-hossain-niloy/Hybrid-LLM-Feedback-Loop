@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T19:27:12
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2114_E**
+
+Once, Kirei stealthily infiltrated the trap-filled estate of the Ainzbern family but was discovered by Kiritugu's familiar. Assessing his strength, Kirei decided to retreat. The estate is represented as a tree with n vertices, with the root at vertex 1. Each vertex of the tree has a number a_i recorded, which represents the danger of vertex i. Recall that a tree is a connected undirected graph without cycles.For a successful retreat, Kirei must compute the threat value for each vertex. The threat of a vertex is equal to the maximum alternating sum along the vertical path starting from that vertex. The alternating sum along the vertical path starting from vertex i is defined as a_i - a_{p_i} + a_{p_{p_i}} - ..., where p_i is the parent of vertex i on the path to the root (to vertex 1).For example, in the tree below, vertex 4 has the following vertical paths: [4] with an alternating sum of a_4 = 6; [4, 3] with an alternating sum of a_4 - a_3 = 6 - 2 = 4; [4, 3, 2] with an alternating sum
+
+**Task:** Please provide a well-structured and optimized C++ solution.

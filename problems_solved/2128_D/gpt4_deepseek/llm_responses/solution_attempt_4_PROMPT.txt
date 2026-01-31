@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-28T06:35:22
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2128_D**
+
+You're given a permutation^{\text{∗}} p_1, ..., p_n such that \max(p_i, p_{i+1}) > p_{i+2} for all 1 ≤q i ≤q n-2.Compute the sum of the length of the longest decreasing subsequence^{\text{†}} of the subarray [p_l, p_{l+1}, ..., p_r] over all pairs 1 ≤q l ≤q r ≤q n.^{\text{∗}}A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array). ^{\text{†}}Given an array b of size |b|, a decreasing subsequence of length k is a sequence of indices i_1, ..., i_k such that: 1 ≤q i_1 < i_2 < ... < i_k ≤q |b| b_{i_1} > b_{i_2} > ... > b_{i_k}
+
+**Previous Attempt Failed:** Wrong answer on test 12
+
+**Task:** Please provide a corrected solution addressing the identified issues.

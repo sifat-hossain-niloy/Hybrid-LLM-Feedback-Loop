@@ -1,0 +1,18 @@
+{
+  "problem_id": "2075_B",
+  "status": "failed",
+  "accepted": false,
+  "total_attempts": 4,
+  "start_time": "2025-11-22T02:36:30",
+  "end_time": "2025-11-22T02:54:54",
+  "total_duration_minutes": 18.4,
+  "successful_attempt": null,
+  "best_verdict": null,
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 0,
+    "wrong_answers": 2,
+    "time_limit_exceeded": 2,
+    "memory_limit_exceeded": 0
+  }
+}

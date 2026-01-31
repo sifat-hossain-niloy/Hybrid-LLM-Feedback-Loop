@@ -1,0 +1,20 @@
+{
+  "problem_id": "2145_D",
+  "contest_id": "2145",
+  "letter": "D",
+  "title": "Problem 2145_D",
+  "statement": "A permutation of length n is an array of n integers, where each number from 1 to n appears exactly once. An inversion in a permutation p is a pair of indices (i, j) such that i < j and p_i > p_j.For a permutation p, we define its inversion value as the number of its subsegments that contain at least one inversion. Formally, this is the number of pairs of integers (l, r) (1 \u2264 l < r \u2264 n) for which there exists a pair of indices (i, j) satisfying the following conditions: l \u2264 i < j \u2264 r and p_i > p_",
+  "rating": "1800",
+  "tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "dp"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n4 5\n5 10\n5 0\n6 8\n3 1",
+      "output": "3 1 4 2\n5 4 3 2 1\n1 2 3 4 5\n2 3 5 6 1 4\n0"
+    }
+  ],
+  "created_at": "2025-11-26T09:29:16"
+}

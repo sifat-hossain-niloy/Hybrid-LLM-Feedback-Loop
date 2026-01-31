@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-21T20:11:31
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2070_D**
+
+You are given a rooted tree, consisting of n vertices. The vertices in the tree are numbered from 1 to n, and the root is the vertex 1. Let d_x be the distance (the number of edges on the shortest path) from the root to the vertex x.There is a chip that is initially placed at the root. You can perform the following operation as many times as you want (possibly zero): move the chip from the current vertex v to a vertex u such that d_u = d_v + 1. If v is the root, you can choose any vertex u meeting this constraint; however, if v is not the root, u should not be a neighbor of v (there should be no edge connecting v and u). For example, in the tree above, the following chip moves are possible: 1 → 2, 1 → 5, 2 → 7, 5 → 3, 5 → 4, 3 → 6, 7 → 6.A sequence of vertices is valid if you can move the chip in such a way that it visits all vertices from the sequence (and only them), in the order they are given in the sequence.Your task is to calculate the number of valid vertex sequences. Since the 
+
+**Previous Attempt Failed:** Wrong answer on test 1
+
+**Task:** Please provide a corrected solution addressing the identified issues.

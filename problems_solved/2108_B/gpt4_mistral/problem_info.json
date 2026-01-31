@@ -1,0 +1,22 @@
+{
+  "problem_id": "2108_B",
+  "contest_id": "2108",
+  "letter": "B",
+  "title": "Problem 2108_B",
+  "statement": "On a recent birthday, your best friend Maurice gave you a pair of numbers n and x, and asked you to construct an array of positive numbers a of length n such that a_1 \\oplus a_2 \\oplus \u00b7s \\oplus a_n = x ^{\\text{\u2217}}. This task seemed too simple to you, and therefore you decided to give Maurice a return gift by constructing an array among all such arrays that has the smallest sum of its elements. You immediately thought of a suitable array; however, since writing it down turned out to be too time-",
+  "rating": "1300",
+  "tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "8\n2 1\n3 6\n1 0\n2 0\n5 0\n2 27\n15 43\n12345678 9101112",
+      "output": "5\n8\n-1\n2\n8\n27\n55\n21446778"
+    }
+  ],
+  "created_at": "2025-11-22T04:38:45"
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-25T22:55:06
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2066_A**
+
+This is an interactive problem. You are given an array x_1, ..., x_n of integers from 1 to n. The jury also has a fixed but hidden array y_1, ..., y_n of integers from 1 to n. The elements of array y are unknown to you. Additionally, it is known that for all i, x_i ≠q y_i, and all pairs (x_i, y_i) are distinct.The jury has secretly thought of one of two objects, and you need to determine which one it is: Object A: A directed graph with n vertices numbered from 1 to n, and with n edges of the form x_i → y_i. Object B: n points on a coordinate plane. The i-th point has coordinates (x_i, y_i). To guess which object the jury has thought of, you can make queries. In one query, you must specify two numbers i, j (1 ≤q i, j ≤q n, i ≠q j). In response, you receive one number: If the jury has thought of Object A, you receive the length of the shortest path (in edges) from vertex i to vertex j in the graph, or 0 if there is no path. If the jury has thought of Object B, you receive the Manhattan d
+
+**Previous Attempt Failed:** Wrong answer on test 3
+
+**Task:** Please provide a corrected solution addressing the identified issues.

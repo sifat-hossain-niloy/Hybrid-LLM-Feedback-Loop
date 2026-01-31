@@ -1,0 +1,49 @@
+{
+  "problem_id": "2053_D",
+  "workflow_type": "gpt4_groq",
+  "workflow_session": "2053_D_gpt4_groq_afed71cd",
+  "start_time": "2025-11-23T04:54:58",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-23T04:54:58",
+      "duration_seconds": 151.06,
+      "solution_file": "2053_D_Solution_1.cpp",
+      "submission_id": "349578334",
+      "verdict": "Wrong answer on test 14",
+      "execution_time_ms": 745,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-23T04:58:52",
+      "duration_seconds": 209.42,
+      "solution_file": "2053_D_Solution_2.cpp",
+      "submission_id": "348937388",
+      "verdict": "Time limit exceeded on test 2",
+      "execution_time_ms": 889,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-23T05:03:10",
+      "duration_seconds": 170.04,
+      "solution_file": "2053_D_Solution_3.cpp",
+      "submission_id": "348953031",
+      "verdict": "Time limit exceeded on test 13",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-23T05:07:23",
+      "duration_seconds": 266.16,
+      "solution_file": "2053_D_Solution_4.cpp",
+      "submission_id": "349586672",
+      "verdict": "Time limit exceeded on test 3",
+      "execution_time_ms": 1000,
+      "accepted": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "problem_id": "2039_C1",
+  "contest_id": "2039",
+  "letter": "C1",
+  "title": "Problem 2039_C1",
+  "statement": "This is the easy version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.Shohag has two integers x and m. Help him count the number of integers 1 \u2264 y \u2264 m such that \\mathbf{x \u2260q y} and x \\oplus y is a divisor^{\\text{\u2217}} of either x, y, or both. Here \\oplus is the bitwise XOR operator.^{\\text{\u2217}}The number b is a divisor of the number a if there exists an integer c such that a = b \u00b7 c.",
+  "rating": "1200",
+  "tags": [
+    "bitmasks",
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n6 9\n5 7\n2 3\n6 4\n4 1",
+      "output": "3\n2\n1\n1\n0"
+    }
+  ],
+  "created_at": "2025-11-26T06:23:19"
+}

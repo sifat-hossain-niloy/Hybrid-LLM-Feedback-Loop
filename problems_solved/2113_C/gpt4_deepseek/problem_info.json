@@ -1,0 +1,20 @@
+{
+  "problem_id": "2113_C",
+  "contest_id": "2113",
+  "letter": "C",
+  "title": "Problem 2113_C",
+  "statement": "The boy Smilo is playing Minecraft! To prepare for the battle with the dragon, he needs a lot of golden apples, and for that, he requires a lot of gold. Therefore, Smilo goes to the mine.The mine is a rectangular grid of size n \u00d7 m, where each cell can be either gold ore, stone, or an empty cell. Smilo can blow up dynamite in any empty cell. When dynamite explodes in an empty cell with coordinates (x, y), all cells within a square of side 2k + 1 centered at cell (x, y) become empty. If gold ore ",
+  "rating": "1700",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n2 3 1\n#.#\ng.g\n2 3 2\n#.#\ng.g\n3 4 2\n.gg.\ng..#\ng##.",
+      "output": "2\n0\n4"
+    }
+  ],
+  "created_at": "2025-11-26T08:48:06"
+}

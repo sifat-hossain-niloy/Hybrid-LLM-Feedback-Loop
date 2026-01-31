@@ -1,0 +1,22 @@
+{
+  "problem_id": "2111_D",
+  "contest_id": "2111",
+  "letter": "D",
+  "title": "Problem 2111_D",
+  "statement": "A new semester is about to begin, and it is necessary to create a schedule for the first day. There are a total of n groups and m classrooms in the faculty. It is also known that each group has exactly 6 classes on the first day, and the k-th class of each group takes place at the same time. Each class must be held in a classroom, and at the same time, there cannot be classes for more than one group in the same classroom.Each classroom has its own index (at least three digits), and all digits of",
+  "rating": "1400",
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n2 4\n479 290 478 293\n1 1\n31415\n6 10\n479 385 290 293 384 383 297 478 291 382",
+      "output": "290 478 293 479 293 479\n293 479 290 478 290 478\n31415 31415 31415 31415 31415 31415\n479 290 479 290 479 290\n290 479 290 479 290 479\n293 478 293 478 293 478\n297 385 297 385 297 385\n478 293 478 293 478 293\n291 384 291 384 291 384"
+    }
+  ],
+  "created_at": "2025-11-26T06:25:59"
+}

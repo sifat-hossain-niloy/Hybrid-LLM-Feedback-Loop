@@ -1,0 +1,21 @@
+{
+  "problem_id": "2115_A",
+  "contest_id": "2115",
+  "letter": "A",
+  "title": "Problem 2115_A",
+  "statement": "Gellyfish hates math problems, but she has to finish her math homework:Gellyfish is given an array of n positive integers a_1, a_2, ..., a_n.She needs to do the following two-step operation until all elements of a are equal: Select two indexes i, j satisfying 1 \u2264q i, j \u2264q n and i \u2260q j. Replace a_i with \\gcd(a_i, a_j). Now, Gellyfish asks you for the minimum number of operations to achieve her goal.It can be proven that Gellyfish can always achieve her goal.",
+  "rating": "1500",
+  "tags": [
+    "constructive algorithms",
+    "dp",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n3\n12 20 30\n6\n1 9 1 9 8 1\n3\n6 14 15",
+      "output": "4\n3\n3"
+    }
+  ],
+  "created_at": "2025-11-27T08:53:05"
+}

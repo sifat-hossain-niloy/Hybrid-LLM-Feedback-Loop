@@ -1,0 +1,20 @@
+{
+  "problem_id": "2152_D",
+  "contest_id": "2152",
+  "letter": "D",
+  "title": "Problem 2152_D",
+  "statement": "For an array b=[b_1,b_2,...,b_m] of length m (b_i \u2265q 2), consider the following two-player game played by Poby and Rekkles. The players take turns, with Poby moving first. On Poby's turn, he must choose an element x \u2265 2 and replace it with \u2264ft\\lfloor \\frac{x}{2} \\right\\rfloor. In other words, he picks i (1 \u2264q i \u2264q m) such that b_i \u2265 2, then does b_i := \u2264ft\\lfloor \\frac{b_i}{2} \\right\\rfloor. On Rekkles' turn, he must choose an element x \u2265 2 from the array b and replace it with x+1. In other word",
+  "rating": "1700",
+  "tags": [
+    "games",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n5 5\n4 3 2 5 6\n1 1\n1 2\n2 4\n3 5\n1 5\n10 1\n314 159 265 358 979 323 846 264 338 327\n1 10",
+      "output": "2\n3\n5\n6\n10\n91"
+    }
+  ],
+  "created_at": "2025-11-25T12:09:33"
+}

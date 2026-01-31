@@ -1,0 +1,19 @@
+{
+  "problem_id": "2085_B",
+  "contest_id": "2085",
+  "letter": "B",
+  "title": "Problem 2085_B",
+  "statement": "You are given an array a consisting of n\u2265 4 non-negative integers.You need to perform the following operation on a until its length becomes 1: Select two indices l and r (1\u2264 {\\color{red}{ l < r }} \u2264 |a|), and replace the subarray [a_l,a_{l+1},...,a_r] with a single integer \\operatorname{mex}([a_l,a_{l+1},...,a_r]), where \\operatorname{mex}(b) denotes the minimum excluded (MEX)^{\\text{\u2217}} of the integers in b. In other words, let x=\\operatorname{mex}([a_l,a_{l+1},...,a_r]), the array a will becom",
+  "rating": "1200",
+  "tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n4\n1 2 3 4\n5\n0 1 0 0 1\n6\n0 0 0 0 0 0\n6\n5 4 3 2 1 0\n4\n0 0 1 1\n4\n1 0 0 0",
+      "output": "1\n1 4\n4\n1 2\n1 2\n1 2\n1 2\n4\n5 6\n3 4\n1 2\n1 3\n3\n4 5\n4 5\n1 4\n2\n1 2\n1 3\n2\n2 4\n1 2"
+    }
+  ],
+  "created_at": "2025-11-27T18:57:59"
+}

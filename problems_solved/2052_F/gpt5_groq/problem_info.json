@@ -1,0 +1,20 @@
+{
+  "problem_id": "2052_F",
+  "contest_id": "2052",
+  "letter": "F",
+  "title": "Problem 2052_F",
+  "statement": "Archimedes conducted his famous experiments on buoyancy. But not everyone knows that while he was taking a bath, he was too focused and didn't notice the moment when the water overflowed over the edge of the bath and flooded the floor near the wall. His expensive parquet was irreversibly damaged!Archimedes noticed that not all was lost, and there were still several undamaged parquet pieces. The parquet near the wall had the shape of a long narrow stripe of 2\u00d7 n cells. Archimedes had an unlimited",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "dp",
+    "graphs"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n10\n#.......##\n##..#.##..\n6\n...#..\n..#...\n8\n........\n........\n3\n###\n###",
+      "output": "Unique\nNone\nMultiple\nUnique"
+    }
+  ],
+  "created_at": "2025-11-22T01:05:33"
+}

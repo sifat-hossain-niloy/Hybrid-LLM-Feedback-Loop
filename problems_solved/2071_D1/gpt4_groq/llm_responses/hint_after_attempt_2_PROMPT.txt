@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 2
+Timestamp: 2025-11-27T13:10:03
+Model: llama-3.3-70b-versatile
+Verdict: Runtime error on test 8
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2071_D1
+**Verdict:** Runtime error on test 8
+
+**Task:** Identify the bug and suggest improvements.

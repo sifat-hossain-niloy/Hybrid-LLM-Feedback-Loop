@@ -1,0 +1,22 @@
+{
+  "problem_id": "2146_D1",
+  "contest_id": "2146",
+  "letter": "D1",
+  "title": "Problem 2146_D1",
+  "statement": "This is the easy version of the problem. The difference between the versions is that in this version, l=0, and r<2\u00b7 10^5. You can hack only if you solved all versions of this problem. You are given two integers l and r (l\u2264 r). Let n = r - l + 1. We will create two arrays a and b, both consisting of n integers. Initially, both a and b are equal to [l, l+1, ..., r]. You have to reorder the array a arbitrarily to maximize the following value:\u2211_{i=1}^n \u2264ft (a_i\\;|\\;b_i \\right ).Here, | denotes the b",
+  "rating": "1500",
+  "tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "divide and conquer",
+    "greedy",
+    "trees"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n0 3\n0 9\n0 15",
+      "output": "12\n3 2 1 0 \n90\n7 8 5 4 3 2 9 0 1 6\n240\n15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0"
+    }
+  ],
+  "created_at": "2025-11-23T14:24:40"
+}

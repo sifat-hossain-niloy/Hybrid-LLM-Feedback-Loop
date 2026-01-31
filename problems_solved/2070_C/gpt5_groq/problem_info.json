@@ -1,0 +1,19 @@
+{
+  "problem_id": "2070_C",
+  "contest_id": "2070",
+  "letter": "C",
+  "title": "Problem 2070_C",
+  "statement": "You are given a strip, consisting of n cells, all cells are initially colored red.In one operation, you can choose a segment of consecutive cells and paint them blue. Before painting, the chosen cells can be either red or blue. Note that it is not possible to paint them red. You are allowed to perform at most k operations (possibly zero).For each cell, the desired color after all operations is specified: red or blue.It is clear that it is not always possible to satisfy all requirements within k ",
+  "rating": "1500",
+  "tags": [
+    "binary search",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n4 1\nBRBR\n9 3 5 4\n4 1\nBRBR\n9 5 3 4\n4 2\nBRBR\n9 3 5 4\n10 2\nBRBRBBRRBR\n5 1 2 4 5 3 6 1 5 4\n5 5\nRRRRR\n5 3 1 2 4",
+      "output": "3\n3\n0\n4\n0"
+    }
+  ],
+  "created_at": "2025-11-24T01:08:23"
+}

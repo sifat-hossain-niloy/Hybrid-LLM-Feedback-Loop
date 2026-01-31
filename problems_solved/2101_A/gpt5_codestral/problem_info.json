@@ -1,0 +1,19 @@
+{
+  "problem_id": "2101_A",
+  "contest_id": "2101",
+  "letter": "A",
+  "title": "Problem 2101_A",
+  "statement": "You are given n^2 cards with values from 0 to n^2-1. You are to arrange them in a n by n grid such that there is exactly one card in each cell.The MEX (minimum excluded value) of a subgrid^{\\text{\u2217}} is defined as the smallest non-negative integer that does not appear in the subgrid.Your task is to arrange the cards such that the sum of MEX values over all \u2264ft(\\frac{n(n+1)}{2}\\right)^2 subgrids is maximized.^{\\text{\u2217}}A subgrid of a n by n grid is specified by four numbers l_1, r_1, l_2, r_2 sat",
+  "rating": "1300",
+  "tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n2\n3",
+      "output": "0 1 \n2 3 \n8 4 5 \n6 0 1 \n7 2 3"
+    }
+  ],
+  "created_at": "2025-11-25T19:30:15"
+}

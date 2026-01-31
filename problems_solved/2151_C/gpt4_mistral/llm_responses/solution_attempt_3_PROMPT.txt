@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-22T18:46:20
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2151_C**
+
+Danimal Cannon, Zef - The Lunar Whale⠀You are the security guard of a museum. The main door of the museum is both an entrance and an exit. At most one person can pass through the door every second. There is a sensor that detects when a visitor passes through the door. The sensor cannot determine neither who the visitor is, nor whether he entered or exited the museum. The sensor detected some activity in 2n distinct moments of time a_1, a_2, ..., a_{2n} (measured in seconds).For each visitor, his stay time is equal to the exit time minus the entrance time.Right now the museum is closed (so it has no visitors), and you wonder about the maximum possible total stay time today, i.e., the maximum possible sum of the stay times of all the visitors that entered the museum today. At second 0, the museum was closed as well.For security reasons, there is also a limit on the number of people who can stay in the museum simultaneously, but you forgot this limit. For each k from 1 to n, you want to d
+
+**Previous Attempt Failed:** Wrong answer on test 15
+
+**Task:** Please provide a corrected solution addressing the identified issues.

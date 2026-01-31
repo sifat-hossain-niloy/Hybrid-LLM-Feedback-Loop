@@ -1,0 +1,29 @@
+{
+  "problem_id": "2160_C",
+  "workflow_type": "gpt4_deepseek",
+  "workflow_session": "2160_C_gpt4_deepseek_1cfeb14a",
+  "start_time": "2025-11-22T18:17:25",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-22T18:17:25",
+      "duration_seconds": 274.89,
+      "solution_file": "2160_C_Solution_1.cpp",
+      "submission_id": "348594352",
+      "verdict": "Runtime error on test 7",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-22T18:23:24",
+      "duration_seconds": 323.59,
+      "solution_file": "2160_C_Solution_2.cpp",
+      "submission_id": "348725350",
+      "verdict": "Accepted",
+      "execution_time_ms": 129,
+      "accepted": true
+    }
+  ]
+}

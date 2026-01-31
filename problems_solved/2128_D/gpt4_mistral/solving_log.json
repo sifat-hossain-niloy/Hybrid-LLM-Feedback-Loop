@@ -1,0 +1,49 @@
+{
+  "problem_id": "2128_D",
+  "workflow_type": "gpt4_mistral",
+  "workflow_session": "2128_D_gpt4_mistral_878641e5",
+  "start_time": "2025-11-28T08:36:24",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T08:36:24",
+      "duration_seconds": 218.19,
+      "solution_file": "2128_D_Solution_1.cpp",
+      "submission_id": "349133042",
+      "verdict": "Wrong answer on test 4",
+      "execution_time_ms": 23,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-28T08:41:03",
+      "duration_seconds": 305.72,
+      "solution_file": "2128_D_Solution_2.cpp",
+      "submission_id": "348518164",
+      "verdict": "Runtime error on test 2",
+      "execution_time_ms": 84,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-28T08:47:48",
+      "duration_seconds": 297.8,
+      "solution_file": "2128_D_Solution_3.cpp",
+      "submission_id": "348006295",
+      "verdict": "Runtime error on test 6",
+      "execution_time_ms": 925,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-28T08:54:23",
+      "duration_seconds": 282.32,
+      "solution_file": "2128_D_Solution_4.cpp",
+      "submission_id": "348330079",
+      "verdict": "Time limit exceeded on test 7",
+      "execution_time_ms": 674,
+      "accepted": false
+    }
+  ]
+}

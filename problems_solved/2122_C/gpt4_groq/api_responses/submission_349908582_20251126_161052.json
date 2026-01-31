@@ -1,0 +1,34 @@
+{
+  "submission_id": "349908582",
+  "timestamp": "2025-11-26T16:10:52",
+  "collection_methods": [
+    "api_interception_via_click"
+  ],
+  "parsed_api_response": {
+    "testCount": "11",
+    "verdict": "<span class='verdict-accepted'>Accepted</span>",
+    "compilationError": "false",
+    "verdict#1": "OK",
+    "timeConsumed#1": "118",
+    "verdict#2": "OK",
+    "timeConsumed#2": "42",
+    "verdict#3": "OK",
+    "timeConsumed#3": "46",
+    "verdict#4": "OK",
+    "timeConsumed#4": "133",
+    "verdict#5": "OK",
+    "timeConsumed#5": "129",
+    "verdict#6": "OK",
+    "timeConsumed#6": "145",
+    "verdict#7": "OK",
+    "timeConsumed#7": "127",
+    "verdict#8": "OK",
+    "timeConsumed#8": "124",
+    "verdict#9": "OK",
+    "timeConsumed#9": "102",
+    "verdict#10": "OK",
+    "timeConsumed#10": "88",
+    "verdict#11": "OK",
+    "timeConsumed#11": "69"
+  }
+}

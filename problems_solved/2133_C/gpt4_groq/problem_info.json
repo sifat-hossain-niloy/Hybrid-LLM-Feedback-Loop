@@ -1,0 +1,19 @@
+{
+  "problem_id": "2133_C",
+  "contest_id": "2133",
+  "letter": "C",
+  "title": "Problem 2133_C",
+  "statement": "This is an interactive problem. Having recently discovered The Nether, Steve has built a network of n nether portals, each at a different location in his world.Each portal is connected in one direction to some number (possibly zero) of other portals. To avoid getting lost, Steve has carefully built the network of portals so that there is no sequence of jumps through portals that will bring you from a location back to itself; formally, the network forms a directed acyclic graph.Steve refuses to t",
+  "rating": "1400",
+  "tags": [
+    "graphs",
+    "interactive"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n5\n\n3\n\n3\n\n2\n\n1\n\n\n2\n\n1\n\n1",
+      "output": "? 1 4 1 2 3 4\n\n? 3 3 4 3 2\n\n? 5 2 1 5\n\n? 2 2 2 4\n\n! 4 5 1 4 2\n\n\n? 1 2 1 2\n\n? 2 2 1 2\n\n! 1 1"
+    }
+  ],
+  "created_at": "2025-11-26T21:37:25"
+}

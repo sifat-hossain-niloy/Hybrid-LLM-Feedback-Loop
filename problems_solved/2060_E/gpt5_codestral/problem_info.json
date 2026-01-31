@@ -1,0 +1,21 @@
+{
+  "problem_id": "2060_E",
+  "contest_id": "2060",
+  "letter": "E",
+  "title": "Problem 2060_E",
+  "statement": "You are given two simple undirected graphs F and G with n vertices. F has m_1 edges while G has m_2 edges. You may perform one of the following two types of operations any number of times: Select two integers u and v (1 \u2264q u,v \u2264q n) such that there is an edge between u and v in F. Then, remove that edge from F. Select two integers u and v (1 \u2264q u,v \u2264q n) such that there is no edge between u and v in F. Then, add an edge between u and v in F. Determine the minimum number of operations required su",
+  "rating": "1500",
+  "tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n3 2 1\n1 2\n2 3\n1 3\n2 1 1\n1 2\n1 2\n3 2 0\n3 2\n1 2\n1 0 0\n3 3 1\n1 2\n1 3\n2 3\n1 2",
+      "output": "3\n0\n2\n0\n2"
+    }
+  ],
+  "created_at": "2025-11-26T21:51:54"
+}

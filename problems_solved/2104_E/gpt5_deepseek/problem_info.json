@@ -1,0 +1,21 @@
+{
+  "problem_id": "2104_E",
+  "contest_id": "2104",
+  "letter": "E",
+  "title": "Problem 2104_E",
+  "statement": "Let's call a letter allowed if it is a lowercase letter and is one of the first k letters of the Latin alphabet.You are given a string s of length n, consisting only of allowed letters.Let's call a string t pleasant if t is a subsequence of s.You are given q strings t_1, t_2, ..., t_q. All of them consist only of allowed letters. For each string t_i, calculate the minimum number of allowed letters you need to append to it on the right so that it stops being pleasant.A sequence t is a subsequence",
+  "rating": "1700",
+  "tags": [
+    "binary search",
+    "dp",
+    "greedy",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "7 3\nabacaba\n3\ncc\nbcb\nb",
+      "output": "0\n1\n2"
+    }
+  ],
+  "created_at": "2025-11-27T15:46:17"
+}

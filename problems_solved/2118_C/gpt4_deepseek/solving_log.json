@@ -1,0 +1,49 @@
+{
+  "problem_id": "2118_C",
+  "workflow_type": "gpt4_deepseek",
+  "workflow_session": "2118_C_gpt4_deepseek_ead8fb67",
+  "start_time": "2025-11-24T19:42:20",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-24T19:42:20",
+      "duration_seconds": 264.75,
+      "solution_file": "2118_C_Solution_1.cpp",
+      "submission_id": "348238448",
+      "verdict": "Memory limit exceeded on test 3",
+      "execution_time_ms": 901,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-24T19:47:53",
+      "duration_seconds": 310.34,
+      "solution_file": "2118_C_Solution_2.cpp",
+      "submission_id": "349874270",
+      "verdict": "Runtime error on test 12",
+      "execution_time_ms": 1000,
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-11-24T19:53:46",
+      "duration_seconds": 230.33,
+      "solution_file": "2118_C_Solution_3.cpp",
+      "submission_id": "349794762",
+      "verdict": "Time limit exceeded on test 12",
+      "execution_time_ms": 549,
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-11-24T19:58:13",
+      "duration_seconds": 197.46,
+      "solution_file": "2118_C_Solution_4.cpp",
+      "submission_id": "348111103",
+      "verdict": "Memory limit exceeded on test 9",
+      "execution_time_ms": 53,
+      "accepted": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "problem_id": "2069_B",
+  "contest_id": "2069",
+  "letter": "B",
+  "title": "Problem 2069_B",
+  "statement": "You are given a table of n rows and m columns. Initially, the cell at the i-th row and the j-th column has color a_{i, j}.Let's say that two cells are strangers if they don't share a side. Strangers are allowed to touch with corners.Let's say that the set of cells is a set of strangers if all pairs of cells in the set are strangers. Sets with no more than one cell are sets of strangers by definition.In one step, you can choose any set of strangers such that all cells in it have the same color an",
+  "rating": "1200",
+  "tags": [
+    "greedy",
+    "matrices"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n1 1\n1\n3 3\n1 2 1\n2 3 2\n1 3 1\n1 6\n5 4 5 4 4 5\n3 4\n1 4 2 2\n1 4 3 5\n6 6 3 5",
+      "output": "0\n2\n1\n10"
+    }
+  ],
+  "created_at": "2025-11-22T03:10:17"
+}

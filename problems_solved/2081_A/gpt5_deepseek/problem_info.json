@@ -1,0 +1,21 @@
+{
+  "problem_id": "2081_A",
+  "contest_id": "2081",
+  "letter": "A",
+  "title": "Problem 2081_A",
+  "statement": "Ecrade has an integer x. He will show you this number in the form of a binary number of length n.There are two kinds of operations. Replace x with \u2264ft\\lfloor \\dfrac{x}{2}\\right\\rfloor, where \u2264ft\\lfloor \\dfrac{x}{2}\\right\\rfloor is the greatest integer \u2264 \\dfrac{x}{2}. Replace x with \u2264ft\\lceil \\dfrac{x}{2}\\right\\rceil, where \u2264ft\\lceil \\dfrac{x}{2}\\right\\rceil is the smallest integer \u2265 \\dfrac{x}{2}. Ecrade will perform several operations until x becomes 1. Each time, he will independently choose to",
+  "rating": "1800",
+  "tags": [
+    "bitmasks",
+    "dp",
+    "math",
+    "probabilities"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n3\n110\n3\n100\n10\n1101001011",
+      "output": "500000006\n2\n193359386"
+    }
+  ],
+  "created_at": "2025-11-21T10:45:40"
+}

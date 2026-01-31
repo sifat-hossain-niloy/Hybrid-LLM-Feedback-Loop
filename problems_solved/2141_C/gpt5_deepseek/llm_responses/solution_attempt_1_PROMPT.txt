@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T00:25:05
+Model: gpt-5
+Workflow: gpt5_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2141_C**
+
+There is a variable sum, which is initially equal to 0.There is also a data structure that can perform the following operations: pushback x — adds an element with value x to the end of the structure; pushfront x — adds an element with value x to the beginning of the structure; popback — removes the last element from the structure; popfront — removes the first element from the structure; min — adds the value of the minimum element currently in the structure to the variable sum. The operations popback, popfront, and min cannot be applied to an empty structure!Using this structure, you would like to be able to find the sum of the minimums of all non-empty subarrays of an array a of n elements.More formally, your task is to find a sequence of no more than n · (n + 2) commands such that after all operations, the variable sum will be equal to ∑_{0 ≤ l ≤ r < n} \min(a[l],..., a[r]) for any possible array a.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

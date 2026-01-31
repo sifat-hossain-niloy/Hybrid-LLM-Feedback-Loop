@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 4
+Timestamp: 2025-11-23T14:38:21
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2146_D1**
+
+This is the easy version of the problem. The difference between the versions is that in this version, l=0, and r<2· 10^5. You can hack only if you solved all versions of this problem. You are given two integers l and r (l≤ r). Let n = r - l + 1. We will create two arrays a and b, both consisting of n integers. Initially, both a and b are equal to [l, l+1, ..., r]. You have to reorder the array a arbitrarily to maximize the following value:∑_{i=1}^n ≤ft (a_i\;|\;b_i \right ).Here, | denotes the bitwise OR operation. You also need to construct a possible way to reorder the array a.
+
+**Previous Attempt Failed:** Wrong answer on test 5
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-27T22:00:17
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2104_E**
+
+Let's call a letter allowed if it is a lowercase letter and is one of the first k letters of the Latin alphabet.You are given a string s of length n, consisting only of allowed letters.Let's call a string t pleasant if t is a subsequence of s.You are given q strings t_1, t_2, ..., t_q. All of them consist only of allowed letters. For each string t_i, calculate the minimum number of allowed letters you need to append to it on the right so that it stops being pleasant.A sequence t is a subsequence of a sequence s if t can be obtained from s by the deletion of several (possibly, zero or all) element from arbitrary positions.
+
+**Previous Attempt Failed:** Wrong answer on test 14
+
+**Task:** Please provide a corrected solution addressing the identified issues.

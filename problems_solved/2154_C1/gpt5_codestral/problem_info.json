@@ -1,0 +1,21 @@
+{
+  "problem_id": "2154_C1",
+  "contest_id": "2154",
+  "letter": "C1",
+  "title": "Problem 2154_C1",
+  "statement": "This is the easy version of the problem. The difference between the versions is that in this version, b_i = 1 for all i (1 \u2264 i \u2264 n). You can hack only if you solved all versions of this problem. You find yourself with two arrays of positive integers a and b, both of length n. You will perform the following operation any number of times (possibly none): select an integer i (1 \u2264 i \u2264 n) and increase a_i by 1. This has a cost of b_i. Determine the minimum total cost to make it so that there exists t",
+  "rating": "1400",
+  "tags": [
+    "greedy",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n2\n1 1\n1 1\n2\n4 8\n1 1\n5\n1 1 727 1 1\n1 1 1 1 1\n2\n3 11\n1 1\n3\n2 7 11\n1 1 1\n3\n7 12 13\n1 1 1",
+      "output": "2\n0\n2\n1\n1\n1"
+    }
+  ],
+  "created_at": "2025-11-28T22:05:46"
+}

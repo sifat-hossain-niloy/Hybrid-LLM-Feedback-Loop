@@ -1,0 +1,21 @@
+{
+  "problem_id": "2103_C",
+  "contest_id": "2103",
+  "letter": "C",
+  "title": "Problem 2103_C",
+  "statement": "The median of an array b_1, b_2, ... b_m, written as \\operatorname{med}(b_1, b_2, ..., b_m), is the \u2264ft\\lceil \\frac{m}{2} \\right\\rceil-th^{\\text{\u2217}} smallest element of array b.You are given an array of integers a_1, a_2, ..., a_n and an integer k. You need to determine whether there exists a pair of indices 1 \u2264 l < r < n such that:\\operatorname{med}(\\operatorname{med}(a_1, a_2, ..., a_l), \\operatorname{med}(a_{l+1}, a_{l+2}, ..., a_r), \\operatorname{med}(a_{r+1}, a_{r+2}, ..., a_n)) \u2264 k.In othe",
+  "rating": "1600",
+  "tags": [
+    "binary search",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n3 2\n3 2 1\n3 1\n3 2 1\n6 3\n8 5 3 1 6 4\n8 7\n10 7 12 16 3 15 6 11\n6 8\n7 11 12 4 9 17\n3 500000000\n1000 1000000000 1000",
+      "output": "YES\nNO\nNO\nYES\nYES\nYES"
+    }
+  ],
+  "created_at": "2025-11-23T00:57:45"
+}

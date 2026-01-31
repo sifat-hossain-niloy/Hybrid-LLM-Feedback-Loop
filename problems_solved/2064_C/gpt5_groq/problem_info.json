@@ -1,0 +1,21 @@
+{
+  "problem_id": "2064_C",
+  "contest_id": "2064",
+  "letter": "C",
+  "title": "Problem 2064_C",
+  "statement": "You have an array a of length n consisting of non-zero integers. Initially, you have 0 coins, and you will do the following until a is empty: Let m be the current size of a. Select an integer i where 1 \u2264 i \u2264 m, gain |a_i|^{\\text{\u2217}} coins, and then: if a_i < 0, then replace a with [a_1,a_2,...,a_{i - 1}] (that is, delete the suffix beginning with a_i); otherwise, replace a with [a_{i + 1},a_{i + 2},...,a_m] (that is, delete the prefix ending with a_i). Find the maximum number of coins you can ha",
+  "rating": "1300",
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "3\n6\n3 1 4 -1 -5 -9\n6\n-10 -3 -17 1 19 20\n1\n1",
+      "output": "23\n40\n1"
+    }
+  ],
+  "created_at": "2025-11-28T15:59:57"
+}

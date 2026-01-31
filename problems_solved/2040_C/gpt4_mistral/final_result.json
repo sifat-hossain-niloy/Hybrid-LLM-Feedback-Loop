@@ -1,0 +1,20 @@
+{
+  "problem_id": "2040_C",
+  "status": "accepted",
+  "accepted": true,
+  "total_attempts": 3,
+  "start_time": "2025-11-24T07:58:14",
+  "end_time": "2025-11-24T08:12:37",
+  "total_duration_minutes": 14.38,
+  "successful_attempt": 3,
+  "best_verdict": "ACCEPTED",
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 0,
+    "wrong_answers": 1,
+    "time_limit_exceeded": 1,
+    "memory_limit_exceeded": 0
+  },
+  "execution_time_ms": 188,
+  "memory_kb": 16141
+}

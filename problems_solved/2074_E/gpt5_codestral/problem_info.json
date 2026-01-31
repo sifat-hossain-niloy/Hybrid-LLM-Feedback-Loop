@@ -1,0 +1,20 @@
+{
+  "problem_id": "2074_E",
+  "contest_id": "2074",
+  "letter": "E",
+  "title": "Problem 2074_E",
+  "statement": "This is an interactive problem. The pink soldiers hid from you n (3 \u2264 n \u2264 1500) fixed points (x_1,y_1), (x_2,y_2), ..., (x_n,y_n), whose coordinates are not given to you. Also, it is known that no two points have the same coordinates, and no three points are collinear.You can ask the Frontman about three distinct indices i, j, k. Then, he will draw a triangle with points (x_i,y_i), (x_j,y_j), (x_k,y_k), and respond with the following: If at least one of the hidden points lies inside the triangle",
+  "rating": "1600",
+  "tags": [
+    "geometry",
+    "interactive",
+    "probabilities"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n6\n\n5\n\n4\n\n0\n\n3",
+      "output": "? 1 2 3\n\n? 1 5 3\n\n? 2 5 6\n\n! 2 5 6\n\n! 1 2 3"
+    }
+  ],
+  "created_at": "2025-11-28T15:49:28"
+}

@@ -1,0 +1,20 @@
+{
+  "problem_id": "2052_F",
+  "status": "accepted",
+  "accepted": true,
+  "total_attempts": 3,
+  "start_time": "2025-11-22T03:16:33",
+  "end_time": "2025-11-22T03:32:04",
+  "total_duration_minutes": 15.52,
+  "successful_attempt": 3,
+  "best_verdict": "ACCEPTED",
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 1,
+    "wrong_answers": 0,
+    "time_limit_exceeded": 1,
+    "memory_limit_exceeded": 0
+  },
+  "execution_time_ms": 129,
+  "memory_kb": 8415
+}

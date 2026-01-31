@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-26T21:45:48
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2133_C**
+
+This is an interactive problem. Having recently discovered The Nether, Steve has built a network of n nether portals, each at a different location in his world.Each portal is connected in one direction to some number (possibly zero) of other portals. To avoid getting lost, Steve has carefully built the network of portals so that there is no sequence of jumps through portals that will bring you from a location back to itself; formally, the network forms a directed acyclic graph.Steve refuses to tell you which portals are connected to which, but he will allow you to ask queries. In each query, you give Steve a set of locations S = \{s_1, s_2, ..., s_k\} and a starting location x ∈ S. Steve will figure out the longest path starting at x that only passes through locations in S and tell you the number of locations in it. (If it is impossible to reach any other location in S from x, Steve will reply with 1.)As you are looking to obtain the achievement "Hot Tourist Destinations", you want to 
+
+**Previous Attempt Failed:** Wrong answer on test 4
+
+**Task:** Please provide a corrected solution addressing the identified issues.

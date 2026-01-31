@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-22T08:32:15
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2120_C**
+
+Harshith attained enlightenment in Competitive Programming by training under a Divine Tree. A divine tree is a rooted tree^{\text{∗}} with n nodes, labelled from 1 to n. The divineness of a node v, denoted d(v), is defined as the smallest node label on the unique simple path from the root to node v.Aryan, being a hungry Competitive Programmer, asked Harshith to pass on the knowledge. Harshith agreed on the condition that Aryan would be given two positive integers n and m, and he had to construct a divine tree with n nodes such that the total divineness of the tree is m, i.e., \displaystyle∑\limits_{i=1}^n d(i)=m. If no such tree exists, Aryan must report that it is impossible.Desperate for knowledge, Aryan turned to you for help in completing this task. As a good friend of his, help him solve the task.^{\text{∗}}A tree is a connected graph without cycles. A rooted tree is a tree where one vertex is special and called the root.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

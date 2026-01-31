@@ -1,0 +1,21 @@
+{
+  "problem_id": "2053_B",
+  "contest_id": "2053",
+  "letter": "B",
+  "title": "Problem 2053_B",
+  "statement": "If it was so, then let's make it a deal...\u2014 MayDay, GentlenessEven after copying the paintings from famous artists for ten years, unfortunately, Eric is still unable to become a skillful impressionist painter. He wants to forget something, but the white bear phenomenon just keeps hanging over him.Eric still remembers n pieces of impressions in the form of an integer array. He records them as w_1, w_2, ..., w_n. However, he has a poor memory of the impressions. For each 1 \u2264q i \u2264q n, he can only r",
+  "rating": "1200",
+  "tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n2\n1 1\n1 1\n4\n1 3\n1 3\n1 3\n1 3\n6\n3 6\n2 2\n1 2\n1 1\n3 4\n2 2\n7\n3 4\n4 4\n4 4\n1 3\n2 5\n1 4\n2 2\n3\n4 5\n4 4\n5 5",
+      "output": "00\n1111\n100110\n1001111\n011"
+    }
+  ],
+  "created_at": "2025-11-25T18:53:05"
+}

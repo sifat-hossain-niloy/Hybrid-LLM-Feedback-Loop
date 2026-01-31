@@ -1,7 +1,7 @@
 /*
- * Problem: 2135_A - In the first test case, the whole array
- * Generated: 2025-11-05 11:06:09
- * Workflow: GPT-4 + Mistral
+ * Problem: 2135_A
+ * Generated: 2025-11-27T15:13:58
+ * Workflow: gpt4_mistral
  * Solution Model: gpt-4
  * Debugging Critic: codestral-2508
  * Iteration: 2
@@ -11,33 +11,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while(t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        for(int i = 0; i < n; i++) {
+        vector<int> a(n), prefix(n+1, 0);
+        for(int i=0;i<n;i++){{
             cin >> a[i];
-        }
-        map<int, int> freq;
-        for(int i = 0; i < n; i++) {
-            freq[a[i]]++;
-        }
-        int ans = 0, cnt = 0;
-        for(auto it = freq.begin(); it != freq.end(); it++) {
-            cnt += it->second;
-            if(cnt >= it->first) {
-                ans += it->first;
-                cnt = 0;
-            }
-        }
+            prefix[i+1] = prefix[i] + a[i];
+        }}
+        
+        long long ans = LLONG_MIN;
+        for(int i=0;i<n;i++){{
+            for(int j=i+1;j<=n;j++){{
+                ans = max(ans, prefix[j] - prefix[i]);
+            }}
+        }}
         cout << ans << "\n";
-    }
-
+    }}
     return 0;
-}
+}}

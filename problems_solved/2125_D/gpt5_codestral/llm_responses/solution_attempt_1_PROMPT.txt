@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-24T22:09:58
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2125_D**
+
+There is a linear strip divided into m cells, numbered from 1 to m from left to right.You are given n segments. Each segment is defined by four numbers: l, r, p and q — the segment covers cells from l to r inclusively and exists with probability \frac{p}{q} (independently).Your task is to calculate the probability that each cell is covered by exactly one segment.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

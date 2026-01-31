@@ -1,0 +1,21 @@
+{
+  "problem_id": "2091_E",
+  "contest_id": "2091",
+  "letter": "E",
+  "title": "Problem 2091_E",
+  "statement": "Recently, Misha at the IT Campus \"NEIMARK\" camp learned a new topic\u00a0\u2014 the Euclidean algorithm.He was somewhat surprised when he realized that a \u00b7 b = lcm(a, b) \u00b7 gcd(a, b), where gcd(a, b)\u00a0\u2014 is the greatest common divisor (GCD) of the numbers a and b and lcm(a, b)\u00a0\u2014 is the least common multiple (LCM). Misha thought that since the product of LCM and GCD exists, it might be interesting to consider their quotient: F(a,b)=\\frac{lcm(a, b)}{gcd(a, b)}.For example, he took a = 2 and b = 4, computed F(2",
+  "rating": "1300",
+  "tags": [
+    "brute force",
+    "math",
+    "number theory",
+    "two pointers"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n5\n10\n34\n10007",
+      "output": "4\n11\n49\n24317"
+    }
+  ],
+  "created_at": "2025-11-22T17:22:54"
+}

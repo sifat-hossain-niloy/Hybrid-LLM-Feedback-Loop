@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-22T20:21:24
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2160_C**
+
+Given a positive integer x, let f(x) be the positive integer formed by reversing the binary representation of x without leading zeroes. For example, if x=12=1100_2, then f(x)=0011_2=3. You are given an integer n. Please determine if there exists a positive integer x such that x \oplus f(x) = n^{\text{∗}}.^{\text{∗}}Here, \oplus denotes the bitwise XOR operation.
+
+**Previous Attempt Failed:** Wrong answer on test 5
+
+**Task:** Please provide a corrected solution addressing the identified issues.

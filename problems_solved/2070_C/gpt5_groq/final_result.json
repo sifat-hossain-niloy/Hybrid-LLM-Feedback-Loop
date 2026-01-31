@@ -1,0 +1,18 @@
+{
+  "problem_id": "2070_C",
+  "status": "failed",
+  "accepted": false,
+  "total_attempts": 4,
+  "start_time": "2025-11-24T01:08:23",
+  "end_time": "2025-11-24T01:27:36",
+  "total_duration_minutes": 19.22,
+  "successful_attempt": null,
+  "best_verdict": null,
+  "statistics": {
+    "compilation_errors": 0,
+    "runtime_errors": 1,
+    "wrong_answers": 2,
+    "time_limit_exceeded": 1,
+    "memory_limit_exceeded": 0
+  }
+}

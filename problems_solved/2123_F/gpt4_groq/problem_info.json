@@ -1,0 +1,19 @@
+{
+  "problem_id": "2123_F",
+  "contest_id": "2123",
+  "letter": "F",
+  "title": "Problem 2123_F",
+  "statement": "Call a permutation^{\\text{\u2217}} p of length n good if \\gcd(p_i, i)^{\\text{\u2020}} > 1 for all 2 \u2264q i \u2264q n. Find a good permutation with the minimum number of fixed points^{\\text{\u2021}} across all good permutations of length n. If there are multiple such permutations, print any of them.^{\\text{\u2217}} A permutation of length n is an array that contains every integer from 1 to n exactly once, in any order. ^{\\text{\u2020}}\\gcd(x, y) denotes the greatest common divisor (GCD) of x and y.^{\\text{\u2021}}A fixed point of a ",
+  "rating": "1700",
+  "tags": [
+    "constructive algorithms",
+    "number theory"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n2\n3\n6\n13",
+      "output": "1 2\n1 2 3\n1 4 6 2 5 3\n1 12 9 6 10 8 7 4 3 5 11 2 13"
+    }
+  ],
+  "created_at": "2025-11-23T13:05:26"
+}

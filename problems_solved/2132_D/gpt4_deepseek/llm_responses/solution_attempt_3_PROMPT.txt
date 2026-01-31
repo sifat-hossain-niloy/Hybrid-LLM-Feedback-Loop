@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-25T17:23:11
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2132_D**
+
+Vadim wanted to understand the infinite sequence of digits that consists of the positive integers written consecutively from 1 to infinity. That is, this sequence looks like 123456789101112131415 ...To avoid looking into infinity, Vadim cut this sequence at the k-th digit and discarded everything after it. Thus, exactly k digits remained in the sequence. Help him find the sum of the digits in the remaining sequence.
+
+**Previous Attempt Failed:** Wrong answer on test 8
+
+**Task:** Please provide a corrected solution addressing the identified issues.

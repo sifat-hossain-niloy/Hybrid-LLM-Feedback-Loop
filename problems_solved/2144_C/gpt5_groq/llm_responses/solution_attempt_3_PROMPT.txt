@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-23T03:59:37
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2144_C**
+
+You are given two integer arrays a and b both of length n.You can choose any subset of indices and swap the elements at those positions (i. e. make a swap(a_i, b_i) for each i in the subset). A subset of indices is considered good if, after the swapping, both arrays are sorted in non-descending order.Your task is to calculate the number of good subsets. Since the answer can be large, print it modulo 998244353.
+
+**Previous Attempt Failed:** Time limit exceeded on test 13
+
+**Task:** Please provide a corrected solution addressing the identified issues.

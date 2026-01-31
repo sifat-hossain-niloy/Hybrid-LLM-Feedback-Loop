@@ -1,0 +1,19 @@
+{
+  "problem_id": "2082_B",
+  "contest_id": "2082",
+  "letter": "B",
+  "title": "Problem 2082_B",
+  "statement": "Ecrade has an integer x. There are two kinds of operations. Replace x with \u2264ft\\lfloor \\dfrac{x}{2}\\right\\rfloor, where \u2264ft\\lfloor \\dfrac{x}{2}\\right\\rfloor is the greatest integer \u2264 \\dfrac{x}{2}. Replace x with \u2264ft\\lceil \\dfrac{x}{2}\\right\\rceil, where \u2264ft\\lceil \\dfrac{x}{2}\\right\\rceil is the smallest integer \u2265 \\dfrac{x}{2}. Ecrade will perform exactly n first operations and m second operations in any order. He wants to know the minimum and the maximum possible value of x after n+m operations. ",
+  "rating": "1600",
+  "tags": [
+    "brute force",
+    "greedy"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n12 1 2\n12 1 1\n12 0 0\n12 1000000000 1000000000\n706636307 0 3",
+      "output": "1 2\n3 3\n12 12\n0 0\n88329539 88329539"
+    }
+  ],
+  "created_at": "2025-11-23T12:48:13"
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-27T16:09:08
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2086_D**
+
+You would like to construct a string s, consisting of lowercase Latin letters, such that the following condition holds: For every pair of indices i and j such that s_{i} = s_{j}, the difference of these indices is even, that is, |i - j| \bmod 2 = 0. Constructing any string is too easy, so you will be given an array c of 26 numbers — the required number of occurrences of each individual letter in the string s. So, for every i ∈ [1, 26], the i-th letter of the Latin alphabet should occur exactly c_i times.Your task is to count the number of distinct strings s that satisfy all these conditions. Since the answer can be huge, output it modulo 998\,244\,353.
+
+**Previous Attempt Failed:** Wrong answer on test 11
+
+**Task:** Please provide a corrected solution addressing the identified issues.

@@ -1,0 +1,14 @@
+=== LLM PROMPT (Hint Generation) ===
+After Attempt: 2
+Timestamp: 2025-11-23T08:09:54
+Model: codestral-2508
+Verdict: Runtime error on test 11
+
+====================================================================
+
+You are a code debugging assistant. Analyze the failed submission.
+
+**Problem:** 2144_C
+**Verdict:** Runtime error on test 11
+
+**Task:** Identify the bug and suggest improvements.

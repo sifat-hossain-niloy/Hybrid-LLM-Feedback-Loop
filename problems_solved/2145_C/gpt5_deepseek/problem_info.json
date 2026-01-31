@@ -1,0 +1,20 @@
+{
+  "problem_id": "2145_C",
+  "contest_id": "2145",
+  "letter": "C",
+  "title": "Problem 2145_C",
+  "statement": "Monocarp has a string s of length n, consisting of the letters 'a' and 'b'. He wants to remove some (possibly zero) number of consecutive letters from his string in such a way that the number of letters 'a' and 'b' in the resulting string becomes equal. Monocarp can start removing letters from any position in the string s.Monocarp really likes his string s, so he wants to remove as few consecutive letters from it as possible.Your task is to determine the minimum number of consecutive letters fro",
+  "rating": "1300",
+  "tags": [
+    "binary search",
+    "greedy",
+    "strings"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n5\nbbbab\n6\nbbaaba\n4\naaaa\n12\naabbaaabbaab\n5\naabaa",
+      "output": "3\n0\n-1\n2\n-1"
+    }
+  ],
+  "created_at": "2025-11-24T10:05:57"
+}

@@ -1,0 +1,20 @@
+{
+  "problem_id": "2119_B",
+  "contest_id": "2119",
+  "letter": "B",
+  "title": "Problem 2119_B",
+  "statement": "PIKASONIC - Lost My Mind (feat.nakotanmaru) You are given two points (p_x,p_y) and (q_x,q_y) on a Euclidean plane.You start at the starting point (p_x,p_y) and will perform n operations. In the i-th operation, you must choose any point such that the Euclidean distance^{\\text{\u2217}} between your current position and the point is exactly a_i, and then move to that point.Determine whether it is possible to reach the terminal point (q_x,q_y) after performing all operations.^{\\text{\u2217}}The Euclidean dist",
+  "rating": "1200",
+  "tags": [
+    "geometry",
+    "greedy",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "5\n2\n1 1 5 1\n3 3\n3\n1 1 3 3\n2 3 4\n2\n100 100 100 100\n4 5\n1\n5 1 1 4\n5\n2\n10000000 10000000 10000000 10000000\n10000 10000",
+      "output": "Yes\nYes\nNo\nYes\nYes"
+    }
+  ],
+  "created_at": "2025-11-23T17:59:13"
+}

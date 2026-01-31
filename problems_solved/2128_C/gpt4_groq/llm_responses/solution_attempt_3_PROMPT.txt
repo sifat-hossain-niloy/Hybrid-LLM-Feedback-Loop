@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-24T04:26:46
+Model: gpt-4
+Workflow: gpt4_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2128_C**
+
+Consider an array a_1, ..., a_n. Initially, a_i = 0 for every i.You can do operations of the following form. You choose an integer x greater than \min(a). Then, i is defined as the minimum index such that a_i < x. In other words, i is the unique integer between 1 and n inclusive such that a_i < x and a_j ≥q x for every 1 ≤q j ≤q i-1. Finally, a_i is incremented by x. For example, if a = [6, 8, 2, 1] and you choose x = 6, then i will be equal to 3 (since a_1 ≥q 6, a_2 ≥q 6, and a_3 < 6) and a will become [6, 8, 8, 1].You can do as many operations as you want. Can you reach a target array b_1, ..., b_n?
+
+**Previous Attempt Failed:** Time limit exceeded on test 7
+
+**Task:** Please provide a corrected solution addressing the identified issues.

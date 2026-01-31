@@ -1,7 +1,7 @@
 /*
- * Problem: 2135_A - In the first test case, the whole array
- * Generated: 2025-11-05 11:17:57
- * Workflow: GPT-4 + Groq
+ * Problem: 2135_A
+ * Generated: 2025-11-27T16:35:50
+ * Workflow: gpt4_groq
  * Solution Model: gpt-4
  * Debugging Critic: llama-3.3-70b-versatile
  * Iteration: 3
@@ -11,44 +11,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
+int main(){{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-    while (t--) {
+    while(t--){{
         int n;
         cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-
-        vector<int> dp(n + 1, 0);
-        dp[0] = 0;
-
-        for (int i = 1; i <= n; i++) {
-            dp[i] = dp[i - 1];
-
-            for (int blockLength = 1; blockLength <= i; blockLength++) {
-                int blockCount = 0;
-                for (int j = i - blockLength + 1; j <= i; j++) {
-                    if (a[j - 1] == blockLength) {
-                        blockCount++;
-                    } else {
-                        break;
-                    }
-                }
-
-                if (blockCount == blockLength) {
-                    dp[i] = max(dp[i], dp[i - blockLength] + blockLength);
-                }
-            }
-        }
-
-        cout << dp[n] << "\n";
-    }
-
+        vector<long long> a(n);
+        for(int i=0;i<n;i++) cin >> a[i];
+        
+        // Kadane's algorithm
+        long long maxSum = a[0], currentSum = a[0];
+        for(int i=1;i<n;i++){{
+            currentSum = max(a[i], currentSum + a[i]);
+            maxSum = max(maxSum, currentSum);
+        }}
+        cout << maxSum << "\n";
+    }}
     return 0;
-}
+}}

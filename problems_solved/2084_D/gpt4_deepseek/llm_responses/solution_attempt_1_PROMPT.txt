@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-27T01:55:07
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2084_D**
+
+You are given three integers n, m, and k, where m · k < n.For a sequence b consisting of non-negative integers, define f(b) as follows: You may perform the following operation on b: Let l denote the current length of b. Choose a positive integer 1 ≤q i ≤q l - k + 1, remove the subarray from index i to i + k - 1 and concatenate the remaining parts. In other words, replace b with [b_1, b_2, ..., b_{i - 1}, b_{i + k}, b_{i + k + 1}, ..., b_l]. f(b) is defined as the minimum possible value of \operatorname{mex}(b)^{\text{∗}} after performing the above operation at most m times (possibly zero). You need to construct a sequence a of length n consisting of non-negative integers, such that: For all 1 ≤ i ≤ n, 0 ≤ a_i ≤ 10^9. Over all such sequences a, f(a) is maximized. ^{\text{∗}}The minimum excluded (MEX) of a collection of integers c_1, c_2, ..., c_k is defined as the smallest non-negative integer x which does not occur in the collection c.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

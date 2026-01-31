@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T16:41:53
+Model: gpt-5
+Workflow: gpt5_codestral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2126_E**
+
+Two arrays p and s of length n are given, where p is the prefix GCD^{\text{∗}} of some array a, and s is the suffix GCD of the same array a. In other words, if the array a existed, then for each 1 ≤ i ≤ n, the following equalities would hold both: p_i = \gcd(a_1, a_2, ..., a_i) s_i = \gcd(a_i, a_{i+1}, ..., a_n). Determine whether there exists such an array a for which the given arrays p and s can be obtained.^{\text{∗}}\gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

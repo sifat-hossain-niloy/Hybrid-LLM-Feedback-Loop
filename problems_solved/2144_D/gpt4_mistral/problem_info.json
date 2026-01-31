@@ -1,0 +1,20 @@
+{
+  "problem_id": "2144_D",
+  "contest_id": "2144",
+  "letter": "D",
+  "title": "Problem 2144_D",
+  "statement": "Imagine that you are the owner of a store. Before the start of a new season, you decided to clear your store of leftover goods, and therefore you decided to hold a total sale.You have n different items in your store: the i-th item costs c_i coins. Each item has a price tag with the corresponding price c_i. You decided to hold a sale in the format: \"we divided all the prices x times.\" Formally, this means that you choose a common coefficient x, and during the sale, the i-th item will cost \u2264ft\\lce",
+  "rating": "1800",
+  "tags": [
+    "brute force",
+    "dp",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "4\n5 51\n50 150 50 148 150\n3 1000000000\n42 42 42\n10 54321\n1 8088 45 1 73 1 9198 4991 1 83\n3 100\n1 1 1",
+      "output": "31\n-2999999937\n-162755\n3"
+    }
+  ],
+  "created_at": "2025-11-29T04:04:00"
+}

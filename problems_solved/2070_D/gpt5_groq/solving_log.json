@@ -1,0 +1,29 @@
+{
+  "problem_id": "2070_D",
+  "workflow_type": "gpt5_groq",
+  "workflow_session": "2070_D_gpt5_groq_6e4b39d3",
+  "start_time": "2025-11-21T14:08:21",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-21T14:08:21",
+      "duration_seconds": 283.85,
+      "solution_file": "2070_D_Solution_1.cpp",
+      "submission_id": "349294733",
+      "verdict": "Runtime error on test 7",
+      "execution_time_ms": 587,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-21T14:14:32",
+      "duration_seconds": 256.39,
+      "solution_file": "2070_D_Solution_2.cpp",
+      "submission_id": "348607340",
+      "verdict": "Accepted",
+      "execution_time_ms": 182,
+      "accepted": true
+    }
+  ]
+}

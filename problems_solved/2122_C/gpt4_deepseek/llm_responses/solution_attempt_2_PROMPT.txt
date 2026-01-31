@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 2
+Timestamp: 2025-11-26T12:17:41
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2122_C**
+
+You are given n points (x_i, y_i) on a 2D plane, where n is even. Select \tfrac{n}{2} disjoint pairs (a_i, b_i) to maximize the sum of Manhattan distances between points in pairs. In other words, maximize ∑_{i=1}^{n/2} |x_{a_i} - x_{b_i}| + |y_{a_i} - y_{b_i}|.
+
+**Previous Attempt Failed:** Wrong answer on test 10
+
+**Task:** Please provide a corrected solution addressing the identified issues.

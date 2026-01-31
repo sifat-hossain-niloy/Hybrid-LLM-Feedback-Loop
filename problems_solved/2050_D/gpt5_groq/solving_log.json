@@ -1,0 +1,29 @@
+{
+  "problem_id": "2050_D",
+  "workflow_type": "gpt5_groq",
+  "workflow_session": "2050_D_gpt5_groq_3eb6e411",
+  "start_time": "2025-11-28T21:27:31",
+  "max_attempts": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-11-28T21:27:31",
+      "duration_seconds": 311.64,
+      "solution_file": "2050_D_Solution_1.cpp",
+      "submission_id": "349365756",
+      "verdict": "Memory limit exceeded on test 3",
+      "execution_time_ms": 986,
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-11-28T21:32:47",
+      "duration_seconds": 157.81,
+      "solution_file": "2050_D_Solution_2.cpp",
+      "submission_id": "349783645",
+      "verdict": "Accepted",
+      "execution_time_ms": 180,
+      "accepted": true
+    }
+  ]
+}

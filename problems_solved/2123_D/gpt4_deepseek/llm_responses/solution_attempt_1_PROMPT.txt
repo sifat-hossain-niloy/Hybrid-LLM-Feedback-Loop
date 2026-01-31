@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-28T11:30:28
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2123_D**
+
+Alice and Bob are given a binary string s of length n, and an integer k (1≤q k < n).Alice wins if she is able to transform all characters of s into zeroes. If Alice is unable to win in a finite number of moves, then Bob wins.Alice and Bob take turns, with Alice going first. On Alice's turn, she may choose any subsequence^{\text{∗}} of length k in s, then set all characters in that subsequence to zero. On Bob's turn, he may choose any substring^{\text{†}} of length k in s, then set all characters in that substring to one. Note that Alice wins if the string consists of all zeros at any point during the game, including in between Alice's and Bob's turns.Determine who wins with optimal play.^{\text{∗}}A subsequence of a string s is a set of characters in s. Note that these characters do not have to be adjacent.^{\text{†}}A substring of a string s is a contiguous group of characters in s. Note that these characters must be adjacent.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

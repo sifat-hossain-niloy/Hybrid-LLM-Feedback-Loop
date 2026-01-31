@@ -1,0 +1,19 @@
+{
+  "problem_id": "2162_D",
+  "contest_id": "2162",
+  "letter": "D",
+  "title": "Problem 2162_D",
+  "statement": "This is an interactive problem.There is a permutation^{\\text{\u2217}} p of length n.Someone secretly chose two integers l, r (1 \u2264 l \u2264 r \u2264 n) and modified the permutation in the following way: For every index i such that l \u2264 i \u2264 r, set p_i := p_i + 1. Let a denote the resulting array obtained by modifying the permutation.You are given an integer n denoting the length of the permutation p.In one query, you are allowed to choose two integers l, r (1 \u2264 l \u2264 r \u2264 n) and ask for the sum of the subarray eithe",
+  "rating": "1400",
+  "tags": [
+    "binary search",
+    "interactive"
+  ],
+  "sample_tests": [
+    {
+      "input": "2\n\n\n3\n\n4\n\n5\n\n\n4\n\n8\n\n8\n\n9",
+      "output": "1 1 2\n\n2 1 2\n\n! 2 2\n\n1 2 4\n\n2 1 3\n\n2 3 4\n\n! 2 4"
+    }
+  ],
+  "created_at": "2025-11-27T19:00:44"
+}

@@ -1,0 +1,17 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 3
+Timestamp: 2025-11-25T05:58:06
+Model: gpt-4
+Workflow: gpt4_deepseek
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2104_D**
+
+You are given an integer array a of size n.You can perform the following operations any number of times (possibly, zero): pay one coin and increase any element of the array by 1 (you must have at least 1 coin to perform this operation); gain one coin and decrease any element of the array by 1. Let's say that an array is ideal if both of the following conditions hold: each element of the array is at least 2; for each pair of indices i and j (1 ≤ i, j ≤ n; i ≠ j) the greatest common divisor (GCD) of a_i and a_j is equal to 1. If the array has less than 2 elements, this condition is automatically satisfied. Let's say that an array is beautiful if it can be transformed into an ideal array using the aforementioned operations, provided that you initially have no coins. If the array is already ideal, then it is also beautiful.The given array is not necessarily beautiful or ideal. You can remove any elements from it (including removing the entire array or not removing anything at all). Your ta
+
+**Previous Attempt Failed:** Wrong answer on test 4
+
+**Task:** Please provide a corrected solution addressing the identified issues.

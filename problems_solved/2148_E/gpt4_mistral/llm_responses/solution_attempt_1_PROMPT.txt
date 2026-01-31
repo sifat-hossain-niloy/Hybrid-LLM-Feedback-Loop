@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-25T11:21:52
+Model: gpt-4
+Workflow: gpt4_mistral
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2148_E**
+
+Farmer John has an array a containing n positive integers and an integer k. Let a[l, r] be a subarray^{\text{∗}} of a. He performs the following procedure to independently determine if subarray a[l, r] is awesome: Initially, FJ has k empty multisets, numbered from 1 to k. Then, for each element a_i (1 ≤q i ≤q n) in a: If l≤q i≤q r (that is, a_i is in the subarray a[l, r]), he places a_i in multiset 1, Otherwise, he places a_i into any multiset he wants (which may be multiset 1). Subarray a[l, r] is awesome if there is some way for him to place elements such that, for every value v, all multisets contain the same number of elements with value v. In other words, he wants to make all multisets contain the exact same elements (ignoring ordering). Output the number of awesome subarrays. ^{\text{∗}}For array a of size n and integers 1≤q l≤q r≤q n, the subarray a[l, r] denotes the array consisting of the elements a_l, ..., a_r, in order.
+
+**Task:** Please provide a well-structured and optimized C++ solution.

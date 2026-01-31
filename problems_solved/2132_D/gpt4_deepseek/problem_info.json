@@ -1,0 +1,21 @@
+{
+  "problem_id": "2132_D",
+  "contest_id": "2132",
+  "letter": "D",
+  "title": "Problem 2132_D",
+  "statement": "Vadim wanted to understand the infinite sequence of digits that consists of the positive integers written consecutively from 1 to infinity. That is, this sequence looks like 123456789101112131415 ...To avoid looking into infinity, Vadim cut this sequence at the k-th digit and discarded everything after it. Thus, exactly k digits remained in the sequence. Help him find the sum of the digits in the remaining sequence.",
+  "rating": "1600",
+  "tags": [
+    "binary search",
+    "dp",
+    "implementation",
+    "math"
+  ],
+  "sample_tests": [
+    {
+      "input": "6\n5\n10\n13\n29\n1000000000\n1000000000000000",
+      "output": "15\n46\n48\n100\n4366712386\n4441049382716054"
+    }
+  ],
+  "created_at": "2025-11-25T17:10:09"
+}

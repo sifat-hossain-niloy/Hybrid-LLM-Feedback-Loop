@@ -1,0 +1,15 @@
+=== LLM PROMPT (Solution Generation) ===
+Attempt: 1
+Timestamp: 2025-11-24T13:14:06
+Model: gpt-5
+Workflow: gpt5_groq
+
+====================================================================
+
+You are a competitive programming expert.
+
+**Problem: 2112_D**
+
+Let u and v be two distinct vertices in a directed graph. Let's call the ordered pair (u, v) good if there exists a path from vertex u to vertex v along the edges of the graph.You are given an undirected tree with n vertices and n - 1 edges. Determine whether it is possible to assign a direction to each edge of this tree so that the number of good pairs in it is exactly n. If it is possible, print any way to direct the edges resulting in exactly n good pairs. One possible directed version of the tree for the first test case.
+
+**Task:** Please provide a well-structured and optimized C++ solution.
